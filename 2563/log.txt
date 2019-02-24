@@ -1,0 +1,116 @@
+2018-04-01 23:40:51,501 INFO  DownloadService - Downloading "https://github.com/soroushjavdan/CustomFontWidgets/archive/master.zip", attempt 3
+2018-04-01 23:41:51,990 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:41:52,655 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 23:41:52,655 INFO  DownloadService - Downloading "https://github.com/soroushjavdan/CustomFontWidgets/archive/master.zip", attempt 3
+2018-04-01 23:42:53,896 DEBUG FullProcessService - Repository https://github.com/soroushjavdan/CustomFontWidgets available: true
+2018-04-01 23:42:53,896 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:42:53,896 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/soroushjavdan/CustomFontWidgets, /tmp/rdisk/2563/src]
+2018-04-01 23:42:55,443 INFO  SysUtils - 
+2018-04-01 23:42:55,447 INFO  GitService - Deleted "/tmp/rdisk/2563/src/.git": true
+2018-04-01 23:42:55,450 INFO  FullProcessService - Size of directory with sources: 539 KB
+2018-04-01 23:42:55,450 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2563/src]
+2018-04-01 23:42:55,455 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2563/src/.git/
+
+2018-04-01 23:42:55,457 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2563/src/gradlew
+2018-04-01 23:42:55,460 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2563/src/app/build.gradle /tmp/rdisk/2563/src/customfontwidgets/build.gradle /tmp/rdisk/2563/src/build.gradle
+2018-04-01 23:42:55,462 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2563/src/settings.gradle /tmp/rdisk/2563/src/customfontwidgets/build.gradle /tmp/rdisk/2563/src/build.gradle /tmp/rdisk/2563/src/app/build.gradle
+2018-04-01 23:42:55,463 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:42:55,463 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:42:55,469 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2563/src/app/local.properties
+2018-04-01 23:42:55,469 INFO  ProjectFixService - Build info for "/tmp/rdisk/2563/src/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 23:42:55,469 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2563/src/customfontwidgets/local.properties
+2018-04-01 23:42:55,470 INFO  ProjectFixService - Build info for "/tmp/rdisk/2563/src/customfontwidgets/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 23:42:55,470 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2563/src/local.properties
+2018-04-01 23:42:55,470 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 23:42:55,470 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 23:42:55,471 INFO  ProjectFixService - Build info for "/tmp/rdisk/2563/src/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 23:42:55,471 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:42:55,471 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:42:55,471 INFO  SysUtils - Execute command: [/tmp/rdisk/2563/src/gradlew, -b, /tmp/rdisk/2563/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:43:03,470 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-01 23:43:03,470 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 23:43:03,471 INFO  SysUtils - Execute command: [/tmp/rdisk/2563/src/gradlew, -b, /tmp/rdisk/2563/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 23:43:14,111 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:customfontwidgets:compileLint
+:customfontwidgets:copyReleaseLint UP-TO-DATE
+:customfontwidgets:mergeReleaseProguardFiles
+:customfontwidgets:preBuild UP-TO-DATE
+:customfontwidgets:preReleaseBuild UP-TO-DATE
+:customfontwidgets:checkReleaseManifest
+:customfontwidgets:prepareReleaseDependencies
+:customfontwidgets:compileReleaseAidl
+:customfontwidgets:compileReleaseRenderscript
+:customfontwidgets:generateReleaseBuildConfig
+:customfontwidgets:generateReleaseAssets UP-TO-DATE
+:customfontwidgets:mergeReleaseAssets
+:customfontwidgets:generateReleaseResValues
+:customfontwidgets:generateReleaseResources
+:customfontwidgets:packageReleaseResources
+:customfontwidgets:processReleaseManifest
+:customfontwidgets:processReleaseResources
+:customfontwidgets:generateReleaseSources
+:customfontwidgets:processReleaseJavaRes UP-TO-DATE
+:customfontwidgets:compileReleaseJava
+:customfontwidgets:packageReleaseJar
+:customfontwidgets:compileReleaseNdk UP-TO-DATE
+:customfontwidgets:packageReleaseJniLibs UP-TO-DATE
+:customfontwidgets:packageReleaseLocalJar UP-TO-DATE
+:customfontwidgets:packageReleaseRenderscript UP-TO-DATE
+:customfontwidgets:bundleRelease
+:app:prepareSrcCustomfontwidgetsUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.24 secs
+
+2018-04-01 23:43:14,121 INFO  FullProcessService - Found APK file: /tmp/rdisk/2563/src/app/build/outputs/apk/app-debug.apk

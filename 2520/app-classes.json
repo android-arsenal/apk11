@@ -1,0 +1,4 @@
+{
+  "com.shamanland.fab" : [ "BuildConfig", "FloatingActionButton", "R", "R$anim", "R$attr", "R$dimen", "R$drawable", "R$id", "R$style", "R$styleable", "ScrollDetector", "ShowHideOnScroll" ],
+  "com.shamanland.fab.example" : [ "BuildConfig", "ExampleAdapter", "ExampleApplication", "ExampleDetailsActivity", "ExampleListActivity", "ExampleListActivity$1", "ExampleListActivity$2", "R", "R$anim", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ]
+}

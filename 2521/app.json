@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.shamanland.fonticon.example",
+    "label" : "Font Icons Demo",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "7",
+    "targetSdkVersion" : "20",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 770,
+  "locales" : [ "", "sl", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "sd", "mn_MN", "fi", "lv", "et_EE", "sw", "dv", "pt_PT", "tl", "th", "pt", "ar", "ru", "fa", "sk", "ug", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "ps", "vi", "fr_CA", "sr", "da", "ku", "es", "hy_AM", "tr", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ji", "fr", "ur", "ja", "lo_LA", "iw", "de", "en_IN", "es_US", "nb", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.shamanland.fonticon.example\">\n\t<uses-sdk android:minSdkVersion=\"7\" android:targetSdkVersion=\"20\" />\n\t<application android:theme=\"resourceId:0x7f0c0000\" android:label=\"Font Icons Demo\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"com.shamanland.fonticon.example.MyApplication\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:label=\"Font Icons Demo\" android:name=\"com.shamanland.fonticon.example.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 887595,
+  "crc32" : 120498999,
+  "sha256" : "3c5b8865954989284d0ea8c1310eeb30d6429ba3e41822c5c5310b22f9301498",
+  "buildTime" : 1522633305000
+}

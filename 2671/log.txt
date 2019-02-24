@@ -1,0 +1,140 @@
+2018-04-01 18:41:20,457 INFO  DownloadService - Downloading "https://github.com/xfumihiro/ViewInspector/archive/master.zip", attempt 3
+2018-04-01 18:42:21,052 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 18:42:21,706 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 18:42:21,707 INFO  DownloadService - Downloading "https://github.com/xfumihiro/ViewInspector/archive/master.zip", attempt 3
+2018-04-01 18:43:23,062 DEBUG FullProcessService - Repository https://github.com/xfumihiro/ViewInspector available: true
+2018-04-01 18:43:23,062 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 18:43:23,063 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/xfumihiro/ViewInspector, /tmp/rdisk/2671/src]
+2018-04-01 18:43:25,134 INFO  SysUtils - 
+2018-04-01 18:43:25,141 INFO  GitService - Deleted "/tmp/rdisk/2671/src/.git": true
+2018-04-01 18:43:25,147 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-01 18:43:25,147 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2671/src]
+2018-04-01 18:43:25,152 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2671/src/.git/
+
+2018-04-01 18:43:25,157 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2671/src/gradlew
+2018-04-01 18:43:25,162 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2671/src/sample/build.gradle /tmp/rdisk/2671/src/view-inspector-aspect-v23/build.gradle /tmp/rdisk/2671/src/view-inspector-aspect/build.gradle /tmp/rdisk/2671/src/view-inspector-runtime/build.gradle /tmp/rdisk/2671/src/build.gradle /tmp/rdisk/2671/src/view-inspector-plugin/build.gradle
+2018-04-01 18:43:25,166 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2671/src/view-inspector-runtime/publish.gradle /tmp/rdisk/2671/src/view-inspector-runtime/build.gradle /tmp/rdisk/2671/src/view-inspector-plugin/publish.gradle /tmp/rdisk/2671/src/view-inspector-plugin/build.gradle /tmp/rdisk/2671/src/view-inspector-aspect/publish.gradle /tmp/rdisk/2671/src/view-inspector-aspect/build.gradle /tmp/rdisk/2671/src/view-inspector-aspect-v23/publish.gradle /tmp/rdisk/2671/src/view-inspector-aspect-v23/build.gradle /tmp/rdisk/2671/src/settings.gradle /tmp/rdisk/2671/src/sample/build.gradle /tmp/rdisk/2671/src/build.gradle
+2018-04-01 18:43:25,168 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 18:43:25,168 INFO  ProjectFixService - Fixing project...
+2018-04-01 18:43:25,183 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/sample/local.properties
+2018-04-01 18:43:25,188 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,188 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/view-inspector-aspect-v23/local.properties
+2018-04-01 18:43:25,194 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/view-inspector-aspect-v23/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,194 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/view-inspector-aspect/local.properties
+2018-04-01 18:43:25,200 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/view-inspector-aspect/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,201 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/view-inspector-runtime/local.properties
+2018-04-01 18:43:25,207 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/view-inspector-runtime/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,208 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/local.properties
+2018-04-01 18:43:25,208 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-bin.zip
+2018-04-01 18:43:25,210 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,211 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2671/src/view-inspector-plugin/local.properties
+2018-04-01 18:43:25,217 INFO  ProjectFixService - Build info for "/tmp/rdisk/2671/src/view-inspector-plugin/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 18:43:25,217 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 18:43:25,217 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:43:25,218 INFO  SysUtils - Execute command: [/tmp/rdisk/2671/src/gradlew, -b, /tmp/rdisk/2671/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:43:40,788 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 18:43:40,788 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 18:43:40,788 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 18:43:40,789 INFO  SysUtils - Execute command: [/tmp/rdisk/2671/src/gradlew, -b, /tmp/rdisk/2671/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 18:44:22,816 INFO  SysUtils - Configuration on demand is an incubating feature.
+Changed dependencies of configuration ':sample:debugCompile' after it has been included in dependency resolution. This behaviour has been deprecated and is scheduled to be removed in Gradle 3.0.
+Changed dependencies of parent of configuration ':sample:_debugCompile' after it has been resolved. This behaviour has been deprecated and is scheduled to be removed in Gradle 3.0
+Attempting to resolve configuration ':sample:_debugCompile' that has been resolved previously. Changes made since the configuration was originally resolved are ignored. This behaviour has been deprecated and is scheduled to be removed in Gradle 3.0
+Changed dependencies of parent of configuration ':sample:_debugApk' after it has been resolved. This behaviour has been deprecated and is scheduled to be removed in Gradle 3.0
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72103Library
+:sample:prepareComAndroidSupportSupportV42103Library
+:sample:prepareComF2prateekRxPreferencesRxPreferences100Library
+:sample:prepareComGithubXfumihiroViewInspectorViewInspectorAspect021SNAPSHOTLibrary
+:sample:prepareComGithubXfumihiroViewInspectorViewInspectorRuntime021SNAPSHOTLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:view_inspectorDebugViews
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResourcesAAPT err(420012849) : No Delegate set : lost message:/tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2671/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:compileLint
+:sample:lint
+Ran lint on variant debug: 16 issues found
+Ran lint on variant release: 16 issues found
+Wrote HTML report to file:/tmp/rdisk/2671/src/sample/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2671/src/sample/build/outputs/lint-results.xml
+:sample:preDebugUnitTestBuild UP-TO-DATE
+:sample:prepareDebugUnitTestDependencies
+:sample:processDebugUnitTestJavaRes UP-TO-DATE
+:sample:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:sample:compileDebugUnitTestSources UP-TO-DATE
+:sample:mockableAndroidJar
+:sample:assembleDebugUnitTest
+:sample:testDebugUnitTest
+:sample:preReleaseUnitTestBuild UP-TO-DATE
+:sample:prepareReleaseUnitTestDependencies
+:sample:processReleaseUnitTestJavaRes UP-TO-DATE
+:sample:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:sample:compileReleaseUnitTestSources UP-TO-DATE
+:sample:assembleReleaseUnitTest
+:sample:testReleaseUnitTest
+:sample:test
+:sample:check
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 41.587 secs
+
+2018-04-01 18:44:22,855 INFO  FullProcessService - Found APK file: /tmp/rdisk/2671/src/sample/build/outputs/apk/sample-release-unsigned.apk

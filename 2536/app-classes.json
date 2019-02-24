@@ -1,0 +1,7 @@
+{
+  "com.wirelesspienetwork.overview" : [ "BuildConfig", "R", "R$anim", "R$array", "R$attr", "R$bool", "R$color", "R$dimen", "R$drawable", "R$fraction", "R$id", "R$integer", "R$plurals", "R$string", "R$styleable" ],
+  "com.wirelesspienetwork.overview.misc" : [ "OverviewConfiguration", "ReferenceCountedTrigger", "ReferenceCountedTrigger$1", "ReferenceCountedTrigger$2", "ReferenceCountedTrigger$3", "Utilities" ],
+  "com.wirelesspienetwork.overview.model" : [ "OverviewAdapter", "OverviewAdapter$Callbacks", "ViewHolder" ],
+  "com.wirelesspienetwork.overview.views" : [ "ObjectPool", "ObjectPool$ObjectPoolConsumer", "Overview", "Overview$RecentsViewCallbacks", "OverviewCard", "OverviewCard$1", "OverviewCard$2", "OverviewCard$3", "OverviewCardTransform", "OverviewStackView", "OverviewStackView$1", "OverviewStackView$2", "OverviewStackView$3", "OverviewStackView$Callbacks", "OverviewStackViewLayoutAlgorithm", "OverviewStackViewScroller", "OverviewStackViewScroller$1", "OverviewStackViewScroller$2", "OverviewStackViewScroller$Callbacks", "OverviewStackViewTouchHandler", "SwipeHelper", "SwipeHelper$1", "SwipeHelper$2", "SwipeHelper$3", "SwipeHelper$4", "SwipeHelper$Callback", "ViewAnimation", "ViewAnimation$OverviewCardEnterContext", "ViewAnimation$OverviewCardExitContext" ],
+  "com.wirelesspienetwork.overviewexample" : [ "BuildConfig", "OverviewActivity", "OverviewActivity$1", "R", "R$anim", "R$array", "R$attr", "R$bool", "R$color", "R$dimen", "R$drawable", "R$fraction", "R$id", "R$integer", "R$layout", "R$plurals", "R$string", "R$styleable" ]
+}

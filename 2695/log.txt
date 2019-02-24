@@ -1,0 +1,354 @@
+2018-04-01 11:17:00,179 INFO  DownloadService - Downloading "https://github.com/soarcn/Favor/archive/master.zip", attempt 3
+2018-04-01 11:18:00,181 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 11:18:00,863 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 11:18:00,863 INFO  DownloadService - Downloading "https://github.com/soarcn/Favor/archive/master.zip", attempt 3
+2018-04-01 11:19:01,600 DEBUG FullProcessService - Repository https://github.com/soarcn/Favor available: true
+2018-04-01 11:19:01,600 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 11:19:01,600 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/soarcn/Favor, /tmp/rdisk/2695/src]
+2018-04-01 11:19:05,724 INFO  SysUtils - 
+2018-04-01 11:19:05,734 INFO  GitService - Deleted "/tmp/rdisk/2695/src/.git": true
+2018-04-01 11:19:05,736 INFO  FullProcessService - Size of directory with sources: 149 KB
+2018-04-01 11:19:05,736 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2695/src]
+2018-04-01 11:19:05,740 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2695/src/.git/
+
+2018-04-01 11:19:05,742 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2695/src/gradlew
+2018-04-01 11:19:05,744 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2695/src/library/build.gradle /tmp/rdisk/2695/src/build.gradle
+2018-04-01 11:19:05,745 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2695/src/settings.gradle /tmp/rdisk/2695/src/library/build.gradle /tmp/rdisk/2695/src/build.gradle
+2018-04-01 11:19:05,746 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/soarcn/gradle/master/android-library.gradle", attempt 3
+2018-04-01 11:20:05,747 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/soarcn/gradle/master/android-library.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 11:20:05,747 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/soarcn/gradle/master/maven_push.gradle", attempt 3
+2018-04-01 11:21:05,748 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/soarcn/gradle/master/maven_push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 11:21:05,748 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 11:21:05,748 INFO  ProjectFixService - Fixing project...
+2018-04-01 11:21:05,753 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2695/src/library/local.properties
+2018-04-01 11:21:05,754 INFO  ProjectFixService - Build info for "/tmp/rdisk/2695/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 11:21:05,754 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2695/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 11:21:05,754 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2695/src/local.properties
+2018-04-01 11:21:05,754 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-01 11:21:05,755 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-01 11:21:05,756 INFO  ProjectFixService - Build info for "/tmp/rdisk/2695/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 11:21:05,756 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2695/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 11:21:05,756 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 11:21:05,756 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:21:05,756 INFO  SysUtils - Execute command: [/tmp/rdisk/2695/src/gradlew, -b, /tmp/rdisk/2695/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:21:15,132 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-01 11:21:15,133 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 11:21:15,133 INFO  SysUtils - Execute command: [/tmp/rdisk/2695/src/gradlew, -b, /tmp/rdisk/2695/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 11:21:27,560 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/MethodInfo.java:8: error: package com.f2prateek.rx.preferences does not exist
+import com.f2prateek.rx.preferences.Preference;
+                                   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/MethodInfo.java:9: error: package com.f2prateek.rx.preferences does not exist
+import com.f2prateek.rx.preferences.RxSharedPreferences;
+                                   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/MethodInfo.java:267: error: package Preference does not exist
+    private class SerializableAdapter<T extends Serializable> implements Preference.Adapter<T> {
+                                                                                   ^
+javadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/AllFavor.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Commit.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Default.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Favor.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @param for <T>
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @param for service
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @return
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:16: error: self-closing element not allowed
+ * <p/>
+   ^
+
+5 errors
+7 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:apklib
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComF2prateekRxPreferencesRxPreferences100Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:incrementalDebugJavaCompilationSafeguard
+:library:compileDebugJavaWithJavac
+:library:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:unzipJacocoAgent
+:library:transformClassesWithJacocoForDebug
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForDebug
+:library:transformNative_libsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.984 secs
+
+2018-04-01 11:21:27,568 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:21:27,568 INFO  SysUtils - Execute command: [/tmp/rdisk/2695/src/gradlew, -b, /tmp/rdisk/2695/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:21:35,358 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-01 11:21:35,358 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 11:21:35,358 INFO  SysUtils - Execute command: [/tmp/rdisk/2695/src/gradlew, -b, /tmp/rdisk/2695/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 11:21:44,947 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:androidJavadocsjavadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/AllFavor.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Commit.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Default.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/Favor.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @param for <T>
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @param for service
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:59: warning: no @return
+    public <T> T create(Class<T> service) {
+                 ^
+/tmp/rdisk/2695/src/library/src/main/java/com/cocosw/favor/FavorAdapter.java:16: error: self-closing element not allowed
+ * <p/>
+   ^
+
+5 errors
+4 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar UP-TO-DATE
+:library:apklib UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComF2prateekRxPreferencesRxPreferences100Library UP-TO-DATE
+:library:prepareDebugDependencies
+:library:compileDebugAidl UP-TO-DATE
+:library:compileDebugRenderscript UP-TO-DATE
+:library:generateDebugBuildConfig UP-TO-DATE
+:library:mergeDebugShaders UP-TO-DATE
+:library:compileDebugShaders UP-TO-DATE
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets UP-TO-DATE
+:library:generateDebugResValues UP-TO-DATE
+:library:generateDebugResources UP-TO-DATE
+:library:mergeDebugResources UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:library:processDebugResources UP-TO-DATE
+:library:generateDebugSources UP-TO-DATE
+:library:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:library:compileDebugJavaWithJavac UP-TO-DATE
+:library:extractDebugAnnotations UP-TO-DATE
+:library:mergeDebugProguardFiles UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources UP-TO-DATE
+:library:unzipJacocoAgent UP-TO-DATE
+:library:transformClassesWithJacocoForDebug UP-TO-DATE
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:library:mergeDebugJniLibFolders UP-TO-DATE
+:library:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:library:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:library:bundleDebug UP-TO-DATE
+:library:compileDebugSources UP-TO-DATE
+:library:assembleDebug UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:compileReleaseSources UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.087 secs
+
+2018-04-01 11:21:44,956 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 11:21:44,964 ERROR FullProcessService - Could not find generated or existed APK file

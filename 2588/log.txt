@@ -1,0 +1,652 @@
+2018-04-01 22:32:04,956 INFO  DownloadService - Downloading "https://github.com/nsk-mironov/kotlin-jetpack/archive/master.zip", attempt 3
+2018-04-01 22:33:05,474 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 22:33:06,209 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 22:33:06,209 INFO  DownloadService - Downloading "https://github.com/nsk-mironov/kotlin-jetpack/archive/master.zip", attempt 3
+2018-04-01 22:34:07,431 DEBUG FullProcessService - Repository https://github.com/nsk-mironov/kotlin-jetpack available: true
+2018-04-01 22:34:07,431 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 22:34:07,431 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nsk-mironov/kotlin-jetpack, /tmp/rdisk/2588/src]
+2018-04-01 22:34:09,058 INFO  SysUtils - 
+2018-04-01 22:34:09,074 INFO  GitService - Deleted "/tmp/rdisk/2588/src/.git": true
+2018-04-01 22:34:09,077 INFO  FullProcessService - Size of directory with sources: 127 KB
+2018-04-01 22:34:09,077 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2588/src]
+2018-04-01 22:34:09,082 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2588/src/.git/
+
+2018-04-01 22:34:09,085 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2588/src/gradlew
+2018-04-01 22:34:09,088 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle /tmp/rdisk/2588/src/build.gradle
+2018-04-01 22:34:09,091 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2588/src/settings.gradle /tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle /tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle /tmp/rdisk/2588/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2588/src/build.gradle
+2018-04-01 22:34:09,093 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 22:34:09,093 INFO  ProjectFixService - Fixing project...
+2018-04-01 22:34:09,102 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2588/src/jetpack-bindings-arguments/local.properties
+2018-04-01 22:34:09,106 INFO  ProjectFixService - Build info for "/tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=21,targetSdkVersion=<null>]
+2018-04-01 22:34:09,106 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=21,targetSdkVersion=27]
+2018-04-01 22:34:09,106 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2588/src/jetpack-bindings-preferences/local.properties
+2018-04-01 22:34:09,110 INFO  ProjectFixService - Build info for "/tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=21,targetSdkVersion=<null>]
+2018-04-01 22:34:09,110 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=21,targetSdkVersion=27]
+2018-04-01 22:34:09,110 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2588/src/jetpack-bindings-resources/local.properties
+2018-04-01 22:34:09,114 INFO  ProjectFixService - Build info for "/tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=21,targetSdkVersion=<null>]
+2018-04-01 22:34:09,114 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=21,targetSdkVersion=27]
+2018-04-01 22:34:09,114 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2588/src/jetpack-bindings-sample/local.properties
+2018-04-01 22:34:09,118 INFO  ProjectFixService - Build info for "/tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=21,targetSdkVersion=<null>]
+2018-04-01 22:34:09,118 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=21,targetSdkVersion=27]
+2018-04-01 22:34:09,118 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2588/src/local.properties
+2018-04-01 22:34:09,119 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-all.zip
+2018-04-01 22:34:09,119 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.8-bin.zip)
+2018-04-01 22:34:09,122 INFO  ProjectFixService - Build info for "/tmp/rdisk/2588/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=21,targetSdkVersion=<null>]
+2018-04-01 22:34:09,122 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2588/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=21,targetSdkVersion=27]
+2018-04-01 22:34:09,123 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 22:34:09,123 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:34:09,123 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:34:24,037 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 22:34:24,037 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 22:34:24,037 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 22:34:24,037 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-arguments/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 22:34:52,282 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 22:34:52,282 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jetpack-bindings-arguments:androidJavadocsjavadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-arguments/src/main/kotlin/com/github/vmironov/jetpack/arguments/SupportUtils.kt"
+javadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-arguments/src/main/kotlin/com/github/vmironov/jetpack/arguments/ArgumentsBindings.kt"
+
+2 errors
+:jetpack-bindings-arguments:androidJavadocsJar
+:jetpack-bindings-arguments:androidSourcesJar
+:jetpack-bindings-arguments:preBuild UP-TO-DATE
+:jetpack-bindings-arguments:preDebugBuild UP-TO-DATE
+:jetpack-bindings-arguments:compileDebugNdk UP-TO-DATE
+:jetpack-bindings-arguments:compileLint
+:jetpack-bindings-arguments:copyDebugLint UP-TO-DATE
+:jetpack-bindings-arguments:checkDebugManifest
+:jetpack-bindings-arguments:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-arguments:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:prepareComAndroidSupportRecyclerviewV72311Library
+:jetpack-bindings-arguments:prepareComAndroidSupportSupportV42311Library
+:jetpack-bindings-arguments:prepareDebugDependencies
+:jetpack-bindings-arguments:compileDebugAidl
+:jetpack-bindings-arguments:compileDebugRenderscript
+:jetpack-bindings-arguments:generateDebugBuildConfig
+:jetpack-bindings-arguments:generateDebugAssets UP-TO-DATE
+:jetpack-bindings-arguments:mergeDebugAssets
+:jetpack-bindings-arguments:generateDebugResValues
+:jetpack-bindings-arguments:generateDebugResources
+:jetpack-bindings-arguments:packageDebugResources
+:jetpack-bindings-arguments:processDebugManifest
+:jetpack-bindings-arguments:processDebugResources
+:jetpack-bindings-arguments:generateDebugSources
+:jetpack-bindings-arguments:compileDebugKotlin
+:jetpack-bindings-arguments:compileDebugJavaWithJavac
+:jetpack-bindings-arguments:extractDebugAnnotations
+:jetpack-bindings-arguments:mergeDebugProguardFiles
+:jetpack-bindings-arguments:packageDebugRenderscript UP-TO-DATE
+:jetpack-bindings-arguments:processDebugJavaRes UP-TO-DATE
+:jetpack-bindings-arguments:transformResourcesWithMergeJavaResForDebug
+:jetpack-bindings-arguments:transformClassesAndResourcesWithSyncLibJarsForDebug
+:jetpack-bindings-arguments:mergeDebugJniLibFolders
+:jetpack-bindings-arguments:transformNative_libsWithMergeJniLibsForDebug
+:jetpack-bindings-arguments:transformNative_libsWithSyncJniLibsForDebug
+:jetpack-bindings-arguments:bundleDebug
+:jetpack-bindings-arguments:compileDebugSources
+:jetpack-bindings-arguments:assembleDebug
+:jetpack-bindings-arguments:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-arguments:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-arguments:checkReleaseManifest
+:jetpack-bindings-arguments:prepareReleaseDependencies
+:jetpack-bindings-arguments:compileReleaseAidl
+:jetpack-bindings-arguments:compileReleaseRenderscript
+:jetpack-bindings-arguments:generateReleaseBuildConfig
+:jetpack-bindings-arguments:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-arguments:mergeReleaseAssets
+:jetpack-bindings-arguments:generateReleaseResValues
+:jetpack-bindings-arguments:generateReleaseResources
+:jetpack-bindings-arguments:packageReleaseResources
+:jetpack-bindings-arguments:processReleaseManifest
+:jetpack-bindings-arguments:processReleaseResources
+:jetpack-bindings-arguments:generateReleaseSources
+:jetpack-bindings-arguments:compileReleaseKotlin
+:jetpack-bindings-arguments:compileReleaseJavaWithJavac
+:jetpack-bindings-arguments:extractReleaseAnnotations
+:jetpack-bindings-arguments:mergeReleaseProguardFiles
+:jetpack-bindings-arguments:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-arguments:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-arguments:transformResourcesWithMergeJavaResForRelease
+:jetpack-bindings-arguments:transformClassesAndResourcesWithSyncLibJarsForRelease
+:jetpack-bindings-arguments:mergeReleaseJniLibFolders
+:jetpack-bindings-arguments:transformNative_libsWithMergeJniLibsForRelease
+:jetpack-bindings-arguments:transformNative_libsWithSyncJniLibsForRelease
+:jetpack-bindings-arguments:bundleRelease
+:jetpack-bindings-arguments:compileReleaseSources
+:jetpack-bindings-arguments:assembleRelease
+:jetpack-bindings-arguments:signArchives SKIPPED
+:jetpack-bindings-arguments:assemble
+:jetpack-bindings-arguments:lint
+Wrote HTML report to file:///tmp/rdisk/2588/src/jetpack-bindings-arguments/build/outputs/lint-results.html
+Wrote XML report to file:///tmp/rdisk/2588/src/jetpack-bindings-arguments/build/outputs/lint-results.xml
+Lint found 0 errors and 3 warnings
+:jetpack-bindings-arguments:prepareDebugUnitTestDependencies
+:jetpack-bindings-arguments:compileDebugUnitTestKotlin
+:jetpack-bindings-arguments:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:jetpack-bindings-arguments:processDebugUnitTestJavaRes UP-TO-DATE
+:jetpack-bindings-arguments:compileDebugUnitTestSources UP-TO-DATE
+:jetpack-bindings-arguments:mockableAndroidJar
+:jetpack-bindings-arguments:assembleDebugUnitTest
+:jetpack-bindings-arguments:testDebugUnitTest
+
+com.github.vmironov.github.jetpack.arguments.ArgumentBindingsTest > initializationError FAILED
+    java.lang.NoClassDefFoundError
+        Caused by: java.lang.ClassNotFoundException
+
+1 test completed, 1 failed
+:jetpack-bindings-arguments:testDebugUnitTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':jetpack-bindings-arguments:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///tmp/rdisk/2588/src/jetpack-bindings-arguments/build/reports/tests/debug/index.html
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':jetpack-bindings-arguments:testDebugUnitTest'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.GradleException: There were failing tests. See the report at: file:///tmp/rdisk/2588/src/jetpack-bindings-arguments/build/reports/tests/debug/index.html
+	at org.gradle.api.tasks.testing.Test.handleTestFailures(Test.java:1129)
+	at org.gradle.api.tasks.testing.Test.executeTests(Test.java:567)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:227)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:585)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:568)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 27.265 secs
+
+2018-04-01 22:34:52,294 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:34:52,294 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:35:01,044 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 22:35:01,044 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 22:35:01,044 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 22:35:01,044 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-preferences/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 22:35:18,250 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jetpack-bindings-preferences:androidJavadocsjavadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-preferences/src/main/kotlin/com/github/vmironov/jetpack/preferences/SupportUtils.kt"
+javadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-preferences/src/main/kotlin/com/github/vmironov/jetpack/preferences/PreferencesBindings.kt"
+
+2 errors
+:jetpack-bindings-preferences:androidJavadocsJar
+:jetpack-bindings-preferences:androidSourcesJar
+:jetpack-bindings-preferences:preBuild UP-TO-DATE
+:jetpack-bindings-preferences:preDebugBuild UP-TO-DATE
+:jetpack-bindings-preferences:compileDebugNdk UP-TO-DATE
+:jetpack-bindings-preferences:compileLint
+:jetpack-bindings-preferences:copyDebugLint UP-TO-DATE
+:jetpack-bindings-preferences:checkDebugManifest
+:jetpack-bindings-preferences:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-preferences:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:prepareComAndroidSupportRecyclerviewV72311Library
+:jetpack-bindings-preferences:prepareComAndroidSupportSupportV42311Library
+:jetpack-bindings-preferences:prepareDebugDependencies
+:jetpack-bindings-preferences:compileDebugAidl
+:jetpack-bindings-preferences:compileDebugRenderscript
+:jetpack-bindings-preferences:generateDebugBuildConfig
+:jetpack-bindings-preferences:generateDebugAssets UP-TO-DATE
+:jetpack-bindings-preferences:mergeDebugAssets
+:jetpack-bindings-preferences:generateDebugResValues
+:jetpack-bindings-preferences:generateDebugResources
+:jetpack-bindings-preferences:packageDebugResources
+:jetpack-bindings-preferences:processDebugManifest
+:jetpack-bindings-preferences:processDebugResources
+:jetpack-bindings-preferences:generateDebugSources
+:jetpack-bindings-preferences:compileDebugKotlin
+:jetpack-bindings-preferences:compileDebugJavaWithJavac
+:jetpack-bindings-preferences:extractDebugAnnotations
+:jetpack-bindings-preferences:mergeDebugProguardFiles
+:jetpack-bindings-preferences:packageDebugRenderscript UP-TO-DATE
+:jetpack-bindings-preferences:processDebugJavaRes UP-TO-DATE
+:jetpack-bindings-preferences:transformResourcesWithMergeJavaResForDebug
+:jetpack-bindings-preferences:transformClassesAndResourcesWithSyncLibJarsForDebug
+:jetpack-bindings-preferences:mergeDebugJniLibFolders
+:jetpack-bindings-preferences:transformNative_libsWithMergeJniLibsForDebug
+:jetpack-bindings-preferences:transformNative_libsWithSyncJniLibsForDebug
+:jetpack-bindings-preferences:bundleDebug
+:jetpack-bindings-preferences:compileDebugSources
+:jetpack-bindings-preferences:assembleDebug
+:jetpack-bindings-preferences:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-preferences:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-preferences:checkReleaseManifest
+:jetpack-bindings-preferences:prepareReleaseDependencies
+:jetpack-bindings-preferences:compileReleaseAidl
+:jetpack-bindings-preferences:compileReleaseRenderscript
+:jetpack-bindings-preferences:generateReleaseBuildConfig
+:jetpack-bindings-preferences:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-preferences:mergeReleaseAssets
+:jetpack-bindings-preferences:generateReleaseResValues
+:jetpack-bindings-preferences:generateReleaseResources
+:jetpack-bindings-preferences:packageReleaseResources
+:jetpack-bindings-preferences:processReleaseManifest
+:jetpack-bindings-preferences:processReleaseResources
+:jetpack-bindings-preferences:generateReleaseSources
+:jetpack-bindings-preferences:compileReleaseKotlin
+:jetpack-bindings-preferences:compileReleaseJavaWithJavac
+:jetpack-bindings-preferences:extractReleaseAnnotations
+:jetpack-bindings-preferences:mergeReleaseProguardFiles
+:jetpack-bindings-preferences:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-preferences:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-preferences:transformResourcesWithMergeJavaResForRelease
+:jetpack-bindings-preferences:transformClassesAndResourcesWithSyncLibJarsForRelease
+:jetpack-bindings-preferences:mergeReleaseJniLibFolders
+:jetpack-bindings-preferences:transformNative_libsWithMergeJniLibsForRelease
+:jetpack-bindings-preferences:transformNative_libsWithSyncJniLibsForRelease
+:jetpack-bindings-preferences:bundleRelease
+:jetpack-bindings-preferences:compileReleaseSources
+:jetpack-bindings-preferences:assembleRelease
+:jetpack-bindings-preferences:signArchives SKIPPED
+:jetpack-bindings-preferences:assemble
+:jetpack-bindings-preferences:lint
+Wrote HTML report to file:///tmp/rdisk/2588/src/jetpack-bindings-preferences/build/outputs/lint-results.html
+Wrote XML report to file:///tmp/rdisk/2588/src/jetpack-bindings-preferences/build/outputs/lint-results.xml
+Lint found 0 errors and 3 warnings
+:jetpack-bindings-preferences:prepareDebugUnitTestDependencies
+:jetpack-bindings-preferences:compileDebugUnitTestKotlin UP-TO-DATE
+:jetpack-bindings-preferences:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:jetpack-bindings-preferences:processDebugUnitTestJavaRes UP-TO-DATE
+:jetpack-bindings-preferences:compileDebugUnitTestSources UP-TO-DATE
+:jetpack-bindings-preferences:mockableAndroidJar
+:jetpack-bindings-preferences:assembleDebugUnitTest
+:jetpack-bindings-preferences:testDebugUnitTest
+:jetpack-bindings-preferences:prepareReleaseUnitTestDependencies
+:jetpack-bindings-preferences:compileReleaseUnitTestKotlin UP-TO-DATE
+:jetpack-bindings-preferences:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:jetpack-bindings-preferences:processReleaseUnitTestJavaRes UP-TO-DATE
+:jetpack-bindings-preferences:compileReleaseUnitTestSources UP-TO-DATE
+:jetpack-bindings-preferences:assembleReleaseUnitTest
+:jetpack-bindings-preferences:testReleaseUnitTest
+:jetpack-bindings-preferences:test
+:jetpack-bindings-preferences:check
+:jetpack-bindings-preferences:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.354 secs
+
+2018-04-01 22:35:18,269 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:35:18,269 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:35:27,066 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 22:35:27,066 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 22:35:27,066 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 22:35:27,066 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-resources/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 22:35:43,619 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jetpack-bindings-resources:androidJavadocsjavadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-resources/src/main/kotlin/com/github/vmironov/jetpack/resources/SupportUtils.kt"
+javadoc: error - Illegal package name: "/tmp/rdisk/2588/src/jetpack-bindings-resources/src/main/kotlin/com/github/vmironov/jetpack/resources/ResourcesBindings.kt"
+
+2 errors
+:jetpack-bindings-resources:androidJavadocsJar
+:jetpack-bindings-resources:androidSourcesJar
+:jetpack-bindings-resources:preBuild UP-TO-DATE
+:jetpack-bindings-resources:preDebugBuild UP-TO-DATE
+:jetpack-bindings-resources:compileDebugNdk UP-TO-DATE
+:jetpack-bindings-resources:compileLint
+:jetpack-bindings-resources:copyDebugLint UP-TO-DATE
+:jetpack-bindings-resources:checkDebugManifest
+:jetpack-bindings-resources:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-resources:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-resources:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-resources:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-resources:prepareComAndroidSupportRecyclerviewV72311Library
+:jetpack-bindings-resources:prepareComAndroidSupportSupportV42311Library
+:jetpack-bindings-resources:prepareDebugDependencies
+:jetpack-bindings-resources:compileDebugAidl
+:jetpack-bindings-resources:compileDebugRenderscript
+:jetpack-bindings-resources:generateDebugBuildConfig
+:jetpack-bindings-resources:generateDebugAssets UP-TO-DATE
+:jetpack-bindings-resources:mergeDebugAssets
+:jetpack-bindings-resources:generateDebugResValues
+:jetpack-bindings-resources:generateDebugResources
+:jetpack-bindings-resources:packageDebugResources
+:jetpack-bindings-resources:processDebugManifest
+:jetpack-bindings-resources:processDebugResources
+:jetpack-bindings-resources:generateDebugSources
+:jetpack-bindings-resources:compileDebugKotlin
+:jetpack-bindings-resources:compileDebugJavaWithJavac
+:jetpack-bindings-resources:extractDebugAnnotations
+:jetpack-bindings-resources:mergeDebugProguardFiles
+:jetpack-bindings-resources:packageDebugRenderscript UP-TO-DATE
+:jetpack-bindings-resources:processDebugJavaRes UP-TO-DATE
+:jetpack-bindings-resources:transformResourcesWithMergeJavaResForDebug
+:jetpack-bindings-resources:transformClassesAndResourcesWithSyncLibJarsForDebug
+:jetpack-bindings-resources:mergeDebugJniLibFolders
+:jetpack-bindings-resources:transformNative_libsWithMergeJniLibsForDebug
+:jetpack-bindings-resources:transformNative_libsWithSyncJniLibsForDebug
+:jetpack-bindings-resources:bundleDebug
+:jetpack-bindings-resources:compileDebugSources
+:jetpack-bindings-resources:assembleDebug
+:jetpack-bindings-resources:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-resources:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-resources:checkReleaseManifest
+:jetpack-bindings-resources:prepareReleaseDependencies
+:jetpack-bindings-resources:compileReleaseAidl
+:jetpack-bindings-resources:compileReleaseRenderscript
+:jetpack-bindings-resources:generateReleaseBuildConfig
+:jetpack-bindings-resources:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-resources:mergeReleaseAssets
+:jetpack-bindings-resources:generateReleaseResValues
+:jetpack-bindings-resources:generateReleaseResources
+:jetpack-bindings-resources:packageReleaseResources
+:jetpack-bindings-resources:processReleaseManifest
+:jetpack-bindings-resources:processReleaseResources
+:jetpack-bindings-resources:generateReleaseSources
+:jetpack-bindings-resources:compileReleaseKotlin
+:jetpack-bindings-resources:compileReleaseJavaWithJavac
+:jetpack-bindings-resources:extractReleaseAnnotations
+:jetpack-bindings-resources:mergeReleaseProguardFiles
+:jetpack-bindings-resources:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-resources:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-resources:transformResourcesWithMergeJavaResForRelease
+:jetpack-bindings-resources:transformClassesAndResourcesWithSyncLibJarsForRelease
+:jetpack-bindings-resources:mergeReleaseJniLibFolders
+:jetpack-bindings-resources:transformNative_libsWithMergeJniLibsForRelease
+:jetpack-bindings-resources:transformNative_libsWithSyncJniLibsForRelease
+:jetpack-bindings-resources:bundleRelease
+:jetpack-bindings-resources:compileReleaseSources
+:jetpack-bindings-resources:assembleRelease
+:jetpack-bindings-resources:signArchives SKIPPED
+:jetpack-bindings-resources:assemble
+:jetpack-bindings-resources:lint
+Wrote HTML report to file:///tmp/rdisk/2588/src/jetpack-bindings-resources/build/outputs/lint-results.html
+Wrote XML report to file:///tmp/rdisk/2588/src/jetpack-bindings-resources/build/outputs/lint-results.xml
+Lint found 0 errors and 3 warnings
+:jetpack-bindings-resources:prepareDebugUnitTestDependencies
+:jetpack-bindings-resources:compileDebugUnitTestKotlin UP-TO-DATE
+:jetpack-bindings-resources:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:jetpack-bindings-resources:processDebugUnitTestJavaRes UP-TO-DATE
+:jetpack-bindings-resources:compileDebugUnitTestSources UP-TO-DATE
+:jetpack-bindings-resources:mockableAndroidJar
+:jetpack-bindings-resources:assembleDebugUnitTest
+:jetpack-bindings-resources:testDebugUnitTest
+:jetpack-bindings-resources:prepareReleaseUnitTestDependencies
+:jetpack-bindings-resources:compileReleaseUnitTestKotlin UP-TO-DATE
+:jetpack-bindings-resources:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:jetpack-bindings-resources:processReleaseUnitTestJavaRes UP-TO-DATE
+:jetpack-bindings-resources:compileReleaseUnitTestSources UP-TO-DATE
+:jetpack-bindings-resources:assembleReleaseUnitTest
+:jetpack-bindings-resources:testReleaseUnitTest
+:jetpack-bindings-resources:test
+:jetpack-bindings-resources:check
+:jetpack-bindings-resources:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.59 secs
+
+2018-04-01 22:35:43,644 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:35:43,644 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:35:52,404 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-01 22:35:52,404 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 22:35:52,404 INFO  SysUtils - Execute command: [/tmp/rdisk/2588/src/gradlew, -b, /tmp/rdisk/2588/src/jetpack-bindings-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 22:36:22,153 INFO  SysUtils - Configuration on demand is an incubating feature.
+:jetpack-bindings-arguments:preBuild UP-TO-DATE
+:jetpack-bindings-arguments:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-arguments:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-arguments:compileLint
+:jetpack-bindings-arguments:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-arguments:checkReleaseManifest
+:jetpack-bindings-arguments:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:preDebugBuild UP-TO-DATE
+:jetpack-bindings-arguments:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-arguments:prepareComAndroidSupportRecyclerviewV72311Library UP-TO-DATE
+:jetpack-bindings-arguments:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:jetpack-bindings-arguments:prepareReleaseDependencies
+:jetpack-bindings-arguments:compileReleaseAidl UP-TO-DATE
+:jetpack-bindings-arguments:compileReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-arguments:generateReleaseBuildConfig UP-TO-DATE
+:jetpack-bindings-arguments:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-arguments:mergeReleaseAssets UP-TO-DATE
+:jetpack-bindings-arguments:generateReleaseResValues UP-TO-DATE
+:jetpack-bindings-arguments:generateReleaseResources UP-TO-DATE
+:jetpack-bindings-arguments:packageReleaseResources UP-TO-DATE
+:jetpack-bindings-arguments:processReleaseManifest UP-TO-DATE
+:jetpack-bindings-arguments:processReleaseResources UP-TO-DATE
+:jetpack-bindings-arguments:generateReleaseSources UP-TO-DATE
+:jetpack-bindings-arguments:compileReleaseKotlin
+:jetpack-bindings-arguments:compileReleaseJavaWithJavac UP-TO-DATE
+:jetpack-bindings-arguments:extractReleaseAnnotations UP-TO-DATE
+:jetpack-bindings-arguments:mergeReleaseProguardFiles UP-TO-DATE
+:jetpack-bindings-arguments:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-arguments:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-arguments:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:jetpack-bindings-arguments:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:jetpack-bindings-arguments:mergeReleaseJniLibFolders UP-TO-DATE
+:jetpack-bindings-arguments:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-arguments:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-arguments:bundleRelease UP-TO-DATE
+:jetpack-bindings-preferences:preBuild UP-TO-DATE
+:jetpack-bindings-preferences:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-preferences:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-preferences:compileLint
+:jetpack-bindings-preferences:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-preferences:checkReleaseManifest
+:jetpack-bindings-preferences:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:preDebugBuild UP-TO-DATE
+:jetpack-bindings-preferences:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-preferences:prepareComAndroidSupportRecyclerviewV72311Library UP-TO-DATE
+:jetpack-bindings-preferences:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:jetpack-bindings-preferences:prepareReleaseDependencies
+:jetpack-bindings-preferences:compileReleaseAidl UP-TO-DATE
+:jetpack-bindings-preferences:compileReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-preferences:generateReleaseBuildConfig UP-TO-DATE
+:jetpack-bindings-preferences:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-preferences:mergeReleaseAssets UP-TO-DATE
+:jetpack-bindings-preferences:generateReleaseResValues UP-TO-DATE
+:jetpack-bindings-preferences:generateReleaseResources UP-TO-DATE
+:jetpack-bindings-preferences:packageReleaseResources UP-TO-DATE
+:jetpack-bindings-preferences:processReleaseManifest UP-TO-DATE
+:jetpack-bindings-preferences:processReleaseResources UP-TO-DATE
+:jetpack-bindings-preferences:generateReleaseSources UP-TO-DATE
+:jetpack-bindings-preferences:compileReleaseKotlin
+:jetpack-bindings-preferences:compileReleaseJavaWithJavac UP-TO-DATE
+:jetpack-bindings-preferences:extractReleaseAnnotations UP-TO-DATE
+:jetpack-bindings-preferences:mergeReleaseProguardFiles UP-TO-DATE
+:jetpack-bindings-preferences:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-preferences:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-preferences:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:jetpack-bindings-preferences:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:jetpack-bindings-preferences:mergeReleaseJniLibFolders UP-TO-DATE
+:jetpack-bindings-preferences:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-preferences:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-preferences:bundleRelease UP-TO-DATE
+:jetpack-bindings-resources:preBuild UP-TO-DATE
+:jetpack-bindings-resources:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-resources:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-resources:compileLint
+:jetpack-bindings-resources:copyReleaseLint UP-TO-DATE
+:jetpack-bindings-resources:checkReleaseManifest
+:jetpack-bindings-resources:preDebugAndroidTestBuild UP-TO-DATE
+:jetpack-bindings-resources:preDebugBuild UP-TO-DATE
+:jetpack-bindings-resources:preDebugUnitTestBuild UP-TO-DATE
+:jetpack-bindings-resources:preReleaseUnitTestBuild UP-TO-DATE
+:jetpack-bindings-resources:prepareComAndroidSupportRecyclerviewV72311Library UP-TO-DATE
+:jetpack-bindings-resources:prepareComAndroidSupportSupportV42311Library UP-TO-DATE
+:jetpack-bindings-resources:prepareReleaseDependencies
+:jetpack-bindings-resources:compileReleaseAidl UP-TO-DATE
+:jetpack-bindings-resources:compileReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-resources:generateReleaseBuildConfig UP-TO-DATE
+:jetpack-bindings-resources:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-resources:mergeReleaseAssets UP-TO-DATE
+:jetpack-bindings-resources:generateReleaseResValues UP-TO-DATE
+:jetpack-bindings-resources:generateReleaseResources UP-TO-DATE
+:jetpack-bindings-resources:packageReleaseResources UP-TO-DATE
+:jetpack-bindings-resources:processReleaseManifest UP-TO-DATE
+:jetpack-bindings-resources:processReleaseResources UP-TO-DATE
+:jetpack-bindings-resources:generateReleaseSources UP-TO-DATE
+:jetpack-bindings-resources:compileReleaseKotlin
+:jetpack-bindings-resources:compileReleaseJavaWithJavac UP-TO-DATE
+:jetpack-bindings-resources:extractReleaseAnnotations UP-TO-DATE
+:jetpack-bindings-resources:mergeReleaseProguardFiles UP-TO-DATE
+:jetpack-bindings-resources:packageReleaseRenderscript UP-TO-DATE
+:jetpack-bindings-resources:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-resources:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:jetpack-bindings-resources:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:jetpack-bindings-resources:mergeReleaseJniLibFolders UP-TO-DATE
+:jetpack-bindings-resources:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-resources:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:jetpack-bindings-resources:bundleRelease UP-TO-DATE
+:jetpack-bindings-sample:preBuild UP-TO-DATE
+:jetpack-bindings-sample:preDebugBuild UP-TO-DATE
+:jetpack-bindings-sample:checkDebugManifest
+:jetpack-bindings-sample:preReleaseBuild UP-TO-DATE
+:jetpack-bindings-sample:prepareComGithubVmironovJetpackJetpackBindingsArguments0143SNAPSHOTLibrary
+:jetpack-bindings-sample:prepareComGithubVmironovJetpackJetpackBindingsPreferences0143SNAPSHOTLibrary
+:jetpack-bindings-sample:prepareComGithubVmironovJetpackJetpackBindingsResources0143SNAPSHOTLibrary
+:jetpack-bindings-sample:prepareDebugDependencies
+:jetpack-bindings-sample:compileDebugAidl
+:jetpack-bindings-sample:compileDebugRenderscript
+:jetpack-bindings-sample:generateDebugBuildConfig
+:jetpack-bindings-sample:generateDebugAssets UP-TO-DATE
+:jetpack-bindings-sample:mergeDebugAssets
+:jetpack-bindings-sample:generateDebugResValues
+:jetpack-bindings-sample:generateDebugResources
+:jetpack-bindings-sample:mergeDebugResources
+:jetpack-bindings-sample:processDebugManifest
+:jetpack-bindings-sample:processDebugResources
+:jetpack-bindings-sample:generateDebugSources
+:jetpack-bindings-sample:compileDebugKotlin
+:jetpack-bindings-sample:compileDebugJavaWithJavac
+:jetpack-bindings-sample:compileDebugNdk UP-TO-DATE
+:jetpack-bindings-sample:compileDebugSources
+:jetpack-bindings-sample:transformClassesWithDexForDebug
+:jetpack-bindings-sample:mergeDebugJniLibFolders
+:jetpack-bindings-sample:transformNative_libsWithMergeJniLibsForDebug
+:jetpack-bindings-sample:processDebugJavaRes UP-TO-DATE
+:jetpack-bindings-sample:transformResourcesWithMergeJavaResForDebug
+:jetpack-bindings-sample:validateDebugSigning
+:jetpack-bindings-sample:packageDebug
+:jetpack-bindings-sample:zipalignDebug
+:jetpack-bindings-sample:assembleDebug
+:jetpack-bindings-sample:checkReleaseManifest
+:jetpack-bindings-sample:prepareReleaseDependencies
+:jetpack-bindings-sample:compileReleaseAidl
+:jetpack-bindings-sample:compileReleaseRenderscript
+:jetpack-bindings-sample:generateReleaseBuildConfig
+:jetpack-bindings-sample:generateReleaseAssets UP-TO-DATE
+:jetpack-bindings-sample:mergeReleaseAssets
+:jetpack-bindings-sample:generateReleaseResValues
+:jetpack-bindings-sample:generateReleaseResources
+:jetpack-bindings-sample:mergeReleaseResources
+:jetpack-bindings-sample:processReleaseManifest
+:jetpack-bindings-sample:processReleaseResources
+:jetpack-bindings-sample:generateReleaseSources
+:jetpack-bindings-sample:compileReleaseKotlin
+:jetpack-bindings-sample:compileReleaseJavaWithJavac
+:jetpack-bindings-sample:compileReleaseNdk UP-TO-DATE
+:jetpack-bindings-sample:compileReleaseSources
+:jetpack-bindings-sample:lintVitalRelease
+:jetpack-bindings-sample:transformClassesWithDexForRelease
+:jetpack-bindings-sample:mergeReleaseJniLibFolders
+:jetpack-bindings-sample:transformNative_libsWithMergeJniLibsForRelease
+:jetpack-bindings-sample:processReleaseJavaRes UP-TO-DATE
+:jetpack-bindings-sample:transformResourcesWithMergeJavaResForRelease
+:jetpack-bindings-sample:packageRelease
+:jetpack-bindings-sample:assembleRelease
+:jetpack-bindings-sample:assemble
+:jetpack-bindings-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.906 secs
+
+2018-04-01 22:36:22,185 INFO  FullProcessService - Found APK file: /tmp/rdisk/2588/src/jetpack-bindings-sample/build/outputs/apk/jetpack-bindings-sample-release-unsigned.apk

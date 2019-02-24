@@ -1,0 +1,3 @@
+{
+  "com.developerphil.testprojectmanifestmerger" : [ "BuildConfig", "MainActivity", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style" ]
+}

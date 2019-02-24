@@ -1,0 +1,149 @@
+2019-01-26 22:28:46,230 INFO  DownloadService - Downloading "https://github.com/KeepSafe/ReLinker/archive/master.zip", attempt 3
+2019-01-26 22:28:47,998 INFO  DownloadService - Downloaded https://github.com/KeepSafe/ReLinker/archive/master.zip, attempt 3
+2019-01-26 22:28:47,999 INFO  DownloadService - Size of file "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/master.zip": 173 KB
+2019-01-26 22:28:47,999 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2019-01-26 22:28:47,999 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/master.zip: true
+2019-01-26 22:28:48,000 DEBUG ZipUtil - Extracting '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/master.zip' into '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src'.
+2019-01-26 22:28:48,038 INFO  FullProcessService - Size of directory with sources: 332 KB
+2019-01-26 22:28:48,038 INFO  SysUtils - Execute command: [git, init, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src]
+2019-01-26 22:28:48,087 INFO  SysUtils - Initialized empty Git repository in /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/.git/
+
+2019-01-26 22:28:48,092 INFO  ProjectBuildService - Gradle wrapper(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/gradlew
+2019-01-26 22:28:48,099 INFO  ProjectBuildService - Build script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/sample/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/build.gradle
+2019-01-26 22:28:48,104 INFO  ProjectBuildService - All script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/sample/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/settings.gradle
+2019-01-26 22:28:48,105 INFO  ProjectBuildService - Remote scripts: none
+2019-01-26 22:28:48,105 INFO  ProjectFixService - Fixing project...
+2019-01-26 22:28:48,119 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/local.properties
+2019-01-26 22:28:48,120 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/build.gradle": [buildToolsVersion=28.0.3,compileSdkVersion=28,minSdkVersion=9,targetSdkVersion=28]
+2019-01-26 22:28:48,121 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/sample/local.properties
+2019-01-26 22:28:48,121 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/sample/build.gradle": [buildToolsVersion=28.0.3,compileSdkVersion=28,minSdkVersion=9,targetSdkVersion=28]
+2019-01-26 22:28:48,122 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/local.properties
+2019-01-26 22:28:48,122 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.10.2-all.zip
+2019-01-26 22:28:48,123 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.10.2-bin.zip)
+2019-01-26 22:28:48,124 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/build.gradle": [buildToolsVersion=28.0.3,compileSdkVersion=28,minSdkVersion=9,targetSdkVersion=28]
+2019-01-26 22:28:48,124 INFO  ProjectFixService - Project was maybe fixed
+2019-01-26 22:28:48,124 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:28:48,125 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:29:07,659 INFO  ProjectTaskService - Detected possible tasks: 68
+2019-01-26 22:29:07,659 INFO  ProjectTaskService - Excluded tasks (15): lintDebug deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2019-01-26 22:29:07,659 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2019-01-26 22:29:32,733 INFO  SysUtils - Configuration on demand is an incubating feature.
+> Task :relinker:preBuild UP-TO-DATE
+> Task :relinker:preDebugBuild UP-TO-DATE
+> Task :relinker:compileDebugAidl NO-SOURCE
+> Task :relinker:compileDebugRenderscript
+> Task :relinker:checkDebugManifest
+> Task :relinker:generateDebugBuildConfig
+> Task :relinker:generateDebugResValues
+> Task :relinker:generateDebugResources
+> Task :relinker:packageDebugResources
+> Task :relinker:processDebugManifest
+> Task :relinker:generateDebugRFile
+> Task :relinker:prepareLintJar
+> Task :relinker:generateDebugSources
+> Task :relinker:javaPreCompileDebug
+> Task :relinker:compileDebugJavaWithJavac
+> Task :relinker:extractDebugAnnotations
+> Task :relinker:mergeDebugConsumerProguardFiles
+> Task :relinker:mergeDebugShaders
+> Task :relinker:compileDebugShaders
+> Task :relinker:generateDebugAssets
+> Task :relinker:packageDebugAssets
+> Task :relinker:packageDebugRenderscript NO-SOURCE
+> Task :relinker:processDebugJavaRes NO-SOURCE
+> Task :relinker:transformResourcesWithMergeJavaResForDebug
+> Task :relinker:transformClassesAndResourcesWithSyncLibJarsForDebug
+> Task :relinker:compileDebugNdk NO-SOURCE
+> Task :relinker:mergeDebugJniLibFolders
+> Task :relinker:transformNativeLibsWithMergeJniLibsForDebug
+> Task :relinker:transformNativeLibsWithStripDebugSymbolForDebug
+> Task :relinker:transformNativeLibsWithSyncJniLibsForDebug
+> Task :relinker:bundleDebugAar
+> Task :relinker:compileDebugSources
+> Task :relinker:assembleDebug
+> Task :relinker:preReleaseBuild UP-TO-DATE
+> Task :relinker:compileReleaseAidl NO-SOURCE
+> Task :relinker:compileReleaseRenderscript
+> Task :relinker:checkReleaseManifest
+> Task :relinker:generateReleaseBuildConfig
+> Task :relinker:generateReleaseResValues
+> Task :relinker:generateReleaseResources
+> Task :relinker:packageReleaseResources
+> Task :relinker:processReleaseManifest
+> Task :relinker:generateReleaseRFile
+> Task :relinker:generateReleaseSources
+> Task :relinker:javaPreCompileRelease
+> Task :relinker:compileReleaseJavaWithJavac
+> Task :relinker:extractReleaseAnnotations
+> Task :relinker:mergeReleaseConsumerProguardFiles
+> Task :relinker:mergeReleaseShaders
+> Task :relinker:compileReleaseShaders
+> Task :relinker:generateReleaseAssets
+> Task :relinker:packageReleaseAssets
+> Task :relinker:packageReleaseRenderscript NO-SOURCE
+> Task :relinker:processReleaseJavaRes NO-SOURCE
+> Task :relinker:transformResourcesWithMergeJavaResForRelease
+> Task :relinker:transformClassesAndResourcesWithSyncLibJarsForRelease
+> Task :relinker:compileReleaseNdk NO-SOURCE
+> Task :relinker:mergeReleaseJniLibFolders
+> Task :relinker:transformNativeLibsWithMergeJniLibsForRelease
+> Task :relinker:transformNativeLibsWithStripDebugSymbolForRelease
+> Task :relinker:transformNativeLibsWithSyncJniLibsForRelease
+> Task :relinker:bundleReleaseAar
+> Task :relinker:compileReleaseSources
+> Task :relinker:mergeReleaseResources
+> Task :relinker:verifyReleaseResources
+> Task :relinker:assembleRelease
+
+> Task :relinker:javadoc
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:63: warning: no @param for logger
+    public ReLinkerInstance log(final ReLinker.Logger logger) {
+                            ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:63: warning: no @return
+    public ReLinkerInstance log(final ReLinker.Logger logger) {
+                            ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:71: warning: no @return
+    public ReLinkerInstance force() {
+                            ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:77: error: bad use of '>'
+     * Enables recursive library loading to resolve and load shared object -> shared object
+                                                                            ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:80: warning: no @return
+    public ReLinkerInstance recursively() {
+                            ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:91: warning: no @param for context
+    public void loadLibrary(final Context context, final String library) {
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:91: warning: no @param for library
+    public void loadLibrary(final Context context, final String library) {
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:99: warning: no @param for context
+    public void loadLibrary(final Context context, final String library, final String version) {
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:99: warning: no @param for library
+    public void loadLibrary(final Context context, final String library, final String version) {
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:99: warning: no @param for version
+    public void loadLibrary(final Context context, final String library, final String version) {
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:107: warning: no @param for context
+    public void loadLibrary(final Context context,
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:107: warning: no @param for library
+    public void loadLibrary(final Context context,
+                ^
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/main/java/com/getkeepsafe/relinker/ReLinkerInstance.java:107: warning: no @param for listener
+    public void loadLibrary(final Context context,
+                ^
+1 error
+12 warnings
+
+> Task :relinker:javadocJar
+> Task :relinker:sourcesJar
+> Task :relinker:assemble
+> Task :relinker:build
+
+BUILD SUCCESSFUL in 24s
+48 actionable tasks: 48 executed
+
+2019-01-26 22:29:32,756 INFO  FullProcessService - Found APK file: /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516526224-0/src/ReLinker-master/relinker/src/test/resources/fake.apk

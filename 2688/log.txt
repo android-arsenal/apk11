@@ -1,0 +1,316 @@
+2018-05-11 09:13:04,622 INFO  DownloadService - Downloading "https://github.com/evernote/android-job/archive/master.zip", attempt 3
+2018-05-11 09:13:05,090 INFO  DownloadService - Downloaded https://github.com/evernote/android-job/archive/master.zip, attempt 3
+2018-05-11 09:13:05,091 INFO  DownloadService - Size of file "/tmp/rdisk/2688/master.zip": 282 KB
+2018-05-11 09:13:05,091 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 09:13:05,091 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2688/master.zip: true
+2018-05-11 09:13:05,091 DEBUG ZipUtil - Extracting '/tmp/rdisk/2688/master.zip' into '/tmp/rdisk/2688/src'.
+2018-05-11 09:13:05,120 INFO  FullProcessService - Size of directory with sources: 824 KB
+2018-05-11 09:13:05,120 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2688/src]
+2018-05-11 09:13:05,130 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2688/src/.git/
+
+2018-05-11 09:13:05,135 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2688/src/android-job-master/gradlew
+2018-05-11 09:13:05,140 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2688/src/android-job-master/demo/build.gradle /tmp/rdisk/2688/src/android-job-master/library/build.gradle /tmp/rdisk/2688/src/android-job-master/build.gradle
+2018-05-11 09:13:05,144 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2688/src/android-job-master/settings.gradle /tmp/rdisk/2688/src/android-job-master/library/build.gradle /tmp/rdisk/2688/src/android-job-master/demo/build.gradle /tmp/rdisk/2688/src/android-job-master/build.gradle /tmp/rdisk/2688/src/android-job-master/build-config/gradle-quality.gradle /tmp/rdisk/2688/src/android-job-master/build-config/gradle-push.gradle
+2018-05-11 09:13:05,145 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 09:13:05,145 INFO  ProjectFixService - Fixing project...
+2018-05-11 09:13:05,157 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2688/src/android-job-master/demo/local.properties
+2018-05-11 09:13:05,160 INFO  ProjectFixService - Build info for "/tmp/rdisk/2688/src/android-job-master/demo/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 09:13:05,160 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2688/src/android-job-master/demo/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 09:13:05,161 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2688/src/android-job-master/library/local.properties
+2018-05-11 09:13:05,164 INFO  ProjectFixService - Build info for "/tmp/rdisk/2688/src/android-job-master/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 09:13:05,164 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2688/src/android-job-master/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 09:13:05,165 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2688/src/android-job-master/local.properties
+2018-05-11 09:13:05,165 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.6-all.zip
+2018-05-11 09:13:05,165 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.6-bin.zip)
+2018-05-11 09:13:05,167 INFO  ProjectFixService - Build info for "/tmp/rdisk/2688/src/android-job-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-11 09:13:05,167 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2688/src/android-job-master/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=27]
+2018-05-11 09:13:05,167 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 09:13:05,167 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 09:13:05,168 INFO  SysUtils - Execute command: [/tmp/rdisk/2688/src/android-job-master/gradlew, -b, /tmp/rdisk/2688/src/android-job-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 09:13:13,841 INFO  ProjectTaskService - Detected possible tasks: 79
+2018-05-11 09:13:13,842 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 09:13:13,842 INFO  SysUtils - Execute command: [/tmp/rdisk/2688/src/android-job-master/gradlew, -b, /tmp/rdisk/2688/src/android-job-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 09:14:20,419 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:demo:preDebugBuild
+:library:compileDebugAidl
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-base/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-basement/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-iid/maven-metadata.xml
+Download https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-tasks/maven-metadata.xml
+:demo:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+:demo:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:demo:compileDebugNdk NO-SOURCE
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:demo:mergeDebugAssets
+:demo:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:validateSigningDebug
+:demo:preGcmBuild
+:demo:compileGcmAidl
+:demo:compileGcmRenderscript
+:demo:checkGcmManifest
+:demo:generateGcmBuildConfig
+:demo:generateGcmResValues
+:demo:generateGcmResources
+:demo:mergeGcmResources
+:demo:createGcmCompatibleScreenManifests
+:demo:processGcmManifest
+:demo:splitsDiscoveryTaskGcm
+:demo:compileGcmNdk NO-SOURCE
+:demo:mergeGcmShaders
+:demo:compileGcmShaders
+:demo:generateGcmAssets
+:demo:mergeGcmAssets
+:demo:mergeGcmJniLibFolders
+:demo:processGcmJavaRes NO-SOURCE
+:demo:validateSigningGcm
+:demo:extractProguardFiles
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:demo:preReleaseBuild
+:library:compileReleaseAidl
+:demo:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+:demo:splitsDiscoveryTaskRelease
+:library:generateReleaseBuildConfig
+:library:javaPreCompileRelease
+:library:processReleaseJavaRes NO-SOURCE
+:demo:compileReleaseNdk NO-SOURCE
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:demo:mergeReleaseAssets
+:demo:processReleaseJavaRes NO-SOURCE
+:library:mergeReleaseConsumerProguardFiles
+:demo:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo:validateSigningRelease
+:library:processDebugResources
+:demo:processDebugResources
+:demo:generateDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavac
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavac
+:demo:compileDebugSources
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:packageDebug
+:demo:assembleDebug
+:demo:processGcmResources
+:demo:generateGcmSources
+:demo:javaPreCompileGcm
+:demo:compileGcmJavaWithJavac
+:demo:compileGcmSources
+:demo:transformClassesWithDexBuilderForGcm
+:demo:transformDexArchiveWithExternalLibsDexMergerForGcm
+:demo:transformDexArchiveWithDexMergerForGcm
+:demo:transformNativeLibsWithMergeJniLibsForGcm
+:demo:transformNativeLibsWithStripDebugSymbolForGcm
+:demo:transformResourcesWithMergeJavaResForGcm
+:demo:packageGcm
+:demo:assembleGcm
+:library:processReleaseResources
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavac
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavac
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.3
+Reading input...
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/e94d7b82e7112c1f8716bfe01f756a2c/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.2.aar/b3db7787cd57d687ba684b6fd8bde673/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/014452e5e22ee10335fb7030b0023e76/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.2.aar/af27671de85942da57284687456efc3b/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.2.aar/7ad29641f7876ae46d03c6a2eb9e8f98/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.2.aar/58d67d8eb2b6c5277dfa570830b237b1/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.2.aar/f32b7f0db9ebde57d73352562d0962b9/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.2.aar/3a3a15d0b0205e8373c066b6abf57f2d/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.2.aar/faecf8e946a732ad8d41a0823c1f1315/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/f2ed62d3e18aaf2860030fac70aa24dd/jars/classes.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.2/8b68a849722b44f584e2d68c451c5e3844c10380/support-annotations-26.0.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar] (filtered)
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar] (filtered)
+Reading program jar [/tmp/rdisk/2688/src/android-job-master/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2688/src/android-job-master/demo/build/intermediates/classes/release] (filtered)
+Reading program jar [/tmp/rdisk/2688/src/android-job-master/demo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-26/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-26/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: com.evernote.android.job.GcmAvailableHelper: can't find dynamically referenced class com.google.android.gms.gcm.GcmNetworkManager
+Note: com.evernote.android.job.JobManager calls '(com.evernote.android.job.JobCreator$AddJobCreatorReceiver)Class.forName(variable).newInstance()'
+Note: com.facebook.stetho.inspector.runtime.RhinoDetectingRuntimeReplFactory: can't find dynamically referenced class com.facebook.stetho.rhino.JsRuntimeReplFactoryBuilder
+Note: the configuration keeps the entry point 'com.facebook.stetho.dumpapp.Dumper { Dumper(java.lang.Iterable,org.apache.commons.cli.CommandLineParser); }', but not the descriptor class 'org.apache.commons.cli.CommandLineParser'
+Note: the configuration keeps the entry point 'com.facebook.stetho.dumpapp.Dumper { void dumpPluginOutput(java.io.InputStream,java.io.PrintStream,java.io.PrintStream,org.apache.commons.cli.CommandLine); }', but not the descriptor class 'org.apache.commons.cli.CommandLine'
+Note: the configuration keeps the entry point 'com.facebook.stetho.dumpapp.DumperContext { DumperContext(java.io.InputStream,java.io.PrintStream,java.io.PrintStream,org.apache.commons.cli.CommandLineParser,java.util.List); }', but not the descriptor class 'org.apache.commons.cli.CommandLineParser'
+Note: there were 3 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 2 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 1 class casts of dynamically created class instances.
+      You might consider explicitly keeping the mentioned classes and/or
+      their implementations (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclasscast)
+Ignoring unused library classes...
+  Original number of library classes: 4590
+  Final number of library classes:    1167
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2688/src/android-job-master/demo/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 2219
+  Final number of program classes:    1221
+Inlining subroutines...
+Optimizing...
+  Number of finalized classes:                 317
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                369
+  Number of staticized methods:                199
+  Number of finalized methods:                 2686
+  Number of removed method parameters:         193
+  Number of inlined constant parameters:       71
+  Number of inlined constant return values:    29
+  Number of inlined short method calls:        683
+  Number of inlined unique method calls:       939
+  Number of inlined tail recursion calls:      9
+  Number of merged code blocks:                23
+  Number of variable peephole optimizations:   3631
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      14
+  Number of branch peephole optimizations:     1119
+  Number of string peephole optimizations:     467
+  Number of simplified instructions:           409
+  Number of removed instructions:              2124
+  Number of removed local variables:           127
+  Number of removed exception blocks:          124
+  Number of optimized local variable frames:   1406
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1221
+  Final number of program classes:    1197
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2688/src/android-job-master/demo/build/outputs/mapping/release/mapping.txt]...
+Preverifying...
+Writing output...
+Preparing output jar [/tmp/rdisk/2688/src/android-job-master/demo/build/intermediates/transforms/proguard/release/0.jar]
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/e94d7b82e7112c1f8716bfe01f756a2c/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.2.aar/b3db7787cd57d687ba684b6fd8bde673/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/014452e5e22ee10335fb7030b0023e76/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.2.aar/af27671de85942da57284687456efc3b/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.2.aar/7ad29641f7876ae46d03c6a2eb9e8f98/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.2.aar/58d67d8eb2b6c5277dfa570830b237b1/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.2.aar/f32b7f0db9ebde57d73352562d0962b9/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.2.aar/3a3a15d0b0205e8373c066b6abf57f2d/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.2.aar/faecf8e946a732ad8d41a0823c1f1315/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/f2ed62d3e18aaf2860030fac70aa24dd/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.2/8b68a849722b44f584e2d68c451c5e3844c10380/support-annotations-26.0.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar] (filtered)
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2688/src/android-job-master/library/build/intermediates/intermediate-jars/release/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2688/src/android-job-master/demo/build/intermediates/classes/release] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2688/src/android-job-master/demo/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+Printing classes to [/tmp/rdisk/2688/src/android-job-master/demo/build/outputs/mapping/release/dump.txt]...
+:demo:transformClassesWithDexForRelease
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1m 6s
+116 actionable tasks: 116 executed
+
+2018-05-11 09:14:20,500 INFO  FullProcessService - Found APK file: /tmp/rdisk/2688/src/android-job-master/demo/build/outputs/apk/release/demo-release.apk

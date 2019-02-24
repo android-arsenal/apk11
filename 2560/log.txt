@@ -1,0 +1,130 @@
+2018-04-01 23:50:33,695 INFO  DownloadService - Downloading "https://github.com/silverforge/BusyIndicator/archive/master.zip", attempt 3
+2018-04-01 23:51:34,155 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:51:34,246 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-01 23:51:34,246 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-01 23:51:35,107 DEBUG FullProcessService - Repository https://github.com/silverforge/BusyIndicator available: true
+2018-04-01 23:51:35,107 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:51:35,107 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/silverforge/BusyIndicator, /tmp/rdisk/2560/src]
+2018-04-01 23:51:37,120 INFO  SysUtils - 
+2018-04-01 23:51:37,125 INFO  GitService - Deleted "/tmp/rdisk/2560/src/.git": true
+2018-04-01 23:51:37,129 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 23:51:37,129 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2560/src]
+2018-04-01 23:51:37,133 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2560/src/.git/
+
+2018-04-01 23:51:37,137 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2560/src/gradlew
+2018-04-01 23:51:37,140 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2560/src/app/build.gradle /tmp/rdisk/2560/src/busyindicator/build.gradle /tmp/rdisk/2560/src/build.gradle
+2018-04-01 23:51:37,143 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2560/src/settings.gradle /tmp/rdisk/2560/src/busyindicator/build.gradle /tmp/rdisk/2560/src/build.gradle /tmp/rdisk/2560/src/app/build.gradle
+2018-04-01 23:51:37,143 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:51:37,143 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:51:37,150 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2560/src/app/local.properties
+2018-04-01 23:51:37,150 INFO  ProjectFixService - Build info for "/tmp/rdisk/2560/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-01 23:51:37,151 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2560/src/busyindicator/local.properties
+2018-04-01 23:51:37,151 INFO  ProjectFixService - Build info for "/tmp/rdisk/2560/src/busyindicator/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-01 23:51:37,151 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2560/src/local.properties
+2018-04-01 23:51:37,151 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 23:51:37,152 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 23:51:37,153 INFO  ProjectFixService - Build info for "/tmp/rdisk/2560/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=16,targetSdkVersion=22]
+2018-04-01 23:51:37,153 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:51:37,153 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:51:37,153 INFO  SysUtils - Execute command: [/tmp/rdisk/2560/src/gradlew, -b, /tmp/rdisk/2560/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:51:46,095 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 23:51:46,095 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 23:51:46,095 INFO  SysUtils - Execute command: [/tmp/rdisk/2560/src/gradlew, -b, /tmp/rdisk/2560/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 23:52:16,190 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:busyindicator:compileLint
+:busyindicator:copyReleaseLint UP-TO-DATE
+:busyindicator:preBuild UP-TO-DATE
+:busyindicator:preReleaseBuild UP-TO-DATE
+:busyindicator:checkReleaseManifest
+:busyindicator:preDebugAndroidTestBuild UP-TO-DATE
+:busyindicator:preDebugBuild UP-TO-DATE
+:busyindicator:preDebugUnitTestBuild UP-TO-DATE
+:busyindicator:preReleaseUnitTestBuild UP-TO-DATE
+:busyindicator:prepareComAndroidSupportAppcompatV72221Library
+:busyindicator:prepareComAndroidSupportSupportV42221Library
+:busyindicator:prepareReleaseDependencies
+:busyindicator:compileReleaseAidl
+:busyindicator:compileReleaseRenderscript
+:busyindicator:generateReleaseBuildConfig
+:busyindicator:generateReleaseAssets UP-TO-DATE
+:busyindicator:mergeReleaseAssets
+:busyindicator:generateReleaseResValues
+:busyindicator:generateReleaseResources
+:busyindicator:mergeReleaseResources
+:busyindicator:processReleaseManifest
+:busyindicator:processReleaseResources
+:busyindicator:generateReleaseSources
+:busyindicator:processReleaseJavaRes UP-TO-DATE
+:busyindicator:compileReleaseJavaWithJavac
+:busyindicator:extractReleaseAnnotations
+:busyindicator:mergeReleaseProguardFiles
+:busyindicator:packageReleaseJar
+:busyindicator:compileReleaseNdk UP-TO-DATE
+:busyindicator:packageReleaseJniLibs UP-TO-DATE
+:busyindicator:packageReleaseLocalJar UP-TO-DATE
+:busyindicator:packageReleaseRenderscript UP-TO-DATE
+:busyindicator:packageReleaseResources
+:busyindicator:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72221Library
+:app:prepareComAndroidSupportDesign2221Library
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareComSilverforgeControlsBusyindicator120Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.62 secs
+
+2018-04-01 23:52:16,245 INFO  FullProcessService - Found APK file: /tmp/rdisk/2560/src/app/build/outputs/apk/app-debug.apk

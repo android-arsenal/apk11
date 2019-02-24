@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.chdev.ks.minx",
+    "label" : "MinX",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "22",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB6VBMVEUAAAD////////////y8vL39/f29vb////19fX09PT09PTz8/Py8vL09PTz8/Po6OgAAADy8vLy8vLz8/Pz8/Pp6em8vLzPz8/x8fHq6uqqqqrBwcHx8fGkpKSOsdJAfrlGgbvk6u7Y4upCf7kAU6Rjkb/f398lbLF1ncXk5OQAVKSYss3g4OBekMLl5eUOXKjAzNihvtkAVKN2nsbm5uYucbHa3d/h4eHa5OwIWadkkr/i4uImbbHn5+eZtM9ckMHBztnj4+Ojvtno6OgwcrLc3+HW298nbK/p6enp6elhkL9Vib13n8fo6Ojg4OAiYKwdXqvq6uqenp4QWahScrZQcbYMWKfq6uoEVaVIbrRVc7dEbbMCVKXh4eE3aLAyZq/r6+sjYKweX6t4oMji4uJHbrRDbLPs7Ow4aLHr6+seXqvj4+N2ncWbrM6frc+grtChr9GbrdCzx9rt7e3s7Ozk5OTu7u7t7e3l5eXExMTv7++goKCkpKTw8PDt7e3t7e3w8PDh4eGAgICqqqoAAADS0tL19fXBwcEAAAA3NzfCwsLh4eHn5+fd3d3e3t7f39/g4ODh4eHi4uLf39+7u7s0NDQAAAAAAABCQkJdXV1cXFxbW1tXV1dYWFhZWVlmZmYAAAAAAAC/v7/sXoKIAAAAo3RSTlMAAwQCEx4dCpbo7JaY//+aAer5/fzqFyXv7yol7ir//////////////////////////////////////////////////P/////8///////v////Kv/////8///////v////////7//////8/+////////////zv//zvJ/8rHOz9+f/sIgMIqf+tAyqw7fDw8PDw8PDtsSwJIEJNS0xMS00FCw4Ei5kJ2wAAAkpJREFUSMfd1u13y1AcB/B07czQYCvmqfVwsRUZWoYpZjYpMmIjExuZouKZRFPzsNKZYX3ysE2pjb/UzU2TJk5y49Ve+L6695zv555zc3LyC0EsVDx1LvFY6l6v+5HmDlz66hdhU+9DNb3fsLhxiUsalzYYwkss85PuWb6iCjyEbyXZ1BzAprnJv2o1od28jljTQgbczg/4166DVQ2s3/BPYGMNtPxPIBjatNlc27I1FMSCEADbtpvADgBa21xAeOcuo78bQEBReADa9+hi7z64jVBUFA/A/gMdaHPwEEAgGo3iATjc0alujqBNBPZjMTwIH+2E4hjQQQwGC0D78a6uE2EdqP1YNxaAkz29p6rLCOrH6DgWgNNn9NVZ1GfoeB8WnDtvAQxDs30XMKB/4OIlE2AYhsOCwcs8f2XIALAf59hhDLjKw1zTgdqPcwIGjPAo1zWA+ljQP6AB7RoJ1Gc54YYTGLzJV3NrCAG1z3JJR3CbN6JeI4H6rOgIRnhT7iAA+4KYvGsHgq337j9Q8xDl0eNE4gnqC6JkC8g2iqKi2vupPX/tfEGQHQDp0E/K0lN7QNr3k3LKCZC2/aRiAdaPsV1fUlLpGnj215fPpi8po+nnVeAhXrz0WwdKN03THIooirIsK8qrsczrN0S2OrLG32Ym/BPm1E6WUqnUKEyGfTduzLjJ9x8+TqWnzMnlcvl8vlAoFIvFUqk0/Onzl6+TtTE6PTP7rVwufzflhymVSuXn7My0eVDPzf9yyfycdfhnf7sku2B/MX8AN8JOWOeAXvsAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 2257,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.1\" package=\"com.chdev.ks.minx\" platformBuildVersionCode=\"22\" platformBuildVersionName=\"5.1.1-1819727\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"22\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />\n\t<application android:theme=\"resourceId:0x7f08008d\" android:label=\"MinX\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:theme=\"@android:style/Theme.NoTitleBar.Fullscreen\" android:label=\"MinX\" android:name=\"com.chdev.ks.minx.InitActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f080107\" android:label=\"SplashActivity\" android:name=\"com.chdev.ks.minx.SplashActivity\" />\n\t\t<activity android:label=\"MinX\" android:name=\"com.chdev.ks.minx.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.VIEW\" />\n\t\t\t\t<category android:name=\"android.intent.category.DEFAULT\" />\n\t\t\t\t<category android:name=\"android.intent.category.BROWSABLE\" />\n\t\t\t\t<data android:scheme=\"http\" />\n\t\t\t\t<data android:scheme=\"https\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"ErrorActivity\" android:name=\"com.chdev.ks.minx.ErrorActivity\" />\n\t\t<activity android:label=\"SavedExtndActivity\" android:name=\"com.chdev.ks.minx.SavedExtndActivity\" android:parentActivityName=\"com.chdev.ks.minx.MainActivity\">\n\t\t\t<meta-data android:name=\"android.support.PARENT_ACTIVITY\" android:value=\"com.chdev.ks.minx.MainActivity\" />\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f080026\" android:name=\"cat.ereza.customactivityoncrash.activity.DefaultErrorActivity\" android:process=\":error_activity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 2194189,
+  "crc32" : 2935105826,
+  "sha256" : "7f0b16e135d89988b6de85c9e9a890db10506a8284cf7d297a2e89846b689d39",
+  "buildTime" : 1522636102000
+}

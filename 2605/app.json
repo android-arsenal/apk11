@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.viksaa.ssspalsh",
+    "label" : "Awesome Splash",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1901,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.viksaa.ssspalsh\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f08002f\" android:label=\"Awesome Splash\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Awesome Splash\" android:name=\"com.viksaa.ssspalsh.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:label=\"Awesome Splash\" android:name=\"com.viksaa.ssspalsh.activity.SplashActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1499983,
+  "crc32" : 369681161,
+  "sha256" : "b409345e654f3be49b7298537f7b1e331d57d7f11e0e87fd0a65bf206cce0d0e",
+  "buildTime" : 1522618863000
+}

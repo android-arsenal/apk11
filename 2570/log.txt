@@ -1,0 +1,204 @@
+2018-04-01 23:20:38,167 INFO  DownloadService - Downloading "https://github.com/gpfduoduo/RadarScanView/archive/master.zip", attempt 3
+2018-04-01 23:21:38,609 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:21:39,309 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 23:21:39,309 INFO  DownloadService - Downloading "https://github.com/gpfduoduo/RadarScanView/archive/master.zip", attempt 3
+2018-04-01 23:22:40,603 DEBUG FullProcessService - Repository https://github.com/gpfduoduo/RadarScanView available: true
+2018-04-01 23:22:40,603 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:22:40,603 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gpfduoduo/RadarScanView, /tmp/rdisk/2570/src]
+2018-04-01 23:22:42,719 INFO  SysUtils - 
+2018-04-01 23:22:42,726 INFO  GitService - Deleted "/tmp/rdisk/2570/src/.git": true
+2018-04-01 23:22:42,731 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 23:22:42,731 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2570/src]
+2018-04-01 23:22:42,742 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2570/src/.git/
+
+2018-04-01 23:22:42,747 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2570/src/RadarScanView/gradlew
+2018-04-01 23:22:42,752 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2570/src/RadarScanView/app/build.gradle /tmp/rdisk/2570/src/RadarScanView/library/build.gradle /tmp/rdisk/2570/src/RadarScanView/randomtextview/build.gradle /tmp/rdisk/2570/src/RadarScanView/rippleview/build.gradle /tmp/rdisk/2570/src/RadarScanView/build.gradle
+2018-04-01 23:22:42,756 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2570/src/RadarScanView/settings.gradle /tmp/rdisk/2570/src/RadarScanView/rippleview/build.gradle /tmp/rdisk/2570/src/RadarScanView/randomtextview/build.gradle /tmp/rdisk/2570/src/RadarScanView/library/build.gradle /tmp/rdisk/2570/src/RadarScanView/build.gradle /tmp/rdisk/2570/src/RadarScanView/app/build.gradle
+2018-04-01 23:22:42,757 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:22:42,757 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:22:42,768 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2570/src/RadarScanView/app/local.properties
+2018-04-01 23:22:42,768 INFO  ProjectFixService - Build info for "/tmp/rdisk/2570/src/RadarScanView/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 23:22:42,768 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2570/src/RadarScanView/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 23:22:42,768 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2570/src/RadarScanView/library/local.properties
+2018-04-01 23:22:42,769 INFO  ProjectFixService - Build info for "/tmp/rdisk/2570/src/RadarScanView/library/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 23:22:42,769 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2570/src/RadarScanView/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 23:22:42,769 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2570/src/RadarScanView/randomtextview/local.properties
+2018-04-01 23:22:42,770 INFO  ProjectFixService - Build info for "/tmp/rdisk/2570/src/RadarScanView/randomtextview/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 23:22:42,770 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2570/src/RadarScanView/rippleview/local.properties
+2018-04-01 23:22:42,770 INFO  ProjectFixService - Build info for "/tmp/rdisk/2570/src/RadarScanView/rippleview/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 23:22:42,770 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2570/src/RadarScanView/local.properties
+2018-04-01 23:22:42,770 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 23:22:42,771 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 23:22:42,772 INFO  ProjectFixService - Build info for "/tmp/rdisk/2570/src/RadarScanView/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 23:22:42,772 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:22:42,772 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:22:42,772 INFO  SysUtils - Execute command: [/tmp/rdisk/2570/src/RadarScanView/gradlew, -b, /tmp/rdisk/2570/src/RadarScanView/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:22:52,111 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 23:22:52,111 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 23:22:52,111 INFO  SysUtils - Execute command: [/tmp/rdisk/2570/src/RadarScanView/gradlew, -b, /tmp/rdisk/2570/src/RadarScanView/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 23:23:21,661 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72300Library
+:library:prepareComAndroidSupportSupportV42300Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:randomtextview:compileLint
+:randomtextview:copyReleaseLint UP-TO-DATE
+:randomtextview:preBuild UP-TO-DATE
+:randomtextview:preReleaseBuild UP-TO-DATE
+:randomtextview:checkReleaseManifest
+:randomtextview:preDebugAndroidTestBuild UP-TO-DATE
+:randomtextview:preDebugBuild UP-TO-DATE
+:randomtextview:preDebugUnitTestBuild UP-TO-DATE
+:randomtextview:preReleaseUnitTestBuild UP-TO-DATE
+:rippleview:compileLint
+:rippleview:copyReleaseLint UP-TO-DATE
+:rippleview:preBuild UP-TO-DATE
+:rippleview:preReleaseBuild UP-TO-DATE
+:rippleview:checkReleaseManifest
+:rippleview:preDebugAndroidTestBuild UP-TO-DATE
+:rippleview:preDebugBuild UP-TO-DATE
+:rippleview:preDebugUnitTestBuild UP-TO-DATE
+:rippleview:preReleaseUnitTestBuild UP-TO-DATE
+:rippleview:prepareComAndroidSupportAppcompatV72220Library
+:rippleview:prepareComAndroidSupportSupportV42220Library
+:rippleview:prepareReleaseDependencies
+:rippleview:compileReleaseAidl
+:rippleview:compileReleaseRenderscript
+:rippleview:generateReleaseBuildConfig
+:rippleview:generateReleaseAssets UP-TO-DATE
+:rippleview:mergeReleaseAssets
+:rippleview:generateReleaseResValues
+:rippleview:generateReleaseResources
+:rippleview:mergeReleaseResources
+:rippleview:processReleaseManifest
+:rippleview:processReleaseResources
+:rippleview:generateReleaseSources
+:rippleview:processReleaseJavaRes UP-TO-DATE
+:rippleview:compileReleaseJavaWithJavac
+:rippleview:extractReleaseAnnotations
+:rippleview:mergeReleaseProguardFiles
+:rippleview:packageReleaseJar
+:rippleview:compileReleaseNdk UP-TO-DATE
+:rippleview:packageReleaseJniLibs UP-TO-DATE
+:rippleview:packageReleaseLocalJar UP-TO-DATE
+:rippleview:packageReleaseRenderscript UP-TO-DATE
+:rippleview:packageReleaseResources
+:rippleview:bundleRelease
+:randomtextview:prepareComAndroidSupportAppcompatV72220Library
+:randomtextview:prepareComAndroidSupportSupportV42220Library
+:randomtextview:prepareRadarScanViewRippleviewUnspecifiedLibrary
+:randomtextview:prepareReleaseDependencies
+:randomtextview:compileReleaseAidl
+:randomtextview:compileReleaseRenderscript
+:randomtextview:generateReleaseBuildConfig
+:randomtextview:generateReleaseAssets UP-TO-DATE
+:randomtextview:mergeReleaseAssets
+:randomtextview:generateReleaseResValues
+:randomtextview:generateReleaseResources
+:randomtextview:mergeReleaseResources
+:randomtextview:processReleaseManifest
+:randomtextview:processReleaseResources
+:randomtextview:generateReleaseSources
+:randomtextview:processReleaseJavaRes UP-TO-DATE
+:randomtextview:compileReleaseJavaWithJavac
+:randomtextview:extractReleaseAnnotations
+:randomtextview:mergeReleaseProguardFiles
+:randomtextview:packageReleaseJar
+:randomtextview:compileReleaseNdk UP-TO-DATE
+:randomtextview:packageReleaseJniLibs UP-TO-DATE
+:randomtextview:packageReleaseLocalJar UP-TO-DATE
+:randomtextview:packageReleaseRenderscript UP-TO-DATE
+:randomtextview:packageReleaseResources
+:randomtextview:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72310Library
+:app:prepareComAndroidSupportDesign2310Library
+:app:prepareComAndroidSupportRecyclerviewV72310Library
+:app:prepareComAndroidSupportSupportV42310Library
+:app:prepareRadarScanViewLibraryUnspecifiedLibrary
+:app:prepareRadarScanViewRandomtextviewUnspecifiedLibrary
+:app:prepareRadarScanViewRippleviewUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.093 secs
+
+2018-04-01 23:23:21,768 INFO  FullProcessService - Found APK file: /tmp/rdisk/2570/src/RadarScanView/app/build/outputs/apk/app-debug.apk

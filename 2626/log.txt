@@ -1,0 +1,189 @@
+2018-04-01 20:38:31,557 INFO  DownloadService - Downloading "https://github.com/gotev/android-host-monitor/archive/master.zip", attempt 3
+2018-04-01 20:39:32,038 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:39:32,718 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:39:32,719 INFO  DownloadService - Downloading "https://github.com/gotev/android-host-monitor/archive/master.zip", attempt 3
+2018-04-01 20:40:34,083 DEBUG FullProcessService - Repository https://github.com/gotev/android-host-monitor available: true
+2018-04-01 20:40:34,084 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:40:34,084 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gotev/android-host-monitor, /tmp/rdisk/2626/src]
+2018-04-01 20:40:35,601 INFO  SysUtils - 
+2018-04-01 20:40:35,610 INFO  GitService - Deleted "/tmp/rdisk/2626/src/.git": true
+2018-04-01 20:40:35,611 INFO  FullProcessService - Size of directory with sources: 119 KB
+2018-04-01 20:40:35,611 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2626/src]
+2018-04-01 20:40:35,615 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2626/src/.git/
+
+2018-04-01 20:40:35,616 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2626/src/gradlew
+2018-04-01 20:40:35,618 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2626/src/hostmonitor/build.gradle /tmp/rdisk/2626/src/build.gradle
+2018-04-01 20:40:35,619 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2626/src/settings.gradle /tmp/rdisk/2626/src/hostmonitor/build.gradle /tmp/rdisk/2626/src/build.gradle
+2018-04-01 20:40:35,619 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:40:35,619 INFO  ProjectFixService - Fixing project...
+2018-04-01 20:40:35,623 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2626/src/hostmonitor/local.properties
+2018-04-01 20:40:35,623 INFO  ProjectFixService - Build info for "/tmp/rdisk/2626/src/hostmonitor/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:40:35,624 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2626/src/local.properties
+2018-04-01 20:40:35,624 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 20:40:35,624 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 20:40:35,625 INFO  ProjectFixService - Build info for "/tmp/rdisk/2626/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:40:35,625 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 20:40:35,625 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:40:35,625 INFO  SysUtils - Execute command: [/tmp/rdisk/2626/src/gradlew, -b, /tmp/rdisk/2626/src/hostmonitor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:40:43,588 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 20:40:43,588 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 20:40:43,588 INFO  SysUtils - Execute command: [/tmp/rdisk/2626/src/gradlew, -b, /tmp/rdisk/2626/src/hostmonitor/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 20:40:52,590 INFO  SysUtils - Configuration on demand is an incubating feature.
+:hostmonitor:preBuild UP-TO-DATE
+:hostmonitor:preDebugBuild UP-TO-DATE
+:hostmonitor:compileDebugNdk UP-TO-DATE
+:hostmonitor:compileLint
+:hostmonitor:copyDebugLint UP-TO-DATE
+:hostmonitor:mergeDebugProguardFiles
+:hostmonitor:packageDebugRenderscript UP-TO-DATE
+:hostmonitor:checkDebugManifest
+:hostmonitor:prepareDebugDependencies
+:hostmonitor:compileDebugRenderscript
+:hostmonitor:generateDebugResValues
+:hostmonitor:generateDebugResources
+:hostmonitor:packageDebugResources
+:hostmonitor:compileDebugAidl
+:hostmonitor:generateDebugBuildConfig
+:hostmonitor:generateDebugAssets UP-TO-DATE
+:hostmonitor:mergeDebugAssets
+:hostmonitor:processDebugManifest
+:hostmonitor:processDebugResources
+:hostmonitor:generateDebugSources
+:hostmonitor:compileDebugJavaWithJavac
+:hostmonitor:processDebugJavaRes UP-TO-DATE
+:hostmonitor:transformResourcesWithMergeJavaResForDebug
+:hostmonitor:transformClassesAndResourcesWithSyncLibJarsForDebug
+:hostmonitor:mergeDebugJniLibFolders
+:hostmonitor:transformNative_libsWithMergeJniLibsForDebug
+:hostmonitor:transformNative_libsWithSyncJniLibsForDebug
+:hostmonitor:bundleDebug
+:hostmonitor:compileDebugSources
+:hostmonitor:assembleDebug
+:hostmonitor:preReleaseBuild UP-TO-DATE
+:hostmonitor:compileReleaseNdk UP-TO-DATE
+:hostmonitor:copyReleaseLint UP-TO-DATE
+:hostmonitor:mergeReleaseProguardFiles
+:hostmonitor:packageReleaseRenderscript UP-TO-DATE
+:hostmonitor:checkReleaseManifest
+:hostmonitor:prepareReleaseDependencies
+:hostmonitor:compileReleaseRenderscript
+:hostmonitor:generateReleaseResValues
+:hostmonitor:generateReleaseResources
+:hostmonitor:packageReleaseResources
+:hostmonitor:compileReleaseAidl
+:hostmonitor:generateReleaseBuildConfig
+:hostmonitor:generateReleaseAssets UP-TO-DATE
+:hostmonitor:mergeReleaseAssets
+:hostmonitor:processReleaseManifest
+:hostmonitor:processReleaseResources
+:hostmonitor:generateReleaseSources
+:hostmonitor:compileReleaseJavaWithJavac
+:hostmonitor:processReleaseJavaRes UP-TO-DATE
+:hostmonitor:transformResourcesWithMergeJavaResForRelease
+:hostmonitor:transformClassesAndResourcesWithSyncLibJarsForRelease
+:hostmonitor:mergeReleaseJniLibFolders
+:hostmonitor:transformNative_libsWithMergeJniLibsForRelease
+:hostmonitor:transformNative_libsWithSyncJniLibsForRelease
+:hostmonitor:bundleRelease
+:hostmonitor:compileReleaseSources
+:hostmonitor:assembleRelease
+:hostmonitor:javadoc/tmp/rdisk/2626/src/hostmonitor/src/main/java/net/gotev/hostmonitor/HostStatus.java:6: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2626/src/hostmonitor/src/main/java/net/gotev/hostmonitor/HostMonitorConfig.java:8: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2626/src/hostmonitor/src/main/java/net/gotev/hostmonitor/HostMonitorConfig.java:9: error: package com.google.gson does not exist
+import com.google.gson.GsonBuilder;
+                      ^
+/tmp/rdisk/2626/src/hostmonitor/src/main/java/net/gotev/hostmonitor/HostMonitorConfig.java:10: error: package com.google.gson.reflect does not exist
+import com.google.gson.reflect.TypeToken;
+                              ^
+javadoc: warning - Error reading file: /root/Applications/android-sdk/docs/reference/package-list
+
+5 warnings
+:hostmonitor:javadocJar
+:hostmonitor:sourcesJar
+:hostmonitor:assemble
+:hostmonitor:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.581 secs
+
+2018-04-01 20:40:52,596 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:40:52,596 INFO  SysUtils - Execute command: [/tmp/rdisk/2626/src/gradlew, -b, /tmp/rdisk/2626/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:40:58,359 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 20:40:58,359 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 20:40:58,359 INFO  SysUtils - Execute command: [/tmp/rdisk/2626/src/gradlew, -b, /tmp/rdisk/2626/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 20:41:04,259 INFO  SysUtils - Configuration on demand is an incubating feature.
+:hostmonitor:preBuild UP-TO-DATE
+:hostmonitor:preDebugBuild UP-TO-DATE
+:hostmonitor:compileDebugNdk UP-TO-DATE
+:hostmonitor:compileLint
+:hostmonitor:copyDebugLint UP-TO-DATE
+:hostmonitor:mergeDebugProguardFiles UP-TO-DATE
+:hostmonitor:packageDebugRenderscript UP-TO-DATE
+:hostmonitor:checkDebugManifest
+:hostmonitor:prepareDebugDependencies
+:hostmonitor:compileDebugRenderscript UP-TO-DATE
+:hostmonitor:generateDebugResValues UP-TO-DATE
+:hostmonitor:generateDebugResources UP-TO-DATE
+:hostmonitor:packageDebugResources UP-TO-DATE
+:hostmonitor:compileDebugAidl UP-TO-DATE
+:hostmonitor:generateDebugBuildConfig UP-TO-DATE
+:hostmonitor:generateDebugAssets UP-TO-DATE
+:hostmonitor:mergeDebugAssets UP-TO-DATE
+:hostmonitor:processDebugManifest UP-TO-DATE
+:hostmonitor:processDebugResources UP-TO-DATE
+:hostmonitor:generateDebugSources UP-TO-DATE
+:hostmonitor:compileDebugJavaWithJavac UP-TO-DATE
+:hostmonitor:processDebugJavaRes UP-TO-DATE
+:hostmonitor:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:hostmonitor:transformClassesAndResourcesWithSyncLibJarsForDebug UP-TO-DATE
+:hostmonitor:mergeDebugJniLibFolders UP-TO-DATE
+:hostmonitor:transformNative_libsWithMergeJniLibsForDebug UP-TO-DATE
+:hostmonitor:transformNative_libsWithSyncJniLibsForDebug UP-TO-DATE
+:hostmonitor:bundleDebug UP-TO-DATE
+:hostmonitor:compileDebugSources UP-TO-DATE
+:hostmonitor:assembleDebug UP-TO-DATE
+:hostmonitor:preReleaseBuild UP-TO-DATE
+:hostmonitor:compileReleaseNdk UP-TO-DATE
+:hostmonitor:copyReleaseLint UP-TO-DATE
+:hostmonitor:mergeReleaseProguardFiles UP-TO-DATE
+:hostmonitor:packageReleaseRenderscript UP-TO-DATE
+:hostmonitor:checkReleaseManifest
+:hostmonitor:prepareReleaseDependencies
+:hostmonitor:compileReleaseRenderscript UP-TO-DATE
+:hostmonitor:generateReleaseResValues UP-TO-DATE
+:hostmonitor:generateReleaseResources UP-TO-DATE
+:hostmonitor:packageReleaseResources UP-TO-DATE
+:hostmonitor:compileReleaseAidl UP-TO-DATE
+:hostmonitor:generateReleaseBuildConfig UP-TO-DATE
+:hostmonitor:generateReleaseAssets UP-TO-DATE
+:hostmonitor:mergeReleaseAssets UP-TO-DATE
+:hostmonitor:processReleaseManifest UP-TO-DATE
+:hostmonitor:processReleaseResources UP-TO-DATE
+:hostmonitor:generateReleaseSources UP-TO-DATE
+:hostmonitor:compileReleaseJavaWithJavac UP-TO-DATE
+:hostmonitor:processReleaseJavaRes UP-TO-DATE
+:hostmonitor:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:hostmonitor:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:hostmonitor:mergeReleaseJniLibFolders UP-TO-DATE
+:hostmonitor:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:hostmonitor:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:hostmonitor:bundleRelease UP-TO-DATE
+:hostmonitor:compileReleaseSources UP-TO-DATE
+:hostmonitor:assembleRelease UP-TO-DATE
+:hostmonitor:javadoc UP-TO-DATE
+:hostmonitor:javadocJar UP-TO-DATE
+:hostmonitor:sourcesJar UP-TO-DATE
+:hostmonitor:assemble UP-TO-DATE
+:hostmonitor:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.476 secs
+
+2018-04-01 20:41:04,265 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 20:41:04,270 ERROR FullProcessService - Could not find generated or existed APK file

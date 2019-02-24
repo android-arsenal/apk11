@@ -1,0 +1,135 @@
+2018-04-01 10:41:28,008 INFO  DownloadService - Downloading "https://github.com/iammert/MaskProgressView/archive/master.zip", attempt 3
+2018-04-01 10:42:28,009 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 10:42:28,984 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 10:42:28,984 INFO  DownloadService - Downloading "https://github.com/iammert/MaskProgressView/archive/master.zip", attempt 3
+2018-04-01 10:43:29,739 DEBUG FullProcessService - Repository https://github.com/iammert/MaskProgressView available: true
+2018-04-01 10:43:29,739 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 10:43:29,739 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/iammert/MaskProgressView, /tmp/rdisk/2708/src]
+2018-04-01 10:43:31,928 INFO  SysUtils - 
+2018-04-01 10:43:31,933 INFO  GitService - Deleted "/tmp/rdisk/2708/src/.git": true
+2018-04-01 10:43:31,936 INFO  FullProcessService - Size of directory with sources: 820 KB
+2018-04-01 10:43:31,936 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2708/src]
+2018-04-01 10:43:31,940 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2708/src/.git/
+
+2018-04-01 10:43:31,943 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2708/src/gradlew
+2018-04-01 10:43:31,946 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2708/src/app/build.gradle /tmp/rdisk/2708/src/library/build.gradle /tmp/rdisk/2708/src/build.gradle
+2018-04-01 10:43:31,949 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2708/src/settings.gradle /tmp/rdisk/2708/src/library/build.gradle /tmp/rdisk/2708/src/build.gradle /tmp/rdisk/2708/src/app/build.gradle
+2018-04-01 10:43:31,949 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 10:43:31,949 INFO  ProjectFixService - Fixing project...
+2018-04-01 10:43:31,955 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2708/src/app/local.properties
+2018-04-01 10:43:31,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/2708/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-01 10:43:31,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2708/src/library/local.properties
+2018-04-01 10:43:31,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/2708/src/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-01 10:43:31,956 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2708/src/local.properties
+2018-04-01 10:43:31,957 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 10:43:31,957 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 10:43:31,958 INFO  ProjectFixService - Build info for "/tmp/rdisk/2708/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-01 10:43:31,958 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 10:43:31,958 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:43:31,958 INFO  SysUtils - Execute command: [/tmp/rdisk/2708/src/gradlew, -b, /tmp/rdisk/2708/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:43:38,783 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 10:43:38,783 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 10:43:38,783 INFO  SysUtils - Execute command: [/tmp/rdisk/2708/src/gradlew, -b, /tmp/rdisk/2708/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 10:44:05,580 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72310Library
+:library:prepareComAndroidSupportSupportV42310Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72310Library
+:app:prepareComAndroidSupportDesign2310Library
+:app:prepareComAndroidSupportRecyclerviewV72310Library
+:app:prepareComAndroidSupportSupportV42310Library
+:app:prepareSrcLibraryUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_previous.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_pause.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT err(56856458) : No Delegate set : lost message:/tmp/rdisk/2708/src/app/src/main/res/drawable/icon_play.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_header.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_previous.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_pause.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_play.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2708/src/app/src/main/res/drawable/icon_header.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.345 secs
+
+2018-04-01 10:44:05,642 INFO  FullProcessService - Found APK file: /tmp/rdisk/2708/src/app/build/outputs/apk/app-debug.apk

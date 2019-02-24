@@ -1,0 +1,278 @@
+2018-04-02 01:23:25,996 INFO  DownloadService - Downloading "https://github.com/xizzhu/simple-tool-tip/archive/master.zip", attempt 3
+2018-04-02 01:24:26,674 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:24:27,331 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:24:27,331 INFO  DownloadService - Downloading "https://github.com/xizzhu/simple-tool-tip/archive/master.zip", attempt 3
+2018-04-02 01:25:28,550 DEBUG FullProcessService - Repository https://github.com/xizzhu/simple-tool-tip available: true
+2018-04-02 01:25:28,550 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:25:28,551 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/xizzhu/simple-tool-tip, /tmp/rdisk/2526/src]
+2018-04-02 01:25:30,031 INFO  SysUtils - 
+2018-04-02 01:25:30,041 INFO  GitService - Deleted "/tmp/rdisk/2526/src/.git": true
+2018-04-02 01:25:30,043 INFO  FullProcessService - Size of directory with sources: 149 KB
+2018-04-02 01:25:30,043 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2526/src]
+2018-04-02 01:25:30,048 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2526/src/.git/
+
+2018-04-02 01:25:30,050 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2526/src/gradlew
+2018-04-02 01:25:30,052 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2526/src/app/build.gradle /tmp/rdisk/2526/src/lib/build.gradle /tmp/rdisk/2526/src/build.gradle
+2018-04-02 01:25:30,053 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2526/src/settings.gradle /tmp/rdisk/2526/src/lib/build.gradle /tmp/rdisk/2526/src/build.gradle /tmp/rdisk/2526/src/app/build.gradle
+2018-04-02 01:25:30,054 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:25:30,054 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:25:30,058 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2526/src/app/local.properties
+2018-04-02 01:25:30,059 INFO  ProjectFixService - Build info for "/tmp/rdisk/2526/src/app/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-02 01:25:30,059 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2526/src/lib/local.properties
+2018-04-02 01:25:30,060 INFO  ProjectFixService - Build info for "/tmp/rdisk/2526/src/lib/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-02 01:25:30,061 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2526/src/local.properties
+2018-04-02 01:25:30,061 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14-all.zip
+2018-04-02 01:25:30,061 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14-bin.zip)
+2018-04-02 01:25:30,061 INFO  ProjectFixService - Build info for "/tmp/rdisk/2526/src/build.gradle": [buildToolsVersion=23.0.3,compileSdkVersion=23,minSdkVersion=8,targetSdkVersion=23]
+2018-04-02 01:25:30,061 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:25:30,061 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:25:30,062 INFO  SysUtils - Execute command: [/tmp/rdisk/2526/src/gradlew, -b, /tmp/rdisk/2526/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:25:39,877 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-02 01:25:39,877 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 01:25:39,877 INFO  SysUtils - Execute command: [/tmp/rdisk/2526/src/gradlew, -b, /tmp/rdisk/2526/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 01:26:10,304 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:incrementalReleaseJavaCompilationSafeguard
+:lib:compileReleaseJavaWithJavac
+:lib:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2526/src/lib/src/main/java/com/github/xizzhu/simpletooltip/ToolTipView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:mergeReleaseJniLibFolders
+:lib:transformNative_libsWithMergeJniLibsForRelease
+:lib:transformNative_libsWithSyncJniLibsForRelease
+:lib:bundleRelease
+:app:prepareComAndroidSupportAnimatedVectorDrawable2340Library
+:app:prepareComAndroidSupportAppcompatV72340Library
+:app:prepareComAndroidSupportSupportV42340Library
+:app:prepareComAndroidSupportSupportVectorDrawable2340Library
+:app:prepareSrcLibUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.2.1
+Reading input...
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+Reading program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/src/lib/unspecified/jars/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2526/src/app/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-23/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: there were 7 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.vending.licensing.ILicensingService'
+Note: the configuration refers to the unknown class 'com.android.vending.licensing.ILicensingService'
+Note: android.support.v4.app.NotificationCompatJellybean calls 'Field.getType'
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.media.IMediaBrowserServiceCallbacksAdapterApi21$Stub: can't find dynamically referenced class android.service.media.IMediaBrowserServiceCallbacks$Stub
+Note: android.support.v4.media.ParceledListSliceAdapterApi21: can't find dynamically referenced class android.content.pm.ParceledListSlice
+Note: android.support.v4.text.ICUCompatApi23: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v7.widget.DrawableUtils: can't find dynamically referenced class android.graphics.Insets
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'icon' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int icon; }'
+      Maybe this is program field 'com.github.xizzhu.simpletooltip.sample.R$attr { int icon; }'
+      Maybe this is program field 'com.github.xizzhu.simpletooltip.sample.R$id { int icon; }'
+      Maybe this is library field 'android.R$attr { int icon; }'
+      Maybe this is library field 'android.R$id { int icon; }'
+      Maybe this is library field 'android.app.LauncherActivity$ListItem { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.app.Notification { int icon; }'
+      Maybe this is library field 'android.app.Notification$Action { int icon; }'
+      Maybe this is library field 'android.appwidget.AppWidgetProviderInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.PackageItemInfo { int icon; }'
+      Maybe this is library field 'android.content.pm.ResolveInfo { int icon; }'
+      Maybe this is library field 'android.inputmethodservice.Keyboard$Key { android.graphics.drawable.Drawable icon; }'
+      Maybe this is library field 'android.speech.tts.TextToSpeech$EngineInfo { int icon; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'title' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { java.lang.CharSequence title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int title; }'
+      Maybe this is program field 'com.github.xizzhu.simpletooltip.sample.R$attr { int title; }'
+      Maybe this is program field 'com.github.xizzhu.simpletooltip.sample.R$id { int title; }'
+      Maybe this is library field 'android.R$attr { int title; }'
+      Maybe this is library field 'android.R$id { int title; }'
+      Maybe this is library field 'android.app.Notification$Action { java.lang.CharSequence title; }'
+      Maybe this is library field 'android.preference.PreferenceActivity$Header { java.lang.CharSequence title; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'actionIntent' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { android.app.PendingIntent actionIntent; }'
+      Maybe this is library field 'android.app.Notification$Action { android.app.PendingIntent actionIntent; }'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setAdapter(android.support.v4.view.PagerAdapter); }', but not the descriptor class 'android.support.v4.view.PagerAdapter'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnAdapterChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.view.ViewPager { void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener); }', but not the descriptor class 'android.support.v4.view.ViewPager$OnPageChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.DrawerLayout { void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener); }', but not the descriptor class 'android.support.v4.widget.DrawerLayout$DrawerListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.NestedScrollView { void setOnScrollChangeListener(android.support.v4.widget.NestedScrollView$OnScrollChangeListener); }', but not the descriptor class 'android.support.v4.widget.NestedScrollView$OnScrollChangeListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SlidingPaneLayout { void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener); }', but not the descriptor class 'android.support.v4.widget.SlidingPaneLayout$PanelSlideListener'
+Note: the configuration keeps the entry point 'android.support.v4.widget.SwipeRefreshLayout { void setOnRefreshListener(android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener); }', but not the descriptor class 'android.support.v4.widget.SwipeRefreshLayout$OnRefreshListener'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setItemInvoker(android.support.v7.view.menu.MenuBuilder$ItemInvoker); }', but not the descriptor class 'android.support.v7.view.menu.MenuBuilder$ItemInvoker'
+Note: the configuration keeps the entry point 'android.support.v7.view.menu.ActionMenuItemView { void setPopupCallback(android.support.v7.view.menu.ActionMenuItemView$PopupCallback); }', but not the descriptor class 'android.support.v7.view.menu.ActionMenuItemView$PopupCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarContainer { void setTabContainer(android.support.v7.widget.ScrollingTabContainerView); }', but not the descriptor class 'android.support.v7.widget.ScrollingTabContainerView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionBarOverlayLayout { void setActionBarVisibilityCallback(android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback); }', but not the descriptor class 'android.support.v7.widget.ActionBarOverlayLayout$ActionBarVisibilityCallback'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setPresenter(android.support.v7.widget.ActionMenuPresenter); }', but not the descriptor class 'android.support.v7.widget.ActionMenuPresenter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActionMenuView { void setOnMenuItemClickListener(android.support.v7.widget.ActionMenuView$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.ActionMenuView$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setActivityChooserModel(android.support.v7.widget.ActivityChooserModel); }', but not the descriptor class 'android.support.v7.widget.ActivityChooserModel'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ActivityChooserView { void setProvider(android.support.v4.view.ActionProvider); }', but not the descriptor class 'android.support.v4.view.ActionProvider'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ContentFrameLayout { void setAttachListener(android.support.v7.widget.ContentFrameLayout$OnAttachListener); }', but not the descriptor class 'android.support.v7.widget.ContentFrameLayout$OnAttachListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsFrameLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.FitWindowsLinearLayout { void setOnFitSystemWindowsListener(android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener); }', but not the descriptor class 'android.support.v7.widget.FitWindowsViewGroup$OnFitSystemWindowsListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnQueryTextListener(android.support.v7.widget.SearchView$OnQueryTextListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnQueryTextListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnCloseListener(android.support.v7.widget.SearchView$OnCloseListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnCloseListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setOnSuggestionListener(android.support.v7.widget.SearchView$OnSuggestionListener); }', but not the descriptor class 'android.support.v7.widget.SearchView$OnSuggestionListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView { void setSuggestionsAdapter(android.support.v4.widget.CursorAdapter); }', but not the descriptor class 'android.support.v4.widget.CursorAdapter'
+Note: the configuration keeps the entry point 'android.support.v7.widget.SearchView$SearchAutoComplete { void setSearchView(android.support.v7.widget.SearchView); }', but not the descriptor class 'android.support.v7.widget.SearchView'
+Note: the configuration keeps the entry point 'android.support.v7.widget.Toolbar { void setOnMenuItemClickListener(android.support.v7.widget.Toolbar$OnMenuItemClickListener); }', but not the descriptor class 'android.support.v7.widget.Toolbar$OnMenuItemClickListener'
+Note: the configuration keeps the entry point 'android.support.v7.widget.ViewStubCompat { void setOnInflateListener(android.support.v7.widget.ViewStubCompat$OnInflateListener); }', but not the descriptor class 'android.support.v7.widget.ViewStubCompat$OnInflateListener'
+Note: there were 2 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 25 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: there were 7 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 3 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Ignoring unused library classes...
+  Original number of library classes: 3880
+  Final number of library classes:    870
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2526/src/app/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 1546
+  Final number of program classes:    676
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2526/src/app/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/2526/src/app/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2526/src/app/build/intermediates/exploded-aar/src/lib/unspecified/jars/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2526/src/app/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/2526/src/app/build/outputs/mapping/release/dump.txt]...
+:app:transformClassesWithDexForRelease
+:app:transformClassesWithShrinkResForRelease
+Removed unused resources: Binary resource data reduced from 442KB to 435KB: Removed 1%
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.993 secs
+
+2018-04-02 01:26:10,352 INFO  FullProcessService - Found APK file: /tmp/rdisk/2526/src/app/build/outputs/apk/app-debug.apk

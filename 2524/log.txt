@@ -1,0 +1,605 @@
+2018-04-02 01:29:08,414 INFO  DownloadService - Downloading "https://github.com/fabioCollini/mv2m/archive/master.zip", attempt 3
+2018-04-02 01:30:08,922 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:30:10,152 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:30:10,152 INFO  DownloadService - Downloading "https://github.com/fabioCollini/mv2m/archive/master.zip", attempt 3
+2018-04-02 01:31:11,520 DEBUG FullProcessService - Repository https://github.com/fabioCollini/mv2m available: true
+2018-04-02 01:31:11,521 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:31:11,521 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/fabioCollini/mv2m, /tmp/rdisk/2524/src]
+2018-04-02 01:31:13,135 INFO  SysUtils - 
+2018-04-02 01:31:13,141 INFO  GitService - Deleted "/tmp/rdisk/2524/src/.git": true
+2018-04-02 01:31:13,147 INFO  FullProcessService - Size of directory with sources: 377 KB
+2018-04-02 01:31:13,147 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2524/src]
+2018-04-02 01:31:13,151 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2524/src/.git/
+
+2018-04-02 01:31:13,158 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2524/src/gradlew
+2018-04-02 01:31:13,163 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2524/src/demo/build.gradle /tmp/rdisk/2524/src/mv2m/build.gradle /tmp/rdisk/2524/src/mv2mrecycler/build.gradle /tmp/rdisk/2524/src/mv2mrx/build.gradle /tmp/rdisk/2524/src/build.gradle
+2018-04-02 01:31:13,167 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2524/src/settings.gradle /tmp/rdisk/2524/src/mv2mrx/build.gradle /tmp/rdisk/2524/src/mv2mrecycler/build.gradle /tmp/rdisk/2524/src/mv2m/build.gradle /tmp/rdisk/2524/src/demo/build.gradle /tmp/rdisk/2524/src/build.gradle
+2018-04-02 01:31:13,168 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:31:13,168 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:31:13,179 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2524/src/demo/local.properties
+2018-04-02 01:31:13,179 INFO  ProjectFixService - Build info for "/tmp/rdisk/2524/src/demo/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-02 01:31:13,180 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2524/src/mv2m/local.properties
+2018-04-02 01:31:13,180 INFO  ProjectFixService - Build info for "/tmp/rdisk/2524/src/mv2m/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 01:31:13,180 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2524/src/mv2mrecycler/local.properties
+2018-04-02 01:31:13,180 INFO  ProjectFixService - Build info for "/tmp/rdisk/2524/src/mv2mrecycler/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 01:31:13,180 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2524/src/mv2mrx/local.properties
+2018-04-02 01:31:13,181 INFO  ProjectFixService - Build info for "/tmp/rdisk/2524/src/mv2mrx/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 01:31:13,181 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2524/src/local.properties
+2018-04-02 01:31:13,181 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-02 01:31:13,181 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-02 01:31:13,182 INFO  ProjectFixService - Build info for "/tmp/rdisk/2524/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 01:31:13,182 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:31:13,182 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:31:13,182 INFO  SysUtils - Execute command: [/tmp/rdisk/2524/src/gradlew, -b, /tmp/rdisk/2524/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:31:55,379 INFO  ProjectTaskService - Detected possible tasks: 89
+2018-04-02 01:31:55,379 INFO  ProjectTaskService - Excluded tasks (21): lintDebug mockableAndroidJar deviceCheck coveralls lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll createDebugCoverageReport test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 01:31:55,379 INFO  SysUtils - Execute command: [/tmp/rdisk/2524/src/gradlew, -b, /tmp/rdisk/2524/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, coveralls, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, createDebugCoverageReport, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 01:32:47,599 INFO  SysUtils - Configuration on demand is an incubating feature.
+Premature end of file.:
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:243)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:214)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:157)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:125)
+	at com.android.repository.impl.meta.SchemaModuleUtil.unmarshal(SchemaModuleUtil.java:209)
+	at com.android.repository.impl.manager.LocalRepoLoader.parsePackage(LocalRepoLoader.java:239)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:140)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.getPackages(LocalRepoLoader.java:116)
+	at com.android.repository.impl.manager.RepoManagerImpl$LoadTask.run(RepoManagerImpl.java:462)
+	at com.android.repository.api.RepoManager$2.runSyncWithProgress(RepoManager.java:305)
+	at com.android.repository.impl.manager.RepoManagerImpl.load(RepoManagerImpl.java:329)
+	at com.android.repository.api.RepoManager.loadSynchronously(RepoManager.java:292)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler$RepoConfig.createRepoManager(AndroidSdkHandler.java:531)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getSdkManager(AndroidSdkHandler.java:240)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getAndroidTargetManager(AndroidSdkHandler.java:279)
+	at com.android.builder.sdk.DefaultSdkLoader.getTargetInfo(DefaultSdkLoader.java:79)
+	at com.android.build.gradle.internal.SdkHandler.initTarget(SdkHandler.java:89)
+	at com.android.build.gradle.BasePlugin.ensureTargetSetup(BasePlugin.java:674)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:611)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:566)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:563)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:55)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:47)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:562)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:559)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:93)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:82)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:44)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:510)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:90)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:56)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+Found corrupted package.xml at /root/Applications/android-sdk/build-tools/28.0.0-rc1/package.xml
+cvc-pattern-valid: Value 'build-tools;28.0.0 rc1' is not facet-valid with respect to pattern '[a-zA-Z0-9_\-;.]+' for type 'segmentListType'.:
+org.xml.sax.SAXParseException; lineNumber: 0; columnNumber: 0; cvc-pattern-valid: Value 'build-tools;28.0.0 rc1' is not facet-valid with respect to pattern '[a-zA-Z0-9_\-;.]+' for type 'segmentListType'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processOneAttribute(XMLSchemaValidator.java:2826)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2763)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2051)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:741)
+	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.startElement(ValidatorHandlerImpl.java:568)
+	at org.xml.sax.helpers.XMLFilterImpl.startElement(XMLFilterImpl.java:551)
+	at com.sun.xml.internal.bind.v2.runtime.output.SAXOutput.endStartTag(SAXOutput.java:113)
+	at com.sun.xml.internal.bind.v2.runtime.output.ForkXmlOutput.endStartTag(ForkXmlOutput.java:91)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.endAttributes(XMLSerializer.java:292)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsXsiType(XMLSerializer.java:680)
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleElementNodeProperty.serializeBody(SingleElementNodeProperty.java:143)
+	at com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl.serializeBody(ClassBeanInfoImpl.java:345)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsXsiType(XMLSerializer.java:681)
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleElementNodeProperty.serializeBody(SingleElementNodeProperty.java:143)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl$1.serializeBody(ElementBeanInfoImpl.java:145)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl$1.serializeBody(ElementBeanInfoImpl.java:115)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeBody(ElementBeanInfoImpl.java:317)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeRoot(ElementBeanInfoImpl.java:324)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeRoot(ElementBeanInfoImpl.java:60)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsRoot(XMLSerializer.java:479)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:308)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.marshal(MarshallerImpl.java:236)
+	at javax.xml.bind.helpers.AbstractMarshallerImpl.marshal(AbstractMarshallerImpl.java:95)
+	at com.android.repository.impl.meta.SchemaModuleUtil.marshal(SchemaModuleUtil.java:226)
+	at com.android.repository.impl.manager.LocalRepoLoader.writePackage(LocalRepoLoader.java:213)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:150)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.getPackages(LocalRepoLoader.java:116)
+	at com.android.repository.impl.manager.RepoManagerImpl$LoadTask.run(RepoManagerImpl.java:462)
+	at com.android.repository.api.RepoManager$2.runSyncWithProgress(RepoManager.java:305)
+	at com.android.repository.impl.manager.RepoManagerImpl.load(RepoManagerImpl.java:329)
+	at com.android.repository.api.RepoManager.loadSynchronously(RepoManager.java:292)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler$RepoConfig.createRepoManager(AndroidSdkHandler.java:531)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getSdkManager(AndroidSdkHandler.java:240)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getAndroidTargetManager(AndroidSdkHandler.java:279)
+	at com.android.builder.sdk.DefaultSdkLoader.getTargetInfo(DefaultSdkLoader.java:79)
+	at com.android.build.gradle.internal.SdkHandler.initTarget(SdkHandler.java:89)
+	at com.android.build.gradle.BasePlugin.ensureTargetSetup(BasePlugin.java:674)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:611)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:566)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:563)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:55)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:47)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:562)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:559)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:93)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:82)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:44)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:510)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:90)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:56)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+
+null:
+javax.xml.bind.MarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 0; columnNumber: 0; cvc-pattern-valid: Value 'build-tools;28.0.0 rc1' is not facet-valid with respect to pattern '[a-zA-Z0-9_\-;.]+' for type 'segmentListType'.]
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:311)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.marshal(MarshallerImpl.java:236)
+	at javax.xml.bind.helpers.AbstractMarshallerImpl.marshal(AbstractMarshallerImpl.java:95)
+	at com.android.repository.impl.meta.SchemaModuleUtil.marshal(SchemaModuleUtil.java:226)
+	at com.android.repository.impl.manager.LocalRepoLoader.writePackage(LocalRepoLoader.java:213)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:150)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.collectPackages(LocalRepoLoader.java:165)
+	at com.android.repository.impl.manager.LocalRepoLoader.getPackages(LocalRepoLoader.java:116)
+	at com.android.repository.impl.manager.RepoManagerImpl$LoadTask.run(RepoManagerImpl.java:462)
+	at com.android.repository.api.RepoManager$2.runSyncWithProgress(RepoManager.java:305)
+	at com.android.repository.impl.manager.RepoManagerImpl.load(RepoManagerImpl.java:329)
+	at com.android.repository.api.RepoManager.loadSynchronously(RepoManager.java:292)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler$RepoConfig.createRepoManager(AndroidSdkHandler.java:531)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getSdkManager(AndroidSdkHandler.java:240)
+	at com.android.sdklib.repositoryv2.AndroidSdkHandler.getAndroidTargetManager(AndroidSdkHandler.java:279)
+	at com.android.builder.sdk.DefaultSdkLoader.getTargetInfo(DefaultSdkLoader.java:79)
+	at com.android.build.gradle.internal.SdkHandler.initTarget(SdkHandler.java:89)
+	at com.android.build.gradle.BasePlugin.ensureTargetSetup(BasePlugin.java:674)
+	at com.android.build.gradle.BasePlugin.createAndroidTasks(BasePlugin.java:611)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:566)
+	at com.android.build.gradle.BasePlugin$10$1.call(BasePlugin.java:563)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:55)
+	at com.android.builder.profile.ThreadRecorder$1.record(ThreadRecorder.java:47)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:562)
+	at com.android.build.gradle.BasePlugin$10.execute(BasePlugin.java:559)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:93)
+	at org.gradle.internal.event.BroadcastDispatch$ActionInvocationHandler.dispatch(BroadcastDispatch.java:82)
+	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:44)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:79)
+	at org.gradle.internal.event.BroadcastDispatch.dispatch(BroadcastDispatch.java:30)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy11.afterEvaluate(Unknown Source)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.notifyAfterEvaluate(LifecycleProjectEvaluator.java:67)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:61)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:510)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:90)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:56)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.configure(DefaultBuildConfigurationActionExecuter.java:48)
+	at org.gradle.execution.DefaultBuildConfigurationActionExecuter.select(DefaultBuildConfigurationActionExecuter.java:36)
+	at org.gradle.initialization.DefaultGradleLauncher$3.run(DefaultGradleLauncher.java:143)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:140)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:78)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:48)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 0; columnNumber: 0; cvc-pattern-valid: Value 'build-tools;28.0.0 rc1' is not facet-valid with respect to pattern '[a-zA-Z0-9_\-;.]+' for type 'segmentListType'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:453)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3231)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processOneAttribute(XMLSchemaValidator.java:2826)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processAttributes(XMLSchemaValidator.java:2763)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:2051)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:741)
+	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.startElement(ValidatorHandlerImpl.java:568)
+	at org.xml.sax.helpers.XMLFilterImpl.startElement(XMLFilterImpl.java:551)
+	at com.sun.xml.internal.bind.v2.runtime.output.SAXOutput.endStartTag(SAXOutput.java:113)
+	at com.sun.xml.internal.bind.v2.runtime.output.ForkXmlOutput.endStartTag(ForkXmlOutput.java:91)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.endAttributes(XMLSerializer.java:292)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsXsiType(XMLSerializer.java:680)
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleElementNodeProperty.serializeBody(SingleElementNodeProperty.java:143)
+	at com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl.serializeBody(ClassBeanInfoImpl.java:345)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsXsiType(XMLSerializer.java:681)
+	at com.sun.xml.internal.bind.v2.runtime.property.SingleElementNodeProperty.serializeBody(SingleElementNodeProperty.java:143)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl$1.serializeBody(ElementBeanInfoImpl.java:145)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl$1.serializeBody(ElementBeanInfoImpl.java:115)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeBody(ElementBeanInfoImpl.java:317)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeRoot(ElementBeanInfoImpl.java:324)
+	at com.sun.xml.internal.bind.v2.runtime.ElementBeanInfoImpl.serializeRoot(ElementBeanInfoImpl.java:60)
+	at com.sun.xml.internal.bind.v2.runtime.XMLSerializer.childAsRoot(XMLSerializer.java:479)
+	at com.sun.xml.internal.bind.v2.runtime.MarshallerImpl.write(MarshallerImpl.java:308)
+	... 88 more
+
+Observed package id 'build-tools;28.0.0 rc1' in inconsistent location '/root/Applications/android-sdk/build-tools/28.0.0-rc1' (Expected '/root/Applications/android-sdk/build-tools/28.0.0 rc1')
+Incremental java compilation is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:mv2m:preBuild UP-TO-DATE
+:mv2m:preReleaseBuild UP-TO-DATE
+:mv2m:compileReleaseNdk UP-TO-DATE
+:mv2m:compileLint
+:mv2m:copyReleaseLint UP-TO-DATE
+:mv2m:checkReleaseManifest
+:mv2m:preDebugAndroidTestBuild UP-TO-DATE
+:mv2m:preDebugBuild UP-TO-DATE
+:mv2m:preDebugUnitTestBuild UP-TO-DATE
+:mv2m:preReleaseUnitTestBuild UP-TO-DATE
+:mv2m:prepareComAndroidSupportAppcompatV72311Library
+:mv2m:prepareComAndroidSupportSupportV42311Library
+:mv2m:prepareReleaseDependencies
+:mv2m:compileReleaseAidl
+:mv2m:compileReleaseRenderscript
+:mv2m:generateReleaseBuildConfig
+:mv2m:generateReleaseAssets UP-TO-DATE
+:mv2m:mergeReleaseAssets
+:mv2m:generateReleaseResValues
+:mv2m:generateReleaseResources
+:mv2m:mergeReleaseResources
+:mv2m:processReleaseManifest
+:mv2m:processReleaseResources
+:mv2m:generateReleaseSources
+:mv2m:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:mv2m:extractReleaseAnnotations
+:mv2m:mergeReleaseProguardFiles
+:mv2m:packageReleaseRenderscript UP-TO-DATE
+:mv2m:packageReleaseResources
+:mv2m:processReleaseJavaRes UP-TO-DATE
+:mv2m:transformResourcesWithMergeJavaResForRelease
+:mv2m:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mv2m:mergeReleaseJniLibFolders
+:mv2m:transformNative_libsWithMergeJniLibsForRelease
+:mv2m:transformNative_libsWithSyncJniLibsForRelease
+:mv2m:bundleRelease
+:mv2mrecycler:preBuild UP-TO-DATE
+:mv2mrecycler:preReleaseBuild UP-TO-DATE
+:mv2mrecycler:compileReleaseNdk UP-TO-DATE
+:mv2mrecycler:compileLint
+:mv2mrecycler:copyReleaseLint UP-TO-DATE
+:mv2mrecycler:checkReleaseManifest
+:mv2mrecycler:preDebugAndroidTestBuild UP-TO-DATE
+:mv2mrecycler:preDebugBuild UP-TO-DATE
+:mv2mrecycler:preDebugUnitTestBuild UP-TO-DATE
+:mv2mrecycler:preReleaseUnitTestBuild UP-TO-DATE
+:mv2mrecycler:prepareComAndroidDatabindingAdapters10Rc5Library
+:mv2mrecycler:prepareComAndroidDatabindingLibrary10Rc5Library
+:mv2mrecycler:prepareComAndroidSupportAppcompatV72311Library
+:mv2mrecycler:prepareComAndroidSupportRecyclerviewV72311Library
+:mv2mrecycler:prepareComAndroidSupportSupportV42311Library
+:mv2mrecycler:prepareReleaseDependencies
+:mv2mrecycler:compileReleaseRenderscript
+:mv2mrecycler:generateReleaseResValues
+:mv2mrecycler:generateReleaseResources
+:mv2mrecycler:mergeReleaseResources
+:mv2mrecycler:dataBindingProcessLayoutsRelease
+:mv2mrecycler:compileReleaseAidl
+:mv2mrecycler:generateReleaseBuildConfig
+:mv2mrecycler:generateReleaseAssets UP-TO-DATE
+:mv2mrecycler:mergeReleaseAssets
+:mv2mrecycler:processReleaseManifest
+:mv2mrecycler:processReleaseResources
+:mv2mrecycler:generateReleaseSources
+:mv2mrecycler:dataBindingExportBuildInfoRelease
+:mv2mrecycler:compileReleaseJavaWithJavacNote: /tmp/rdisk/2524/src/mv2mrecycler/src/main/java/it/cosenonjaviste/mv2m/recycler/BindableAdapter.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:mv2mrecycler:extractReleaseAnnotations
+:mv2mrecycler:mergeReleaseProguardFiles
+:mv2mrecycler:packageReleaseRenderscript UP-TO-DATE
+:mv2mrecycler:packageReleaseResources
+:mv2mrecycler:processReleaseJavaRes UP-TO-DATE
+:mv2mrecycler:transformResourcesWithMergeJavaResForRelease
+:mv2mrecycler:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mv2mrecycler:mergeReleaseJniLibFolders
+:mv2mrecycler:transformNative_libsWithMergeJniLibsForRelease
+:mv2mrecycler:transformNative_libsWithSyncJniLibsForRelease
+:mv2mrecycler:bundleRelease
+:mv2mrx:preBuild UP-TO-DATE
+:mv2mrx:preReleaseBuild UP-TO-DATE
+:mv2mrx:compileReleaseNdk UP-TO-DATE
+:mv2mrx:compileLint
+:mv2mrx:copyReleaseLint UP-TO-DATE
+:mv2mrx:checkReleaseManifest
+:mv2mrx:preDebugAndroidTestBuild UP-TO-DATE
+:mv2mrx:preDebugBuild UP-TO-DATE
+:mv2mrx:preDebugUnitTestBuild UP-TO-DATE
+:mv2mrx:preReleaseUnitTestBuild UP-TO-DATE
+:mv2mrx:prepareComAndroidSupportAppcompatV72311Library
+:mv2mrx:prepareComAndroidSupportSupportV42311Library
+:mv2mrx:prepareComGithubFabioColliniMv2mMv2mUnspecifiedLibrary
+:mv2mrx:prepareIoReactivexRxandroid101Library
+:mv2mrx:prepareReleaseDependencies
+:mv2mrx:compileReleaseAidl
+:mv2mrx:compileReleaseRenderscript
+:mv2mrx:generateReleaseBuildConfig
+:mv2mrx:generateReleaseAssets UP-TO-DATE
+:mv2mrx:mergeReleaseAssets
+:mv2mrx:generateReleaseResValues
+:mv2mrx:generateReleaseResources
+:mv2mrx:mergeReleaseResources
+:mv2mrx:processReleaseManifest
+:mv2mrx:processReleaseResources
+:mv2mrx:generateReleaseSources
+:mv2mrx:compileReleaseJavaWithJavac
+:mv2mrx:extractReleaseAnnotations
+:mv2mrx:mergeReleaseProguardFiles
+:mv2mrx:packageReleaseRenderscript UP-TO-DATE
+:mv2mrx:packageReleaseResources
+:mv2mrx:processReleaseJavaRes UP-TO-DATE
+:mv2mrx:transformResourcesWithMergeJavaResForRelease
+:mv2mrx:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mv2mrx:mergeReleaseJniLibFolders
+:mv2mrx:transformNative_libsWithMergeJniLibsForRelease
+:mv2mrx:transformNative_libsWithSyncJniLibsForRelease
+:mv2mrx:bundleRelease
+:demo:prepareComAndroidDatabindingAdapters10Rc5Library
+:demo:prepareComAndroidDatabindingLibrary10Rc5Library
+:demo:prepareComAndroidSupportAppcompatV72311Library
+:demo:prepareComAndroidSupportCardviewV72311Library
+:demo:prepareComAndroidSupportDesign2311Library
+:demo:prepareComAndroidSupportRecyclerviewV72311Library
+:demo:prepareComAndroidSupportSupportV42311Library
+:demo:prepareComGithubFabioColliniMv2mMv2mUnspecifiedLibrary
+:demo:prepareComGithubFabioColliniMv2mMv2mrecyclerUnspecifiedLibrary
+:demo:prepareComGithubFabioColliniMv2mMv2mrxUnspecifiedLibrary
+:demo:prepareComGithubFabioColliniTwowaydatabinding01Library
+:demo:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp131Library
+:demo:prepareIoReactivexRxandroid101Library
+:demo:prepareDebugDependencies
+:demo:compileDebugRenderscript
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+:demo:dataBindingProcessLayoutsDebug
+:demo:compileDebugAidl
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:dataBindingExportBuildInfoDebug
+:demo:compileDebugJavaWithJavac/tmp/rdisk/2524/src/demo/src/main/java/it/cosenonjaviste/demomv2m/ui/bind/DataBindingConverters.java:24: warning: Application namespace for attribute app:error will be ignored.
+    public static void bindValidationError(TextInputLayout textInputLayout, int errorRes) {
+                       ^
+Note: /tmp/rdisk/2524/src/demo/build/intermediates/classes/debug/it/cosenonjaviste/demomv2m/databinding/NoteListItemBinding.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:prePackageMarkerForDebug
+:demo:unzipJacocoAgent
+:demo:transformClassesWithJacocoForDebug
+:demo:transformClassesWithDexForDebug
+Allocated dexExecutorService of size 1
+Dexing /tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar,/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar,/root/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.13/b8668706414b5936d38c8a9e4c2be16e3c999c62/rxjava-1.0.13.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2mrx/unspecified/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.4.0/5b72bf48563ea8410e650de14aa33ff69a3e8c35/okio-1.4.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.databinding/adapters/1.0-rc5/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2mrecycler/unspecified/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/jacoco/jacocoagent.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.databinding/library/1.0-rc5/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android-no-op/1.3.1/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.annimon/stream/1.0.3/9d15bc0a17713f06ef4325379fc9788be7f9c440/stream-1.0.3.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.0.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar,/root/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.0.0-beta5/3f6e089341576948de9e4aa6d645375d65d502fe/baseLibrary-2.0.0-beta5.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2m/unspecified/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/transforms/jacoco/debug/folders/1/1/main,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini/twowaydatabinding/0.1/jars/classes.jar took 11052
+:demo:mergeDebugJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForDebug
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseRenderscript
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+:demo:dataBindingProcessLayoutsRelease
+:demo:compileReleaseAidl
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:dataBindingExportBuildInfoRelease
+:demo:compileReleaseJavaWithJavac/tmp/rdisk/2524/src/demo/src/main/java/it/cosenonjaviste/demomv2m/ui/bind/DataBindingConverters.java:24: warning: Application namespace for attribute app:error will be ignored.
+    public static void bindValidationError(TextInputLayout textInputLayout, int errorRes) {
+                       ^
+Note: /tmp/rdisk/2524/src/demo/build/intermediates/classes/release/it/cosenonjaviste/demomv2m/databinding/NoteListItemBinding.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:prePackageMarkerForRelease
+:demo:transformClassesWithDexForRelease
+Dexing /tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/classes/release,/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar,/root/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.13/b8668706414b5936d38c8a9e4c2be16e3c999c62/rxjava-1.0.13.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2mrx/unspecified/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.4.0/5b72bf48563ea8410e650de14aa33ff69a3e8c35/okio-1.4.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.databinding/adapters/1.0-rc5/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2mrecycler/unspecified/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.databinding/library/1.0-rc5/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android-no-op/1.3.1/jars/classes.jar,/root/.gradle/caches/modules-2/files-2.1/com.annimon/stream/1.0.3/9d15bc0a17713f06ef4325379fc9788be7f9c440/stream-1.0.3.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.0.1/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar,/root/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.0.0-beta5/3f6e089341576948de9e4aa6d645375d65d502fe/baseLibrary-2.0.0-beta5.jar,/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini.mv2m/mv2m/unspecified/jars/classes.jar,/tmp/rdisk/2524/src/demo/build/intermediates/exploded-aar/com.github.fabioCollini/twowaydatabinding/0.1/jars/classes.jar took 10533
+:demo:mergeReleaseJniLibFolders
+:demo:transformNative_libsWithMergeJniLibsForRelease
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 51.807 secs
+
+2018-04-02 01:32:47,757 INFO  FullProcessService - Found APK file: /tmp/rdisk/2524/src/demo/build/outputs/apk/demo-release-unsigned.apk

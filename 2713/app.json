@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "jlelse.passwy",
+    "label" : "Passwy",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.2",
+    "versionCode" : 4,
+    "installLocation" : "auto",
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAt1BMVEUDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfQDqfR13jcjAAAAPXRSTlMAB16u4fqtXFjl/+RWApeU9tPU2FQG21W2Cgy6491bqwn538zQKrT19LIo8fCx89VLC03XDg9OUBHZr+4mNs0oMQAAAP5JREFUSMftlFcPgkAQhE8By4oFFRWs2MUudv3/v8u7nESSw+WMD0bjPDGb+cgsIUvIJxSLK6qmqYlkTC6fSsNdGV0ins1BQPlsJMDzBaNY4ERkH5YqlU1CTL3CnqsR+7L+NYsbu05Nw0SBOHu/5Tu7SW0LBRSaKD9si9o2Cqh030CHjgPQRQENwAj6EoCDArRCL+j7dPBFwGA4gicaT9yQ/BQQzURiCKjmAjDCgUXYuqj+gAAsV9Z648kDyy2b7DxpYMVHe2nAvxrSwPpVYMNHB2nA27HJ8ST/Wb29bR9O/5/vfWD86hGY4MBZANwZlr9cxdPnzhdP+5yv5Jd0A5JBMbDSlZt8AAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 2042,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"4\" android:versionName=\"0.2\" android:installLocation=\"auto\" package=\"jlelse.passwy\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2166767\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f090083\" android:label=\"Passwy\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Passwy\" android:name=\"jlelse.passwy.Passwy\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1548595,
+  "crc32" : 3187828715,
+  "sha256" : "1c62ced619a3862849b7d38b233b16ea5438077f7e67a6e65a2e14728e6fb0f3",
+  "buildTime" : 1522578356000
+}

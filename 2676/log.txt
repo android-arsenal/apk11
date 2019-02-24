@@ -1,0 +1,563 @@
+2018-04-01 18:29:33,711 INFO  DownloadService - Downloading "https://github.com/Wackymax/CPOrm/archive/master.zip", attempt 3
+2018-04-01 18:30:34,305 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 18:30:34,974 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 18:30:34,974 INFO  DownloadService - Downloading "https://github.com/Wackymax/CPOrm/archive/master.zip", attempt 3
+2018-04-01 18:31:36,201 DEBUG FullProcessService - Repository https://github.com/Wackymax/CPOrm available: true
+2018-04-01 18:31:36,201 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 18:31:36,201 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Wackymax/CPOrm, /tmp/rdisk/2676/src]
+2018-04-01 18:31:37,784 INFO  SysUtils - 
+2018-04-01 18:31:37,790 INFO  GitService - Deleted "/tmp/rdisk/2676/src/.git": true
+2018-04-01 18:31:37,796 INFO  FullProcessService - Size of directory with sources: 651 KB
+2018-04-01 18:31:37,796 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2676/src]
+2018-04-01 18:31:37,801 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2676/src/.git/
+
+2018-04-01 18:31:37,805 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2676/src/gradlew
+2018-04-01 18:31:37,810 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2676/src/CPOrm/build.gradle /tmp/rdisk/2676/src/CPOrmExample/build.gradle /tmp/rdisk/2676/src/build.gradle
+2018-04-01 18:31:37,814 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2676/src/settings.gradle /tmp/rdisk/2676/src/build.gradle /tmp/rdisk/2676/src/CPOrmExample/build.gradle /tmp/rdisk/2676/src/CPOrm/build.gradle
+2018-04-01 18:31:37,815 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 18:31:37,815 INFO  ProjectFixService - Fixing project...
+2018-04-01 18:31:37,826 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2676/src/CPOrm/local.properties
+2018-04-01 18:31:37,827 INFO  ProjectFixService - Build info for "/tmp/rdisk/2676/src/CPOrm/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=12,targetSdkVersion=25]
+2018-04-01 18:31:37,827 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2676/src/CPOrmExample/local.properties
+2018-04-01 18:31:37,827 INFO  ProjectFixService - Build info for "/tmp/rdisk/2676/src/CPOrmExample/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-01 18:31:37,828 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2676/src/local.properties
+2018-04-01 18:31:37,828 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-01 18:31:37,828 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-01 18:31:37,830 INFO  ProjectFixService - Build info for "/tmp/rdisk/2676/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-01 18:31:37,830 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 18:31:37,830 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:31:37,830 INFO  SysUtils - Execute command: [/tmp/rdisk/2676/src/gradlew, -b, /tmp/rdisk/2676/src/CPOrm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:31:47,244 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-01 18:31:47,244 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 18:31:47,245 INFO  SysUtils - Execute command: [/tmp/rdisk/2676/src/gradlew, -b, /tmp/rdisk/2676/src/CPOrm/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 18:32:04,139 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:CPOrm:androidJavadocsJar
+:CPOrm:androidSourcesJar
+:CPOrm:preBuild UP-TO-DATE
+:CPOrm:preDebugBuild UP-TO-DATE
+:CPOrm:checkDebugManifest
+:CPOrm:preDebugAndroidTestBuild UP-TO-DATE
+:CPOrm:preDebugUnitTestBuild UP-TO-DATE
+:CPOrm:preReleaseBuild UP-TO-DATE
+:CPOrm:preReleaseUnitTestBuild UP-TO-DATE
+:CPOrm:prepareComAndroidSupportSupportCompat2530Library
+:CPOrm:prepareComAndroidSupportSupportCoreUi2530Library
+:CPOrm:prepareComAndroidSupportSupportCoreUtils2530Library
+:CPOrm:prepareComAndroidSupportSupportFragment2530Library
+:CPOrm:prepareComAndroidSupportSupportMediaCompat2530Library
+:CPOrm:prepareComAndroidSupportSupportV42530Library
+:CPOrm:prepareDebugDependencies
+:CPOrm:compileDebugAidl
+:CPOrm:compileDebugNdk UP-TO-DATE
+:CPOrm:compileLint
+:CPOrm:copyDebugLint UP-TO-DATE
+:CPOrm:compileDebugRenderscript
+:CPOrm:generateDebugBuildConfig
+:CPOrm:generateDebugResValues
+:CPOrm:generateDebugResources
+:CPOrm:mergeDebugResources
+:CPOrm:processDebugManifest
+:CPOrm:processDebugResources
+:CPOrm:generateDebugSources
+:CPOrm:incrementalDebugJavaCompilationSafeguard
+:CPOrm:javaPreCompileDebug
+:CPOrm:compileDebugJavaWithJavac
+:CPOrm:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/util/CPOrmBatchDispatcher.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:CPOrm:extractDebugAnnotations
+:CPOrm:mergeDebugShaders
+:CPOrm:compileDebugShaders
+:CPOrm:generateDebugAssets
+:CPOrm:mergeDebugAssets
+:CPOrm:mergeDebugProguardFiles
+:CPOrm:packageDebugRenderscript UP-TO-DATE
+:CPOrm:packageDebugResources
+:CPOrm:processDebugJavaRes UP-TO-DATE
+:CPOrm:transformResourcesWithMergeJavaResForDebug
+:CPOrm:transformClassesAndResourcesWithSyncLibJarsForDebug
+:CPOrm:mergeDebugJniLibFolders
+:CPOrm:transformNativeLibsWithMergeJniLibsForDebug
+:CPOrm:transformNativeLibsWithStripDebugSymbolForDebug
+:CPOrm:transformNativeLibsWithSyncJniLibsForDebug
+:CPOrm:bundleDebug
+:CPOrm:compileDebugSources
+:CPOrm:assembleDebug
+:CPOrm:checkReleaseManifest
+:CPOrm:prepareReleaseDependencies
+:CPOrm:compileReleaseAidl
+:CPOrm:compileReleaseNdk UP-TO-DATE
+:CPOrm:copyReleaseLint UP-TO-DATE
+:CPOrm:compileReleaseRenderscript
+:CPOrm:generateReleaseBuildConfig
+:CPOrm:generateReleaseResValues
+:CPOrm:generateReleaseResources
+:CPOrm:mergeReleaseResources
+:CPOrm:processReleaseManifest
+:CPOrm:processReleaseResources
+:CPOrm:generateReleaseSources
+:CPOrm:incrementalReleaseJavaCompilationSafeguard
+:CPOrm:javaPreCompileRelease
+:CPOrm:compileReleaseJavaWithJavac
+:CPOrm:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/util/CPOrmBatchDispatcher.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:CPOrm:extractReleaseAnnotations
+:CPOrm:mergeReleaseShaders
+:CPOrm:compileReleaseShaders
+:CPOrm:generateReleaseAssets
+:CPOrm:mergeReleaseAssets
+:CPOrm:mergeReleaseProguardFiles
+:CPOrm:packageReleaseRenderscript UP-TO-DATE
+:CPOrm:packageReleaseResources
+:CPOrm:processReleaseJavaRes UP-TO-DATE
+:CPOrm:transformResourcesWithMergeJavaResForRelease
+:CPOrm:transformClassesAndResourcesWithSyncLibJarsForRelease
+:CPOrm:mergeReleaseJniLibFolders
+:CPOrm:transformNativeLibsWithMergeJniLibsForRelease
+:CPOrm:transformNativeLibsWithStripDebugSymbolForRelease
+:CPOrm:transformNativeLibsWithSyncJniLibsForRelease
+:CPOrm:bundleRelease
+:CPOrm:compileReleaseSources
+:CPOrm:assembleRelease
+:CPOrm:javadoc/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:16: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:6: error: package android.support.v4.app does not exist
+import android.support.v4.app.LoaderManager;
+                             ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:7: error: package android.support.v4.content does not exist
+import android.support.v4.content.Loader;
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:8: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.CursorAdapter;
+                                ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:15: error: package LoaderManager does not exist
+public class CPOrmLoaderCallback<Model> implements LoaderManager.LoaderCallbacks<Cursor> {
+                                                                ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:18: error: cannot find symbol
+    private final CursorAdapter listAdapter;
+                  ^
+  symbol:   class CursorAdapter
+  location: class CPOrmLoaderCallback<Model>
+  where Model is a type-variable:
+    Model extends Object declared in class CPOrmLoaderCallback
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:21: error: cannot find symbol
+    public CPOrmLoaderCallback(Context context, CursorAdapter listAdapter, Select<Model> select) {
+                                                ^
+  symbol:   class CursorAdapter
+  location: class CPOrmLoaderCallback<Model>
+  where Model is a type-variable:
+    Model extends Object declared in class CPOrmLoaderCallback
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:29: error: cannot find symbol
+    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+           ^
+  symbol:   class Loader
+  location: class CPOrmLoaderCallback<Model>
+  where Model is a type-variable:
+    Model extends Object declared in class CPOrmLoaderCallback
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:35: error: cannot find symbol
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+                               ^
+  symbol:   class Loader
+  location: class CPOrmLoaderCallback<Model>
+  where Model is a type-variable:
+    Model extends Object declared in class CPOrmLoaderCallback
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoaderCallback.java:41: error: cannot find symbol
+    public void onLoaderReset(Loader<Cursor> loader) {
+                              ^
+  symbol:   class Loader
+  location: class CPOrmLoaderCallback<Model>
+  where Model is a type-variable:
+    Model extends Object declared in class CPOrmLoaderCallback
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoader.java:5: error: package android.support.v4.content does not exist
+import android.support.v4.content.CursorLoader;
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmLoader.java:14: error: cannot find symbol
+public class CPOrmLoader<Model> extends CursorLoader {
+                                        ^
+  symbol: class CursorLoader
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmCursorAdaptor.java:5: error: package android.support.v4.widget does not exist
+import android.support.v4.widget.CursorAdapter;
+                                ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/loader/support/CPOrmCursorAdaptor.java:17: error: cannot find symbol
+public abstract class CPOrmCursorAdaptor<Model, ViewHolder> extends CursorAdapter {
+                                                                    ^
+  symbol: class CursorAdapter
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:73: error: cannot find symbol
+    public Cursor query(@NonNull Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+                         ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:111: error: cannot find symbol
+    public Cursor query(@NonNull Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder, CancellationSignal cancellationSignal) {
+                         ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:148: error: cannot find symbol
+    public String getType(@NonNull Uri uri) {
+                           ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:154: error: cannot find symbol
+    public Uri insert(@NonNull Uri uri, ContentValues contentValues) {
+                       ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:193: error: cannot find symbol
+    public int delete(@NonNull Uri uri, String where, String[] args) {
+                       ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:225: error: cannot find symbol
+    public int update(@NonNull Uri uri, ContentValues contentValues, String where, String[] args) {
+                       ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:257: error: cannot find symbol
+    public int bulkInsert(@NonNull Uri uri, @NonNull ContentValues[] values) {
+                           ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:257: error: cannot find symbol
+    public int bulkInsert(@NonNull Uri uri, @NonNull ContentValues[] values) {
+                                             ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:297: error: cannot find symbol
+    public ContentProviderResult[] applyBatch(@NonNull ArrayList<ContentProviderOperation> operations) throws OperationApplicationException {
+                                               ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/provider/CPOrmContentProvider.java:295: error: cannot find symbol
+    @NonNull
+     ^
+  symbol:   class NonNull
+  location: class CPOrmContentProvider
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Index.java:18: warning: no @return
+    String[] indexColumns();
+             ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Index.java:15: warning: no @return
+    String indexName();
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Indices.java:13: warning: no @return
+    Index[] indices();
+            ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Table.java:19: warning: no @return
+    TableConstraint[] constraints() default {};
+                      ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Table.java:16: warning: no @return
+    String tableName() default "";
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/TableConstraint.java:24: warning: no @return
+    String[] constraintColumns();
+             ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/TableConstraint.java:21: warning: no @return
+    Type constraintType();
+         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/TableConstraint.java:18: warning: no @return
+    String name();
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:14: warning: no @return
+    Class<?> getJavaType();
+             ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:17: warning: no @return
+    String getSqlColumnTypeName();
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:22: warning: no @param for source
+    Object toSqlType(Object source);
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:22: warning: no @return
+    Object toSqlType(Object source);
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:28: warning: no @param for cursor
+    Object getColumnValue(Cursor cursor, int columnIndex);
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:28: warning: no @param for columnIndex
+    Object getColumnValue(Cursor cursor, int columnIndex);
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/map/SqlColumnMapping.java:28: warning: no @return
+    Object getColumnValue(Cursor cursor, int columnIndex);
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/util/ManifestHelper.java:59: warning: no description for @throws
+     * @throws IllegalArgumentException
+       ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/util/TableDetailsCache.java:30: warning: no @param for context
+    public synchronized void init(Context context, List<Class<?>> objects){
+                             ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/util/TableDetailsCache.java:44: warning: no @param for context
+    public synchronized TableDetails findTableDetails(Context context, Class<?> object){
+                                     ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/generate/TableView.java:15: warning: no @return
+    String getTableViewSql();
+           ^
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/DataFilterClause.java:21: warning: no @param for context
+    QueryBuilder buildWhereClause(Context context, SqlColumnMappingFactory columnMappingFactory);
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/DataFilterClause.java:21: warning: no @param for columnMappingFactory
+    QueryBuilder buildWhereClause(Context context, SqlColumnMappingFactory columnMappingFactory);
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/DataFilterClause.java:21: warning: no @return
+    QueryBuilder buildWhereClause(Context context, SqlColumnMappingFactory columnMappingFactory);
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/DataFilterClause.java:24: warning: no @return
+    QueryBuilder getWhereClause();
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/DataFilterCriterion.java:34: warning: no @param for filterValue
+    public DataFilterCriterion(String filterColumn, DataFilterOperator operator, Object filterValue){
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:89: warning: no @return
+    public Select<Model> distinct() {
+                         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:317: warning: no @param for groupBy
+    public Select<Model> groupBy(String groupBy) {
+                         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:317: warning: no @return
+    public Select<Model> groupBy(String groupBy) {
+                         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:325: warning: no @param for having
+    public Select<Model> having(String having) {
+                         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:325: warning: no @return
+    public Select<Model> having(String having) {
+                         ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:333: warning: no @return
+    public CPOrmCursor<Model> queryAsCursor() {
+                              ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:345: warning: no @param for context
+    public CPOrmCursor<Model> queryAsCursor(Context context) {
+                              ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:361: warning: no @return
+    public CursorIterator<Model> queryAsIterator() {
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:373: warning: no @param for context
+    public CursorIterator<Model> queryAsIterator(Context context) {
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:382: warning: no @return
+    public List<Model> queryAsList() {
+                       ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:392: warning: no @param for context
+    public List<Model> queryAsList(Context context) {
+                       ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:414: warning: no @return
+    public int queryAsCount() {
+               ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:424: warning: no @param for context
+    public int queryAsCount(Context context) {
+               ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:455: warning: no @return
+    public ContentResolverValues asContentResolverValue() {
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:466: warning: no @param for context
+    public ContentResolverValues asContentResolverValue(Context context) {
+                                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:492: warning: no @return
+    public Model first() {
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:503: warning: no @param for context
+    public Model first(Context context) {
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:528: warning: no @return
+    public Model last() {
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/query/Select.java:538: warning: no @param for context
+    public Model last(Context context) {
+                 ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Column/Column.java:15: warning: no @return
+    String columnName() default "";
+           ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Column/Column.java:18: warning: no @return
+    boolean required() default true;
+            ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/annotation/Column/PrimaryKey.java:16: warning: no @return
+    boolean autoIncrement() default true;
+            ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:29: warning: no @param for <T>
+    public static <T> T findById(Context context, Class<T> object, long id){
+                        ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:29: warning: no @param for object
+    public static <T> T findById(Context context, Class<T> object, long id){
+                        ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:36: warning: no @param for <T>
+    public static <T> T findById(Class<T> object, long id){
+                        ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:36: warning: no @param for object
+    public static <T> T findById(Class<T> object, long id){
+                        ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:36: warning: no @param for id
+    public static <T> T findById(Class<T> object, long id){
+                        ^
+/tmp/rdisk/2676/src/CPOrm/src/main/java/za/co/cporm/model/CPDefaultRecord.java:36: warning: no @return
+    public static <T> T findById(Class<T> object, long id){
+                        ^
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+
+91 warnings
+:CPOrm:javadocJar
+:CPOrm:sourcesJar
+:CPOrm:assemble
+:CPOrm:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.675 secs
+
+2018-04-01 18:32:04,158 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:32:04,158 INFO  SysUtils - Execute command: [/tmp/rdisk/2676/src/gradlew, -b, /tmp/rdisk/2676/src/CPOrmExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:32:12,201 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 18:32:12,202 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 18:32:12,202 INFO  SysUtils - Execute command: [/tmp/rdisk/2676/src/gradlew, -b, /tmp/rdisk/2676/src/CPOrmExample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 18:32:34,733 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:CPOrm:preBuild UP-TO-DATE
+:CPOrm:preReleaseBuild UP-TO-DATE
+:CPOrm:checkReleaseManifest
+:CPOrm:preDebugAndroidTestBuild UP-TO-DATE
+:CPOrm:preDebugBuild UP-TO-DATE
+:CPOrm:preDebugUnitTestBuild UP-TO-DATE
+:CPOrm:preReleaseUnitTestBuild UP-TO-DATE
+:CPOrm:prepareComAndroidSupportSupportCompat2530Library
+:CPOrm:prepareComAndroidSupportSupportCoreUi2530Library
+:CPOrm:prepareComAndroidSupportSupportCoreUtils2530Library
+:CPOrm:prepareComAndroidSupportSupportFragment2530Library
+:CPOrm:prepareComAndroidSupportSupportMediaCompat2530Library
+:CPOrm:prepareComAndroidSupportSupportV42530Library
+:CPOrm:prepareReleaseDependencies
+:CPOrm:compileReleaseAidl UP-TO-DATE
+:CPOrm:compileReleaseNdk UP-TO-DATE
+:CPOrm:compileLint UP-TO-DATE
+:CPOrm:copyReleaseLint UP-TO-DATE
+:CPOrm:compileReleaseRenderscript UP-TO-DATE
+:CPOrm:generateReleaseBuildConfig UP-TO-DATE
+:CPOrm:generateReleaseResValues UP-TO-DATE
+:CPOrm:generateReleaseResources UP-TO-DATE
+:CPOrm:mergeReleaseResources UP-TO-DATE
+:CPOrm:processReleaseManifest UP-TO-DATE
+:CPOrm:processReleaseResources UP-TO-DATE
+:CPOrm:generateReleaseSources UP-TO-DATE
+:CPOrm:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:CPOrm:javaPreCompileRelease
+:CPOrm:compileReleaseJavaWithJavac UP-TO-DATE
+:CPOrm:extractReleaseAnnotations UP-TO-DATE
+:CPOrm:mergeReleaseShaders UP-TO-DATE
+:CPOrm:compileReleaseShaders UP-TO-DATE
+:CPOrm:generateReleaseAssets UP-TO-DATE
+:CPOrm:mergeReleaseAssets UP-TO-DATE
+:CPOrm:mergeReleaseProguardFiles UP-TO-DATE
+:CPOrm:packageReleaseRenderscript UP-TO-DATE
+:CPOrm:packageReleaseResources UP-TO-DATE
+:CPOrm:processReleaseJavaRes UP-TO-DATE
+:CPOrm:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:CPOrm:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:CPOrm:mergeReleaseJniLibFolders UP-TO-DATE
+:CPOrm:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:CPOrm:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:CPOrm:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:CPOrm:bundleRelease UP-TO-DATE
+:CPOrmExample:preBuild UP-TO-DATE
+:CPOrmExample:preDebugBuild UP-TO-DATE
+:CPOrmExample:checkDebugManifest
+:CPOrmExample:preReleaseBuild UP-TO-DATE
+:CPOrmExample:prepareComAndroidSupportAnimatedVectorDrawable2530Library
+:CPOrmExample:prepareComAndroidSupportAppcompatV72530Library
+:CPOrmExample:prepareComAndroidSupportSupportCompat2530Library
+:CPOrmExample:prepareComAndroidSupportSupportCoreUi2530Library
+:CPOrmExample:prepareComAndroidSupportSupportCoreUtils2530Library
+:CPOrmExample:prepareComAndroidSupportSupportFragment2530Library
+:CPOrmExample:prepareComAndroidSupportSupportMediaCompat2530Library
+:CPOrmExample:prepareComAndroidSupportSupportV42530Library
+:CPOrmExample:prepareComAndroidSupportSupportVectorDrawable2530Library
+:CPOrmExample:prepareDebugDependencies
+:CPOrmExample:compileDebugAidl
+:CPOrmExample:compileDebugRenderscript
+:CPOrmExample:generateDebugBuildConfig
+:CPOrmExample:generateDebugResValues
+:CPOrmExample:generateDebugResources
+:CPOrmExample:mergeDebugResources
+:CPOrmExample:processDebugManifest
+:CPOrmExample:processDebugResources
+:CPOrmExample:generateDebugSources
+:CPOrmExample:incrementalDebugJavaCompilationSafeguard
+:CPOrmExample:javaPreCompileDebug
+:CPOrmExample:compileDebugJavaWithJavac
+:CPOrmExample:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2676/src/CPOrmExample/src/main/java/za/co/cporm/example/app/ExampleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2676/src/CPOrmExample/src/main/java/za/co/cporm/example/app/ExampleActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:CPOrmExample:compileDebugNdk UP-TO-DATE
+:CPOrmExample:compileDebugSources
+:CPOrmExample:mergeDebugShaders
+:CPOrmExample:compileDebugShaders
+:CPOrmExample:generateDebugAssets
+:CPOrmExample:mergeDebugAssets
+:CPOrmExample:transformClassesWithDexForDebug
+:CPOrmExample:mergeDebugJniLibFolders
+:CPOrmExample:transformNativeLibsWithMergeJniLibsForDebug
+:CPOrmExample:transformNativeLibsWithStripDebugSymbolForDebug
+:CPOrmExample:processDebugJavaRes UP-TO-DATE
+:CPOrmExample:transformResourcesWithMergeJavaResForDebug
+:CPOrmExample:validateSigningDebug
+:CPOrmExample:packageDebug
+:CPOrmExample:assembleDebug
+:CPOrmExample:checkReleaseManifest
+:CPOrmExample:prepareReleaseDependencies
+:CPOrmExample:compileReleaseAidl
+:CPOrmExample:compileReleaseRenderscript
+:CPOrmExample:generateReleaseBuildConfig
+:CPOrmExample:generateReleaseResValues
+:CPOrmExample:generateReleaseResources
+:CPOrmExample:mergeReleaseResources
+:CPOrmExample:processReleaseManifest
+:CPOrmExample:processReleaseResources
+:CPOrmExample:generateReleaseSources
+:CPOrmExample:incrementalReleaseJavaCompilationSafeguard
+:CPOrmExample:javaPreCompileRelease
+:CPOrmExample:compileReleaseJavaWithJavac
+:CPOrmExample:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2676/src/CPOrmExample/src/main/java/za/co/cporm/example/app/ExampleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2676/src/CPOrmExample/src/main/java/za/co/cporm/example/app/ExampleActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:CPOrmExample:compileReleaseNdk UP-TO-DATE
+:CPOrmExample:compileReleaseSources
+:CPOrmExample:lintVitalRelease
+:CPOrmExample:mergeReleaseShaders
+:CPOrmExample:compileReleaseShaders
+:CPOrmExample:generateReleaseAssets
+:CPOrmExample:mergeReleaseAssets
+:CPOrmExample:transformClassesWithDexForRelease
+:CPOrmExample:mergeReleaseJniLibFolders
+:CPOrmExample:transformNativeLibsWithMergeJniLibsForRelease
+:CPOrmExample:transformNativeLibsWithStripDebugSymbolForRelease
+:CPOrmExample:processReleaseJavaRes UP-TO-DATE
+:CPOrmExample:transformResourcesWithMergeJavaResForRelease
+:CPOrmExample:packageRelease
+:CPOrmExample:assembleRelease
+:CPOrmExample:assemble
+:CPOrmExample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.267 secs
+
+2018-04-01 18:32:34,795 INFO  FullProcessService - Found APK file: /tmp/rdisk/2676/src/CPOrmExample/build/outputs/apk/CPOrmExample-release-unsigned.apk

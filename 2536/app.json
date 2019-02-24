@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.wirelesspienetwork.overviewexample",
+    "label" : "OverviewExample",
+    "icon" : null,
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 71,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.wirelesspienetwork.overviewexample\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"21\" />\n\t<application android:label=\"OverviewExample\" android:allowClearUserData=\"false\" android:persistent=\"true\" android:debuggable=\"true\" android:allowBackup=\"false\" android:hardwareAccelerated=\"true\">\n\t\t<activity android:name=\"com.wirelesspienetwork.overviewexample.OverviewActivity\" android:stateNotNeeded=\"true\" android:excludeFromRecents=\"true\" android:launchMode=\"singleInstance\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 107631,
+  "crc32" : 3843995958,
+  "sha256" : "d73c35816ccc846283353447e7ed70e5fb57323dcbfa7b8432b690fa3119afb5",
+  "buildTime" : 1522630622000
+}

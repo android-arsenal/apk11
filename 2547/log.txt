@@ -1,0 +1,268 @@
+2018-04-02 00:20:40,669 INFO  DownloadService - Downloading "https://github.com/skyfe79/AndroidChannel/archive/master.zip", attempt 3
+2018-04-02 00:21:41,123 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:21:41,796 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:21:41,796 INFO  DownloadService - Downloading "https://github.com/skyfe79/AndroidChannel/archive/master.zip", attempt 3
+2018-04-02 00:22:43,093 DEBUG FullProcessService - Repository https://github.com/skyfe79/AndroidChannel available: true
+2018-04-02 00:22:43,093 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:22:43,093 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/skyfe79/AndroidChannel, /tmp/rdisk/2547/src]
+2018-04-02 00:22:44,654 INFO  SysUtils - 
+2018-04-02 00:22:44,660 INFO  GitService - Deleted "/tmp/rdisk/2547/src/.git": true
+2018-04-02 00:22:44,666 INFO  FullProcessService - Size of directory with sources: 445 KB
+2018-04-02 00:22:44,666 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2547/src]
+2018-04-02 00:22:44,671 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2547/src/.git/
+
+2018-04-02 00:22:44,675 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2547/src/gradlew /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/gradlew
+2018-04-02 00:22:44,680 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2547/src/androidchannel/build.gradle /tmp/rdisk/2547/src/app/build.gradle /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/app/build.gradle /tmp/rdisk/2547/src/build.gradle /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/build.gradle
+2018-04-02 00:22:44,685 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2547/src/settings.gradle /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/settings.gradle /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/build.gradle /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/app/build.gradle /tmp/rdisk/2547/src/build.gradle /tmp/rdisk/2547/src/app/build.gradle /tmp/rdisk/2547/src/androidchannel/build.gradle
+2018-04-02 00:22:44,685 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:22:44,685 INFO  ProjectFixService - Fixing project...
+2018-04-02 00:22:44,696 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2547/src/androidchannel/local.properties
+2018-04-02 00:22:44,697 INFO  ProjectFixService - Build info for "/tmp/rdisk/2547/src/androidchannel/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,697 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2547/src/androidchannel/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,697 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2547/src/app/local.properties
+2018-04-02 00:22:44,698 INFO  ProjectFixService - Build info for "/tmp/rdisk/2547/src/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,698 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2547/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,698 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/app/local.properties
+2018-04-02 00:22:44,699 INFO  ProjectFixService - Build info for "/tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,699 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2547/src/local.properties
+2018-04-02 00:22:44,699 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-02 00:22:44,699 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-02 00:22:44,701 INFO  ProjectFixService - Build info for "/tmp/rdisk/2547/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,701 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/local.properties
+2018-04-02 00:22:44,701 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 00:22:44,701 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 00:22:44,702 INFO  ProjectFixService - Build info for "/tmp/rdisk/2547/src/example/AndroidChannel-ProgressLayout/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-02 00:22:44,703 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 00:22:44,703 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:22:44,703 INFO  SysUtils - Execute command: [/tmp/rdisk/2547/src/gradlew, -b, /tmp/rdisk/2547/src/androidchannel/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:22:53,459 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:22:53,459 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:22:53,459 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:22:53,459 INFO  SysUtils - Execute command: [/tmp/rdisk/2547/src/gradlew, -b, /tmp/rdisk/2547/src/androidchannel/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:23:15,294 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:androidchannel:preBuild UP-TO-DATE
+:androidchannel:preDebugBuild UP-TO-DATE
+:androidchannel:compileDebugNdk UP-TO-DATE
+:androidchannel:compileLint
+:androidchannel:copyDebugLint UP-TO-DATE
+:androidchannel:checkDebugManifest
+:androidchannel:preDebugAndroidTestBuild UP-TO-DATE
+:androidchannel:preDebugUnitTestBuild UP-TO-DATE
+:androidchannel:preReleaseBuild UP-TO-DATE
+:androidchannel:preReleaseUnitTestBuild UP-TO-DATE
+:androidchannel:prepareComAndroidSupportAppcompatV72301Library
+:androidchannel:prepareComAndroidSupportSupportV42301Library
+:androidchannel:prepareDebugDependencies
+:androidchannel:compileDebugAidl
+:androidchannel:compileDebugRenderscript
+:androidchannel:generateDebugBuildConfig
+:androidchannel:mergeDebugShaders
+:androidchannel:compileDebugShaders
+:androidchannel:generateDebugAssets
+:androidchannel:mergeDebugAssets
+:androidchannel:generateDebugResValues
+:androidchannel:generateDebugResources
+:androidchannel:mergeDebugResources
+:androidchannel:processDebugManifest
+:androidchannel:processDebugResources
+:androidchannel:generateDebugSources
+:androidchannel:incrementalDebugJavaCompilationSafeguard
+:androidchannel:compileDebugJavaWithJavac
+:androidchannel:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:androidchannel:extractDebugAnnotations
+:androidchannel:mergeDebugProguardFiles
+:androidchannel:packageDebugRenderscript UP-TO-DATE
+:androidchannel:packageDebugResources
+:androidchannel:processDebugJavaRes UP-TO-DATE
+:androidchannel:transformResourcesWithMergeJavaResForDebug
+:androidchannel:transformClassesAndResourcesWithSyncLibJarsForDebug
+:androidchannel:mergeDebugJniLibFolders
+:androidchannel:transformNative_libsWithMergeJniLibsForDebug
+:androidchannel:transformNative_libsWithSyncJniLibsForDebug
+:androidchannel:bundleDebug
+:androidchannel:compileDebugSources
+:androidchannel:assembleDebug
+:androidchannel:compileReleaseNdk UP-TO-DATE
+:androidchannel:copyReleaseLint UP-TO-DATE
+:androidchannel:checkReleaseManifest
+:androidchannel:prepareReleaseDependencies
+:androidchannel:compileReleaseAidl
+:androidchannel:compileReleaseRenderscript
+:androidchannel:generateReleaseBuildConfig
+:androidchannel:mergeReleaseShaders
+:androidchannel:compileReleaseShaders
+:androidchannel:generateReleaseAssets
+:androidchannel:mergeReleaseAssets
+:androidchannel:generateReleaseResValues
+:androidchannel:generateReleaseResources
+:androidchannel:mergeReleaseResources
+:androidchannel:processReleaseManifest
+:androidchannel:processReleaseResources
+:androidchannel:generateReleaseSources
+:androidchannel:incrementalReleaseJavaCompilationSafeguard
+:androidchannel:compileReleaseJavaWithJavac
+:androidchannel:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:androidchannel:extractReleaseAnnotations
+:androidchannel:mergeReleaseProguardFiles
+:androidchannel:packageReleaseRenderscript UP-TO-DATE
+:androidchannel:packageReleaseResources
+:androidchannel:processReleaseJavaRes UP-TO-DATE
+:androidchannel:transformResourcesWithMergeJavaResForRelease
+:androidchannel:transformClassesAndResourcesWithSyncLibJarsForRelease
+:androidchannel:mergeReleaseJniLibFolders
+:androidchannel:transformNative_libsWithMergeJniLibsForRelease
+:androidchannel:transformNative_libsWithSyncJniLibsForRelease
+:androidchannel:bundleRelease
+:androidchannel:compileReleaseSources
+:androidchannel:assembleRelease
+:androidchannel:assemble
+:androidchannel:lint
+Ran lint on variant release: 3 issues found
+Ran lint on variant debug: 3 issues found
+Wrote HTML report to file:///tmp/rdisk/2547/src/androidchannel/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2547/src/androidchannel/build/outputs/lint-results-debug.xml
+:androidchannel:incrementalDebugUnitTestJavaCompilationSafeguard UP-TO-DATE
+:androidchannel:prepareDebugUnitTestDependencies
+:androidchannel:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:androidchannel:processDebugUnitTestJavaRes UP-TO-DATE
+:androidchannel:compileDebugUnitTestSources UP-TO-DATE
+:androidchannel:mockableAndroidJar
+:androidchannel:assembleDebugUnitTest
+:androidchannel:testDebugUnitTest
+:androidchannel:incrementalReleaseUnitTestJavaCompilationSafeguard UP-TO-DATE
+:androidchannel:prepareReleaseUnitTestDependencies
+:androidchannel:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:androidchannel:processReleaseUnitTestJavaRes UP-TO-DATE
+:androidchannel:compileReleaseUnitTestSources UP-TO-DATE
+:androidchannel:assembleReleaseUnitTest
+:androidchannel:testReleaseUnitTest
+:androidchannel:test
+:androidchannel:check
+:androidchannel:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.308 secs
+
+2018-04-02 00:23:15,335 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:23:15,335 INFO  SysUtils - Execute command: [/tmp/rdisk/2547/src/gradlew, -b, /tmp/rdisk/2547/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:23:22,423 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-02 00:23:22,423 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 00:23:22,423 INFO  SysUtils - Execute command: [/tmp/rdisk/2547/src/gradlew, -b, /tmp/rdisk/2547/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 00:23:46,292 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:androidchannel:preBuild UP-TO-DATE
+:androidchannel:preReleaseBuild UP-TO-DATE
+:androidchannel:compileReleaseNdk UP-TO-DATE
+:androidchannel:compileLint
+:androidchannel:copyReleaseLint UP-TO-DATE
+:androidchannel:checkReleaseManifest
+:androidchannel:preDebugAndroidTestBuild UP-TO-DATE
+:androidchannel:preDebugBuild UP-TO-DATE
+:androidchannel:preDebugUnitTestBuild UP-TO-DATE
+:androidchannel:preReleaseUnitTestBuild UP-TO-DATE
+:androidchannel:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:androidchannel:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:androidchannel:prepareReleaseDependencies
+:androidchannel:compileReleaseAidl UP-TO-DATE
+:androidchannel:compileReleaseRenderscript UP-TO-DATE
+:androidchannel:generateReleaseBuildConfig UP-TO-DATE
+:androidchannel:mergeReleaseShaders UP-TO-DATE
+:androidchannel:compileReleaseShaders UP-TO-DATE
+:androidchannel:generateReleaseAssets UP-TO-DATE
+:androidchannel:mergeReleaseAssets UP-TO-DATE
+:androidchannel:generateReleaseResValues UP-TO-DATE
+:androidchannel:generateReleaseResources UP-TO-DATE
+:androidchannel:mergeReleaseResources UP-TO-DATE
+:androidchannel:processReleaseManifest UP-TO-DATE
+:androidchannel:processReleaseResources UP-TO-DATE
+:androidchannel:generateReleaseSources UP-TO-DATE
+:androidchannel:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:androidchannel:compileReleaseJavaWithJavac UP-TO-DATE
+:androidchannel:extractReleaseAnnotations UP-TO-DATE
+:androidchannel:mergeReleaseProguardFiles UP-TO-DATE
+:androidchannel:packageReleaseRenderscript UP-TO-DATE
+:androidchannel:packageReleaseResources UP-TO-DATE
+:androidchannel:processReleaseJavaRes UP-TO-DATE
+:androidchannel:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:androidchannel:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:androidchannel:mergeReleaseJniLibFolders UP-TO-DATE
+:androidchannel:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:androidchannel:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:androidchannel:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareSrcAndroidchannelUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+Running dex in-process requires build tools 23.0.2.
+For faster builds update this project to use the latest build tools.
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 23.438 secs
+
+2018-04-02 00:23:46,369 INFO  FullProcessService - Found APK file: /tmp/rdisk/2547/src/app/build/outputs/apk/app-debug.apk

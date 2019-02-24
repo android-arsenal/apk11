@@ -1,0 +1,38 @@
+{
+  "meta" : {
+    "packageName" : "com.actinarium.aligned",
+    "label" : "Aligned text sample",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "0.1",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "compileSdkVersion" : null,
+    "compileSdkVersionCodename" : null,
+    "platformBuildVersionCode" : "23",
+    "platformBuildVersionName" : "6.0-2704002",
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 160,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABMlBMVEX///8AAAD////////////y8vLv7+/29vZZWVmcnJyxsbGCgoKioqKSkpKysrKBgYF4eHiIiIi1tbXw8PC0tLR4eHjh4eGHh4eUlJQAAACvr6+ysrK0tLSzs7Ph4eHDw8Pw8PDh4eGFhYXx8fGpqam/v7/Ly8uCgoI8PDylpaWWlpaGhoZ9fX2oqKi+vr6CgoJ3d3eioqKhoaGkpKSbm5vDw8OVlZXi4uKRkZGvr6+qqqrS0tJaWlppaWlvb2/BwcGlpaWnp6eAgICHh4dZWVl7e3uDg4OqqqoAAACLi4uysrLy8vKIiIjj4+OxsbGCgoIAAAAnJyeDg4OkpKR8fHx7e3uZmZmnp6dtbW15eXmBgYElJSUAAAAAAABGRkZfX19cXFxbW1tmZmYAAAAAAAC/v7+6wAG5AAAAZnRSTlMAAAMEAhQgHhqz7/Xz9PLzv7r///////+2AfD7/v38/fz9/P/wGCf3/////fcsJ/b+LPX99f/9//b09P////gpLR31/v31IwMIwf//////xAM3xvL39/X1+PXGOQkgQk5LTAULDgRGUe9HAAACHklEQVRIx71Wf1vTMBAmXYfIZGpzS1DJNqmK7VDQ0SlWBAQdOlDUsSk/J+j3/womXdqFljarz6PvH7ukuXe5vHe9dGLiPwAJGAUNjMAtJJgm0iLwkQQ+LE5ey8RkMXAbEkw0dX26VLpRmilzlMrlmJnhS+Wbt6a4Y0i4bWHAFYIFACcMoXwAs3ckwUDFu/jeHKvW6gKsnjC1Krs/bz94iIyAUECPFoA9BscFAQoJ4zpQaViLT1BBEp4uYcaf47SQeDx42V58NiI8r1QdcNMJLpAmXVEIC6TmRv+WJPAfr/VC3eElroOyGjPBkNnqDqtDwmhZNcMRs19dQRiuk1AeX8wkM4UgHMALd/DFDGcTMNBLespZnMATJxMF9LWaOLrmyOc8cakhqXrqQiJeeEwpGPg+1qoUOWO9Sqp3GNQ4BPUoHhmHoKoLWbLSSM+RujRL1r8NKe+hc8jK0xRLHPH01ZqnNJLVSrTVunapWqW6WdXqgB/uQIDoQgq08cVLB17w6mlUipoACYNPKY3cbWacRma/UVslzdkqx2jGDbVVrq/iagXLIriCwAvW5YfekAQDbb615reWmy0m0GAJ02o25ratd+9RW15ZOx8+dqzO7l5HwOokze6ebX36vBPdcftfvn7rHvS6vT5Ht9+Pmd733kH/x+HRvhldu8cnp2eDweBnCvjS2enJsalc7OcXvzS4OFcudo72bw3ao0+Hf4w/51fPLxjMGlMAAAAASUVORK5CYII=",
+    "file" : true
+  },
+  "dexClasses" : 1573,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"0.1\" package=\"com.actinarium.aligned\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f0a008a\" android:label=\"Aligned text sample\" android:icon=\"res/mipmap-xxxhdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\" android:fullBackupContent=\"true\">\n\t\t<activity android:name=\"com.actinarium.aligned.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<service android:name=\"com.actinarium.rhythm.RhythmNotificationService\" android:exported=\"false\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1213694,
+  "crc32" : 486891925,
+  "sha256" : "714b6ec186aa12efcca50c9ee9759bcf2d3939512b29d967d33cbea52e5aaa55",
+  "buildTime" : 1548512863000
+}

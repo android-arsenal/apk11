@@ -1,0 +1,197 @@
+2018-04-01 11:14:06,291 INFO  DownloadService - Downloading "https://github.com/hzsweers/RxPalette/archive/master.zip", attempt 3
+2018-04-01 11:15:06,292 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 11:15:07,118 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 11:15:07,118 INFO  DownloadService - Downloading "https://github.com/hzsweers/RxPalette/archive/master.zip", attempt 3
+2018-04-01 11:16:07,929 DEBUG FullProcessService - Repository https://github.com/hzsweers/RxPalette available: true
+2018-04-01 11:16:07,929 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 11:16:07,929 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/hzsweers/RxPalette, /tmp/rdisk/2696/src]
+2018-04-01 11:16:09,601 INFO  SysUtils - 
+2018-04-01 11:16:09,605 INFO  GitService - Deleted "/tmp/rdisk/2696/src/.git": true
+2018-04-01 11:16:09,608 INFO  FullProcessService - Size of directory with sources: 139 KB
+2018-04-01 11:16:09,608 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2696/src]
+2018-04-01 11:16:09,613 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2696/src/.git/
+
+2018-04-01 11:16:09,616 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2696/src/gradlew
+2018-04-01 11:16:09,619 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2696/src/rxpalette-kotlin/build.gradle /tmp/rdisk/2696/src/rxpalette/build.gradle /tmp/rdisk/2696/src/sample/build.gradle /tmp/rdisk/2696/src/build.gradle
+2018-04-01 11:16:09,622 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2696/src/settings.gradle /tmp/rdisk/2696/src/sample/build.gradle /tmp/rdisk/2696/src/rxpalette/build.gradle /tmp/rdisk/2696/src/rxpalette-kotlin/build.gradle /tmp/rdisk/2696/src/gradle/gradle-mvn-push.gradle /tmp/rdisk/2696/src/build.gradle
+2018-04-01 11:16:09,622 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 11:16:09,622 INFO  ProjectFixService - Fixing project...
+2018-04-01 11:16:09,630 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2696/src/rxpalette-kotlin/local.properties
+2018-04-01 11:16:09,634 INFO  ProjectFixService - Build info for "/tmp/rdisk/2696/src/rxpalette-kotlin/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 11:16:09,634 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2696/src/rxpalette/local.properties
+2018-04-01 11:16:09,638 INFO  ProjectFixService - Build info for "/tmp/rdisk/2696/src/rxpalette/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 11:16:09,638 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2696/src/sample/local.properties
+2018-04-01 11:16:09,642 INFO  ProjectFixService - Build info for "/tmp/rdisk/2696/src/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 11:16:09,642 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2696/src/local.properties
+2018-04-01 11:16:09,642 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-01 11:16:09,642 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-01 11:16:09,643 INFO  ProjectFixService - Build info for "/tmp/rdisk/2696/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 11:16:09,643 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 11:16:09,643 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:16:09,643 INFO  SysUtils - Execute command: [/tmp/rdisk/2696/src/gradlew, -b, /tmp/rdisk/2696/src/rxpalette-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:16:25,140 INFO  ProjectTaskService - Detected possible tasks: 72
+2018-04-01 11:16:25,140 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 11:16:25,140 INFO  SysUtils - Execute command: [/tmp/rdisk/2696/src/gradlew, -b, /tmp/rdisk/2696/src/rxpalette-kotlin/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 11:16:53,585 INFO  SysUtils - Configuration on demand is an incubating feature.
+Constructor DefaultSourceDirectorySet(String, FileResolver) has been deprecated and is scheduled to be removed in Gradle 3.0
+Incremental java compilation is an incubating feature.
+:rxpalette-kotlin:androidJavadocs UP-TO-DATE
+:rxpalette-kotlin:androidJavadocsJar
+:rxpalette-kotlin:androidSourcesJar
+:rxpalette-kotlin:preBuild UP-TO-DATE
+:rxpalette-kotlin:preDebugBuild UP-TO-DATE
+:rxpalette-kotlin:checkDebugManifest
+:rxpalette:preBuild UP-TO-DATE
+:rxpalette:preReleaseBuild UP-TO-DATE
+:rxpalette:checkReleaseManifest
+:rxpalette:preDebugAndroidTestBuild UP-TO-DATE
+:rxpalette:preDebugBuild UP-TO-DATE
+:rxpalette:preDebugUnitTestBuild UP-TO-DATE
+:rxpalette:preReleaseUnitTestBuild UP-TO-DATE
+:rxpalette:prepareComAndroidSupportPaletteV72321Library
+:rxpalette:prepareComAndroidSupportSupportV42321Library
+:rxpalette:prepareReleaseDependencies
+:rxpalette:compileReleaseAidl
+:rxpalette:compileReleaseNdk UP-TO-DATE
+:rxpalette:compileLint
+:rxpalette:copyReleaseLint UP-TO-DATE
+:rxpalette:compileReleaseRenderscript
+:rxpalette:generateReleaseBuildConfig
+:rxpalette:generateReleaseResValues
+:rxpalette:generateReleaseResources
+:rxpalette:mergeReleaseResources
+:rxpalette:processReleaseManifest
+:rxpalette:processReleaseResources
+:rxpalette:generateReleaseSources
+:rxpalette:incrementalReleaseJavaCompilationSafeguard
+:rxpalette:compileReleaseJavaWithJavac
+:rxpalette:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:rxpalette:extractReleaseAnnotations
+:rxpalette:mergeReleaseShaders
+:rxpalette:compileReleaseShaders
+:rxpalette:generateReleaseAssets
+:rxpalette:mergeReleaseAssets
+:rxpalette:mergeReleaseProguardFiles
+:rxpalette:packageReleaseRenderscript UP-TO-DATE
+:rxpalette:packageReleaseResources
+:rxpalette:processReleaseJavaRes UP-TO-DATE
+:rxpalette:transformResourcesWithMergeJavaResForRelease
+:rxpalette:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxpalette:mergeReleaseJniLibFolders
+:rxpalette:transformNative_libsWithMergeJniLibsForRelease
+:rxpalette:transformNative_libsWithSyncJniLibsForRelease
+:rxpalette:bundleRelease
+:rxpalette-kotlin:preDebugAndroidTestBuild UP-TO-DATE
+:rxpalette-kotlin:preDebugUnitTestBuild UP-TO-DATE
+:rxpalette-kotlin:preReleaseBuild UP-TO-DATE
+:rxpalette-kotlin:preReleaseUnitTestBuild UP-TO-DATE
+:rxpalette-kotlin:prepareComAndroidSupportPaletteV72321Library
+:rxpalette-kotlin:prepareComAndroidSupportSupportV42321Library
+:rxpalette-kotlin:prepareIoSweersRxpaletteRxpalette031SNAPSHOTLibrary
+:rxpalette-kotlin:prepareDebugDependencies
+:rxpalette-kotlin:compileDebugAidl
+:rxpalette-kotlin:compileDebugNdk UP-TO-DATE
+:rxpalette-kotlin:compileLint
+:rxpalette-kotlin:copyDebugLint UP-TO-DATE
+:rxpalette-kotlin:compileDebugRenderscript
+:rxpalette-kotlin:generateDebugBuildConfig
+:rxpalette-kotlin:generateDebugResValues
+:rxpalette-kotlin:generateDebugResources
+:rxpalette-kotlin:mergeDebugResources
+:rxpalette-kotlin:processDebugManifest
+:rxpalette-kotlin:processDebugResources
+:rxpalette-kotlin:generateDebugSources
+:rxpalette-kotlin:incrementalDebugJavaCompilationSafeguard
+:rxpalette-kotlin:compileDebugKotlin
+w: /tmp/rdisk/2696/src/rxpalette-kotlin/src/main/kotlin/io/sweers/rxpalette/RxPalette.kt: (9, 8): Expected performance impact of inlining 'public inline fun Palette.Builder.asSingle(): Single<Palette> defined in io.sweers.rxpalette' can be insignificant. Inlining works best for functions with lambda parameters
+:rxpalette-kotlin:compileDebugJavaWithJavac
+:rxpalette-kotlin:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:rxpalette-kotlin:extractDebugAnnotations
+:rxpalette-kotlin:mergeDebugShaders
+:rxpalette-kotlin:compileDebugShaders
+:rxpalette-kotlin:generateDebugAssets
+:rxpalette-kotlin:mergeDebugAssets
+:rxpalette-kotlin:mergeDebugProguardFiles
+:rxpalette-kotlin:packageDebugRenderscript UP-TO-DATE
+:rxpalette-kotlin:packageDebugResources
+:rxpalette-kotlin:processDebugJavaRes UP-TO-DATE
+:rxpalette-kotlin:transformResourcesWithMergeJavaResForDebug
+:rxpalette-kotlin:transformClassesAndResourcesWithSyncLibJarsForDebug
+:rxpalette-kotlin:mergeDebugJniLibFolders
+:rxpalette-kotlin:transformNative_libsWithMergeJniLibsForDebug
+:rxpalette-kotlin:transformNative_libsWithSyncJniLibsForDebug
+:rxpalette-kotlin:bundleDebug
+:rxpalette-kotlin:compileDebugSources
+:rxpalette-kotlin:assembleDebug
+:rxpalette-kotlin:prepareDebugAndroidTestDependencies
+:rxpalette-kotlin:compileDebugAndroidTestAidl
+:rxpalette-kotlin:processDebugAndroidTestManifest
+:rxpalette-kotlin:compileDebugAndroidTestRenderscript
+:rxpalette-kotlin:generateDebugAndroidTestBuildConfig
+:rxpalette-kotlin:generateDebugAndroidTestResValues
+:rxpalette-kotlin:generateDebugAndroidTestResources
+:rxpalette-kotlin:mergeDebugAndroidTestResources
+:rxpalette-kotlin:processDebugAndroidTestResources
+:rxpalette-kotlin:generateDebugAndroidTestSources
+:rxpalette-kotlin:incrementalDebugAndroidTestJavaCompilationSafeguard
+:rxpalette-kotlin:compileDebugAndroidTestKotlin
+No Kotlin files found, skipping Kotlin compiler task
+:rxpalette-kotlin:compileDebugAndroidTestJavaWithJavac
+:rxpalette-kotlin:compileDebugAndroidTestNdk UP-TO-DATE
+:rxpalette-kotlin:compileDebugAndroidTestSources
+:rxpalette-kotlin:mergeDebugAndroidTestShaders
+:rxpalette-kotlin:compileDebugAndroidTestShaders
+:rxpalette-kotlin:generateDebugAndroidTestAssets
+:rxpalette-kotlin:mergeDebugAndroidTestAssets
+:rxpalette-kotlin:transformClassesWithDexForDebugAndroidTest
+:rxpalette-kotlin:mergeDebugAndroidTestJniLibFolders
+:rxpalette-kotlin:transformNative_libsWithMergeJniLibsForDebugAndroidTest
+:rxpalette-kotlin:processDebugAndroidTestJavaRes UP-TO-DATE
+:rxpalette-kotlin:transformResourcesWithMergeJavaResForDebugAndroidTest
+:rxpalette-kotlin:validateSigningDebugAndroidTest
+:rxpalette-kotlin:packageDebugAndroidTest
+:rxpalette-kotlin:assembleDebugAndroidTest
+:rxpalette-kotlin:checkReleaseManifest
+:rxpalette-kotlin:prepareReleaseDependencies
+:rxpalette-kotlin:compileReleaseAidl
+:rxpalette-kotlin:compileReleaseNdk UP-TO-DATE
+:rxpalette-kotlin:copyReleaseLint UP-TO-DATE
+:rxpalette-kotlin:compileReleaseRenderscript
+:rxpalette-kotlin:generateReleaseBuildConfig
+:rxpalette-kotlin:generateReleaseResValues
+:rxpalette-kotlin:generateReleaseResources
+:rxpalette-kotlin:mergeReleaseResources
+:rxpalette-kotlin:processReleaseManifest
+:rxpalette-kotlin:processReleaseResources
+:rxpalette-kotlin:generateReleaseSources
+:rxpalette-kotlin:incrementalReleaseJavaCompilationSafeguard
+:rxpalette-kotlin:compileReleaseKotlin
+w: /tmp/rdisk/2696/src/rxpalette-kotlin/src/main/kotlin/io/sweers/rxpalette/RxPalette.kt: (9, 8): Expected performance impact of inlining 'public inline fun Palette.Builder.asSingle(): Single<Palette> defined in io.sweers.rxpalette' can be insignificant. Inlining works best for functions with lambda parameters
+:rxpalette-kotlin:compileReleaseJavaWithJavac
+:rxpalette-kotlin:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:rxpalette-kotlin:extractReleaseAnnotations
+:rxpalette-kotlin:mergeReleaseShaders
+:rxpalette-kotlin:compileReleaseShaders
+:rxpalette-kotlin:generateReleaseAssets
+:rxpalette-kotlin:mergeReleaseAssets
+:rxpalette-kotlin:mergeReleaseProguardFiles
+:rxpalette-kotlin:packageReleaseRenderscript UP-TO-DATE
+:rxpalette-kotlin:packageReleaseResources
+:rxpalette-kotlin:processReleaseJavaRes UP-TO-DATE
+:rxpalette-kotlin:transformResourcesWithMergeJavaResForRelease
+:rxpalette-kotlin:transformClassesAndResourcesWithSyncLibJarsForRelease
+:rxpalette-kotlin:mergeReleaseJniLibFolders
+:rxpalette-kotlin:transformNative_libsWithMergeJniLibsForRelease
+:rxpalette-kotlin:transformNative_libsWithSyncJniLibsForRelease
+:rxpalette-kotlin:bundleRelease
+:rxpalette-kotlin:compileReleaseSources
+:rxpalette-kotlin:assembleRelease
+:rxpalette-kotlin:signArchives SKIPPED
+:rxpalette-kotlin:assemble
+:rxpalette-kotlin:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.66 secs
+
+2018-04-01 11:16:53,602 INFO  FullProcessService - Found APK file: /tmp/rdisk/2696/src/rxpalette-kotlin/build/outputs/apk/rxpalette-kotlin-debug-androidTest.apk

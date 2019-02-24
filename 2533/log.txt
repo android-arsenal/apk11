@@ -1,0 +1,1285 @@
+2018-04-02 01:02:00,714 INFO  DownloadService - Downloading "https://github.com/square/duktape-android/archive/master.zip", attempt 3
+2018-04-02 01:03:01,179 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:03:01,776 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:03:01,776 INFO  DownloadService - Downloading "https://github.com/square/duktape-android/archive/master.zip", attempt 3
+2018-04-02 01:04:03,103 DEBUG FullProcessService - Repository https://github.com/square/duktape-android available: true
+2018-04-02 01:04:03,103 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:04:03,103 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/square/duktape-android, /tmp/rdisk/2533/src]
+2018-04-02 01:04:07,120 INFO  SysUtils - 
+2018-04-02 01:04:07,124 INFO  GitService - Deleted "/tmp/rdisk/2533/src/.git": true
+2018-04-02 01:04:07,127 INFO  FullProcessService - Size of directory with sources: 11 MB
+2018-04-02 01:04:07,127 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2533/src]
+2018-04-02 01:04:07,133 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2533/src/.git/
+
+2018-04-02 01:04:07,138 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2533/src/gradlew
+2018-04-02 01:04:07,141 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2533/src/duktape/build.gradle /tmp/rdisk/2533/src/tests/build.gradle /tmp/rdisk/2533/src/build.gradle
+2018-04-02 01:04:07,143 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2533/src/tests/build.gradle /tmp/rdisk/2533/src/settings.gradle /tmp/rdisk/2533/src/duktape/build.gradle /tmp/rdisk/2533/src/build.gradle
+2018-04-02 01:04:07,143 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:04:07,143 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:04:07,149 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2533/src/duktape/local.properties
+2018-04-02 01:04:07,150 INFO  ProjectFixService - Build info for "/tmp/rdisk/2533/src/duktape/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=12,targetSdkVersion=26]
+2018-04-02 01:04:07,150 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2533/src/tests/local.properties
+2018-04-02 01:04:07,151 INFO  ProjectFixService - Build info for "/tmp/rdisk/2533/src/tests/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=15,targetSdkVersion=26]
+2018-04-02 01:04:07,151 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2533/src/local.properties
+2018-04-02 01:04:07,151 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.1-all.zip
+2018-04-02 01:04:07,152 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.1-bin.zip)
+2018-04-02 01:04:07,152 INFO  ProjectFixService - Build info for "/tmp/rdisk/2533/src/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=15,targetSdkVersion=26]
+2018-04-02 01:04:07,152 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:04:07,152 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:04:07,152 INFO  SysUtils - Execute command: [/tmp/rdisk/2533/src/gradlew, -b, /tmp/rdisk/2533/src/duktape/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:04:24,804 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-02 01:04:24,804 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-02 01:04:24,804 INFO  SysUtils - Execute command: [/tmp/rdisk/2533/src/gradlew, -b, /tmp/rdisk/2533/src/duktape/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-02 01:06:09,163 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':duktape' is deprecated. Use 'implementation' instead.
+:duktape:preBuild UP-TO-DATE
+:duktape:preDebugBuild UP-TO-DATE
+:duktape:compileDebugAidl
+:duktape:compileDebugRenderscript
+:duktape:checkDebugManifest
+:duktape:generateDebugBuildConfig
+:duktape:prepareLintJar
+:duktape:generateDebugResValues
+:duktape:generateDebugResources
+:duktape:packageDebugResources
+:duktape:platformAttrExtractor
+:duktape:processDebugManifest
+:duktape:javaPreCompileDebug
+:duktape:mergeDebugShaders
+:duktape:compileDebugShaders
+:duktape:generateDebugAssets
+:duktape:mergeDebugAssets
+:duktape:mergeDebugConsumerProguardFiles
+:duktape:packageDebugRenderscript NO-SOURCE
+:duktape:processDebugJavaRes NO-SOURCE
+:duktape:generateJsonModelDebug
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips64
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/x86_64
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/x86
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi-v7a
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/armeabi
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/mips
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/debug/arm64-v8a
+:duktape:externalNativeBuildDebug
+Build duktape arm64-v8a
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/arm64-v8a/libduktape.so
+Build duktape mips
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/mips/libduktape.so
+Build duktape armeabi
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/armeabi/libduktape.so
+Build duktape armeabi-v7a
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/armeabi-v7a/libduktape.so
+Build duktape x86
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/x86/libduktape.so
+Build duktape x86_64
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/x86_64/libduktape.so
+Build duktape mips64
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/debug/obj/mips64/libduktape.so
+:duktape:mergeDebugJniLibFolders
+:duktape:transformNativeLibsWithMergeJniLibsForDebug
+:duktape:transformNativeLibsWithStripDebugSymbolForDebug
+:duktape:transformNativeLibsWithSyncJniLibsForDebug
+:duktape:preReleaseBuild UP-TO-DATE
+:duktape:compileReleaseAidl
+:duktape:compileReleaseRenderscript
+:duktape:checkReleaseManifest
+:duktape:generateReleaseBuildConfig
+:duktape:generateReleaseResValues
+:duktape:generateReleaseResources
+:duktape:packageReleaseResources
+:duktape:processReleaseManifest
+:duktape:javaPreCompileRelease
+:duktape:mergeReleaseShaders
+:duktape:compileReleaseShaders
+:duktape:generateReleaseAssets
+:duktape:mergeReleaseAssets
+:duktape:mergeReleaseConsumerProguardFiles
+:duktape:packageReleaseRenderscript NO-SOURCE
+:duktape:processReleaseJavaRes NO-SOURCE
+:duktape:generateJsonModelRelease
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:282 (message):
+  mips64 is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips64
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/x86_64
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/x86
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi-v7a
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:243 (message):
+  armeabi is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/armeabi
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:273 (message):
+  mips is deprecated and will be removed in a future NDK release.
+Call Stack (most recent call first):
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/mips
+CMake Warning at /root/Applications/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /root/Applications/android-sdk/ndk-bundle
+Call Stack (most recent call first):
+  /root/Applications/android-sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+-- Check for working C compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+-- Check for working CXX compiler: /root/Applications/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/rdisk/2533/src/duktape/.externalNativeBuild/cmake/release/arm64-v8a
+:duktape:externalNativeBuildRelease
+Build duktape arm64-v8a
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/arm64-v8a/libduktape.so
+Build duktape mips
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/mips/libduktape.so
+Build duktape armeabi
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/armeabi/libduktape.so
+Build duktape armeabi-v7a
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/armeabi-v7a/libduktape.so
+Build duktape x86
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/x86/libduktape.so
+Build duktape x86_64
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/x86_64/libduktape.so
+Build duktape mips64
+[1/9] Building C object CMakeFiles/duktape.dir/duktape/duktape.c.o
+[2/9] Building CXX object CMakeFiles/duktape.dir/DuktapeContext.cpp.o
+[3/9] Building CXX object CMakeFiles/duktape.dir/duktape-jni.cpp.o
+[4/9] Building CXX object CMakeFiles/duktape.dir/java/GlobalRef.cpp.o
+[5/9] Building CXX object CMakeFiles/duktape.dir/java/JavaExceptions.cpp.o
+[6/9] Building CXX object CMakeFiles/duktape.dir/java/JavaMethod.cpp.o
+[7/9] Building CXX object CMakeFiles/duktape.dir/java/JavaType.cpp.o
+[8/9] Building CXX object CMakeFiles/duktape.dir/javascript/JavaScriptObject.cpp.o
+duk_bi_date.c:402:6: warning: implicit declaration of function 'android__date_parse_string' is invalid in C99 [-Wimplicit-function-declaration]
+        if (DUK_USE_DATE_PARSE_STRING(ctx, str) != 0) {
+            ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:2:35: note: expanded from macro 'DUK_USE_DATE_PARSE_STRING'
+#define DUK_USE_DATE_PARSE_STRING android__date_parse_string
+                                  ^
+duk_bi_date.c:850:12: warning: implicit declaration of function 'android__get_local_tzoffset' is invalid in C99 [-Wimplicit-function-declaration]
+                        tzoff = DUK_USE_DATE_GET_LOCAL_TZOFFSET(d - tzoff * 1000L);
+                                ^
+/tmp/rdisk/2533/src/duktape/src/main/jni/duktape/duk_custom.h:1:41: note: expanded from macro 'DUK_USE_DATE_GET_LOCAL_TZOFFSET'
+#define DUK_USE_DATE_GET_LOCAL_TZOFFSET android__get_local_tzoffset
+                                        ^
+2 warnings generated.
+[9/9] Linking CXX shared library /tmp/rdisk/2533/src/duktape/build/intermediates/cmake/release/obj/mips64/libduktape.so
+:duktape:mergeReleaseJniLibFolders
+:duktape:transformNativeLibsWithMergeJniLibsForRelease
+:duktape:transformNativeLibsWithStripDebugSymbolForRelease
+:duktape:transformNativeLibsWithSyncJniLibsForRelease
+:duktape:mergeReleaseResources
+:duktape:verifyReleaseResources
+:duktape:javadoc/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/DuktapeException.java:18: error: package android.support.annotation does not exist
+import android.support.annotation.Keep;
+                                 ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/DuktapeException.java:26: error: cannot find symbol
+@Keep // Instruct ProGuard not to strip this type.
+ ^
+  symbol: class Keep
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:35: warning: no @return
+  public static Duktape create() {
+                        ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:56: warning: no @param for script
+  public synchronized Object evaluate(String script, String fileName) {
+                             ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:56: warning: no @param for fileName
+  public synchronized Object evaluate(String script, String fileName) {
+                             ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:56: warning: no @return
+  public synchronized Object evaluate(String script, String fileName) {
+                             ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:65: warning: no @param for script
+  public synchronized Object evaluate(String script) {
+                             ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:65: warning: no @return
+  public synchronized Object evaluate(String script) {
+                             ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:78: warning: no @param for <T>
+  public synchronized <T> void set(String name, Class<T> type, T object) {
+                               ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:78: warning: no @param for name
+  public synchronized <T> void set(String name, Class<T> type, T object) {
+                               ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:78: warning: no @param for type
+  public synchronized <T> void set(String name, Class<T> type, T object) {
+                               ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:78: warning: no @param for object
+  public synchronized <T> void set(String name, Class<T> type, T object) {
+                               ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:106: warning: no @param for <T>
+  public synchronized <T> T get(final String name, final Class<T> type) {
+                            ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:106: warning: no @param for name
+  public synchronized <T> T get(final String name, final Class<T> type) {
+                            ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:106: warning: no @param for type
+  public synchronized <T> T get(final String name, final Class<T> type) {
+                            ^
+/tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java:106: warning: no @return
+  public synchronized <T> T get(final String name, final Class<T> type) {
+                            ^
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+javadoc: warning - Class Keep not found.
+
+25 warnings
+:duktape:javadocJar
+:duktape:sourcesJar
+:duktape:processDebugResources
+:duktape:generateDebugSources
+:duktape:compileDebugJavaWithJavacNote: /tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:duktape:extractDebugAnnotations
+:duktape:transformResourcesWithMergeJavaResForDebug
+:duktape:transformClassesAndResourcesWithSyncLibJarsForDebug
+:duktape:bundleDebug
+:duktape:compileDebugSources
+:duktape:assembleDebug
+:duktape:processReleaseResources
+:duktape:generateReleaseSources
+:duktape:compileReleaseJavaWithJavacNote: /tmp/rdisk/2533/src/duktape/src/main/java/com/squareup/duktape/Duktape.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:duktape:extractReleaseAnnotations
+:duktape:transformResourcesWithMergeJavaResForRelease
+:duktape:transformClassesAndResourcesWithSyncLibJarsForRelease
+:duktape:bundleRelease
+:duktape:compileReleaseSources
+:duktape:assembleRelease
+:duktape:assemble
+:duktape:build
+
+BUILD SUCCESSFUL in 1m 43s
+55 actionable tasks: 55 executed
+
+2018-04-02 01:06:09,188 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:06:09,188 INFO  SysUtils - Execute command: [/tmp/rdisk/2533/src/gradlew, -b, /tmp/rdisk/2533/src/tests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:06:16,951 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 01:06:16,951 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 01:06:16,951 INFO  SysUtils - Execute command: [/tmp/rdisk/2533/src/gradlew, -b, /tmp/rdisk/2533/src/tests/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 01:06:39,320 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':tests' is deprecated. Use 'implementation' instead.
+Configuration 'androidTestCompile' in project ':tests' is deprecated. Use 'androidTestImplementation' instead.
+Configuration 'compile' in project ':duktape' is deprecated. Use 'implementation' instead.
+:duktape:preBuild UP-TO-DATE
+:duktape:preDebugBuild UP-TO-DATE
+:duktape:compileDebugAidl UP-TO-DATE
+:duktape:compileDebugRenderscript UP-TO-DATE
+:duktape:checkDebugManifest UP-TO-DATE
+:duktape:generateDebugBuildConfig UP-TO-DATE
+:duktape:prepareLintJar UP-TO-DATE
+:duktape:generateDebugResValues UP-TO-DATE
+:duktape:generateDebugResources UP-TO-DATE
+:duktape:packageDebugResources UP-TO-DATE
+:duktape:platformAttrExtractor UP-TO-DATE
+:duktape:processDebugManifest UP-TO-DATE
+:duktape:processDebugResources UP-TO-DATE
+:duktape:generateDebugSources UP-TO-DATE
+:duktape:javaPreCompileDebug UP-TO-DATE
+:duktape:compileDebugJavaWithJavac UP-TO-DATE
+:duktape:processDebugJavaRes NO-SOURCE
+:duktape:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:tests:preBuild UP-TO-DATE
+:tests:preDebugBuild
+:tests:compileDebugAidl
+:duktape:packageDebugRenderscript NO-SOURCE
+:tests:compileDebugRenderscript
+:tests:checkDebugManifest
+:tests:generateDebugBuildConfig
+:tests:prepareLintJar
+:tests:generateDebugResValues
+:tests:generateDebugResources
+:tests:mergeDebugResources
+:tests:createDebugCompatibleScreenManifests
+:tests:processDebugManifest
+:tests:splitsDiscoveryTaskDebug
+:tests:processDebugResources
+:tests:generateDebugSources
+:tests:javaPreCompileDebug
+:tests:compileDebugJavaWithJavac
+:tests:compileDebugNdk NO-SOURCE
+:tests:compileDebugSources
+:duktape:mergeDebugShaders UP-TO-DATE
+:duktape:compileDebugShaders UP-TO-DATE
+:duktape:generateDebugAssets UP-TO-DATE
+:duktape:mergeDebugAssets UP-TO-DATE
+:tests:mergeDebugShaders
+:tests:compileDebugShaders
+:tests:generateDebugAssets
+:tests:mergeDebugAssets
+:tests:transformClassesWithDexBuilderForDebug
+:tests:transformDexArchiveWithExternalLibsDexMergerForDebug
+:tests:transformDexArchiveWithDexMergerForDebug
+:duktape:generateJsonModelDebug UP-TO-DATE
+:duktape:externalNativeBuildDebug
+Build duktape arm64-v8a
+ninja: no work to do.
+Build duktape mips
+ninja: no work to do.
+Build duktape armeabi
+ninja: no work to do.
+Build duktape armeabi-v7a
+ninja: no work to do.
+Build duktape x86
+ninja: no work to do.
+Build duktape x86_64
+ninja: no work to do.
+Build duktape mips64
+ninja: no work to do.
+:duktape:mergeDebugJniLibFolders UP-TO-DATE
+:duktape:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:duktape:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:duktape:transformNativeLibsWithIntermediateJniLibsForDebug
+:tests:mergeDebugJniLibFolders
+:tests:transformNativeLibsWithMergeJniLibsForDebug
+:tests:transformNativeLibsWithStripDebugSymbolForDebug
+:tests:processDebugJavaRes NO-SOURCE
+:tests:transformResourcesWithMergeJavaResForDebug
+:tests:validateSigningDebug
+:tests:packageDebug
+:tests:assembleDebug
+:duktape:preReleaseBuild UP-TO-DATE
+:duktape:compileReleaseAidl UP-TO-DATE
+:duktape:compileReleaseRenderscript UP-TO-DATE
+:duktape:checkReleaseManifest UP-TO-DATE
+:duktape:generateReleaseBuildConfig UP-TO-DATE
+:duktape:generateReleaseResValues UP-TO-DATE
+:duktape:generateReleaseResources UP-TO-DATE
+:duktape:packageReleaseResources UP-TO-DATE
+:duktape:processReleaseManifest UP-TO-DATE
+:duktape:processReleaseResources UP-TO-DATE
+:duktape:generateReleaseSources UP-TO-DATE
+:duktape:javaPreCompileRelease UP-TO-DATE
+:duktape:compileReleaseJavaWithJavac UP-TO-DATE
+:duktape:processReleaseJavaRes NO-SOURCE
+:duktape:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:tests:preReleaseBuild
+:tests:compileReleaseAidl
+:duktape:packageReleaseRenderscript NO-SOURCE
+:tests:compileReleaseRenderscript
+:tests:checkReleaseManifest
+:tests:generateReleaseBuildConfig
+:tests:generateReleaseResValues
+:tests:generateReleaseResources
+:tests:mergeReleaseResources
+:tests:createReleaseCompatibleScreenManifests
+:tests:processReleaseManifest
+:tests:splitsDiscoveryTaskRelease
+:tests:processReleaseResources
+:tests:generateReleaseSources
+:tests:javaPreCompileRelease
+:tests:compileReleaseJavaWithJavac
+:tests:compileReleaseNdk NO-SOURCE
+:tests:compileReleaseSources
+:tests:lintVitalRelease
+:duktape:mergeReleaseShaders UP-TO-DATE
+:duktape:compileReleaseShaders UP-TO-DATE
+:duktape:generateReleaseAssets UP-TO-DATE
+:duktape:mergeReleaseAssets UP-TO-DATE
+:tests:mergeReleaseShaders
+:tests:compileReleaseShaders
+:tests:generateReleaseAssets
+:tests:mergeReleaseAssets
+:tests:transformClassesWithPreDexForRelease
+:tests:transformDexWithDexForRelease
+:duktape:generateJsonModelRelease UP-TO-DATE
+:duktape:externalNativeBuildRelease
+Build duktape arm64-v8a
+ninja: no work to do.
+Build duktape mips
+ninja: no work to do.
+Build duktape armeabi
+ninja: no work to do.
+Build duktape armeabi-v7a
+ninja: no work to do.
+Build duktape x86
+ninja: no work to do.
+Build duktape x86_64
+ninja: no work to do.
+Build duktape mips64
+ninja: no work to do.
+:duktape:mergeReleaseJniLibFolders UP-TO-DATE
+:duktape:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:duktape:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:duktape:transformNativeLibsWithIntermediateJniLibsForRelease
+:tests:mergeReleaseJniLibFolders
+:tests:transformNativeLibsWithMergeJniLibsForRelease
+:tests:transformNativeLibsWithStripDebugSymbolForRelease
+:tests:processReleaseJavaRes NO-SOURCE
+:tests:transformResourcesWithMergeJavaResForRelease
+:tests:packageRelease
+:tests:assembleRelease
+:tests:assemble
+:tests:build
+
+BUILD SUCCESSFUL in 21s
+92 actionable tasks: 56 executed, 36 up-to-date
+
+2018-04-02 01:06:39,352 INFO  FullProcessService - Found APK file: /tmp/rdisk/2533/src/tests/build/outputs/apk/release/tests-release-unsigned.apk

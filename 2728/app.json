@@ -1,0 +1,38 @@
+{
+  "meta" : {
+    "packageName" : "com.viksaa.autofit.et",
+    "label" : "AutoFitEditText",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "compileSdkVersion" : null,
+    "compileSdkVersionCodename" : null,
+    "platformBuildVersionCode" : "23",
+    "platformBuildVersionName" : "6.0-2704002",
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 160,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAACjlBMVEUAAABVqlVAgEAAgAA2lDY8kTw1jT4zmTM4jzw4jTw4jDw3jTs4jTw1hzgAAAAzjDM4izw3jDs4jTw3jDs1hzopcCkwdTA3izw1hjkrZysoay84izskXyojXSlJl03b6dq207Y7jz5Ej0hFj0hFkEiGtYg1hjk1hTg1hTmBsoMzgTZZn1xAkUNCk0ZHlkpIl0xLmE5OmlE7iT4+i0A+i0E5iD0zgTcjVynS49EzgTfe6t3P38651LijyKP5+fe91LyUvZWItomMuI1spm+/2L+31Lfv8u2Xv5iAsoGkxqT09vK407lfoGI2hznv8+36+fhKkE6ixKOwz7DU5dTA2L/7+fizzrNspG3Y5dXj6+FipWX7+vk0hDiEtIabwZzN3svR4c+Zv5nx9O9IkUxTmFb9+vp+sX9inmSBsYPt8et6rXzK3MmUvJWNuI7X5NbL3cqOuo/U4tOSvJPq7+i91L19r36kxqW00LWuzK6Kt4v39/VUmVdBjkUzgjeRupKcwJ3e6NyqyavR4NCWvZfw8+9TmVY1hjg2hzqGs4c0gjeGtIe70rqnxqe60rrG2sV+sH+uyq2pyKl/sICyzrLJ3MhUmFd6rnyfw6DB18CLuIzX5daSvZN/sYBPllLb59pyq3U1hzk0gjg0gzg2iDqw0bGHtYmHtomBsoMzgzc2iTo1iDk0gzc0gzg3ijs2iTotbC0oYCgkZCQ3ijs0hTg3ijs2iTo3izs0gTceUx4AAAAwejM4jjw1hzk2iDk2ijoscS0AAAAAAAAMJAwtcDAzgjg1hDk1hTczfzczgDczgTc0gTc0gTg0gjYygDcqbSwLIgsAAAAPKg8XNRcUMhcULhcPKQ8AKwAAAAAAAAAzZjNgYUGhAAAA2nRSTlMAAwQCEx4dCpbo7Zj/mwEU6vn9/esZJe/wKibuKyz///3//////f////3w/f/////////////wLP3//////////////////////////////////////////////////////////////////////////////////////////fD///////////3//////////////////////////////////f////3////w//3w8P/9KC0c7P39+f/tIgiq/////64JAyux7vHw8fHx8fHw7rItIUNNTU1EBgsOBTSlrG8AAAJYSURBVEjHY2CgF2BkIgAYUZQzMxM2ElkNkMnCyoYXsLKAlcHUs3NwchEAnBzscB3MDNw8RABePqgGRgZ+AR5BIWG8QEiQR0SUAeJzJgYxcR5hQuYL80hIApVCNEhJE6VBBqGBOBtkRzVQTYOcPAQoEKtBUUlJWVlZRUVVjVgnqWtoaKipqWmqaaFo0AZK6egiqdPT1zcwBIrp6xsZm5iYAjWYmSNrsLDk4bGytgQptbEFkXb2Do5Ozi6ubu4enl7ePmqavugaLHX9/AMCg4JDQsPCIyKjoh1jYuPiExKTko1SUtPUsGlIz8jMys7Jzs3LzS8oLCouKS0rryivrHKvBmnwrfGtRddQV9/QmJ3TBNRg7dTUXOyoDtbQYqrWmprm69vWjqGho7Oru6e3r3/CxEmTp0zNn6ZeNL1yxsxZs+fMnTff13cBhobOzs6FCxcuWrQoBgzU1aHhCQS+vr7tGBoIqG9fsBhDA171GBqWLF0GAstxqV+8YPEKFA3C+M1fvHjBSjQNPPjVL161cgV64sOrfuWqlasxUis+9Vg18OBRj10DD271QA1rsGUgnOpXrlqLVQMPLvUr16FoQCqMcahfC9SAKIzXI+dp7OpBGjZANTAybNyEXKFsBoK2trYFYLAKDNat27J12/YdUA0MzDt3bdvNsxsO9uzZu3cvxPB9YLBt27a12xbvPwCv4w4eOnzk6LGjcHD8+PETYHDy5MlTp06dPn36zOmz584fRFSjBy5cvHQZCVyBA5jIpasXDiBX1Neu3yAArl9DrfyZbhIATHRrxQAAFGnMG2uVU+kAAAAASUVORK5CYII=",
+    "file" : true
+  },
+  "dexClasses" : 1839,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.viksaa.autofit.et\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f090083\" android:label=\"AutoFitEditText\" android:icon=\"res/mipmap-xxxhdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f090030\" android:label=\"AutoFitEditText\" android:name=\"com.viksaa.autofit.et.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1429131,
+  "crc32" : 688620059,
+  "sha256" : "1bff9c0acf46dd02a08fa95a82be6f4f89b7d633851290ef62b7345c8fd50a35",
+  "buildTime" : 1548517611000
+}

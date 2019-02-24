@@ -1,0 +1,823 @@
+2018-04-02 00:46:49,617 INFO  DownloadService - Downloading "https://github.com/jjhesk/slideSelectionList/archive/master.zip", attempt 3
+2018-04-02 00:47:50,085 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:47:50,778 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:47:50,778 INFO  DownloadService - Downloading "https://github.com/jjhesk/slideSelectionList/archive/master.zip", attempt 3
+2018-04-02 00:48:52,169 DEBUG FullProcessService - Repository https://github.com/jjhesk/slideSelectionList available: true
+2018-04-02 00:48:52,169 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:48:52,169 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jjhesk/slideSelectionList, /tmp/rdisk/2538/src]
+2018-04-02 00:48:53,917 INFO  SysUtils - 
+2018-04-02 00:48:53,925 INFO  GitService - Deleted "/tmp/rdisk/2538/src/.git": true
+2018-04-02 00:48:53,935 INFO  FullProcessService - Size of directory with sources: 626 KB
+2018-04-02 00:48:53,935 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2538/src]
+2018-04-02 00:48:53,943 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2538/src/.git/
+
+2018-04-02 00:48:53,950 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2538/src/SmartSelectionList/gradlew
+2018-04-02 00:48:53,958 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2538/src/SmartSelectionList/app/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/hbsdk/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/slideselection/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/build.gradle
+2018-04-02 00:48:53,964 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2538/src/SmartSelectionList/slideselection/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/slideselection/br.gradle /tmp/rdisk/2538/src/SmartSelectionList/settings.gradle /tmp/rdisk/2538/src/SmartSelectionList/hbsdk/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/build.gradle /tmp/rdisk/2538/src/SmartSelectionList/app/build.gradle
+2018-04-02 00:48:53,965 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:48:53,965 INFO  ProjectFixService - Fixing project...
+2018-04-02 00:48:53,986 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2538/src/SmartSelectionList/app/local.properties
+2018-04-02 00:48:53,986 INFO  ProjectFixService - Build info for "/tmp/rdisk/2538/src/SmartSelectionList/app/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-02 00:48:53,986 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2538/src/SmartSelectionList/hbsdk/local.properties
+2018-04-02 00:48:53,987 INFO  ProjectFixService - Build info for "/tmp/rdisk/2538/src/SmartSelectionList/hbsdk/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-02 00:48:53,987 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2538/src/SmartSelectionList/slideselection/local.properties
+2018-04-02 00:48:53,987 INFO  ProjectFixService - Build info for "/tmp/rdisk/2538/src/SmartSelectionList/slideselection/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-02 00:48:53,987 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2538/src/SmartSelectionList/local.properties
+2018-04-02 00:48:53,988 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 00:48:53,988 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 00:48:53,988 INFO  ProjectFixService - Build info for "/tmp/rdisk/2538/src/SmartSelectionList/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=16,targetSdkVersion=22]
+2018-04-02 00:48:53,989 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 00:48:53,989 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:48:53,989 INFO  SysUtils - Execute command: [/tmp/rdisk/2538/src/SmartSelectionList/gradlew, -b, /tmp/rdisk/2538/src/SmartSelectionList/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:49:25,241 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 00:49:25,241 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 00:49:25,241 INFO  SysUtils - Execute command: [/tmp/rdisk/2538/src/SmartSelectionList/gradlew, -b, /tmp/rdisk/2538/src/SmartSelectionList/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 00:51:34,584 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:hbsdk:preBuild UP-TO-DATE
+:hbsdk:preReleaseBuild UP-TO-DATE
+:hbsdk:compileReleaseNdk UP-TO-DATE
+:hbsdk:compileLint
+:hbsdk:copyReleaseLint UP-TO-DATE
+:hbsdk:checkReleaseManifest
+:hbsdk:preDebugAndroidTestBuild UP-TO-DATE
+:hbsdk:preDebugBuild UP-TO-DATE
+:hbsdk:preDebugUnitTestBuild UP-TO-DATE
+:hbsdk:preReleaseUnitTestBuild UP-TO-DATE
+:hbsdk:prepareComAndroidSupportAppcompatV72311Library
+:hbsdk:prepareComAndroidSupportSupportV132311Library
+:hbsdk:prepareComAndroidSupportSupportV42311Library
+:hbsdk:prepareReleaseDependencies
+:hbsdk:compileReleaseAidl
+:hbsdk:compileReleaseRenderscript
+:hbsdk:generateReleaseBuildConfig
+:hbsdk:generateReleaseAssets UP-TO-DATE
+:hbsdk:mergeReleaseAssets
+:hbsdk:generateReleaseResValues
+:hbsdk:generateReleaseResources
+:hbsdk:mergeReleaseResources
+:hbsdk:processReleaseManifest
+:hbsdk:processReleaseResources
+:hbsdk:generateReleaseSources
+:hbsdk:compileReleaseJavaWithJavac/tmp/rdisk/2538/src/SmartSelectionList/hbsdk/src/main/java/com/hypebeast/sdk/api/cookiesupport/PersistentCookieStore.java:11: warning: [deprecation] CookieSyncManager in android.webkit has been deprecated
+import android.webkit.CookieSyncManager;
+                     ^
+/tmp/rdisk/2538/src/SmartSelectionList/hbsdk/src/main/java/com/hypebeast/sdk/api/cookiesupport/PersistentCookieStore.java:11: warning: [deprecation] CookieSyncManager in android.webkit has been deprecated
+import android.webkit.CookieSyncManager;
+                     ^
+/tmp/rdisk/2538/src/SmartSelectionList/hbsdk/src/main/java/com/hypebeast/sdk/api/cookiesupport/PersistentCookieStore.java:11: warning: [deprecation] CookieSyncManager in android.webkit has been deprecated
+import android.webkit.CookieSyncManager;
+                     ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings
+
+:hbsdk:extractReleaseAnnotations
+:hbsdk:mergeReleaseProguardFiles
+:hbsdk:packageReleaseRenderscript UP-TO-DATE
+:hbsdk:packageReleaseResources
+:hbsdk:processReleaseJavaRes UP-TO-DATE
+:hbsdk:transformResourcesWithMergeJavaResForRelease
+:hbsdk:transformClassesAndResourcesWithSyncLibJarsForRelease
+:hbsdk:mergeReleaseJniLibFolders
+:hbsdk:transformNative_libsWithMergeJniLibsForRelease
+:hbsdk:transformNative_libsWithSyncJniLibsForRelease
+:hbsdk:bundleRelease
+:slideselection:preBuild UP-TO-DATE
+:slideselection:preReleaseBuild UP-TO-DATE
+:slideselection:compileReleaseNdk UP-TO-DATE
+:slideselection:compileLint
+:slideselection:copyReleaseLint UP-TO-DATE
+:slideselection:checkReleaseManifest
+:slideselection:preDebugAndroidTestBuild UP-TO-DATE
+:slideselection:preDebugBuild UP-TO-DATE
+:slideselection:preDebugUnitTestBuild UP-TO-DATE
+:slideselection:preReleaseUnitTestBuild UP-TO-DATE
+:slideselection:prepareComAndroidSupportAppcompatV72311Library
+:slideselection:prepareComAndroidSupportRecyclerviewV72220Library
+:slideselection:prepareComAndroidSupportSupportV132311Library
+:slideselection:prepareComAndroidSupportSupportV42311Library
+:slideselection:prepareComBalysvMaterialRipple102Library
+:slideselection:prepareComMarshalchenUltimaterecyclerviewLibrary0316Library
+:slideselection:prepareInSrainCubeUltraPtr1010Library
+:slideselection:prepareReleaseDependencies
+:slideselection:compileReleaseAidl
+:slideselection:compileReleaseRenderscript
+:slideselection:generateReleaseBuildConfig
+:slideselection:generateReleaseAssets UP-TO-DATE
+:slideselection:mergeReleaseAssets
+:slideselection:generateReleaseResValues
+:slideselection:generateReleaseResources
+:slideselection:mergeReleaseResources
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/slideselection/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_mini.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/slideselection/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.10/res/drawable-xhdpi-v4/ptr_rotate_arrow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/slideselection/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:slideselection:processReleaseManifest
+:slideselection:processReleaseResources
+:slideselection:generateReleaseSources
+:slideselection:compileReleaseJavaWithJavac/tmp/rdisk/2538/src/SmartSelectionList/slideselection/src/main/java/com/hkm/slideselection/app/HbSelectionFragment.java:106: warning: [deprecation] onAttach(Activity) in selectionBody has been deprecated
+    public void onAttach(Activity activity) {
+                ^
+/tmp/rdisk/2538/src/SmartSelectionList/slideselection/src/main/java/com/hkm/slideselection/app/HbSelectionFragment.java:107: warning: [deprecation] onAttach(Activity) in selectionBody has been deprecated
+        super.onAttach(activity);
+             ^
+Note: /tmp/rdisk/2538/src/SmartSelectionList/slideselection/src/main/java/com/hkm/slideselection/V1/SimpleSingleList.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+
+:slideselection:extractReleaseAnnotations
+:slideselection:mergeReleaseProguardFiles
+:slideselection:packageReleaseRenderscript UP-TO-DATE
+:slideselection:packageReleaseResources
+:slideselection:processReleaseJavaRes UP-TO-DATE
+:slideselection:transformResourcesWithMergeJavaResForRelease
+:slideselection:transformClassesAndResourcesWithSyncLibJarsForRelease
+:slideselection:mergeReleaseJniLibFolders
+:slideselection:transformNative_libsWithMergeJniLibsForRelease
+:slideselection:transformNative_libsWithSyncJniLibsForRelease
+:slideselection:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72311Library
+:app:prepareComAndroidSupportMediarouterV72220Library
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:prepareComAndroidSupportMultidex101Library
+:app:prepareComAndroidSupportRecyclerviewV72300Library
+:app:prepareComAndroidSupportSupportV132311Library
+:app:prepareComAndroidSupportSupportV42311Library
+:app:prepareComBalysvMaterialRipple102Library
+:app:prepareComGithubKingideayouSlideBottomPanel103Library
+:app:prepareComGoogleAndroidGmsPlayServices780Library
+:app:prepareComGoogleAndroidGmsPlayServicesAds780Library
+:app:prepareComGoogleAndroidGmsPlayServicesAnalytics780Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppindexing780Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppinvite780Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppstate780Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase780Library
+:app:prepareComGoogleAndroidGmsPlayServicesCast780Library
+:app:prepareComGoogleAndroidGmsPlayServicesDrive780Library
+:app:prepareComGoogleAndroidGmsPlayServicesFitness780Library
+:app:prepareComGoogleAndroidGmsPlayServicesGames780Library
+:app:prepareComGoogleAndroidGmsPlayServicesGcm780Library
+:app:prepareComGoogleAndroidGmsPlayServicesIdentity780Library
+:app:prepareComGoogleAndroidGmsPlayServicesLocation780Library
+:app:prepareComGoogleAndroidGmsPlayServicesMaps780Library
+:app:prepareComGoogleAndroidGmsPlayServicesNearby780Library
+:app:prepareComGoogleAndroidGmsPlayServicesPanorama780Library
+:app:prepareComGoogleAndroidGmsPlayServicesPlus780Library
+:app:prepareComGoogleAndroidGmsPlayServicesSafetynet780Library
+:app:prepareComGoogleAndroidGmsPlayServicesVision780Library
+:app:prepareComGoogleAndroidGmsPlayServicesWallet780Library
+:app:prepareComGoogleAndroidGmsPlayServicesWearable780Library
+:app:prepareComIsseiaokiSimplecropview108Library
+:app:prepareComMarshalchenUltimaterecyclerviewLibrary0316Library
+:app:prepareComTuringtechnologiesMaterialscrollbarLib301Library
+:app:prepareInSrainCubeUltraPtr1010Library
+:app:prepareMeDrakeetLibraryCrashwoodpecker097Library
+:app:prepareSmartSelectionListHbsdkUnspecifiedLibrary
+:app:prepareSmartSelectionListSlideselectionUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.10/res/drawable-xhdpi-v4/ptr_rotate_arrow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_mini.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithJarMergingForDebug
+:app:collectDebugMultiDexComponents
+:app:transformClassesWithMultidexlistForDebug
+ProGuard, version 5.2.1
+Reading program jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar]
+Reading library jar [/root/Applications/android-sdk/build-tools/23.0.2/lib/shrinkedAndroid.jar]
+Note: the configuration refers to the unknown class 'com.tradlulu.demoCollectionList.AppliedHBFilter'
+Note: com.google.ads.mediation.MediationServerParameters calls 'Field.getAnnotation'
+Note: com.google.gson.FieldAttributes calls 'Field.getAnnotation'
+Note: com.google.gson.FieldAttributes calls 'Field.getAnnotations'
+Note: com.google.gson.internal.Excluder calls 'Field.getAnnotation'
+Note: com.google.gson.internal.Excluder calls 'Class.getAnnotation'
+Note: com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory calls 'Class.getAnnotation'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getAnnotation'
+Note: com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter calls 'Field.getAnnotation'
+Note: org.apache.commons.lang3.reflect.FieldUtils calls 'Field.getAnnotation'
+Note: org.apache.commons.lang3.reflect.MethodUtils calls 'Method.getAnnotation'
+Note: retrofit.RestMethodInfo calls 'Method.getAnnotations'
+Note: retrofit.RestMethodInfo calls 'Class.getAnnotations'
+Note: retrofit.RestMethodInfo calls 'Method.getParameterAnnotations'
+Note: android.support.v4.app.NotificationCompatJellybean calls 'Field.getType'
+Note: com.google.android.gms.internal.zzry calls 'Field.getType'
+Note: com.google.gson.FieldAttributes calls 'Field.getGenericType'
+Note: com.google.gson.FieldAttributes calls 'Field.getType'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getGenericInterfaces'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getGenericSuperclass'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getTypeParameters'
+Note: com.google.gson.internal.Excluder calls 'Field.getType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getGenericType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Class.getGenericSuperclass'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getGenericSuperclass'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getTypeParameters'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getGenericInterfaces'
+Note: com.nineoldandroids.util.ReflectiveProperty calls 'Field.getType'
+Note: io.realm.processor.javawriter.JavaWriter calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.builder.Diff calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.MethodUtils calls 'Method.getGenericParameterTypes'
+Note: org.apache.commons.lang3.reflect.TypeLiteral calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getGenericInterfaces'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getGenericSuperclass'
+Note: retrofit.RestMethodInfo calls 'Method.getGenericReturnType'
+Note: retrofit.RestMethodInfo calls 'Method.getGenericParameterTypes'
+Note: retrofit.Types calls 'Class.getGenericInterfaces'
+Note: retrofit.Types calls 'Class.getGenericSuperclass'
+Note: retrofit.Types calls 'Class.getTypeParameters'
+Note: com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.ClassUtils calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.reflect.ConstructorUtils calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getEnclosingClass'
+Note: retrofit.Types$ParameterizedTypeImpl calls 'Class.getEnclosingClass'
+Note: android.support.v4.app.NotificationCompatJellybean: can't find dynamically referenced class android.app.Notification$Action
+Note: android.support.v4.text.ICUCompatApi23: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v7.widget.DrawableUtils: can't find dynamically referenced class android.graphics.Insets
+Note: com.google.android.gms.maps.internal.zzy: can't find dynamically referenced class com.google.android.gms.maps.internal.CreatorImpl
+Note: com.google.gson.internal.UnsafeAllocator: can't find dynamically referenced class sun.misc.Unsafe
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class com.android.org.conscrypt.OpenSSLSocketImpl
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class android.net.TrafficStats
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class android.net.Network
+Note: retrofit.Platform: can't find dynamically referenced class android.os.Build
+Note: retrofit.Platform: can't find dynamically referenced class rx.Observable
+Note: android.support.multidex.MultiDexExtractor accesses a method 'apply()' dynamically
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'icon' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int icon; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$id { int icon; }'
+      Maybe this is program field 'com.hkm.slideselection.R$attr { int icon; }'
+      Maybe this is program field 'com.hkm.slideselection.R$id { int icon; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$attr { int icon; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$id { int icon; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$attr { int icon; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$id { int icon; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$attr { int icon; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$id { int icon; }'
+      Maybe this is program field 'me.drakeet.library.R$attr { int icon; }'
+      Maybe this is program field 'me.drakeet.library.R$id { int icon; }'
+      Maybe this is program field 'me.next.slidebottomview.R$attr { int icon; }'
+      Maybe this is program field 'me.next.slidebottomview.R$id { int icon; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'title' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { java.lang.CharSequence title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int title; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$id { int title; }'
+      Maybe this is program field 'com.google.android.gms.games.internal.player.PlayerColumnNames { java.lang.String title; }'
+      Maybe this is program field 'com.google.android.gms.vision.barcode.Barcode$ContactInfo { java.lang.String title; }'
+      Maybe this is program field 'com.google.android.gms.vision.barcode.Barcode$UrlBookmark { java.lang.String title; }'
+      Maybe this is program field 'com.hkm.slideselection.R$attr { int title; }'
+      Maybe this is program field 'com.hkm.slideselection.R$id { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$attr { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$id { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.hbeditorial.ArticleData { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.symfony.ProductGroupContainer { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.wprest.featuredImage { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.wprest.post { java.lang.String title; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$attr { int title; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$id { int title; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$attr { int title; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$id { int title; }'
+      Maybe this is program field 'me.drakeet.library.R$attr { int title; }'
+      Maybe this is program field 'me.drakeet.library.R$id { int title; }'
+      Maybe this is program field 'me.drakeet.library.ui.CrashListAdapter$ViewHolder { android.widget.TextView title; }'
+      Maybe this is program field 'me.next.slidebottomview.R$attr { int title; }'
+      Maybe this is program field 'me.next.slidebottomview.R$id { int title; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'actionIntent' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { android.app.PendingIntent actionIntent; }'
+Note: android.support.v4.text.ICUCompatApi23 accesses a method 'addLikelySubtags(java.util.Locale)' dynamically
+      Maybe this is program method 'android.support.v4.text.ICUCompatIcs { java.lang.String addLikelySubtags(java.util.Locale); }'
+Note: android.support.v4.text.ICUCompatIcs accesses a method 'getScript(java.lang.String)' dynamically
+      Maybe this is program method 'android.support.v4.text.ICUCompatIcs { java.lang.String getScript(java.lang.String); }'
+Note: android.support.v4.text.ICUCompatIcs accesses a method 'addLikelySubtags(java.lang.String)' dynamically
+Note: android.support.v7.widget.DrawableUtils accesses a method 'getOpticalInsets()' dynamically
+Note: android.support.v7.widget.ViewUtils accesses a method 'makeOptionalFitsSystemWindows()' dynamically
+Note: com.google.android.gms.ads.internal.purchase.zzb accesses a declared method 'asInterface(android.os.IBinder)' dynamically
+      Maybe this is program method 'android.support.v4.app.INotificationSideChannel$Stub { android.support.v4.app.INotificationSideChannel asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.IMediaBrowserServiceCompat$Stub { android.support.v4.media.IMediaBrowserServiceCompat asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub { android.support.v4.media.IMediaBrowserServiceCompatCallbacks asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.session.IMediaControllerCallback$Stub { android.support.v4.media.session.IMediaControllerCallback asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.session.IMediaSession$Stub { android.support.v4.media.session.IMediaSession asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.os.IResultReceiver$Stub { android.support.v4.os.IResultReceiver asInterface(android.os.IBinder); }'
+Note: com.google.android.gms.common.internal.DowngradeableSafeParcel accesses a field 'NULL' dynamically
+      Maybe this is program field 'com.google.android.gms.common.internal.safeparcel.SafeParcelable { java.lang.String NULL; }'
+      Maybe this is program field 'com.google.gson.stream.JsonToken { com.google.gson.stream.JsonToken NULL; }'
+      Maybe this is program field 'org.apache.commons.lang3.ObjectUtils { org.apache.commons.lang3.ObjectUtils$Null NULL; }'
+Note: com.google.gson.internal.UnsafeAllocator accesses a declared field 'theUnsafe' dynamically
+Note: com.google.gson.internal.UnsafeAllocator accesses a method 'allocateInstance(java.lang.Class)' dynamically
+Note: com.hypebeast.sdk.api.cookiesupport.SerializableHttpCookie accesses a declared field 'httpOnly' dynamically
+Note: com.marshalchen.ultimaterecyclerview.swipe.SwipeLayout accesses a field 'gravity' dynamically
+      Maybe this is program field 'android.support.v4.view.ViewPager$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v4.widget.DrawerLayout$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v7.app.ActionBar$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState { int gravity; }'
+      Maybe this is program field 'android.support.v7.widget.LinearLayoutCompat$LayoutParams { int gravity; }'
+      Maybe this is program field 'com.google.android.gms.games.internal.PopupManager$PopupLocationInfo { int gravity; }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'tagSocket(java.net.Socket)' dynamically
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompatIcs { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform$Android { void tagSocket(java.net.Socket); }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'untagSocket(java.net.Socket)' dynamically
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompatIcs { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform$Android { void untagSocket(java.net.Socket); }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'get(javax.net.ssl.SSLSocket)' dynamically
+Note: com.squareup.okhttp.internal.Platform accesses a method 'remove(javax.net.ssl.SSLSocket)' dynamically
+Note: org.apache.commons.lang3.ObjectUtils accesses a method 'clone()' dynamically
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$Action$WearableExtender { android.support.v4.app.NotificationCompat$Action$WearableExtender clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$Action$WearableExtender { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$WearableExtender { android.support.v4.app.NotificationCompat$WearableExtender clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$WearableExtender { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.util.LongSparseArray { android.support.v4.util.LongSparseArray clone(); }'
+      Maybe this is program method 'android.support.v4.util.LongSparseArray { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.util.SparseArrayCompat { android.support.v4.util.SparseArrayCompat clone(); }'
+      Maybe this is program method 'android.support.v4.util.SparseArrayCompat { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v7.widget.PositionMap { android.support.v7.widget.PositionMap clone(); }'
+      Maybe this is program method 'android.support.v7.widget.PositionMap { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { com.bumptech.glide.BitmapRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { com.bumptech.glide.DrawableRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GenericRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GenericRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { com.bumptech.glide.GifRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.provider.ChildLoadProvider { com.bumptech.glide.provider.ChildLoadProvider clone(); }'
+      Maybe this is program method 'com.bumptech.glide.provider.ChildLoadProvider { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrr { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrt { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzru { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrx { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.gson.internal.Excluder { com.google.gson.internal.Excluder clone(); }'
+      Maybe this is program method 'com.google.gson.internal.Excluder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.hkm.slideselection.worker.SelectChoice { com.hkm.slideselection.worker.SelectChoice clone(); }'
+      Maybe this is program method 'com.hkm.slideselection.worker.SelectChoice { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Animator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Animator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { com.nineoldandroids.animation.AnimatorSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet$Node { com.nineoldandroids.animation.AnimatorSet$Node clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet$Node { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { com.nineoldandroids.animation.FloatKeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { com.nineoldandroids.animation.IntKeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { com.nineoldandroids.animation.Keyframe$FloatKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { com.nineoldandroids.animation.Keyframe$IntKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { com.nineoldandroids.animation.Keyframe$ObjectKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.KeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.KeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.ObjectAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.ValueAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { com.nineoldandroids.animation.ValueAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkHttpClient { com.squareup.okhttp.OkHttpClient clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkHttpClient { java.lang.Object clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkUrlFactory { com.squareup.okhttp.OkUrlFactory clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkUrlFactory { java.lang.Object clone(); }'
+      Maybe this is program method 'okio.Buffer { okio.Buffer clone(); }'
+      Maybe this is program method 'okio.Buffer { java.lang.Object clone(); }'
+      Maybe this is program method 'org.apache.commons.lang3.text.StrTokenizer { java.lang.Object clone(); }'
+Note: retrofit.RestMethodInfo accesses a method 'value()' dynamically
+      Maybe this is program method 'android.support.annotation.IntDef { long[] value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission { java.lang.String value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission$Read { android.support.annotation.RequiresPermission value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission$Write { android.support.annotation.RequiresPermission value(); }'
+      Maybe this is program method 'android.support.annotation.Size { long value(); }'
+      Maybe this is program method 'android.support.annotation.StringDef { java.lang.String[] value(); }'
+      Maybe this is program method 'com.google.gson.annotations.JsonAdapter { java.lang.Class value(); }'
+      Maybe this is program method 'com.google.gson.annotations.SerializedName { java.lang.String value(); }'
+      Maybe this is program method 'com.google.gson.annotations.Since { double value(); }'
+      Maybe this is program method 'com.google.gson.annotations.Until { double value(); }'
+      Maybe this is program method 'retrofit.http.DELETE { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.EncodedPath { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.EncodedQuery { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Field { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.GET { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.HEAD { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Header { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Headers { java.lang.String[] value(); }'
+      Maybe this is program method 'retrofit.http.PATCH { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.POST { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.PUT { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Part { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Path { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Query { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.RestMethod { java.lang.String value(); }'
+Note: the configuration refers to the unknown method 'void attachBaseContext(android.content.Context)' in class 'com.tradlulu.demoCollectionList.Module.base'
+Note: there were 1 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 references to unknown class members.
+      You should check your configuration for typos.
+Note: there were 13 classes trying to access annotations using reflection.
+      You should consider keeping the annotation attributes
+      (using '-keepattributes *Annotation*').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 27 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 5 classes trying to access enclosing classes using reflection.
+      You should consider keeping the inner classes attributes
+      (using '-keepattributes InnerClasses').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 12 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 21 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Note: you're ignoring all warnings!
+Preparing output jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/multi-dex/debug/componentClasses.jar]
+  Copying resources from program jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar]
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareMeDrakeetLibraryCrashwoodpeckerDoNothing097Library
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.10/res/drawable-xhdpi-v4/ptr_rotate_arrow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_mini.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.16/res/drawable-xhdpi/urv_floating_action_button_fab_bg_normal.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithJarMergingForRelease
+:app:collectReleaseMultiDexComponents
+:app:transformClassesWithMultidexlistForRelease
+ProGuard, version 5.2.1
+Reading program jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar]
+Reading library jar [/root/Applications/android-sdk/build-tools/23.0.2/lib/shrinkedAndroid.jar]
+Note: the configuration refers to the unknown class 'com.tradlulu.demoCollectionList.AppliedHBFilter'
+Note: com.google.ads.mediation.MediationServerParameters calls 'Field.getAnnotation'
+Note: com.google.gson.FieldAttributes calls 'Field.getAnnotation'
+Note: com.google.gson.FieldAttributes calls 'Field.getAnnotations'
+Note: com.google.gson.internal.Excluder calls 'Field.getAnnotation'
+Note: com.google.gson.internal.Excluder calls 'Class.getAnnotation'
+Note: com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory calls 'Class.getAnnotation'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getAnnotation'
+Note: com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter calls 'Field.getAnnotation'
+Note: org.apache.commons.lang3.reflect.FieldUtils calls 'Field.getAnnotation'
+Note: org.apache.commons.lang3.reflect.MethodUtils calls 'Method.getAnnotation'
+Note: retrofit.RestMethodInfo calls 'Method.getAnnotations'
+Note: retrofit.RestMethodInfo calls 'Class.getAnnotations'
+Note: retrofit.RestMethodInfo calls 'Method.getParameterAnnotations'
+Note: android.support.v4.app.NotificationCompatJellybean calls 'Field.getType'
+Note: com.google.android.gms.internal.zzry calls 'Field.getType'
+Note: com.google.gson.FieldAttributes calls 'Field.getGenericType'
+Note: com.google.gson.FieldAttributes calls 'Field.getType'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getGenericInterfaces'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getGenericSuperclass'
+Note: com.google.gson.internal.$Gson$Types calls 'Class.getTypeParameters'
+Note: com.google.gson.internal.Excluder calls 'Field.getType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Field.getGenericType'
+Note: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory calls 'Class.getGenericSuperclass'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getGenericSuperclass'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getTypeParameters'
+Note: com.google.gson.reflect.TypeToken calls 'Class.getGenericInterfaces'
+Note: com.nineoldandroids.util.ReflectiveProperty calls 'Field.getType'
+Note: io.realm.processor.javawriter.JavaWriter calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.builder.Diff calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.MethodUtils calls 'Method.getGenericParameterTypes'
+Note: org.apache.commons.lang3.reflect.TypeLiteral calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getTypeParameters'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getGenericInterfaces'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getGenericSuperclass'
+Note: retrofit.RestMethodInfo calls 'Method.getGenericReturnType'
+Note: retrofit.RestMethodInfo calls 'Method.getGenericParameterTypes'
+Note: retrofit.Types calls 'Class.getGenericInterfaces'
+Note: retrofit.Types calls 'Class.getGenericSuperclass'
+Note: retrofit.Types calls 'Class.getTypeParameters'
+Note: com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.ClassUtils calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.reflect.ConstructorUtils calls 'Class.getEnclosingClass'
+Note: org.apache.commons.lang3.reflect.TypeUtils calls 'Class.getEnclosingClass'
+Note: retrofit.Types$ParameterizedTypeImpl calls 'Class.getEnclosingClass'
+Note: android.support.v4.app.NotificationCompatJellybean: can't find dynamically referenced class android.app.Notification$Action
+Note: android.support.v4.text.ICUCompatApi23: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v4.text.ICUCompatIcs: can't find dynamically referenced class libcore.icu.ICU
+Note: android.support.v7.widget.DrawableUtils: can't find dynamically referenced class android.graphics.Insets
+Note: com.google.android.gms.maps.internal.zzy: can't find dynamically referenced class com.google.android.gms.maps.internal.CreatorImpl
+Note: com.google.gson.internal.UnsafeAllocator: can't find dynamically referenced class sun.misc.Unsafe
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class com.android.org.conscrypt.OpenSSLSocketImpl
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class android.net.TrafficStats
+Note: com.squareup.okhttp.internal.Platform: can't find dynamically referenced class android.net.Network
+Note: retrofit.Platform: can't find dynamically referenced class android.os.Build
+Note: retrofit.Platform: can't find dynamically referenced class rx.Observable
+Note: android.support.multidex.MultiDexExtractor accesses a method 'apply()' dynamically
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'icon' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int icon; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$attr { int icon; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$id { int icon; }'
+      Maybe this is program field 'com.hkm.slideselection.R$attr { int icon; }'
+      Maybe this is program field 'com.hkm.slideselection.R$id { int icon; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$attr { int icon; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$id { int icon; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$attr { int icon; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$id { int icon; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$attr { int icon; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$id { int icon; }'
+      Maybe this is program field 'me.next.slidebottomview.R$attr { int icon; }'
+      Maybe this is program field 'me.next.slidebottomview.R$id { int icon; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'title' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { java.lang.CharSequence title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.appcompat.R$id { int title; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$attr { int title; }'
+      Maybe this is program field 'android.support.v7.mediarouter.R$id { int title; }'
+      Maybe this is program field 'com.google.android.gms.games.internal.player.PlayerColumnNames { java.lang.String title; }'
+      Maybe this is program field 'com.google.android.gms.vision.barcode.Barcode$ContactInfo { java.lang.String title; }'
+      Maybe this is program field 'com.google.android.gms.vision.barcode.Barcode$UrlBookmark { java.lang.String title; }'
+      Maybe this is program field 'com.hkm.slideselection.R$attr { int title; }'
+      Maybe this is program field 'com.hkm.slideselection.R$id { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$attr { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.R$id { int title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.hbeditorial.ArticleData { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.symfony.ProductGroupContainer { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.wprest.featuredImage { java.lang.String title; }'
+      Maybe this is program field 'com.hypebeast.sdk.api.model.wprest.post { java.lang.String title; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$attr { int title; }'
+      Maybe this is program field 'com.marshalchen.ultimaterecyclerview.R$id { int title; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$attr { int title; }'
+      Maybe this is program field 'com.tradlulu.demoCollectionList.R$id { int title; }'
+      Maybe this is program field 'me.next.slidebottomview.R$attr { int title; }'
+      Maybe this is program field 'me.next.slidebottomview.R$id { int title; }'
+Note: android.support.v4.app.NotificationCompatJellybean accesses a declared field 'actionIntent' dynamically
+      Maybe this is program field 'android.support.v4.app.NotificationCompat$Action { android.app.PendingIntent actionIntent; }'
+Note: android.support.v4.text.ICUCompatApi23 accesses a method 'addLikelySubtags(java.util.Locale)' dynamically
+      Maybe this is program method 'android.support.v4.text.ICUCompatIcs { java.lang.String addLikelySubtags(java.util.Locale); }'
+Note: android.support.v4.text.ICUCompatIcs accesses a method 'getScript(java.lang.String)' dynamically
+      Maybe this is program method 'android.support.v4.text.ICUCompatIcs { java.lang.String getScript(java.lang.String); }'
+Note: android.support.v4.text.ICUCompatIcs accesses a method 'addLikelySubtags(java.lang.String)' dynamically
+Note: android.support.v7.widget.DrawableUtils accesses a method 'getOpticalInsets()' dynamically
+Note: android.support.v7.widget.ViewUtils accesses a method 'makeOptionalFitsSystemWindows()' dynamically
+Note: com.google.android.gms.ads.internal.purchase.zzb accesses a declared method 'asInterface(android.os.IBinder)' dynamically
+      Maybe this is program method 'android.support.v4.app.INotificationSideChannel$Stub { android.support.v4.app.INotificationSideChannel asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.IMediaBrowserServiceCompat$Stub { android.support.v4.media.IMediaBrowserServiceCompat asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.IMediaBrowserServiceCompatCallbacks$Stub { android.support.v4.media.IMediaBrowserServiceCompatCallbacks asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.session.IMediaControllerCallback$Stub { android.support.v4.media.session.IMediaControllerCallback asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.media.session.IMediaSession$Stub { android.support.v4.media.session.IMediaSession asInterface(android.os.IBinder); }'
+      Maybe this is program method 'android.support.v4.os.IResultReceiver$Stub { android.support.v4.os.IResultReceiver asInterface(android.os.IBinder); }'
+Note: com.google.android.gms.common.internal.DowngradeableSafeParcel accesses a field 'NULL' dynamically
+      Maybe this is program field 'com.google.android.gms.common.internal.safeparcel.SafeParcelable { java.lang.String NULL; }'
+      Maybe this is program field 'com.google.gson.stream.JsonToken { com.google.gson.stream.JsonToken NULL; }'
+      Maybe this is program field 'org.apache.commons.lang3.ObjectUtils { org.apache.commons.lang3.ObjectUtils$Null NULL; }'
+Note: com.google.gson.internal.UnsafeAllocator accesses a declared field 'theUnsafe' dynamically
+Note: com.google.gson.internal.UnsafeAllocator accesses a method 'allocateInstance(java.lang.Class)' dynamically
+Note: com.hypebeast.sdk.api.cookiesupport.SerializableHttpCookie accesses a declared field 'httpOnly' dynamically
+Note: com.marshalchen.ultimaterecyclerview.swipe.SwipeLayout accesses a field 'gravity' dynamically
+      Maybe this is program field 'android.support.v4.view.ViewPager$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v4.widget.DrawerLayout$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v7.app.ActionBar$LayoutParams { int gravity; }'
+      Maybe this is program field 'android.support.v7.app.AppCompatDelegateImplV7$PanelFeatureState { int gravity; }'
+      Maybe this is program field 'android.support.v7.widget.LinearLayoutCompat$LayoutParams { int gravity; }'
+      Maybe this is program field 'com.google.android.gms.games.internal.PopupManager$PopupLocationInfo { int gravity; }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'tagSocket(java.net.Socket)' dynamically
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompatIcs { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform { void tagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform$Android { void tagSocket(java.net.Socket); }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'untagSocket(java.net.Socket)' dynamically
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'android.support.v4.net.TrafficStatsCompatIcs { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform { void untagSocket(java.net.Socket); }'
+      Maybe this is program method 'com.squareup.okhttp.internal.Platform$Android { void untagSocket(java.net.Socket); }'
+Note: com.squareup.okhttp.internal.Platform accesses a method 'get(javax.net.ssl.SSLSocket)' dynamically
+Note: com.squareup.okhttp.internal.Platform accesses a method 'remove(javax.net.ssl.SSLSocket)' dynamically
+Note: org.apache.commons.lang3.ObjectUtils accesses a method 'clone()' dynamically
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$Action$WearableExtender { android.support.v4.app.NotificationCompat$Action$WearableExtender clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$Action$WearableExtender { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$WearableExtender { android.support.v4.app.NotificationCompat$WearableExtender clone(); }'
+      Maybe this is program method 'android.support.v4.app.NotificationCompat$WearableExtender { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.util.LongSparseArray { android.support.v4.util.LongSparseArray clone(); }'
+      Maybe this is program method 'android.support.v4.util.LongSparseArray { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v4.util.SparseArrayCompat { android.support.v4.util.SparseArrayCompat clone(); }'
+      Maybe this is program method 'android.support.v4.util.SparseArrayCompat { java.lang.Object clone(); }'
+      Maybe this is program method 'android.support.v7.widget.PositionMap { android.support.v7.widget.PositionMap clone(); }'
+      Maybe this is program method 'android.support.v7.widget.PositionMap { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { com.bumptech.glide.BitmapRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.BitmapRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { com.bumptech.glide.DrawableRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.DrawableRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GenericRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GenericRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { com.bumptech.glide.GifRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { com.bumptech.glide.GenericRequestBuilder clone(); }'
+      Maybe this is program method 'com.bumptech.glide.GifRequestBuilder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.bumptech.glide.provider.ChildLoadProvider { com.bumptech.glide.provider.ChildLoadProvider clone(); }'
+      Maybe this is program method 'com.bumptech.glide.provider.ChildLoadProvider { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrr { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrt { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzru { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.android.gms.internal.zzrx { java.lang.Object clone(); }'
+      Maybe this is program method 'com.google.gson.internal.Excluder { com.google.gson.internal.Excluder clone(); }'
+      Maybe this is program method 'com.google.gson.internal.Excluder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.hkm.slideselection.worker.SelectChoice { com.hkm.slideselection.worker.SelectChoice clone(); }'
+      Maybe this is program method 'com.hkm.slideselection.worker.SelectChoice { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Animator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Animator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { com.nineoldandroids.animation.AnimatorSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet$Node { com.nineoldandroids.animation.AnimatorSet$Node clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.AnimatorSet$Node { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { com.nineoldandroids.animation.FloatKeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.FloatKeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { com.nineoldandroids.animation.IntKeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.IntKeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { com.nineoldandroids.animation.Keyframe$FloatKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$FloatKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { com.nineoldandroids.animation.Keyframe$IntKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$IntKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { com.nineoldandroids.animation.Keyframe$ObjectKeyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { com.nineoldandroids.animation.Keyframe clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.Keyframe$ObjectKeyframe { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.KeyframeSet { com.nineoldandroids.animation.KeyframeSet clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.KeyframeSet { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.ObjectAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.ValueAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ObjectAnimator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$FloatPropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { com.nineoldandroids.animation.PropertyValuesHolder clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.PropertyValuesHolder$IntPropertyValuesHolder { java.lang.Object clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { com.nineoldandroids.animation.ValueAnimator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { com.nineoldandroids.animation.Animator clone(); }'
+      Maybe this is program method 'com.nineoldandroids.animation.ValueAnimator { java.lang.Object clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkHttpClient { com.squareup.okhttp.OkHttpClient clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkHttpClient { java.lang.Object clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkUrlFactory { com.squareup.okhttp.OkUrlFactory clone(); }'
+      Maybe this is program method 'com.squareup.okhttp.OkUrlFactory { java.lang.Object clone(); }'
+      Maybe this is program method 'okio.Buffer { okio.Buffer clone(); }'
+      Maybe this is program method 'okio.Buffer { java.lang.Object clone(); }'
+      Maybe this is program method 'org.apache.commons.lang3.text.StrTokenizer { java.lang.Object clone(); }'
+Note: retrofit.RestMethodInfo accesses a method 'value()' dynamically
+      Maybe this is program method 'android.support.annotation.IntDef { long[] value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission { java.lang.String value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission$Read { android.support.annotation.RequiresPermission value(); }'
+      Maybe this is program method 'android.support.annotation.RequiresPermission$Write { android.support.annotation.RequiresPermission value(); }'
+      Maybe this is program method 'android.support.annotation.Size { long value(); }'
+      Maybe this is program method 'android.support.annotation.StringDef { java.lang.String[] value(); }'
+      Maybe this is program method 'com.google.gson.annotations.JsonAdapter { java.lang.Class value(); }'
+      Maybe this is program method 'com.google.gson.annotations.SerializedName { java.lang.String value(); }'
+      Maybe this is program method 'com.google.gson.annotations.Since { double value(); }'
+      Maybe this is program method 'com.google.gson.annotations.Until { double value(); }'
+      Maybe this is program method 'retrofit.http.DELETE { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.EncodedPath { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.EncodedQuery { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Field { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.GET { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.HEAD { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Header { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Headers { java.lang.String[] value(); }'
+      Maybe this is program method 'retrofit.http.PATCH { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.POST { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.PUT { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Part { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Path { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.Query { java.lang.String value(); }'
+      Maybe this is program method 'retrofit.http.RestMethod { java.lang.String value(); }'
+Note: the configuration refers to the unknown method 'void attachBaseContext(android.content.Context)' in class 'com.tradlulu.demoCollectionList.Module.base'
+Note: there were 1 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 references to unknown class members.
+      You should check your configuration for typos.
+Note: there were 13 classes trying to access annotations using reflection.
+      You should consider keeping the annotation attributes
+      (using '-keepattributes *Annotation*').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 27 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 5 classes trying to access enclosing classes using reflection.
+      You should consider keeping the inner classes attributes
+      (using '-keepattributes InnerClasses').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 12 unresolved dynamic references to classes or interfaces.
+      You should check if you need to specify additional program jars.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclass)
+Note: there were 21 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Note: you're ignoring all warnings!
+Preparing output jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/multi-dex/release/componentClasses.jar]
+  Copying resources from program jar [/tmp/rdisk/2538/src/SmartSelectionList/app/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar]
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 2 mins 8.906 secs
+
+2018-04-02 00:51:34,734 INFO  FullProcessService - Found APK file: /tmp/rdisk/2538/src/SmartSelectionList/app/build/outputs/apk/app-debug.apk

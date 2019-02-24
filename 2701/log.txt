@@ -1,0 +1,200 @@
+2018-04-01 11:01:01,876 INFO  DownloadService - Downloading "https://github.com/ayz4sci/DownloadProgress/archive/master.zip", attempt 3
+2018-04-01 11:02:01,877 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 11:02:02,627 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 11:02:02,627 INFO  DownloadService - Downloading "https://github.com/ayz4sci/DownloadProgress/archive/master.zip", attempt 3
+2018-04-01 11:03:03,391 DEBUG FullProcessService - Repository https://github.com/ayz4sci/DownloadProgress available: true
+2018-04-01 11:03:03,391 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 11:03:03,391 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ayz4sci/DownloadProgress, /tmp/rdisk/2701/src]
+2018-04-01 11:03:06,864 INFO  SysUtils - 
+2018-04-01 11:03:06,876 INFO  GitService - Deleted "/tmp/rdisk/2701/src/.git": true
+2018-04-01 11:03:06,877 INFO  FullProcessService - Size of directory with sources: 106 KB
+2018-04-01 11:03:06,877 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2701/src]
+2018-04-01 11:03:06,882 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2701/src/.git/
+
+2018-04-01 11:03:06,884 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2701/src/gradlew
+2018-04-01 11:03:06,886 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2701/src/app/build.gradle /tmp/rdisk/2701/src/downloadprogress/build.gradle /tmp/rdisk/2701/src/build.gradle
+2018-04-01 11:03:06,887 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2701/src/settings.gradle /tmp/rdisk/2701/src/downloadprogress/build.gradle /tmp/rdisk/2701/src/build.gradle /tmp/rdisk/2701/src/app/build.gradle
+2018-04-01 11:03:06,888 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-01 11:04:06,889 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 11:04:06,889 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-01 11:05:06,890 ERROR RemoteScriptService - Could not download content from "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 11:05:06,890 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 11:05:06,890 INFO  ProjectFixService - Fixing project...
+2018-04-01 11:05:06,895 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2701/src/app/local.properties
+2018-04-01 11:05:06,895 INFO  ProjectFixService - Build info for "/tmp/rdisk/2701/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=11,targetSdkVersion=22]
+2018-04-01 11:05:06,895 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2701/src/downloadprogress/local.properties
+2018-04-01 11:05:06,895 INFO  ProjectFixService - Build info for "/tmp/rdisk/2701/src/downloadprogress/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-01 11:05:06,896 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2701/src/local.properties
+2018-04-01 11:05:06,896 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 11:05:06,896 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 11:05:06,897 INFO  ProjectFixService - Build info for "/tmp/rdisk/2701/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=9,targetSdkVersion=22]
+2018-04-01 11:05:06,897 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 11:05:06,897 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:05:06,897 INFO  SysUtils - Execute command: [/tmp/rdisk/2701/src/gradlew, -b, /tmp/rdisk/2701/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:05:14,682 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-01 11:05:14,682 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 11:05:14,683 INFO  SysUtils - Execute command: [/tmp/rdisk/2701/src/gradlew, -b, /tmp/rdisk/2701/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 11:05:40,124 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:downloadprogress:compileLint
+:downloadprogress:copyReleaseLint UP-TO-DATE
+:downloadprogress:preBuild UP-TO-DATE
+:downloadprogress:preReleaseBuild UP-TO-DATE
+:downloadprogress:checkReleaseManifest
+:downloadprogress:preDebugAndroidTestBuild UP-TO-DATE
+:downloadprogress:preDebugBuild UP-TO-DATE
+:downloadprogress:preDebugUnitTestBuild UP-TO-DATE
+:downloadprogress:preReleaseUnitTestBuild UP-TO-DATE
+:downloadprogress:prepareComAndroidSupportAppcompatV72220Library
+:downloadprogress:prepareComAndroidSupportSupportV42220Library
+:downloadprogress:prepareReleaseDependencies
+:downloadprogress:compileReleaseAidl
+:downloadprogress:compileReleaseRenderscript
+:downloadprogress:generateReleaseBuildConfig
+:downloadprogress:generateReleaseAssets UP-TO-DATE
+:downloadprogress:mergeReleaseAssets
+:downloadprogress:generateReleaseResValues
+:downloadprogress:generateReleaseResources
+:downloadprogress:mergeReleaseResources
+:downloadprogress:processReleaseManifest
+:downloadprogress:processReleaseResources
+:downloadprogress:generateReleaseSources
+:downloadprogress:processReleaseJavaRes UP-TO-DATE
+:downloadprogress:compileReleaseJava
+:downloadprogress:extractReleaseAnnotations
+:downloadprogress:mergeReleaseProguardFiles
+:downloadprogress:packageReleaseJar
+:downloadprogress:compileReleaseNdk UP-TO-DATE
+:downloadprogress:packageReleaseJniLibs UP-TO-DATE
+:downloadprogress:packageReleaseLocalJar UP-TO-DATE
+:downloadprogress:packageReleaseRenderscript UP-TO-DATE
+:downloadprogress:packageReleaseResources
+:downloadprogress:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72220Library
+:app:prepareComAndroidSupportSupportV42220Library
+:app:prepareComAyz4sciAndroidfactoryDownloadprogress102Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaNote: /tmp/rdisk/2701/src/app/src/main/java/com/ayz4sci/downloadprogressexample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaNote: /tmp/rdisk/2701/src/app/src/main/java/com/ayz4sci/downloadprogressexample/MainActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.975 secs
+
+2018-04-01 11:05:40,177 INFO  FullProcessService - Found APK file: /tmp/rdisk/2701/src/app/build/outputs/apk/app-debug.apk

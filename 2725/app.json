@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "pl.aprilapps.easyphotopicker.sample",
+    "label" : "EasyImage Sample",
+    "icon" : "res/drawable-nodpi-v4/sample_app_icon.xml",
+    "versionName" : "1.5.0",
+    "versionCode" : 11,
+    "installLocation" : null,
+    "minSdkVersion" : "16",
+    "targetSdkVersion" : "27",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 2152,
+  "locales" : [ "", "sl", "bg", "mr", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "mn", "fi", "lv", "mk", "uz", "eu", "bs", "sw", "pt_PT", "tl", "th", "bn", "pt", "ar", "ru", "gl", "kn", "az", "fa", "sk", "ms", "ml", "gu", "kk", "et", "hi", "cs", "sv", "pa", "el", "lo", "nl", "hu", "af", "hy", "en_AU", "in", "vi", "fr_CA", "ky", "sr", "km", "pt_BR", "da", "be", "es", "tr", "ne", "ro", "hr", "en_CA", "am", "lt", "pl", "zh_CN", "my", "ka", "sq", "fr", "ur", "ja", "is", "si", "en_XC", "iw", "de", "en_IN", "es_US", "nb", "ca", "ta", "en_GB", "te" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"11\" android:versionName=\"1.5.0\" package=\"pl.aprilapps.easyphotopicker.sample\">\n\t<uses-sdk android:minSdkVersion=\"16\" android:targetSdkVersion=\"27\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f0e0006\" android:label=\"EasyImage Sample\" android:icon=\"res/drawable-nodpi-v4/sample_app_icon.xml\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f0e0008\" android:label=\"EasyImage Sample\" android:name=\"pl.aprilapps.easyphotopicker.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<provider android:name=\"pl.aprilapps.easyphotopicker.ExtendedFileProvider\" android:exported=\"false\" android:authorities=\"pl.aprilapps.easyphotopicker.sample.easyphotopicker.fileprovider\" android:grantUriPermissions=\"true\">\n\t\t\t<meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"res/xml/filepaths.xml\" />\n\t\t</provider>\n\t\t<meta-data android:name=\"android.arch.lifecycle.VERSION\" android:value=\"27.0.0-SNAPSHOT\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1853330,
+  "crc32" : 1994463949,
+  "sha256" : "28e250f9efdda78d2103a61a19883b74f2ee1c89c5e15c7fb979d81308581898",
+  "buildTime" : 1526029639000
+}

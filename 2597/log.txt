@@ -1,0 +1,208 @@
+2018-04-01 22:02:28,188 INFO  DownloadService - Downloading "https://github.com/soroushjavdan/Android-Mandrill-Interface/archive/master.zip", attempt 3
+2018-04-01 22:03:28,797 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 22:03:29,430 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 22:03:29,430 INFO  DownloadService - Downloading "https://github.com/soroushjavdan/Android-Mandrill-Interface/archive/master.zip", attempt 3
+2018-04-01 22:04:30,733 DEBUG FullProcessService - Repository https://github.com/soroushjavdan/Android-Mandrill-Interface available: true
+2018-04-01 22:04:30,733 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 22:04:30,734 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/soroushjavdan/Android-Mandrill-Interface, /tmp/rdisk/2597/src]
+2018-04-01 22:04:32,237 INFO  SysUtils - 
+2018-04-01 22:04:32,252 INFO  GitService - Deleted "/tmp/rdisk/2597/src/.git": true
+2018-04-01 22:04:32,254 INFO  FullProcessService - Size of directory with sources: 114 KB
+2018-04-01 22:04:32,254 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2597/src]
+2018-04-01 22:04:32,259 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2597/src/.git/
+
+2018-04-01 22:04:32,261 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2597/src/gradlew
+2018-04-01 22:04:32,264 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2597/src/androidmandrillinterface/build.gradle /tmp/rdisk/2597/src/app/build.gradle /tmp/rdisk/2597/src/build.gradle
+2018-04-01 22:04:32,266 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2597/src/settings.gradle /tmp/rdisk/2597/src/build.gradle /tmp/rdisk/2597/src/app/build.gradle /tmp/rdisk/2597/src/androidmandrillinterface/build.gradle
+2018-04-01 22:04:32,267 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 22:04:32,267 INFO  ProjectFixService - Fixing project...
+2018-04-01 22:04:32,272 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2597/src/androidmandrillinterface/local.properties
+2018-04-01 22:04:32,272 INFO  ProjectFixService - Build info for "/tmp/rdisk/2597/src/androidmandrillinterface/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 22:04:32,273 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2597/src/app/local.properties
+2018-04-01 22:04:32,273 INFO  ProjectFixService - Build info for "/tmp/rdisk/2597/src/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 22:04:32,273 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2597/src/local.properties
+2018-04-01 22:04:32,274 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 22:04:32,274 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 22:04:32,275 INFO  ProjectFixService - Build info for "/tmp/rdisk/2597/src/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=7,targetSdkVersion=22]
+2018-04-01 22:04:32,275 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 22:04:32,275 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:04:32,275 INFO  SysUtils - Execute command: [/tmp/rdisk/2597/src/gradlew, -b, /tmp/rdisk/2597/src/androidmandrillinterface/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:04:40,611 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 22:04:40,611 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 22:04:40,611 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 22:04:40,611 INFO  SysUtils - Execute command: [/tmp/rdisk/2597/src/gradlew, -b, /tmp/rdisk/2597/src/androidmandrillinterface/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 22:04:56,206 INFO  SysUtils - Configuration on demand is an incubating feature.
+:androidmandrillinterface:compileLint
+:androidmandrillinterface:copyDebugLint UP-TO-DATE
+:androidmandrillinterface:mergeDebugProguardFiles
+:androidmandrillinterface:preBuild UP-TO-DATE
+:androidmandrillinterface:preDebugBuild UP-TO-DATE
+:androidmandrillinterface:checkDebugManifest
+:androidmandrillinterface:prepareDebugDependencies
+:androidmandrillinterface:compileDebugAidl
+:androidmandrillinterface:compileDebugRenderscript
+:androidmandrillinterface:generateDebugBuildConfig
+:androidmandrillinterface:generateDebugAssets UP-TO-DATE
+:androidmandrillinterface:mergeDebugAssets
+:androidmandrillinterface:generateDebugResValues
+:androidmandrillinterface:generateDebugResources
+:androidmandrillinterface:packageDebugResources
+:androidmandrillinterface:processDebugManifest
+:androidmandrillinterface:processDebugResources
+:androidmandrillinterface:generateDebugSources
+:androidmandrillinterface:processDebugJavaRes UP-TO-DATE
+:androidmandrillinterface:compileDebugJava
+:androidmandrillinterface:packageDebugJar
+:androidmandrillinterface:compileDebugNdk UP-TO-DATE
+:androidmandrillinterface:packageDebugJniLibs UP-TO-DATE
+:androidmandrillinterface:packageDebugLocalJar UP-TO-DATE
+:androidmandrillinterface:packageDebugRenderscript UP-TO-DATE
+:androidmandrillinterface:bundleDebug
+:androidmandrillinterface:compileDebugSources
+:androidmandrillinterface:assembleDebug
+:androidmandrillinterface:copyReleaseLint UP-TO-DATE
+:androidmandrillinterface:mergeReleaseProguardFiles
+:androidmandrillinterface:preReleaseBuild UP-TO-DATE
+:androidmandrillinterface:checkReleaseManifest
+:androidmandrillinterface:prepareReleaseDependencies
+:androidmandrillinterface:compileReleaseAidl
+:androidmandrillinterface:compileReleaseRenderscript
+:androidmandrillinterface:generateReleaseBuildConfig
+:androidmandrillinterface:generateReleaseAssets UP-TO-DATE
+:androidmandrillinterface:mergeReleaseAssets
+:androidmandrillinterface:generateReleaseResValues
+:androidmandrillinterface:generateReleaseResources
+:androidmandrillinterface:packageReleaseResources
+:androidmandrillinterface:processReleaseManifest
+:androidmandrillinterface:processReleaseResources
+:androidmandrillinterface:generateReleaseSources
+:androidmandrillinterface:processReleaseJavaRes UP-TO-DATE
+:androidmandrillinterface:compileReleaseJava
+:androidmandrillinterface:packageReleaseJar
+:androidmandrillinterface:compileReleaseNdk UP-TO-DATE
+:androidmandrillinterface:packageReleaseJniLibs UP-TO-DATE
+:androidmandrillinterface:packageReleaseLocalJar UP-TO-DATE
+:androidmandrillinterface:packageReleaseRenderscript UP-TO-DATE
+:androidmandrillinterface:bundleRelease
+:androidmandrillinterface:compileReleaseSources
+:androidmandrillinterface:assembleRelease
+:androidmandrillinterface:assemble
+:androidmandrillinterface:lint
+Ran lint on variant release: 5 issues found
+Ran lint on variant debug: 5 issues found
+Wrote HTML report to file:/tmp/rdisk/2597/src/androidmandrillinterface/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2597/src/androidmandrillinterface/build/outputs/lint-results.xml
+:androidmandrillinterface:preCompileDebugUnitTestJava
+:androidmandrillinterface:preDebugUnitTestBuild UP-TO-DATE
+:androidmandrillinterface:prepareDebugUnitTestDependencies
+:androidmandrillinterface:processDebugUnitTestJavaRes UP-TO-DATE
+:androidmandrillinterface:compileDebugUnitTestJava UP-TO-DATE
+:androidmandrillinterface:compileDebugUnitTestSources UP-TO-DATE
+:androidmandrillinterface:mockableAndroidJar
+:androidmandrillinterface:assembleDebugUnitTest
+:androidmandrillinterface:testDebug
+:androidmandrillinterface:preCompileReleaseUnitTestJava
+:androidmandrillinterface:preReleaseUnitTestBuild UP-TO-DATE
+:androidmandrillinterface:prepareReleaseUnitTestDependencies
+:androidmandrillinterface:processReleaseUnitTestJavaRes UP-TO-DATE
+:androidmandrillinterface:compileReleaseUnitTestJava UP-TO-DATE
+:androidmandrillinterface:compileReleaseUnitTestSources UP-TO-DATE
+:androidmandrillinterface:assembleReleaseUnitTest
+:androidmandrillinterface:testRelease
+:androidmandrillinterface:test
+:androidmandrillinterface:check
+:androidmandrillinterface:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.194 secs
+
+2018-04-01 22:04:56,214 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:04:56,214 INFO  SysUtils - Execute command: [/tmp/rdisk/2597/src/gradlew, -b, /tmp/rdisk/2597/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:05:02,356 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-01 22:05:02,357 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 22:05:02,357 INFO  SysUtils - Execute command: [/tmp/rdisk/2597/src/gradlew, -b, /tmp/rdisk/2597/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 22:05:14,046 INFO  SysUtils - Configuration on demand is an incubating feature.
+:androidmandrillinterface:compileLint
+:androidmandrillinterface:copyReleaseLint UP-TO-DATE
+:androidmandrillinterface:mergeReleaseProguardFiles UP-TO-DATE
+:androidmandrillinterface:preBuild UP-TO-DATE
+:androidmandrillinterface:preReleaseBuild UP-TO-DATE
+:androidmandrillinterface:checkReleaseManifest
+:androidmandrillinterface:prepareReleaseDependencies
+:androidmandrillinterface:compileReleaseAidl UP-TO-DATE
+:androidmandrillinterface:compileReleaseRenderscript UP-TO-DATE
+:androidmandrillinterface:generateReleaseBuildConfig UP-TO-DATE
+:androidmandrillinterface:generateReleaseAssets UP-TO-DATE
+:androidmandrillinterface:mergeReleaseAssets UP-TO-DATE
+:androidmandrillinterface:generateReleaseResValues UP-TO-DATE
+:androidmandrillinterface:generateReleaseResources UP-TO-DATE
+:androidmandrillinterface:packageReleaseResources UP-TO-DATE
+:androidmandrillinterface:processReleaseManifest UP-TO-DATE
+:androidmandrillinterface:processReleaseResources UP-TO-DATE
+:androidmandrillinterface:generateReleaseSources UP-TO-DATE
+:androidmandrillinterface:processReleaseJavaRes UP-TO-DATE
+:androidmandrillinterface:compileReleaseJava UP-TO-DATE
+:androidmandrillinterface:packageReleaseJar UP-TO-DATE
+:androidmandrillinterface:compileReleaseNdk UP-TO-DATE
+:androidmandrillinterface:packageReleaseJniLibs UP-TO-DATE
+:androidmandrillinterface:packageReleaseLocalJar UP-TO-DATE
+:androidmandrillinterface:packageReleaseRenderscript UP-TO-DATE
+:androidmandrillinterface:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareSrcAndroidmandrillinterfaceUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.286 secs
+
+2018-04-01 22:05:14,059 INFO  FullProcessService - Found APK file: /tmp/rdisk/2597/src/app/build/outputs/apk/app-debug.apk

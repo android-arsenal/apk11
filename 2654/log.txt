@@ -1,0 +1,49 @@
+2018-04-01 19:23:50,945 INFO  DownloadService - Downloading "https://github.com/pedrovgs/AndroidWiFiADB/archive/master.zip", attempt 3
+2018-04-01 19:24:51,390 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:24:52,098 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:24:52,098 INFO  DownloadService - Downloading "https://github.com/pedrovgs/AndroidWiFiADB/archive/master.zip", attempt 3
+2018-04-01 19:25:53,325 DEBUG FullProcessService - Repository https://github.com/pedrovgs/AndroidWiFiADB available: true
+2018-04-01 19:25:53,325 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:25:53,325 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pedrovgs/AndroidWiFiADB, /tmp/rdisk/2654/src]
+2018-04-01 19:25:57,405 INFO  SysUtils - 
+2018-04-01 19:25:57,419 INFO  GitService - Deleted "/tmp/rdisk/2654/src/.git": true
+2018-04-01 19:25:57,421 INFO  FullProcessService - Size of directory with sources: 500 KB
+2018-04-01 19:25:57,421 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2654/src]
+2018-04-01 19:25:57,426 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2654/src/.git/
+
+2018-04-01 19:25:57,429 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2654/src/gradlew
+2018-04-01 19:25:57,431 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2654/src/build.gradle
+2018-04-01 19:25:57,434 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2654/src/settigs.gradle /tmp/rdisk/2654/src/build.gradle
+2018-04-01 19:25:57,434 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:25:57,434 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:25:57,439 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2654/src/local.properties
+2018-04-01 19:25:57,439 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.7-all.zip
+2018-04-01 19:25:57,439 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.7-bin.zip)
+2018-04-01 19:25:57,440 INFO  ProjectFixService - Build info for "/tmp/rdisk/2654/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 19:25:57,440 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2654/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 19:25:57,441 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:25:57,441 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:25:57,441 INFO  SysUtils - Execute command: [/tmp/rdisk/2654/src/gradlew, -b, /tmp/rdisk/2654/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:27:17,090 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-04-01 19:27:17,091 INFO  ProjectTaskService - Excluded tasks (4): javadoc checkstyle test check
+2018-04-01 19:27:17,091 INFO  SysUtils - Execute command: [/tmp/rdisk/2654/src/gradlew, -b, /tmp/rdisk/2654/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, checkstyle, -x, test, -x, check, build]
+2018-04-01 19:27:37,657 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+[ant:instrumentIdeaExtensions] : warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+:processResources
+:classes
+:patchPluginXml
+:prepareSandbox
+:buildPlugin
+:jar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.159 secs
+
+2018-04-01 19:27:37,662 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 19:27:37,666 ERROR FullProcessService - Could not find generated or existed APK file

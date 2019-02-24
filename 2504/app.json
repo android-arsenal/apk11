@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "me.henrytao.recyclerview",
+    "label" : "RecyclerView",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "3.1.1",
+    "versionCode" : 15,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1767,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"15\" android:versionName=\"3.1.1\" package=\"me.henrytao.recyclerview\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f09008a\" android:label=\"RecyclerView\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"RecyclerView\" android:name=\"me.henrytao.sample.activity.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1439036,
+  "crc32" : 968111712,
+  "sha256" : "431d9909c47ee7793b1098974dd2e0c37114cd1ebcaa617f3971c62579651c7f",
+  "buildTime" : 1496784514000
+}

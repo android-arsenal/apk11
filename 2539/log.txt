@@ -1,0 +1,170 @@
+2018-04-02 00:43:48,619 INFO  DownloadService - Downloading "https://github.com/selfimgr/commentView/archive/master.zip", attempt 3
+2018-04-02 00:44:49,073 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:44:49,743 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:44:49,744 INFO  DownloadService - Downloading "https://github.com/selfimgr/commentView/archive/master.zip", attempt 3
+2018-04-02 00:45:51,059 DEBUG FullProcessService - Repository https://github.com/selfimgr/commentView available: true
+2018-04-02 00:45:51,059 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:45:51,059 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/selfimgr/commentView, /tmp/rdisk/2539/src]
+2018-04-02 00:45:53,272 INFO  SysUtils - 
+2018-04-02 00:45:53,284 INFO  GitService - Deleted "/tmp/rdisk/2539/src/.git": true
+2018-04-02 00:45:53,307 INFO  FullProcessService - Size of directory with sources: 3 MB
+2018-04-02 00:45:53,307 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2539/src]
+2018-04-02 00:45:53,312 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2539/src/.git/
+
+2018-04-02 00:45:53,325 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2539/src/library/gradlew /tmp/rdisk/2539/src/gradlew
+2018-04-02 00:45:53,338 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2539/src/library/build.gradle /tmp/rdisk/2539/src/app/build.gradle /tmp/rdisk/2539/src/build.gradle
+2018-04-02 00:45:53,350 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2539/src/settings.gradle /tmp/rdisk/2539/src/library/build.gradle /tmp/rdisk/2539/src/build.gradle /tmp/rdisk/2539/src/app/build.gradle
+2018-04-02 00:45:53,350 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:45:53,350 INFO  ProjectFixService - Fixing project...
+2018-04-02 00:45:53,377 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2539/src/library/local.properties
+2018-04-02 00:45:53,377 INFO  ProjectFixService - Build info for "/tmp/rdisk/2539/src/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 00:45:53,377 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2539/src/app/local.properties
+2018-04-02 00:45:53,378 INFO  ProjectFixService - Build info for "/tmp/rdisk/2539/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-02 00:45:53,378 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2539/src/local.properties
+2018-04-02 00:45:53,378 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-02 00:45:53,378 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-02 00:45:53,379 INFO  ProjectFixService - Build info for "/tmp/rdisk/2539/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=22]
+2018-04-02 00:45:53,379 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 00:45:53,379 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:45:53,379 INFO  SysUtils - Execute command: [/tmp/rdisk/2539/src/library/gradlew, -b, /tmp/rdisk/2539/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:45:53,500 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:45:53,500 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:45:53,501 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:45:53,501 INFO  SysUtils - Execute command: [/tmp/rdisk/2539/src/library/gradlew, -b, /tmp/rdisk/2539/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:45:53,606 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 00:45:53,606 INFO  SysUtils - Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+
+2018-04-02 00:45:53,620 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:45:53,620 INFO  SysUtils - Execute command: [/tmp/rdisk/2539/src/gradlew, -b, /tmp/rdisk/2539/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:46:02,791 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-02 00:46:02,791 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 00:46:02,792 INFO  SysUtils - Execute command: [/tmp/rdisk/2539/src/gradlew, -b, /tmp/rdisk/2539/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 00:46:32,338 INFO  SysUtils - Configuration on demand is an incubating feature.
+[/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar, /tmp/rdisk/2539/src/library/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar]
+[/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar, /tmp/rdisk/2539/src/library/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar]
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42301Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2539/src/library/src/main/java/com/chaowen/commentlibrary/emoji/RecycleBin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComChaowenCommentlibraryLibrary103Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResourcesAAPT err(529739408) : No Delegate set : lost message:/tmp/rdisk/2539/src/app/build/intermediates/exploded-aar/ com.chaowen.commentlibrary/library/1.0.3/res/drawable-xhdpi/emoji_1f555.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+AAPT: /tmp/rdisk/2539/src/app/build/intermediates/exploded-aar/ com.chaowen.commentlibrary/library/1.0.3/res/drawable-xhdpi/emoji_1f4bd.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT: /tmp/rdisk/2539/src/app/build/intermediates/exploded-aar/ com.chaowen.commentlibrary/library/1.0.3/res/drawable-xhdpi/emoji_1f555.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2539/src/app/build/intermediates/exploded-aar/ com.chaowen.commentlibrary/library/1.0.3/res/drawable-xhdpi/emoji_1f4bd.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.126 secs
+
+2018-04-02 00:46:32,442 INFO  FullProcessService - Found APK file: /tmp/rdisk/2539/src/app/build/outputs/apk/app-debug.apk

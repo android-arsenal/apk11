@@ -1,0 +1,120 @@
+2018-04-02 00:59:10,594 INFO  DownloadService - Downloading "https://github.com/ivacf/archi/archive/master.zip", attempt 3
+2018-04-02 01:00:11,069 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:00:11,753 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:00:11,753 INFO  DownloadService - Downloading "https://github.com/ivacf/archi/archive/master.zip", attempt 3
+2018-04-02 01:01:13,059 DEBUG FullProcessService - Repository https://github.com/ivacf/archi available: true
+2018-04-02 01:01:13,059 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:01:13,059 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ivacf/archi, /tmp/rdisk/2534/src]
+2018-04-02 01:01:14,760 INFO  SysUtils - 
+2018-04-02 01:01:14,766 INFO  GitService - Deleted "/tmp/rdisk/2534/src/.git": true
+2018-04-02 01:01:14,771 INFO  FullProcessService - Size of directory with sources: 448 KB
+2018-04-02 01:01:14,771 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2534/src]
+2018-04-02 01:01:14,782 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2534/src/.git/
+
+2018-04-02 01:01:14,786 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2534/src/gradlew
+2018-04-02 01:01:14,790 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2534/src/app-mvp/build.gradle /tmp/rdisk/2534/src/app-mvvm/build.gradle /tmp/rdisk/2534/src/app/build.gradle /tmp/rdisk/2534/src/build.gradle
+2018-04-02 01:01:14,795 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2534/src/settings.gradle /tmp/rdisk/2534/src/dependencies.gradle /tmp/rdisk/2534/src/build.gradle /tmp/rdisk/2534/src/app/build.gradle /tmp/rdisk/2534/src/app-mvvm/build.gradle /tmp/rdisk/2534/src/app-mvp/build.gradle
+2018-04-02 01:01:14,795 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:01:14,795 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:01:14,804 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2534/src/app-mvp/local.properties
+2018-04-02 01:01:14,807 INFO  ProjectFixService - Build info for "/tmp/rdisk/2534/src/app-mvp/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:01:14,807 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2534/src/app-mvp/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:01:14,808 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2534/src/app-mvvm/local.properties
+2018-04-02 01:01:14,810 INFO  ProjectFixService - Build info for "/tmp/rdisk/2534/src/app-mvvm/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:01:14,810 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2534/src/app-mvvm/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:01:14,811 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2534/src/app/local.properties
+2018-04-02 01:01:14,813 INFO  ProjectFixService - Build info for "/tmp/rdisk/2534/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:01:14,813 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2534/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:01:14,814 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2534/src/local.properties
+2018-04-02 01:01:14,814 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14.1-all.zip
+2018-04-02 01:01:14,814 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14.1-bin.zip)
+2018-04-02 01:01:14,819 INFO  ProjectFixService - Build info for "/tmp/rdisk/2534/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:01:14,819 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2534/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:01:14,820 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:01:14,820 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:01:14,820 INFO  SysUtils - Execute command: [/tmp/rdisk/2534/src/gradlew, -b, /tmp/rdisk/2534/src/app-mvp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:01:24,173 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-02 01:01:24,173 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 01:01:24,173 INFO  SysUtils - Execute command: [/tmp/rdisk/2534/src/gradlew, -b, /tmp/rdisk/2534/src/app-mvp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 01:01:52,993 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app-mvp:preBuild UP-TO-DATE
+:app-mvp:preDebugBuild UP-TO-DATE
+:app-mvp:checkDebugManifest
+:app-mvp:preReleaseBuild UP-TO-DATE
+:app-mvp:prepareComAndroidSupportAnimatedVectorDrawable2511Library
+:app-mvp:prepareComAndroidSupportAppcompatV72511Library
+:app-mvp:prepareComAndroidSupportCardviewV72511Library
+:app-mvp:prepareComAndroidSupportRecyclerviewV72511Library
+:app-mvp:prepareComAndroidSupportSupportCompat2511Library
+:app-mvp:prepareComAndroidSupportSupportCoreUi2511Library
+:app-mvp:prepareComAndroidSupportSupportCoreUtils2511Library
+:app-mvp:prepareComAndroidSupportSupportFragment2511Library
+:app-mvp:prepareComAndroidSupportSupportMediaCompat2511Library
+:app-mvp:prepareComAndroidSupportSupportV42511Library
+:app-mvp:prepareComAndroidSupportSupportVectorDrawable2511Library
+:app-mvp:prepareDeHdodenhofCircleimageview130Library
+:app-mvp:prepareIoReactivexRxandroid121Library
+:app-mvp:prepareDebugDependencies
+:app-mvp:compileDebugAidl
+:app-mvp:compileDebugRenderscript
+:app-mvp:generateDebugBuildConfig
+:app-mvp:generateDebugResValues
+:app-mvp:generateDebugResources
+:app-mvp:mergeDebugResources
+:app-mvp:processDebugManifest
+:app-mvp:processDebugResources
+:app-mvp:generateDebugSources
+:app-mvp:incrementalDebugJavaCompilationSafeguard
+:app-mvp:compileDebugJavaWithJavac
+:app-mvp:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app-mvp:compileDebugNdk UP-TO-DATE
+:app-mvp:compileDebugSources
+:app-mvp:mergeDebugShaders
+:app-mvp:compileDebugShaders
+:app-mvp:generateDebugAssets
+:app-mvp:mergeDebugAssets
+:app-mvp:transformClassesWithDexForDebug
+:app-mvp:mergeDebugJniLibFolders
+:app-mvp:transformNative_libsWithMergeJniLibsForDebug
+:app-mvp:processDebugJavaRes UP-TO-DATE
+:app-mvp:transformResourcesWithMergeJavaResForDebug
+:app-mvp:validateSigningDebug
+:app-mvp:packageDebug
+:app-mvp:assembleDebug
+:app-mvp:checkReleaseManifest
+:app-mvp:prepareReleaseDependencies
+:app-mvp:compileReleaseAidl
+:app-mvp:compileReleaseRenderscript
+:app-mvp:generateReleaseBuildConfig
+:app-mvp:generateReleaseResValues
+:app-mvp:generateReleaseResources
+:app-mvp:mergeReleaseResources
+:app-mvp:processReleaseManifest
+:app-mvp:processReleaseResources
+:app-mvp:generateReleaseSources
+:app-mvp:incrementalReleaseJavaCompilationSafeguard
+:app-mvp:compileReleaseJavaWithJavac
+:app-mvp:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app-mvp:compileReleaseNdk UP-TO-DATE
+:app-mvp:compileReleaseSources
+:app-mvp:lintVitalRelease
+:app-mvp:mergeReleaseShaders
+:app-mvp:compileReleaseShaders
+:app-mvp:generateReleaseAssets
+:app-mvp:mergeReleaseAssets
+:app-mvp:transformClassesWithDexForRelease
+:app-mvp:mergeReleaseJniLibFolders
+:app-mvp:transformNative_libsWithMergeJniLibsForRelease
+:app-mvp:processReleaseJavaRes UP-TO-DATE
+:app-mvp:transformResourcesWithMergeJavaResForRelease
+:app-mvp:packageRelease
+:app-mvp:assembleRelease
+:app-mvp:assemble
+:app-mvp:build
+
+BUILD SUCCESSFUL
+
+Total time: 28.222 secs
+
+2018-04-02 01:01:53,058 INFO  FullProcessService - Found APK file: /tmp/rdisk/2534/src/app-mvp/build/outputs/apk/app-mvp-release-unsigned.apk

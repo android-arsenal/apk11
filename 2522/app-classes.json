@@ -1,0 +1,16 @@
+{
+  "xdroid" : [ "BuildConfig", "R", "R$attr", "R$id", "R$styleable" ],
+  "xdroid.adapter" : [ "AdapterX", "AdapterX$1", "BuildConfig", "CursorAdapterX", "IAdapter", "R", "R$attr", "R$id", "R$styleable", "ViewBinder", "ViewTypeResolver" ],
+  "xdroid.app" : [ "ActivityListeners", "ApplicationX", "BuildConfig", "OnBackPressedListener", "OnFinishListener" ],
+  "xdroid.collections" : [ "ArrayCollection", "ArrayIterator", "BuildConfig", "Factory", "FactoryArg1", "FactoryArg2", "FactoryArg3", "FactoryArg4", "Indexed", "IndexedCollection", "IndexedIterator" ],
+  "xdroid.core" : [ "ActivityStarter", "BuildConfig", "BundleBuilder", "ContextActivityStarter", "ContextOwner", "Global", "Global$BackgroundHandlerHolder", "Global$CurrentApplicationHolder", "Global$UiHandlerHolder", "Invokable", "IoUtils", "ObjectUtils", "ParcelUtils", "ReflectUtils", "SharedPreferencesUtils", "Singletons", "ThreadUtils", "ThreadUtils$ObjAsRunnableCallback", "ViewUtils", "ViewUtils$1", "ViewVisitor" ],
+  "xdroid.customservice" : [ "BuildConfig", "CustomService", "CustomServiceHolder", "CustomServiceResolver", "CustomServices" ],
+  "xdroid.enumformat" : [ "BuildConfig", "EnumFormat", "EnumString" ],
+  "xdroid.example" : [ "BuildConfig", "ExampleActivity", "ExampleApplication", "ExampleBinder", "ExampleData", "ExampleEnumFormatDialog", "ExampleEnumFormatDialog$MyEnum", "ExampleSingleton", "R", "R$attr", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable", "R$xml" ],
+  "xdroid.example.settings" : [ "Settings", "SettingsActivity", "SettingsActivity$SettingsFragment", "SettingsActivity$SettingsFragment$1", "SettingsActivity$SettingsFragment$2" ],
+  "xdroid.inflater" : [ "AbstractInflater", "AbstractInflater$MissedAttributeException", "BuildConfig", "Inflatable" ],
+  "xdroid.options" : [ "BuildConfig", "EnumOption", "Option", "OptionAccessor", "OptionAccessor$BooleanGetter", "OptionAccessor$BooleanSetter", "OptionAccessor$FloatGetter", "OptionAccessor$FloatSetter", "OptionAccessor$Getter", "OptionAccessor$IntGetter", "OptionAccessor$IntSetter", "OptionAccessor$LongGetter", "OptionAccessor$LongSetter", "OptionAccessor$Setter", "OptionAccessor$StringGetter", "OptionAccessor$StringSetGetter", "OptionAccessor$StringSetSetter", "OptionAccessor$StringSetter", "SimpleOption" ],
+  "xdroid.toaster" : [ "BuildConfig", "Toaster" ],
+  "xdroid.viewholder" : [ "BuildConfig", "ViewHolder" ],
+  "xdroid.widget" : [ "BuildConfig", "HorizontalSpinner", "HorizontalSpinner$1", "HorizontalSpinner$2", "HorizontalSpinner$3", "HorizontalSpinner$Listener", "R", "R$attr", "R$id", "R$styleable" ]
+}

@@ -1,0 +1,201 @@
+2018-04-01 21:56:18,594 INFO  DownloadService - Downloading "https://github.com/Gitteroid/GitterJavaSDK/archive/master.zip", attempt 3
+2018-04-01 21:57:19,192 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:57:19,863 INFO  GithubDownloadService - Default branch of this repository: dev
+2018-04-01 21:57:19,863 INFO  DownloadService - Downloading "https://github.com/Gitteroid/GitterJavaSDK/archive/dev.zip", attempt 3
+2018-04-01 21:58:21,188 DEBUG FullProcessService - Repository https://github.com/Gitteroid/GitterJavaSDK available: true
+2018-04-01 21:58:21,188 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:58:21,188 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Gitteroid/GitterJavaSDK, /tmp/rdisk/2599/src]
+2018-04-01 21:58:22,656 INFO  SysUtils - 
+2018-04-01 21:58:22,663 INFO  GitService - Deleted "/tmp/rdisk/2599/src/.git": true
+2018-04-01 21:58:22,670 INFO  FullProcessService - Size of directory with sources: 273 KB
+2018-04-01 21:58:22,670 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2599/src]
+2018-04-01 21:58:22,675 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2599/src/.git/
+
+2018-04-01 21:58:22,680 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2599/src/gradlew
+2018-04-01 21:58:22,685 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2599/src/build.gradle /tmp/rdisk/2599/src/library/async/build.gradle /tmp/rdisk/2599/src/library/core/build.gradle /tmp/rdisk/2599/src/library/rx/build.gradle /tmp/rdisk/2599/src/library/sync/build.gradle /tmp/rdisk/2599/src/samples/build.gradle
+2018-04-01 21:58:22,690 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2599/src/settings.gradle /tmp/rdisk/2599/src/samples/build.gradle /tmp/rdisk/2599/src/library/sync/build.gradle /tmp/rdisk/2599/src/library/rx/build.gradle /tmp/rdisk/2599/src/library/core/build.gradle /tmp/rdisk/2599/src/library/async/build.gradle /tmp/rdisk/2599/src/build.gradle
+2018-04-01 21:58:22,691 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:58:22,691 INFO  ProjectFixService - Fixing project...
+2018-04-01 21:58:22,701 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/local.properties
+2018-04-01 21:58:22,702 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.0-all.zip
+2018-04-01 21:58:22,702 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.0-bin.zip)
+2018-04-01 21:58:22,705 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,705 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,705 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/library/async/local.properties
+2018-04-01 21:58:22,708 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/library/async/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,708 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/library/async/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,709 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/library/core/local.properties
+2018-04-01 21:58:22,711 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/library/core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,712 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/library/core/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,712 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/library/rx/local.properties
+2018-04-01 21:58:22,715 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/library/rx/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,715 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/library/rx/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,716 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/library/sync/local.properties
+2018-04-01 21:58:22,719 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/library/sync/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,719 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/library/sync/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,719 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2599/src/samples/local.properties
+2018-04-01 21:58:22,722 INFO  ProjectFixService - Build info for "/tmp/rdisk/2599/src/samples/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 21:58:22,722 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2599/src/samples/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 21:58:22,722 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 21:58:22,722 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:58:22,722 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:58:30,731 INFO  ProjectTaskService - Detected possible tasks: 58
+2018-04-01 21:58:30,731 INFO  ProjectTaskService - Excluded tasks (4): coveralls javadoc test check
+2018-04-01 21:58:30,732 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:58:39,064 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:async:compileJava
+:library:async:processResources UP-TO-DATE
+:library:async:classes
+:library:async:jar
+:library:rx:compileJava
+:library:rx:processResources UP-TO-DATE
+:library:rx:classes
+:library:rx:jar
+:library:sync:compileJava
+:library:sync:processResources UP-TO-DATE
+:library:sync:classes
+:library:sync:jar
+:samples:compileJava
+:samples:processResources UP-TO-DATE
+:samples:classes
+:samples:jar
+:samples:startScripts
+:samples:distTar
+:samples:distZip
+:samples:assemble
+:samples:build
+:library:async:javadocJar
+:library:async:sourcesJar
+:library:async:assemble
+:library:async:build
+:library:core:compileJava
+:library:core:processResources UP-TO-DATE
+:library:core:classes
+:library:core:jar
+:library:core:javadocJar
+:library:core:sourcesJar
+:library:core:assemble
+:library:core:build
+:library:rx:javadocJar
+:library:rx:sourcesJar
+:library:rx:assemble
+:library:rx:build
+:library:sync:javadocJar
+:library:sync:sourcesJar
+:library:sync:assemble
+:library:sync:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.924 secs
+
+2018-04-01 21:58:39,076 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:58:39,076 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:58:43,683 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-01 21:58:43,683 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-01 21:58:43,683 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:58:48,119 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:async:compileJava UP-TO-DATE
+:library:async:processResources UP-TO-DATE
+:library:async:classes UP-TO-DATE
+:library:async:jar UP-TO-DATE
+:library:async:javadocJar UP-TO-DATE
+:library:async:sourcesJar UP-TO-DATE
+:library:async:assemble UP-TO-DATE
+:library:async:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.99 secs
+
+2018-04-01 21:58:48,130 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:58:48,130 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:58:53,322 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-01 21:58:53,322 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-01 21:58:53,322 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/core/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:58:57,826 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:core:compileJava UP-TO-DATE
+:library:core:processResources UP-TO-DATE
+:library:core:classes UP-TO-DATE
+:library:core:jar UP-TO-DATE
+:library:core:javadocJar UP-TO-DATE
+:library:core:sourcesJar UP-TO-DATE
+:library:core:assemble UP-TO-DATE
+:library:core:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.089 secs
+
+2018-04-01 21:58:57,838 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:58:57,838 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:59:02,683 INFO  ProjectTaskService - Detected possible tasks: 51
+2018-04-01 21:59:02,684 INFO  ProjectTaskService - Excluded tasks (4): coveralls javadoc test check
+2018-04-01 21:59:02,684 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, coveralls, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:59:07,546 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:rx:compileJava UP-TO-DATE
+:library:rx:processResources UP-TO-DATE
+:library:rx:classes UP-TO-DATE
+:library:rx:jar UP-TO-DATE
+:library:rx:javadocJar UP-TO-DATE
+:library:rx:sourcesJar UP-TO-DATE
+:library:rx:assemble UP-TO-DATE
+:library:rx:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.429 secs
+
+2018-04-01 21:59:07,558 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:59:07,558 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/sync/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:59:12,193 INFO  ProjectTaskService - Detected possible tasks: 48
+2018-04-01 21:59:12,193 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-01 21:59:12,193 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/library/sync/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:59:16,598 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:sync:compileJava UP-TO-DATE
+:library:sync:processResources UP-TO-DATE
+:library:sync:classes UP-TO-DATE
+:library:sync:jar UP-TO-DATE
+:library:sync:javadocJar UP-TO-DATE
+:library:sync:sourcesJar UP-TO-DATE
+:library:sync:assemble UP-TO-DATE
+:library:sync:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.93 secs
+
+2018-04-01 21:59:16,610 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:59:16,610 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:59:21,200 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-04-01 21:59:21,200 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-01 21:59:21,200 INFO  SysUtils - Execute command: [/tmp/rdisk/2599/src/gradlew, -b, /tmp/rdisk/2599/src/samples/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 21:59:26,042 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:async:compileJava UP-TO-DATE
+:library:async:processResources UP-TO-DATE
+:library:async:classes UP-TO-DATE
+:library:async:jar UP-TO-DATE
+:library:rx:compileJava UP-TO-DATE
+:library:rx:processResources UP-TO-DATE
+:library:rx:classes UP-TO-DATE
+:library:rx:jar UP-TO-DATE
+:library:sync:compileJava UP-TO-DATE
+:library:sync:processResources UP-TO-DATE
+:library:sync:classes UP-TO-DATE
+:library:sync:jar UP-TO-DATE
+:samples:compileJava UP-TO-DATE
+:samples:processResources UP-TO-DATE
+:samples:classes UP-TO-DATE
+:samples:jar UP-TO-DATE
+:samples:startScripts UP-TO-DATE
+:samples:distTar UP-TO-DATE
+:samples:distZip UP-TO-DATE
+:samples:assemble UP-TO-DATE
+:samples:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.402 secs
+
+2018-04-01 21:59:26,053 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 21:59:26,064 ERROR FullProcessService - Could not find generated or existed APK file

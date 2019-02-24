@@ -1,0 +1,559 @@
+2019-01-26 22:38:05,149 INFO  DownloadService - Downloading "https://github.com/mskurt/NeverEmptyListView/archive/master.zip", attempt 3
+2019-01-26 22:38:06,613 INFO  DownloadService - Downloaded https://github.com/mskurt/NeverEmptyListView/archive/master.zip, attempt 3
+2019-01-26 22:38:06,614 INFO  DownloadService - Size of file "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/master.zip": 627 KB
+2019-01-26 22:38:06,614 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2019-01-26 22:38:06,619 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/master.zip: true
+2019-01-26 22:38:06,619 DEBUG ZipUtil - Extracting '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/master.zip' into '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src'.
+2019-01-26 22:38:06,649 INFO  FullProcessService - Size of directory with sources: 660 KB
+2019-01-26 22:38:06,649 INFO  SysUtils - Execute command: [git, init, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src]
+2019-01-26 22:38:06,690 INFO  SysUtils - Initialized empty Git repository in /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/.git/
+
+2019-01-26 22:38:06,695 INFO  ProjectBuildService - Gradle wrapper(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew
+2019-01-26 22:38:06,700 INFO  ProjectBuildService - Build script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/build.gradle
+2019-01-26 22:38:06,705 INFO  ProjectBuildService - All script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/settings.gradle
+2019-01-26 22:38:06,706 INFO  ProjectBuildService - Remote scripts: none
+2019-01-26 22:38:06,706 INFO  ProjectFixService - Fixing project...
+2019-01-26 22:38:06,718 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/local.properties
+2019-01-26 22:38:06,719 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2019-01-26 22:38:06,720 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/local.properties
+2019-01-26 22:38:06,720 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2019-01-26 22:38:06,721 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/local.properties
+2019-01-26 22:38:06,722 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2019-01-26 22:38:06,722 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2019-01-26 22:38:06,723 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2019-01-26 22:38:06,724 INFO  ProjectFixService - Project was maybe fixed
+2019-01-26 22:38:06,724 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:38:06,724 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:38:22,469 INFO  ProjectTaskService - Detected possible tasks: 66
+2019-01-26 22:38:22,469 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2019-01-26 22:38:22,469 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2019-01-26 22:38:42,104 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:52)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:196)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:130)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$createTasks$1(BuildProcessorServiceImpl.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-26 22:38:42,105 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:neveremptylistviewlibrary:compileLint
+:neveremptylistviewlibrary:copyReleaseLint UP-TO-DATE
+:neveremptylistviewlibrary:preBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseBuild UP-TO-DATE
+:neveremptylistviewlibrary:checkReleaseManifest
+:neveremptylistviewlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:prepareComAndroidSupportAppcompatV72221Library
+:neveremptylistviewlibrary:prepareComAndroidSupportSupportV42221Library
+:neveremptylistviewlibrary:prepareReleaseDependencies
+:neveremptylistviewlibrary:compileReleaseAidl
+:neveremptylistviewlibrary:compileReleaseRenderscript
+:neveremptylistviewlibrary:generateReleaseBuildConfig
+:neveremptylistviewlibrary:generateReleaseAssets UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseAssets
+:neveremptylistviewlibrary:generateReleaseResValues
+:neveremptylistviewlibrary:generateReleaseResources
+:neveremptylistviewlibrary:mergeReleaseResources
+:neveremptylistviewlibrary:processReleaseManifest
+:neveremptylistviewlibrary:processReleaseResources
+:neveremptylistviewlibrary:generateReleaseSources
+:neveremptylistviewlibrary:processReleaseJavaRes UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseJavaWithJavacNote: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/src/main/java/net/mskurt/neveremptylistviewlibrary/NeverEmptyListView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:neveremptylistviewlibrary:extractReleaseAnnotations
+:neveremptylistviewlibrary:mergeReleaseProguardFiles
+:neveremptylistviewlibrary:packageReleaseJar
+:neveremptylistviewlibrary:compileReleaseNdk UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseJniLibs UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseLocalJar UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseResources
+:neveremptylistviewlibrary:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72221Library
+:demo:prepareComAndroidSupportSupportV42221Library
+:demo:prepareNeverEmptyListViewMasterNeveremptylistviewlibraryUnspecifiedLibrary
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources[Fatal Error] :1:1: Content is not allowed in prolog.
+
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+:demo:mergeDebugResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':demo:mergeDebugResources'.
+> /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':demo:mergeDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: com.android.build.gradle.tasks.ResourceException: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:151)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:85)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+Caused by: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+	at com.android.ide.common.res2.MergingException.throwIfNonEmpty(MergingException.java:139)
+	at com.android.ide.common.res2.DataSet.loadFromFiles(DataSet.java:249)
+	at com.android.ide.common.res2.ResourceSet.loadFromFiles(ResourceSet.java:48)
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:134)
+	... 57 more
+
+
+BUILD FAILED
+
+Total time: 19.073 secs
+
+2019-01-26 22:38:42,168 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:38:42,169 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:38:52,863 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2019-01-26 22:38:52,863 INFO  ProjectTaskService - Detected possible tasks: 0
+2019-01-26 22:38:52,863 INFO  ProjectTaskService - Excluded tasks (0): none
+2019-01-26 22:38:52,863 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2019-01-26 22:39:08,251 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:52)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:196)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:130)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$createTasks$1(BuildProcessorServiceImpl.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-26 22:39:08,251 INFO  SysUtils - Configuration on demand is an incubating feature.
+:neveremptylistviewlibrary:compileLint
+:neveremptylistviewlibrary:copyDebugLint UP-TO-DATE
+:neveremptylistviewlibrary:preBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugBuild UP-TO-DATE
+:neveremptylistviewlibrary:checkDebugManifest
+:neveremptylistviewlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:neveremptylistviewlibrary:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:neveremptylistviewlibrary:prepareDebugDependencies
+:neveremptylistviewlibrary:compileDebugAidl
+:neveremptylistviewlibrary:compileDebugRenderscript
+:neveremptylistviewlibrary:generateDebugBuildConfig
+:neveremptylistviewlibrary:generateDebugAssets UP-TO-DATE
+:neveremptylistviewlibrary:mergeDebugAssets
+:neveremptylistviewlibrary:generateDebugResValues
+:neveremptylistviewlibrary:generateDebugResources
+:neveremptylistviewlibrary:mergeDebugResources
+:neveremptylistviewlibrary:processDebugManifest
+:neveremptylistviewlibrary:processDebugResources
+:neveremptylistviewlibrary:generateDebugSources
+:neveremptylistviewlibrary:processDebugJavaRes UP-TO-DATE
+:neveremptylistviewlibrary:compileDebugJavaWithJavacNote: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/neveremptylistviewlibrary/src/main/java/net/mskurt/neveremptylistviewlibrary/NeverEmptyListView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:neveremptylistviewlibrary:extractDebugAnnotations
+:neveremptylistviewlibrary:mergeDebugProguardFiles
+:neveremptylistviewlibrary:packageDebugJar
+:neveremptylistviewlibrary:compileDebugNdk UP-TO-DATE
+:neveremptylistviewlibrary:packageDebugJniLibs UP-TO-DATE
+:neveremptylistviewlibrary:packageDebugLocalJar UP-TO-DATE
+:neveremptylistviewlibrary:packageDebugRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:packageDebugResources
+:neveremptylistviewlibrary:bundleDebug
+:neveremptylistviewlibrary:compileDebugSources
+:neveremptylistviewlibrary:assembleDebug
+:neveremptylistviewlibrary:copyReleaseLint UP-TO-DATE
+:neveremptylistviewlibrary:checkReleaseManifest
+:neveremptylistviewlibrary:prepareReleaseDependencies
+:neveremptylistviewlibrary:compileReleaseAidl UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseBuildConfig UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseAssets UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseAssets UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseResValues UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseManifest UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseSources UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseJavaRes UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseJavaWithJavac UP-TO-DATE
+:neveremptylistviewlibrary:extractReleaseAnnotations UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseProguardFiles UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseJar UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseNdk UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseJniLibs UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseLocalJar UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:bundleRelease UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseSources UP-TO-DATE
+:neveremptylistviewlibrary:assembleRelease UP-TO-DATE
+:neveremptylistviewlibrary:assemble
+:neveremptylistviewlibrary:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':neveremptylistviewlibrary:lint'.
+> No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':neveremptylistviewlibrary:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.RuntimeException: No toolchains found in the NDK toolchains folder for ABI with prefix: mipsel-linux-android
+	at com.android.build.gradle.internal.NdkHandler.getDefaultToolchainVersion(NdkHandler.java:339)
+	at com.android.build.gradle.internal.NdkHandler.getToolchainPath(NdkHandler.java:231)
+	at com.android.build.gradle.internal.NdkHandler.getCCompiler(NdkHandler.java:417)
+	at com.android.build.gradle.internal.model.ModelBuilder.createNativeToolchainModelMap(ModelBuilder.java:221)
+	at com.android.build.gradle.internal.model.ModelBuilder.buildAll(ModelBuilder.java:162)
+	at org.gradle.tooling.provider.model.ToolingModelBuilder$buildAll.call(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.createAndroidProject(Lint.groovy:236)
+	at com.android.build.gradle.tasks.Lint.this$5$createAndroidProject(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$5$createAndroidProject$3.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:78)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 14.824 secs
+
+2019-01-26 22:39:08,333 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:39:08,333 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:39:19,204 INFO  ProjectTaskService - Detected possible tasks: 69
+2019-01-26 22:39:19,204 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2019-01-26 22:39:19,205 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2019-01-26 22:39:32,239 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:52)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:196)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:130)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$createTasks$1(BuildProcessorServiceImpl.java:113)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-26 22:39:32,239 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:neveremptylistviewlibrary:compileLint
+:neveremptylistviewlibrary:copyReleaseLint UP-TO-DATE
+:neveremptylistviewlibrary:preBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseBuild UP-TO-DATE
+:neveremptylistviewlibrary:checkReleaseManifest
+:neveremptylistviewlibrary:preDebugAndroidTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugBuild UP-TO-DATE
+:neveremptylistviewlibrary:preDebugUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:preReleaseUnitTestBuild UP-TO-DATE
+:neveremptylistviewlibrary:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:neveremptylistviewlibrary:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:neveremptylistviewlibrary:prepareReleaseDependencies
+:neveremptylistviewlibrary:compileReleaseAidl UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseBuildConfig UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseAssets UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseAssets UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseResValues UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseManifest UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:generateReleaseSources UP-TO-DATE
+:neveremptylistviewlibrary:processReleaseJavaRes UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseJavaWithJavac UP-TO-DATE
+:neveremptylistviewlibrary:extractReleaseAnnotations UP-TO-DATE
+:neveremptylistviewlibrary:mergeReleaseProguardFiles UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseJar UP-TO-DATE
+:neveremptylistviewlibrary:compileReleaseNdk UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseJniLibs UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseLocalJar UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseRenderscript UP-TO-DATE
+:neveremptylistviewlibrary:packageReleaseResources UP-TO-DATE
+:neveremptylistviewlibrary:bundleRelease UP-TO-DATE
+:demo:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:demo:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:demo:prepareNeverEmptyListViewMasterNeveremptylistviewlibraryUnspecifiedLibrary UP-TO-DATE
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl UP-TO-DATE
+:demo:compileDebugRenderscript UP-TO-DATE
+:demo:generateDebugBuildConfig UP-TO-DATE
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets UP-TO-DATE
+:demo:generateDebugResValues UP-TO-DATE
+:demo:generateDebugResources UP-TO-DATE
+:demo:mergeDebugResources[Fatal Error] :1:1: Content is not allowed in prolog.
+
+/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+:demo:mergeDebugResources FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':demo:mergeDebugResources'.
+> /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':demo:mergeDebugResources'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: com.android.build.gradle.tasks.ResourceException: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:151)
+	at com.android.build.gradle.internal.tasks.IncrementalTask.taskAction(IncrementalTask.java:85)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:243)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:230)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+Caused by: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517085141-0/src/NeverEmptyListView-master/demo/src/main/res/preview/preview.png:1:1: Error: Content is not allowed in prolog.
+	at com.android.ide.common.res2.MergingException.throwIfNonEmpty(MergingException.java:139)
+	at com.android.ide.common.res2.DataSet.loadFromFiles(DataSet.java:249)
+	at com.android.ide.common.res2.ResourceSet.loadFromFiles(ResourceSet.java:48)
+	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.java:134)
+	... 57 more
+
+
+BUILD FAILED
+
+Total time: 12.43 secs
+
+2019-01-26 22:39:32,325 ERROR FullProcessService - Project build has not produced APK file
+2019-01-26 22:39:32,411 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,120 @@
+2018-04-02 00:54:40,809 INFO  DownloadService - Downloading "https://github.com/Bossyao168/StackOverView/archive/master.zip", attempt 3
+2018-04-02 00:55:41,252 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:55:41,887 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:55:41,887 INFO  DownloadService - Downloading "https://github.com/Bossyao168/StackOverView/archive/master.zip", attempt 3
+2018-04-02 00:56:43,141 DEBUG FullProcessService - Repository https://github.com/Bossyao168/StackOverView available: true
+2018-04-02 00:56:43,141 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:56:43,141 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Bossyao168/StackOverView, /tmp/rdisk/2536/src]
+2018-04-02 00:56:44,773 INFO  SysUtils - 
+2018-04-02 00:56:44,777 INFO  GitService - Deleted "/tmp/rdisk/2536/src/.git": true
+2018-04-02 00:56:44,780 INFO  FullProcessService - Size of directory with sources: 418 KB
+2018-04-02 00:56:44,780 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2536/src]
+2018-04-02 00:56:44,785 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2536/src/.git/
+
+2018-04-02 00:56:44,788 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2536/src/gradlew
+2018-04-02 00:56:44,790 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2536/src/app/build.gradle /tmp/rdisk/2536/src/lib/build.gradle /tmp/rdisk/2536/src/build.gradle
+2018-04-02 00:56:44,792 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2536/src/settings.gradle /tmp/rdisk/2536/src/lib/build.gradle /tmp/rdisk/2536/src/build.gradle /tmp/rdisk/2536/src/app/build.gradle
+2018-04-02 00:56:44,793 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:56:44,793 INFO  ProjectFixService - Fixing project...
+2018-04-02 00:56:44,798 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2536/src/app/local.properties
+2018-04-02 00:56:44,798 INFO  ProjectFixService - Build info for "/tmp/rdisk/2536/src/app/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=16,targetSdkVersion=21]
+2018-04-02 00:56:44,798 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2536/src/lib/local.properties
+2018-04-02 00:56:44,799 INFO  ProjectFixService - Build info for "/tmp/rdisk/2536/src/lib/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 00:56:44,799 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2536/src/local.properties
+2018-04-02 00:56:44,799 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 00:56:44,799 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 00:56:44,800 INFO  ProjectFixService - Build info for "/tmp/rdisk/2536/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=15,targetSdkVersion=21]
+2018-04-02 00:56:44,800 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 00:56:44,800 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:56:44,800 INFO  SysUtils - Execute command: [/tmp/rdisk/2536/src/gradlew, -b, /tmp/rdisk/2536/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:56:53,012 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-02 00:56:53,012 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 00:56:53,012 INFO  SysUtils - Execute command: [/tmp/rdisk/2536/src/gradlew, -b, /tmp/rdisk/2536/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 00:57:05,197 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:preBuild
+:lib:preReleaseBuild
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJavaNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:compileReleaseNdk
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease
+:app:prepareSrcLibUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: /tmp/rdisk/2536/src/app/src/main/java/com/wirelesspienetwork/overviewexample/OverviewActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: /tmp/rdisk/2536/src/app/src/main/java/com/wirelesspienetwork/overviewexample/OverviewActivity.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 11.773 secs
+
+2018-04-02 00:57:05,208 INFO  FullProcessService - Found APK file: /tmp/rdisk/2536/src/app/build/outputs/apk/app-debug.apk

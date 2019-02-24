@@ -1,0 +1,50 @@
+2018-04-01 20:55:42,011 INFO  DownloadService - Downloading "https://github.com/rchampa/DropboxHttpConnector/archive/master.zip", attempt 3
+2018-04-01 20:56:42,649 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:56:43,498 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:56:43,499 INFO  DownloadService - Downloading "https://github.com/rchampa/DropboxHttpConnector/archive/master.zip", attempt 3
+2018-04-01 20:57:44,679 DEBUG FullProcessService - Repository https://github.com/rchampa/DropboxHttpConnector available: true
+2018-04-01 20:57:44,679 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:57:44,679 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rchampa/DropboxHttpConnector, /tmp/rdisk/2621/src]
+2018-04-01 20:57:45,963 INFO  SysUtils - 
+2018-04-01 20:57:45,969 INFO  GitService - Deleted "/tmp/rdisk/2621/src/.git": true
+2018-04-01 20:57:45,970 INFO  FullProcessService - Size of directory with sources: 39 KB
+2018-04-01 20:57:45,970 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2621/src]
+2018-04-01 20:57:45,975 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2621/src/.git/
+
+2018-04-01 20:57:45,976 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-01 20:57:45,976 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-01 20:57:45,977 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2621/src/build.gradle
+2018-04-01 20:57:45,978 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2621/src/build.gradle
+2018-04-01 20:57:45,978 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:57:45,978 INFO  ProjectFixService - Fixing project...
+2018-04-01 20:57:45,981 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2621/src/local.properties
+2018-04-01 20:57:45,982 INFO  ProjectFixService - Build info for "/tmp/rdisk/2621/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 20:57:45,982 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2621/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 20:57:45,982 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 20:57:45,982 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:57:45,982 INFO  SysUtils - Execute command: [gradle, -b, /tmp/rdisk/2621/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:57:49,793 INFO  ProjectTaskService - Detected possible tasks: 42
+2018-04-01 20:57:49,793 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-04-01 20:57:49,793 INFO  SysUtils - Execute command: [gradle, -b, /tmp/rdisk/2621/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-04-01 20:57:54,808 INFO  SysUtils - Configuration on demand is an incubating feature.
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+/tmp/rdisk/2621/src/src/main/java/es/ric/dropbox/DropboxOkHttp.java:19: warning: IOUtils is internal proprietary API and may be removed in a future release
+import sun.misc.IOUtils;
+               ^
+/tmp/rdisk/2621/src/src/main/java/es/ric/dropbox/DropboxOkHttp.java:35: warning: IOUtils is internal proprietary API and may be removed in a future release
+        byte[] content = IOUtils.readFully(fis, -1, true);
+                         ^
+3 warnings
+
+:processResources NO-SOURCE
+:classes
+:jar
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.823 secs
+
+2018-04-01 20:57:54,810 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 20:57:54,812 ERROR FullProcessService - Could not find generated or existed APK file

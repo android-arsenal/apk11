@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.afollestad.dragselectrecyclerviewsample",
+    "label" : "DragSelectRecyclerView",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0.0",
+    "versionCode" : 21,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "26",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1881,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"21\" android:versionName=\"1.0.0\" package=\"com.afollestad.dragselectrecyclerviewsample\" platformBuildVersionCode=\"26\" platformBuildVersionName=\"8.0.0\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"26\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f080094\" android:label=\"DragSelectRecyclerView\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:label=\"DragSelectRecyclerView\" android:name=\"com.afollestad.dragselectrecyclerviewsample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1562779,
+  "crc32" : 2014589087,
+  "sha256" : "e8a617386256ccf29fcd6dace7c6b5d1d52d6f53bf469f7987a1d31c87fe923d",
+  "buildTime" : 1526045449000
+}

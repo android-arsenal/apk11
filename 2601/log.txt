@@ -1,0 +1,112 @@
+2018-04-01 21:50:10,905 INFO  DownloadService - Downloading "https://github.com/gitskarios/GithubAndroidSdk/archive/master.zip", attempt 3
+2018-04-01 21:51:11,528 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:51:12,155 INFO  GithubDownloadService - Default branch of this repository: develop
+2018-04-01 21:51:12,155 INFO  DownloadService - Downloading "https://github.com/gitskarios/GithubAndroidSdk/archive/develop.zip", attempt 3
+2018-04-01 21:52:13,447 DEBUG FullProcessService - Repository https://github.com/gitskarios/GithubAndroidSdk available: true
+2018-04-01 21:52:13,447 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:52:13,448 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/gitskarios/GithubAndroidSdk, /tmp/rdisk/2601/src]
+2018-04-01 21:52:15,008 INFO  SysUtils - 
+2018-04-01 21:52:15,015 INFO  GitService - Deleted "/tmp/rdisk/2601/src/.git": true
+2018-04-01 21:52:15,023 INFO  FullProcessService - Size of directory with sources: 417 KB
+2018-04-01 21:52:15,023 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2601/src]
+2018-04-01 21:52:15,028 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2601/src/.git/
+
+2018-04-01 21:52:15,034 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2601/src/gradlew
+2018-04-01 21:52:15,040 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2601/src/build.gradle
+2018-04-01 21:52:15,045 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2601/src/build.gradle
+2018-04-01 21:52:15,045 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:52:15,045 INFO  ProjectFixService - Fixing project...
+2018-04-01 21:52:15,057 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2601/src/local.properties
+2018-04-01 21:52:15,057 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-01 21:52:15,057 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-01 21:52:15,058 INFO  ProjectFixService - Build info for "/tmp/rdisk/2601/src/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 21:52:15,058 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 21:52:15,058 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:52:15,058 INFO  SysUtils - Execute command: [/tmp/rdisk/2601/src/gradlew, -b, /tmp/rdisk/2601/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:52:22,905 INFO  ProjectTaskService - Detected possible tasks: 81
+2018-04-01 21:52:22,906 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 21:52:22,906 INFO  SysUtils - Execute command: [/tmp/rdisk/2601/src/gradlew, -b, /tmp/rdisk/2601/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 21:52:39,098 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:preBuild UP-TO-DATE
+:preDebugBuild UP-TO-DATE
+:compileDebugNdk UP-TO-DATE
+:compileLint
+:copyDebugLint UP-TO-DATE
+:mergeDebugProguardFiles
+:packageDebugRenderscript UP-TO-DATE
+:checkDebugManifest
+:preDebugAndroidTestBuild UP-TO-DATE
+:preDebugUnitTestBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:preReleaseUnitTestBuild UP-TO-DATE
+:prepareNetDanlewAndroidJoda282Library
+:prepareNlLittlerobotsRxlintRxlint10Library
+:prepareDebugDependencies
+:compileDebugRenderscript
+:generateDebugResValues
+:generateDebugResources
+:packageDebugResources
+:compileDebugAidl
+:generateDebugBuildConfig
+:mergeDebugShaders
+:compileDebugShaders
+:generateDebugAssets
+:mergeDebugAssets
+:mergeDebugResources
+:processDebugManifest
+:processDebugResources
+:generateDebugSources
+:incrementalDebugJavaCompilationSafeguard
+:compileDebugJavaWithJavac
+:compileRetrolambdaDebug
+:processDebugJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForDebug
+:transformClassesAndResourcesWithSyncLibJarsForDebug
+:mergeDebugJniLibFolders
+:transformNative_libsWithMergeJniLibsForDebug
+:transformNative_libsWithSyncJniLibsForDebug
+:bundleDebug
+:compileDebugSources
+:assembleDebug
+:compileReleaseNdk UP-TO-DATE
+:copyReleaseLint UP-TO-DATE
+:mergeReleaseProguardFiles
+:packageReleaseRenderscript UP-TO-DATE
+:checkReleaseManifest
+:prepareReleaseDependencies
+:compileReleaseRenderscript
+:generateReleaseResValues
+:generateReleaseResources
+:packageReleaseResources
+:compileReleaseAidl
+:generateReleaseBuildConfig
+:mergeReleaseShaders
+:compileReleaseShaders
+:generateReleaseAssets
+:mergeReleaseAssets
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:incrementalReleaseJavaCompilationSafeguard
+:compileReleaseJavaWithJavac
+:compileRetrolambdaRelease
+:processReleaseJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForRelease
+:transformClassesAndResourcesWithSyncLibJarsForRelease
+:mergeReleaseJniLibFolders
+:transformNative_libsWithMergeJniLibsForRelease
+:transformNative_libsWithSyncJniLibsForRelease
+:bundleRelease
+:compileReleaseSources
+:assembleRelease
+:assemble
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.753 secs
+
+2018-04-01 21:52:39,171 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 21:52:39,244 ERROR FullProcessService - Could not find generated or existed APK file

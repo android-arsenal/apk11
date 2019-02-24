@@ -1,0 +1,1080 @@
+2018-04-02 00:31:54,647 INFO  DownloadService - Downloading "https://github.com/satorufujiwara/lighthttp/archive/master.zip", attempt 3
+2018-04-02 00:32:55,252 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:32:55,931 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:32:55,931 INFO  DownloadService - Downloading "https://github.com/satorufujiwara/lighthttp/archive/master.zip", attempt 3
+2018-04-02 00:33:57,307 DEBUG FullProcessService - Repository https://github.com/satorufujiwara/lighthttp available: true
+2018-04-02 00:33:57,307 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:33:57,307 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/satorufujiwara/lighthttp, /tmp/rdisk/2543/src]
+2018-04-02 00:33:58,740 INFO  SysUtils - 
+2018-04-02 00:33:58,745 INFO  GitService - Deleted "/tmp/rdisk/2543/src/.git": true
+2018-04-02 00:33:58,749 INFO  FullProcessService - Size of directory with sources: 131 KB
+2018-04-02 00:33:58,749 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2543/src]
+2018-04-02 00:33:58,754 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2543/src/.git/
+
+2018-04-02 00:33:58,757 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2543/src/gradlew
+2018-04-02 00:33:58,761 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2543/src/lighthttp-async/build.gradle /tmp/rdisk/2543/src/lighthttp-gson/build.gradle /tmp/rdisk/2543/src/lighthttp-rx/build.gradle /tmp/rdisk/2543/src/lighthttp-utils/build.gradle /tmp/rdisk/2543/src/lighthttp/build.gradle /tmp/rdisk/2543/src/build.gradle
+2018-04-02 00:33:58,764 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2543/src/settings.gradle /tmp/rdisk/2543/src/lighthttp/build.gradle /tmp/rdisk/2543/src/lighthttp/bintray-publish.gradle /tmp/rdisk/2543/src/lighthttp/android-artifacts.gradle /tmp/rdisk/2543/src/lighthttp-utils/build.gradle /tmp/rdisk/2543/src/lighthttp-utils/bintray-publish.gradle /tmp/rdisk/2543/src/lighthttp-utils/android-artifacts.gradle /tmp/rdisk/2543/src/lighthttp-rx/build.gradle /tmp/rdisk/2543/src/lighthttp-rx/bintray-publish.gradle /tmp/rdisk/2543/src/lighthttp-rx/android-artifacts.gradle /tmp/rdisk/2543/src/lighthttp-gson/build.gradle /tmp/rdisk/2543/src/lighthttp-gson/bintray-publish.gradle /tmp/rdisk/2543/src/lighthttp-gson/android-artifacts.gradle /tmp/rdisk/2543/src/lighthttp-async/build.gradle /tmp/rdisk/2543/src/lighthttp-async/bintray-publish.gradle /tmp/rdisk/2543/src/lighthttp-async/android-artifacts.gradle /tmp/rdisk/2543/src/build.gradle
+2018-04-02 00:33:58,765 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:33:58,765 INFO  ProjectFixService - Fixing project...
+2018-04-02 00:33:58,776 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/lighthttp-async/local.properties
+2018-04-02 00:33:58,785 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/lighthttp-async/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,785 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/lighthttp-async/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,786 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/lighthttp-gson/local.properties
+2018-04-02 00:33:58,794 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/lighthttp-gson/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,795 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/lighthttp-gson/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,795 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/lighthttp-rx/local.properties
+2018-04-02 00:33:58,804 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/lighthttp-rx/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,804 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/lighthttp-rx/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,805 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/lighthttp-utils/local.properties
+2018-04-02 00:33:58,814 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/lighthttp-utils/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,814 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/lighthttp-utils/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,814 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/lighthttp/local.properties
+2018-04-02 00:33:58,823 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/lighthttp/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,823 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/lighthttp/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,823 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2543/src/local.properties
+2018-04-02 00:33:58,824 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 00:33:58,824 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 00:33:58,833 INFO  ProjectFixService - Build info for "/tmp/rdisk/2543/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 00:33:58,833 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2543/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 00:33:58,833 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 00:33:58,833 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:33:58,833 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:34:18,516 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:34:18,516 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:34:18,516 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:34:18,516 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:34:35,529 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lighthttp-async:androidJar
+:lighthttp-async:androidJavadocs/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncTask.java:6: error: cannot find symbol
+import jp.satorufujiwara.http.ExecutorTask;
+                             ^
+  symbol:   class ExecutorTask
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncTask.java:7: error: cannot find symbol
+import jp.satorufujiwara.http.Response;
+                             ^
+  symbol:   class Response
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncTask.java:11: error: cannot find symbol
+    private final ExecutorTask<T> task;
+                  ^
+  symbol:   class ExecutorTask
+  location: class AsyncTask<T>
+  where T is a type-variable:
+    T extends Object declared in class AsyncTask
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncCallback.java:4: error: cannot find symbol
+import jp.satorufujiwara.http.Response;
+                             ^
+  symbol:   class Response
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncTask.java:14: error: cannot find symbol
+    AsyncTask(ExecutorTask<T> task, AsyncCallback<T> callback) {
+              ^
+  symbol:   class ExecutorTask
+  location: class AsyncTask<T>
+  where T is a type-variable:
+    T extends Object declared in class AsyncTask
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncCallback.java:8: error: cannot find symbol
+    void onResult(Response<T> response, Throwable e);
+                  ^
+  symbol:   class Response
+  location: interface AsyncCallback<T>
+  where T is a type-variable:
+    T extends Object declared in interface AsyncCallback
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:4: error: cannot find symbol
+import jp.satorufujiwara.http.Executor;
+                             ^
+  symbol:   class Executor
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:5: error: cannot find symbol
+import jp.satorufujiwara.http.ExecutorTask;
+                             ^
+  symbol:   class ExecutorTask
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:7: error: cannot find symbol
+public class AsyncExecutor<T> extends Executor<T> {
+                                      ^
+  symbol: class Executor
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:12: error: cannot find symbol
+    AsyncExecutor(ExecutorTask<T> task) {
+                  ^
+  symbol:   class ExecutorTask
+  location: class AsyncExecutor<T>
+  where T is a type-variable:
+    T extends Object declared in class AsyncExecutor
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:24: error: package Executor does not exist
+    public static class Provider<T> implements Executor.Provider<T, AsyncExecutor<T>> {
+                                                       ^
+/tmp/rdisk/2543/src/lighthttp-async/src/main/java/jp/satorufujiwara/http/async/AsyncExecutor.java:31: error: cannot find symbol
+        public AsyncExecutor<T> newExecutor(ExecutorTask<T> task) {
+                                            ^
+  symbol:   class ExecutorTask
+  location: class Provider<T>
+  where T is a type-variable:
+    T extends Object declared in class Provider
+
+12 warnings
+:lighthttp-async:androidJavadocsJar
+:lighthttp-async:androidSourcesJar
+:lighthttp-async:compileLint
+:lighthttp-async:copyDebugLint UP-TO-DATE
+:lighthttp-async:mergeDebugProguardFiles
+:lighthttp:compileLint
+:lighthttp:copyReleaseLint UP-TO-DATE
+:lighthttp:mergeReleaseProguardFiles
+:lighthttp:preBuild UP-TO-DATE
+:lighthttp:preReleaseBuild UP-TO-DATE
+:lighthttp:checkReleaseManifest
+:lighthttp:prepareReleaseDependencies
+:lighthttp:compileReleaseAidl
+:lighthttp:compileReleaseRenderscript
+:lighthttp:generateReleaseBuildConfig
+:lighthttp:generateReleaseAssets UP-TO-DATE
+:lighthttp:mergeReleaseAssets
+:lighthttp:generateReleaseResValues
+:lighthttp:generateReleaseResources
+:lighthttp:packageReleaseResources
+:lighthttp:processReleaseManifest
+:lighthttp:processReleaseResources
+:lighthttp:generateReleaseSources
+:lighthttp:processReleaseJavaRes UP-TO-DATE
+:lighthttp:compileReleaseJavaNote: /tmp/rdisk/2543/src/lighthttp/src/main/java/jp/satorufujiwara/http/LightHttpClient.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lighthttp:packageReleaseJar
+:lighthttp:compileReleaseNdk UP-TO-DATE
+:lighthttp:packageReleaseJniLibs UP-TO-DATE
+:lighthttp:packageReleaseLocalJar UP-TO-DATE
+:lighthttp:packageReleaseRenderscript UP-TO-DATE
+:lighthttp:bundleRelease
+:lighthttp-async:preBuild UP-TO-DATE
+:lighthttp-async:preDebugBuild UP-TO-DATE
+:lighthttp-async:checkDebugManifest
+:lighthttp-async:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-async:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-async:preReleaseBuild UP-TO-DATE
+:lighthttp-async:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-async:prepareSrcLighthttpUnspecifiedLibrary
+:lighthttp-async:prepareDebugDependencies
+:lighthttp-async:compileDebugAidl
+:lighthttp-async:compileDebugRenderscript
+:lighthttp-async:generateDebugBuildConfig
+:lighthttp-async:generateDebugAssets UP-TO-DATE
+:lighthttp-async:mergeDebugAssets
+:lighthttp-async:generateDebugResValues
+:lighthttp-async:generateDebugResources
+:lighthttp-async:mergeDebugResources
+:lighthttp-async:processDebugManifest
+:lighthttp-async:processDebugResources
+:lighthttp-async:generateDebugSources
+:lighthttp-async:processDebugJavaRes UP-TO-DATE
+:lighthttp-async:compileDebugJava
+:lighthttp-async:packageDebugJar
+:lighthttp-async:compileDebugNdk UP-TO-DATE
+:lighthttp-async:packageDebugJniLibs UP-TO-DATE
+:lighthttp-async:packageDebugLocalJar UP-TO-DATE
+:lighthttp-async:packageDebugRenderscript UP-TO-DATE
+:lighthttp-async:packageDebugResources
+:lighthttp-async:bundleDebug
+:lighthttp-async:compileDebugSources
+:lighthttp-async:assembleDebug
+:lighthttp-async:copyReleaseLint UP-TO-DATE
+:lighthttp-async:mergeReleaseProguardFiles
+:lighthttp-async:checkReleaseManifest
+:lighthttp-async:prepareReleaseDependencies
+:lighthttp-async:compileReleaseAidl
+:lighthttp-async:compileReleaseRenderscript
+:lighthttp-async:generateReleaseBuildConfig
+:lighthttp-async:generateReleaseAssets UP-TO-DATE
+:lighthttp-async:mergeReleaseAssets
+:lighthttp-async:generateReleaseResValues
+:lighthttp-async:generateReleaseResources
+:lighthttp-async:mergeReleaseResources
+:lighthttp-async:processReleaseManifest
+:lighthttp-async:processReleaseResources
+:lighthttp-async:generateReleaseSources
+:lighthttp-async:processReleaseJavaRes UP-TO-DATE
+:lighthttp-async:compileReleaseJava
+:lighthttp-async:packageReleaseJar
+:lighthttp-async:compileReleaseNdk UP-TO-DATE
+:lighthttp-async:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-async:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-async:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-async:packageReleaseResources
+:lighthttp-async:bundleRelease
+:lighthttp-async:compileReleaseSources
+:lighthttp-async:assembleRelease
+:lighthttp-async:assemble
+:lighthttp-async:lint
+Ran lint on variant release: 0 issues found
+Ran lint on variant debug: 0 issues found
+Wrote HTML report to file:/tmp/rdisk/2543/src/lighthttp-async/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2543/src/lighthttp-async/build/outputs/lint-results.xml
+:lighthttp-async:preCompileDebugUnitTestJava
+:lighthttp-async:prepareDebugUnitTestDependencies
+:lighthttp-async:processDebugUnitTestJavaRes UP-TO-DATE
+:lighthttp-async:compileDebugUnitTestJava UP-TO-DATE
+:lighthttp-async:compileDebugUnitTestSources UP-TO-DATE
+:lighthttp-async:mockableAndroidJar
+:lighthttp-async:assembleDebugUnitTest
+:lighthttp-async:testDebug
+:lighthttp-async:preCompileReleaseUnitTestJava
+:lighthttp-async:prepareReleaseUnitTestDependencies
+:lighthttp-async:processReleaseUnitTestJavaRes UP-TO-DATE
+:lighthttp-async:compileReleaseUnitTestJava UP-TO-DATE
+:lighthttp-async:compileReleaseUnitTestSources UP-TO-DATE
+:lighthttp-async:assembleReleaseUnitTest
+:lighthttp-async:testRelease
+:lighthttp-async:test
+:lighthttp-async:check
+:lighthttp-async:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.534 secs
+
+2018-04-02 00:34:35,540 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:34:35,540 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-gson/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:34:42,835 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:34:42,836 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:34:42,836 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:34:42,836 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-gson/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:34:57,857 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lighthttp-gson:androidJar
+:lighthttp-gson:androidJavadocs/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:3: error: package com.google.gson does not exist
+import com.google.gson.Gson;
+                      ^
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:4: error: package com.google.gson does not exist
+import com.google.gson.JsonIOException;
+                      ^
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:5: error: package com.google.gson does not exist
+import com.google.gson.JsonSyntaxException;
+                      ^
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:6: error: package com.google.gson.stream does not exist
+import com.google.gson.stream.JsonWriter;
+                             ^
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:13: error: cannot find symbol
+import jp.satorufujiwara.http.ConverterProvider;
+                             ^
+  symbol:   class ConverterProvider
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:14: error: cannot find symbol
+import jp.satorufujiwara.http.RequestBody;
+                             ^
+  symbol:   class RequestBody
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:15: error: cannot find symbol
+import jp.satorufujiwara.http.ResponseBody;
+                             ^
+  symbol:   class ResponseBody
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:16: error: cannot find symbol
+import jp.satorufujiwara.http.Utils;
+                             ^
+  symbol:   class Utils
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:18: error: cannot find symbol
+public class GsonConverterProvider extends ConverterProvider {
+                                           ^
+  symbol: class ConverterProvider
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:20: error: cannot find symbol
+    private final Gson gson;
+                  ^
+  symbol:   class Gson
+  location: class GsonConverterProvider
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:26: error: cannot find symbol
+    public GsonConverterProvider(Gson gson) {
+                                 ^
+  symbol:   class Gson
+  location: class GsonConverterProvider
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:31: error: cannot find symbol
+    protected <T> RequestConverter<T> requestConverter(final Type type) {
+                  ^
+  symbol:   class RequestConverter
+  location: class GsonConverterProvider
+/tmp/rdisk/2543/src/lighthttp-gson/src/main/java/jp/satorufujiwara/http/gson/GsonConverterProvider.java:59: error: cannot find symbol
+    protected <T> ResponseConverter<T> responseConverter(final Type type) {
+                  ^
+  symbol:   class ResponseConverter
+  location: class GsonConverterProvider
+
+13 warnings
+:lighthttp-gson:androidJavadocsJar
+:lighthttp-gson:androidSourcesJar
+:lighthttp-gson:compileLint
+:lighthttp-gson:copyDebugLint UP-TO-DATE
+:lighthttp-gson:mergeDebugProguardFiles
+:lighthttp:compileLint
+:lighthttp:copyReleaseLint UP-TO-DATE
+:lighthttp:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp:preBuild UP-TO-DATE
+:lighthttp:preReleaseBuild UP-TO-DATE
+:lighthttp:checkReleaseManifest
+:lighthttp:prepareReleaseDependencies
+:lighthttp:compileReleaseAidl UP-TO-DATE
+:lighthttp:compileReleaseRenderscript UP-TO-DATE
+:lighthttp:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp:generateReleaseAssets UP-TO-DATE
+:lighthttp:mergeReleaseAssets UP-TO-DATE
+:lighthttp:generateReleaseResValues UP-TO-DATE
+:lighthttp:generateReleaseResources UP-TO-DATE
+:lighthttp:packageReleaseResources UP-TO-DATE
+:lighthttp:processReleaseManifest UP-TO-DATE
+:lighthttp:processReleaseResources UP-TO-DATE
+:lighthttp:generateReleaseSources UP-TO-DATE
+:lighthttp:processReleaseJavaRes UP-TO-DATE
+:lighthttp:compileReleaseJava UP-TO-DATE
+:lighthttp:packageReleaseJar UP-TO-DATE
+:lighthttp:compileReleaseNdk UP-TO-DATE
+:lighthttp:packageReleaseJniLibs UP-TO-DATE
+:lighthttp:packageReleaseLocalJar UP-TO-DATE
+:lighthttp:packageReleaseRenderscript UP-TO-DATE
+:lighthttp:bundleRelease UP-TO-DATE
+:lighthttp-gson:preBuild UP-TO-DATE
+:lighthttp-gson:preDebugBuild UP-TO-DATE
+:lighthttp-gson:checkDebugManifest
+:lighthttp-gson:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-gson:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-gson:preReleaseBuild UP-TO-DATE
+:lighthttp-gson:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-gson:prepareSrcLighthttpUnspecifiedLibrary
+:lighthttp-gson:prepareDebugDependencies
+:lighthttp-gson:compileDebugAidl
+:lighthttp-gson:compileDebugRenderscript
+:lighthttp-gson:generateDebugBuildConfig
+:lighthttp-gson:generateDebugAssets UP-TO-DATE
+:lighthttp-gson:mergeDebugAssets
+:lighthttp-gson:generateDebugResValues
+:lighthttp-gson:generateDebugResources
+:lighthttp-gson:mergeDebugResources
+:lighthttp-gson:processDebugManifest
+:lighthttp-gson:processDebugResources
+:lighthttp-gson:generateDebugSources
+:lighthttp-gson:processDebugJavaRes UP-TO-DATE
+:lighthttp-gson:compileDebugJava
+:lighthttp-gson:packageDebugJar
+:lighthttp-gson:compileDebugNdk UP-TO-DATE
+:lighthttp-gson:packageDebugJniLibs UP-TO-DATE
+:lighthttp-gson:packageDebugLocalJar UP-TO-DATE
+:lighthttp-gson:packageDebugRenderscript UP-TO-DATE
+:lighthttp-gson:packageDebugResources
+:lighthttp-gson:bundleDebug
+:lighthttp-gson:compileDebugSources
+:lighthttp-gson:assembleDebug
+:lighthttp-gson:copyReleaseLint UP-TO-DATE
+:lighthttp-gson:mergeReleaseProguardFiles
+:lighthttp-gson:checkReleaseManifest
+:lighthttp-gson:prepareReleaseDependencies
+:lighthttp-gson:compileReleaseAidl
+:lighthttp-gson:compileReleaseRenderscript
+:lighthttp-gson:generateReleaseBuildConfig
+:lighthttp-gson:generateReleaseAssets UP-TO-DATE
+:lighthttp-gson:mergeReleaseAssets
+:lighthttp-gson:generateReleaseResValues
+:lighthttp-gson:generateReleaseResources
+:lighthttp-gson:mergeReleaseResources
+:lighthttp-gson:processReleaseManifest
+:lighthttp-gson:processReleaseResources
+:lighthttp-gson:generateReleaseSources
+:lighthttp-gson:processReleaseJavaRes UP-TO-DATE
+:lighthttp-gson:compileReleaseJava
+:lighthttp-gson:packageReleaseJar
+:lighthttp-gson:compileReleaseNdk UP-TO-DATE
+:lighthttp-gson:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-gson:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-gson:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-gson:packageReleaseResources
+:lighthttp-gson:bundleRelease
+:lighthttp-gson:compileReleaseSources
+:lighthttp-gson:assembleRelease
+:lighthttp-gson:assemble
+:lighthttp-gson:lint
+Ran lint on variant debug: 0 issues found
+Ran lint on variant release: 0 issues found
+Wrote HTML report to file:/tmp/rdisk/2543/src/lighthttp-gson/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2543/src/lighthttp-gson/build/outputs/lint-results.xml
+:lighthttp-gson:preCompileDebugUnitTestJava
+:lighthttp-gson:prepareDebugUnitTestDependencies
+:lighthttp-gson:processDebugUnitTestJavaRes UP-TO-DATE
+:lighthttp-gson:compileDebugUnitTestJava UP-TO-DATE
+:lighthttp-gson:compileDebugUnitTestSources UP-TO-DATE
+:lighthttp-gson:mockableAndroidJar
+:lighthttp-gson:assembleDebugUnitTest
+:lighthttp-gson:testDebug
+:lighthttp-gson:preCompileReleaseUnitTestJava
+:lighthttp-gson:prepareReleaseUnitTestDependencies
+:lighthttp-gson:processReleaseUnitTestJavaRes UP-TO-DATE
+:lighthttp-gson:compileReleaseUnitTestJava UP-TO-DATE
+:lighthttp-gson:compileReleaseUnitTestSources UP-TO-DATE
+:lighthttp-gson:assembleReleaseUnitTest
+:lighthttp-gson:testRelease
+:lighthttp-gson:test
+:lighthttp-gson:check
+:lighthttp-gson:build
+
+BUILD SUCCESSFUL
+
+Total time: 14.599 secs
+
+2018-04-02 00:34:57,873 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:34:57,873 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:35:04,932 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:35:04,932 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:35:04,932 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:35:04,932 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:35:20,451 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lighthttp-rx:androidJar
+:lighthttp-rx:androidJavadocs/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:5: error: cannot find symbol
+import jp.satorufujiwara.http.Executor;
+                             ^
+  symbol:   class Executor
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:6: error: cannot find symbol
+import jp.satorufujiwara.http.ExecutorTask;
+                             ^
+  symbol:   class ExecutorTask
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:7: error: cannot find symbol
+import jp.satorufujiwara.http.Response;
+                             ^
+  symbol:   class Response
+  location: package jp.satorufujiwara.http
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:8: error: package rx does not exist
+import rx.Observable;
+         ^
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:9: error: package rx does not exist
+import rx.Subscriber;
+         ^
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:11: error: cannot find symbol
+public class RxExecutor<T> extends Executor<T> {
+                                   ^
+  symbol: class Executor
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:13: error: cannot find symbol
+    RxExecutor(ExecutorTask<T> task) {
+               ^
+  symbol:   class ExecutorTask
+  location: class RxExecutor<T>
+  where T is a type-variable:
+    T extends Object declared in class RxExecutor
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:36: error: package Executor does not exist
+    static class Provider<T> implements Executor.Provider<T, RxExecutor<T>> {
+                                                ^
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:21: error: cannot find symbol
+    public Observable<Response<T>> asObservable() {
+           ^
+  symbol:   class Observable
+  location: class RxExecutor<T>
+  where T is a type-variable:
+    T extends Object declared in class RxExecutor
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:21: error: cannot find symbol
+    public Observable<Response<T>> asObservable() {
+                      ^
+  symbol:   class Response
+  location: class RxExecutor<T>
+  where T is a type-variable:
+    T extends Object declared in class RxExecutor
+/tmp/rdisk/2543/src/lighthttp-rx/src/main/java/jp/satorufujiwara/http/rx/RxExecutor.java:43: error: cannot find symbol
+        public RxExecutor<T> newExecutor(ExecutorTask<T> task) {
+                                         ^
+  symbol:   class ExecutorTask
+  location: class Provider<T>
+  where T is a type-variable:
+    T extends Object declared in class Provider
+
+11 warnings
+:lighthttp-rx:androidJavadocsJar
+:lighthttp-rx:androidSourcesJar
+:lighthttp-rx:compileLint
+:lighthttp-rx:copyDebugLint UP-TO-DATE
+:lighthttp-rx:mergeDebugProguardFiles
+:lighthttp:compileLint
+:lighthttp:copyReleaseLint UP-TO-DATE
+:lighthttp:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp:preBuild UP-TO-DATE
+:lighthttp:preReleaseBuild UP-TO-DATE
+:lighthttp:checkReleaseManifest
+:lighthttp:prepareReleaseDependencies
+:lighthttp:compileReleaseAidl UP-TO-DATE
+:lighthttp:compileReleaseRenderscript UP-TO-DATE
+:lighthttp:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp:generateReleaseAssets UP-TO-DATE
+:lighthttp:mergeReleaseAssets UP-TO-DATE
+:lighthttp:generateReleaseResValues UP-TO-DATE
+:lighthttp:generateReleaseResources UP-TO-DATE
+:lighthttp:packageReleaseResources UP-TO-DATE
+:lighthttp:processReleaseManifest UP-TO-DATE
+:lighthttp:processReleaseResources UP-TO-DATE
+:lighthttp:generateReleaseSources UP-TO-DATE
+:lighthttp:processReleaseJavaRes UP-TO-DATE
+:lighthttp:compileReleaseJava UP-TO-DATE
+:lighthttp:packageReleaseJar UP-TO-DATE
+:lighthttp:compileReleaseNdk UP-TO-DATE
+:lighthttp:packageReleaseJniLibs UP-TO-DATE
+:lighthttp:packageReleaseLocalJar UP-TO-DATE
+:lighthttp:packageReleaseRenderscript UP-TO-DATE
+:lighthttp:bundleRelease UP-TO-DATE
+:lighthttp-rx:preBuild UP-TO-DATE
+:lighthttp-rx:preDebugBuild UP-TO-DATE
+:lighthttp-rx:checkDebugManifest
+:lighthttp-rx:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-rx:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-rx:preReleaseBuild UP-TO-DATE
+:lighthttp-rx:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-rx:prepareSrcLighthttpUnspecifiedLibrary
+:lighthttp-rx:prepareDebugDependencies
+:lighthttp-rx:compileDebugAidl
+:lighthttp-rx:compileDebugRenderscript
+:lighthttp-rx:generateDebugBuildConfig
+:lighthttp-rx:generateDebugAssets UP-TO-DATE
+:lighthttp-rx:mergeDebugAssets
+:lighthttp-rx:generateDebugResValues
+:lighthttp-rx:generateDebugResources
+:lighthttp-rx:mergeDebugResources
+:lighthttp-rx:processDebugManifest
+:lighthttp-rx:processDebugResources
+:lighthttp-rx:generateDebugSources
+:lighthttp-rx:processDebugJavaRes UP-TO-DATE
+:lighthttp-rx:compileDebugJava
+:lighthttp-rx:packageDebugJar
+:lighthttp-rx:compileDebugNdk UP-TO-DATE
+:lighthttp-rx:packageDebugJniLibs UP-TO-DATE
+:lighthttp-rx:packageDebugLocalJar UP-TO-DATE
+:lighthttp-rx:packageDebugRenderscript UP-TO-DATE
+:lighthttp-rx:packageDebugResources
+:lighthttp-rx:bundleDebug
+:lighthttp-rx:compileDebugSources
+:lighthttp-rx:assembleDebug
+:lighthttp-rx:copyReleaseLint UP-TO-DATE
+:lighthttp-rx:mergeReleaseProguardFiles
+:lighthttp-rx:checkReleaseManifest
+:lighthttp-rx:prepareReleaseDependencies
+:lighthttp-rx:compileReleaseAidl
+:lighthttp-rx:compileReleaseRenderscript
+:lighthttp-rx:generateReleaseBuildConfig
+:lighthttp-rx:generateReleaseAssets UP-TO-DATE
+:lighthttp-rx:mergeReleaseAssets
+:lighthttp-rx:generateReleaseResValues
+:lighthttp-rx:generateReleaseResources
+:lighthttp-rx:mergeReleaseResources
+:lighthttp-rx:processReleaseManifest
+:lighthttp-rx:processReleaseResources
+:lighthttp-rx:generateReleaseSources
+:lighthttp-rx:processReleaseJavaRes UP-TO-DATE
+:lighthttp-rx:compileReleaseJava
+:lighthttp-rx:packageReleaseJar
+:lighthttp-rx:compileReleaseNdk UP-TO-DATE
+:lighthttp-rx:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-rx:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-rx:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-rx:packageReleaseResources
+:lighthttp-rx:bundleRelease
+:lighthttp-rx:compileReleaseSources
+:lighthttp-rx:assembleRelease
+:lighthttp-rx:assemble
+:lighthttp-rx:lint
+Ran lint on variant release: 0 issues found
+Ran lint on variant debug: 0 issues found
+Wrote HTML report to file:/tmp/rdisk/2543/src/lighthttp-rx/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2543/src/lighthttp-rx/build/outputs/lint-results.xml
+:lighthttp-rx:preCompileDebugUnitTestJava
+:lighthttp-rx:prepareDebugUnitTestDependencies
+:lighthttp-rx:processDebugUnitTestJavaRes UP-TO-DATE
+:lighthttp-rx:compileDebugUnitTestJava UP-TO-DATE
+:lighthttp-rx:compileDebugUnitTestSources UP-TO-DATE
+:lighthttp-rx:mockableAndroidJar
+:lighthttp-rx:assembleDebugUnitTest
+:lighthttp-rx:testDebug
+:lighthttp-rx:preCompileReleaseUnitTestJava
+:lighthttp-rx:prepareReleaseUnitTestDependencies
+:lighthttp-rx:processReleaseUnitTestJavaRes UP-TO-DATE
+:lighthttp-rx:compileReleaseUnitTestJava UP-TO-DATE
+:lighthttp-rx:compileReleaseUnitTestSources UP-TO-DATE
+:lighthttp-rx:assembleReleaseUnitTest
+:lighthttp-rx:testRelease
+:lighthttp-rx:test
+:lighthttp-rx:check
+:lighthttp-rx:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.082 secs
+
+2018-04-02 00:35:20,472 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:35:20,472 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-utils/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:35:24,159 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:35:24,159 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:35:24,159 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:35:24,160 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp-utils/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:35:26,433 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 00:35:26,433 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/tmp/rdisk/2543/src/lighthttp-utils/build.gradle' line: 1
+
+* What went wrong:
+A problem occurred evaluating root project 'lighthttp-utils'.
+> Failed to apply plugin [id 'com.android.library']
+   > Plugin with id 'com.android.library' not found.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'lighthttp-utils'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:54)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:148)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:39)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:59)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:504)
+	at org.gradle.api.internal.project.AbstractProject.evaluate(AbstractProject.java:83)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:33)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:129)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply plugin [id 'com.android.library']
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:117)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.access$200(DefaultObjectConfigurationAction.java:36)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction$3.run(DefaultObjectConfigurationAction.java:80)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.execute(DefaultObjectConfigurationAction.java:131)
+	at org.gradle.api.internal.project.AbstractPluginAware.apply(AbstractPluginAware.java:37)
+	at org.gradle.api.Project$apply.call(Unknown Source)
+	at org.gradle.api.internal.project.ProjectScript.apply(ProjectScript.groovy:34)
+	at org.gradle.api.Script$apply.callCurrent(Unknown Source)
+	at build_6hswmq9g1lccnmqlfvfoh8voh.run(/tmp/rdisk/2543/src/lighthttp-utils/build.gradle:1)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:52)
+	... 35 more
+Caused by: org.gradle.api.plugins.UnknownPluginException: Plugin with id 'com.android.library' not found.
+	at org.gradle.api.internal.plugins.DefaultPluginRegistry.getTypeForId(DefaultPluginRegistry.java:94)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.getTypeForId(DefaultPluginContainer.java:183)
+	at org.gradle.api.internal.plugins.DefaultPluginContainer.apply(DefaultPluginContainer.java:103)
+	at org.gradle.api.internal.plugins.DefaultObjectConfigurationAction.applyPlugin(DefaultObjectConfigurationAction.java:115)
+	... 44 more
+
+
+BUILD FAILED
+
+Total time: 2.159 secs
+
+2018-04-02 00:35:26,452 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:35:26,453 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:35:33,724 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 00:35:33,724 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-02 00:35:33,724 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-02 00:35:33,724 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/lighthttp/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 00:35:49,303 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lighthttp:androidJar
+:lighthttp:androidJavadocs
+:lighthttp:androidJavadocsJar
+:lighthttp:androidSourcesJar
+:lighthttp:compileLint
+:lighthttp:copyDebugLint UP-TO-DATE
+:lighthttp:mergeDebugProguardFiles
+:lighthttp:preBuild UP-TO-DATE
+:lighthttp:preDebugBuild UP-TO-DATE
+:lighthttp:checkDebugManifest
+:lighthttp:prepareDebugDependencies
+:lighthttp:compileDebugAidl
+:lighthttp:compileDebugRenderscript
+:lighthttp:generateDebugBuildConfig
+:lighthttp:generateDebugAssets UP-TO-DATE
+:lighthttp:mergeDebugAssets
+:lighthttp:generateDebugResValues
+:lighthttp:generateDebugResources
+:lighthttp:packageDebugResources
+:lighthttp:processDebugManifest
+:lighthttp:processDebugResources
+:lighthttp:generateDebugSources
+:lighthttp:processDebugJavaRes UP-TO-DATE
+:lighthttp:compileDebugJavaNote: /tmp/rdisk/2543/src/lighthttp/src/main/java/jp/satorufujiwara/http/LightHttpClient.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lighthttp:packageDebugJar
+:lighthttp:compileDebugNdk UP-TO-DATE
+:lighthttp:packageDebugJniLibs UP-TO-DATE
+:lighthttp:packageDebugLocalJar UP-TO-DATE
+:lighthttp:packageDebugRenderscript UP-TO-DATE
+:lighthttp:bundleDebug
+:lighthttp:compileDebugSources
+:lighthttp:assembleDebug
+:lighthttp:copyReleaseLint UP-TO-DATE
+:lighthttp:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp:preReleaseBuild UP-TO-DATE
+:lighthttp:checkReleaseManifest
+:lighthttp:prepareReleaseDependencies
+:lighthttp:compileReleaseAidl UP-TO-DATE
+:lighthttp:compileReleaseRenderscript UP-TO-DATE
+:lighthttp:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp:generateReleaseAssets UP-TO-DATE
+:lighthttp:mergeReleaseAssets UP-TO-DATE
+:lighthttp:generateReleaseResValues UP-TO-DATE
+:lighthttp:generateReleaseResources UP-TO-DATE
+:lighthttp:packageReleaseResources UP-TO-DATE
+:lighthttp:processReleaseManifest UP-TO-DATE
+:lighthttp:processReleaseResources UP-TO-DATE
+:lighthttp:generateReleaseSources UP-TO-DATE
+:lighthttp:processReleaseJavaRes UP-TO-DATE
+:lighthttp:compileReleaseJava UP-TO-DATE
+:lighthttp:packageReleaseJar UP-TO-DATE
+:lighthttp:compileReleaseNdk UP-TO-DATE
+:lighthttp:packageReleaseJniLibs UP-TO-DATE
+:lighthttp:packageReleaseLocalJar UP-TO-DATE
+:lighthttp:packageReleaseRenderscript UP-TO-DATE
+:lighthttp:bundleRelease UP-TO-DATE
+:lighthttp:compileReleaseSources UP-TO-DATE
+:lighthttp:assembleRelease UP-TO-DATE
+:lighthttp:assemble
+:lighthttp:lint
+Ran lint on variant debug: 0 issues found
+Ran lint on variant release: 0 issues found
+Wrote HTML report to file:/tmp/rdisk/2543/src/lighthttp/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2543/src/lighthttp/build/outputs/lint-results.xml
+:lighthttp:preCompileDebugUnitTestJava
+:lighthttp:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp:prepareDebugUnitTestDependencies
+:lighthttp:processDebugUnitTestJavaRes UP-TO-DATE
+:lighthttp:compileDebugUnitTestJava UP-TO-DATE
+:lighthttp:compileDebugUnitTestSources UP-TO-DATE
+:lighthttp:mockableAndroidJar
+:lighthttp:assembleDebugUnitTest
+:lighthttp:testDebug
+:lighthttp:preCompileReleaseUnitTestJava
+:lighthttp:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp:prepareReleaseUnitTestDependencies
+:lighthttp:processReleaseUnitTestJavaRes UP-TO-DATE
+:lighthttp:compileReleaseUnitTestJava UP-TO-DATE
+:lighthttp:compileReleaseUnitTestSources UP-TO-DATE
+:lighthttp:assembleReleaseUnitTest
+:lighthttp:testRelease
+:lighthttp:test
+:lighthttp:check
+:lighthttp:build
+
+BUILD SUCCESSFUL
+
+Total time: 15.172 secs
+
+2018-04-02 00:35:49,326 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 00:35:49,326 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 00:35:56,565 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-02 00:35:56,566 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-02 00:35:56,566 INFO  SysUtils - Execute command: [/tmp/rdisk/2543/src/gradlew, -b, /tmp/rdisk/2543/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-02 00:36:04,236 INFO  SysUtils - Configuration on demand is an incubating feature.
+:lighthttp:androidJar UP-TO-DATE
+:lighthttp:androidJavadocs UP-TO-DATE
+:lighthttp:androidJavadocsJar UP-TO-DATE
+:lighthttp:androidSourcesJar UP-TO-DATE
+:lighthttp:compileLint
+:lighthttp:copyDebugLint UP-TO-DATE
+:lighthttp:mergeDebugProguardFiles UP-TO-DATE
+:lighthttp:preBuild UP-TO-DATE
+:lighthttp:preDebugBuild UP-TO-DATE
+:lighthttp:checkDebugManifest
+:lighthttp:prepareDebugDependencies
+:lighthttp:compileDebugAidl UP-TO-DATE
+:lighthttp:compileDebugRenderscript UP-TO-DATE
+:lighthttp:generateDebugBuildConfig UP-TO-DATE
+:lighthttp:generateDebugAssets UP-TO-DATE
+:lighthttp:mergeDebugAssets UP-TO-DATE
+:lighthttp:generateDebugResValues UP-TO-DATE
+:lighthttp:generateDebugResources UP-TO-DATE
+:lighthttp:packageDebugResources UP-TO-DATE
+:lighthttp:processDebugManifest UP-TO-DATE
+:lighthttp:processDebugResources UP-TO-DATE
+:lighthttp:generateDebugSources UP-TO-DATE
+:lighthttp:processDebugJavaRes UP-TO-DATE
+:lighthttp:compileDebugJava UP-TO-DATE
+:lighthttp:packageDebugJar UP-TO-DATE
+:lighthttp:compileDebugNdk UP-TO-DATE
+:lighthttp:packageDebugJniLibs UP-TO-DATE
+:lighthttp:packageDebugLocalJar UP-TO-DATE
+:lighthttp:packageDebugRenderscript UP-TO-DATE
+:lighthttp:bundleDebug UP-TO-DATE
+:lighthttp:compileDebugSources UP-TO-DATE
+:lighthttp:assembleDebug UP-TO-DATE
+:lighthttp:copyReleaseLint UP-TO-DATE
+:lighthttp:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp:preReleaseBuild UP-TO-DATE
+:lighthttp:checkReleaseManifest
+:lighthttp:prepareReleaseDependencies
+:lighthttp:compileReleaseAidl UP-TO-DATE
+:lighthttp:compileReleaseRenderscript UP-TO-DATE
+:lighthttp:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp:generateReleaseAssets UP-TO-DATE
+:lighthttp:mergeReleaseAssets UP-TO-DATE
+:lighthttp:generateReleaseResValues UP-TO-DATE
+:lighthttp:generateReleaseResources UP-TO-DATE
+:lighthttp:packageReleaseResources UP-TO-DATE
+:lighthttp:processReleaseManifest UP-TO-DATE
+:lighthttp:processReleaseResources UP-TO-DATE
+:lighthttp:generateReleaseSources UP-TO-DATE
+:lighthttp:processReleaseJavaRes UP-TO-DATE
+:lighthttp:compileReleaseJava UP-TO-DATE
+:lighthttp:packageReleaseJar UP-TO-DATE
+:lighthttp:compileReleaseNdk UP-TO-DATE
+:lighthttp:packageReleaseJniLibs UP-TO-DATE
+:lighthttp:packageReleaseLocalJar UP-TO-DATE
+:lighthttp:packageReleaseRenderscript UP-TO-DATE
+:lighthttp:bundleRelease UP-TO-DATE
+:lighthttp:compileReleaseSources UP-TO-DATE
+:lighthttp:assembleRelease UP-TO-DATE
+:lighthttp:assemble UP-TO-DATE
+:lighthttp:build
+:lighthttp-async:androidJar
+:lighthttp-async:androidJavadocs UP-TO-DATE
+:lighthttp-async:androidJavadocsJar UP-TO-DATE
+:lighthttp-async:androidSourcesJar UP-TO-DATE
+:lighthttp-async:compileLint
+:lighthttp-async:copyDebugLint UP-TO-DATE
+:lighthttp-async:mergeDebugProguardFiles UP-TO-DATE
+:lighthttp-async:preBuild UP-TO-DATE
+:lighthttp-async:preDebugBuild UP-TO-DATE
+:lighthttp-async:checkDebugManifest
+:lighthttp-async:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-async:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-async:preReleaseBuild UP-TO-DATE
+:lighthttp-async:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-async:prepareSrcLighthttpUnspecifiedLibrary UP-TO-DATE
+:lighthttp-async:prepareDebugDependencies
+:lighthttp-async:compileDebugAidl UP-TO-DATE
+:lighthttp-async:compileDebugRenderscript UP-TO-DATE
+:lighthttp-async:generateDebugBuildConfig UP-TO-DATE
+:lighthttp-async:generateDebugAssets UP-TO-DATE
+:lighthttp-async:mergeDebugAssets UP-TO-DATE
+:lighthttp-async:generateDebugResValues UP-TO-DATE
+:lighthttp-async:generateDebugResources UP-TO-DATE
+:lighthttp-async:mergeDebugResources UP-TO-DATE
+:lighthttp-async:processDebugManifest UP-TO-DATE
+:lighthttp-async:processDebugResources UP-TO-DATE
+:lighthttp-async:generateDebugSources UP-TO-DATE
+:lighthttp-async:processDebugJavaRes UP-TO-DATE
+:lighthttp-async:compileDebugJava UP-TO-DATE
+:lighthttp-async:packageDebugJar UP-TO-DATE
+:lighthttp-async:compileDebugNdk UP-TO-DATE
+:lighthttp-async:packageDebugJniLibs UP-TO-DATE
+:lighthttp-async:packageDebugLocalJar UP-TO-DATE
+:lighthttp-async:packageDebugRenderscript UP-TO-DATE
+:lighthttp-async:packageDebugResources UP-TO-DATE
+:lighthttp-async:bundleDebug UP-TO-DATE
+:lighthttp-async:compileDebugSources UP-TO-DATE
+:lighthttp-async:assembleDebug UP-TO-DATE
+:lighthttp-async:copyReleaseLint UP-TO-DATE
+:lighthttp-async:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp-async:checkReleaseManifest
+:lighthttp-async:prepareReleaseDependencies
+:lighthttp-async:compileReleaseAidl UP-TO-DATE
+:lighthttp-async:compileReleaseRenderscript UP-TO-DATE
+:lighthttp-async:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp-async:generateReleaseAssets UP-TO-DATE
+:lighthttp-async:mergeReleaseAssets UP-TO-DATE
+:lighthttp-async:generateReleaseResValues UP-TO-DATE
+:lighthttp-async:generateReleaseResources UP-TO-DATE
+:lighthttp-async:mergeReleaseResources UP-TO-DATE
+:lighthttp-async:processReleaseManifest UP-TO-DATE
+:lighthttp-async:processReleaseResources UP-TO-DATE
+:lighthttp-async:generateReleaseSources UP-TO-DATE
+:lighthttp-async:processReleaseJavaRes UP-TO-DATE
+:lighthttp-async:compileReleaseJava UP-TO-DATE
+:lighthttp-async:packageReleaseJar UP-TO-DATE
+:lighthttp-async:compileReleaseNdk UP-TO-DATE
+:lighthttp-async:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-async:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-async:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-async:packageReleaseResources UP-TO-DATE
+:lighthttp-async:bundleRelease UP-TO-DATE
+:lighthttp-async:compileReleaseSources UP-TO-DATE
+:lighthttp-async:assembleRelease UP-TO-DATE
+:lighthttp-async:assemble
+:lighthttp-async:build
+:lighthttp-gson:androidJar
+:lighthttp-gson:androidJavadocs UP-TO-DATE
+:lighthttp-gson:androidJavadocsJar UP-TO-DATE
+:lighthttp-gson:androidSourcesJar UP-TO-DATE
+:lighthttp-gson:compileLint
+:lighthttp-gson:copyDebugLint UP-TO-DATE
+:lighthttp-gson:mergeDebugProguardFiles UP-TO-DATE
+:lighthttp-gson:preBuild UP-TO-DATE
+:lighthttp-gson:preDebugBuild UP-TO-DATE
+:lighthttp-gson:checkDebugManifest
+:lighthttp-gson:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-gson:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-gson:preReleaseBuild UP-TO-DATE
+:lighthttp-gson:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-gson:prepareSrcLighthttpUnspecifiedLibrary UP-TO-DATE
+:lighthttp-gson:prepareDebugDependencies
+:lighthttp-gson:compileDebugAidl UP-TO-DATE
+:lighthttp-gson:compileDebugRenderscript UP-TO-DATE
+:lighthttp-gson:generateDebugBuildConfig UP-TO-DATE
+:lighthttp-gson:generateDebugAssets UP-TO-DATE
+:lighthttp-gson:mergeDebugAssets UP-TO-DATE
+:lighthttp-gson:generateDebugResValues UP-TO-DATE
+:lighthttp-gson:generateDebugResources UP-TO-DATE
+:lighthttp-gson:mergeDebugResources UP-TO-DATE
+:lighthttp-gson:processDebugManifest UP-TO-DATE
+:lighthttp-gson:processDebugResources UP-TO-DATE
+:lighthttp-gson:generateDebugSources UP-TO-DATE
+:lighthttp-gson:processDebugJavaRes UP-TO-DATE
+:lighthttp-gson:compileDebugJava UP-TO-DATE
+:lighthttp-gson:packageDebugJar UP-TO-DATE
+:lighthttp-gson:compileDebugNdk UP-TO-DATE
+:lighthttp-gson:packageDebugJniLibs UP-TO-DATE
+:lighthttp-gson:packageDebugLocalJar UP-TO-DATE
+:lighthttp-gson:packageDebugRenderscript UP-TO-DATE
+:lighthttp-gson:packageDebugResources UP-TO-DATE
+:lighthttp-gson:bundleDebug UP-TO-DATE
+:lighthttp-gson:compileDebugSources UP-TO-DATE
+:lighthttp-gson:assembleDebug UP-TO-DATE
+:lighthttp-gson:copyReleaseLint UP-TO-DATE
+:lighthttp-gson:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp-gson:checkReleaseManifest
+:lighthttp-gson:prepareReleaseDependencies
+:lighthttp-gson:compileReleaseAidl UP-TO-DATE
+:lighthttp-gson:compileReleaseRenderscript UP-TO-DATE
+:lighthttp-gson:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp-gson:generateReleaseAssets UP-TO-DATE
+:lighthttp-gson:mergeReleaseAssets UP-TO-DATE
+:lighthttp-gson:generateReleaseResValues UP-TO-DATE
+:lighthttp-gson:generateReleaseResources UP-TO-DATE
+:lighthttp-gson:mergeReleaseResources UP-TO-DATE
+:lighthttp-gson:processReleaseManifest UP-TO-DATE
+:lighthttp-gson:processReleaseResources UP-TO-DATE
+:lighthttp-gson:generateReleaseSources UP-TO-DATE
+:lighthttp-gson:processReleaseJavaRes UP-TO-DATE
+:lighthttp-gson:compileReleaseJava UP-TO-DATE
+:lighthttp-gson:packageReleaseJar UP-TO-DATE
+:lighthttp-gson:compileReleaseNdk UP-TO-DATE
+:lighthttp-gson:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-gson:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-gson:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-gson:packageReleaseResources UP-TO-DATE
+:lighthttp-gson:bundleRelease UP-TO-DATE
+:lighthttp-gson:compileReleaseSources UP-TO-DATE
+:lighthttp-gson:assembleRelease UP-TO-DATE
+:lighthttp-gson:assemble
+:lighthttp-gson:build
+:lighthttp-rx:androidJar
+:lighthttp-rx:androidJavadocs UP-TO-DATE
+:lighthttp-rx:androidJavadocsJar UP-TO-DATE
+:lighthttp-rx:androidSourcesJar UP-TO-DATE
+:lighthttp-rx:compileLint
+:lighthttp-rx:copyDebugLint UP-TO-DATE
+:lighthttp-rx:mergeDebugProguardFiles UP-TO-DATE
+:lighthttp-rx:preBuild UP-TO-DATE
+:lighthttp-rx:preDebugBuild UP-TO-DATE
+:lighthttp-rx:checkDebugManifest
+:lighthttp-rx:preDebugAndroidTestBuild UP-TO-DATE
+:lighthttp-rx:preDebugUnitTestBuild UP-TO-DATE
+:lighthttp-rx:preReleaseBuild UP-TO-DATE
+:lighthttp-rx:preReleaseUnitTestBuild UP-TO-DATE
+:lighthttp-rx:prepareSrcLighthttpUnspecifiedLibrary UP-TO-DATE
+:lighthttp-rx:prepareDebugDependencies
+:lighthttp-rx:compileDebugAidl UP-TO-DATE
+:lighthttp-rx:compileDebugRenderscript UP-TO-DATE
+:lighthttp-rx:generateDebugBuildConfig UP-TO-DATE
+:lighthttp-rx:generateDebugAssets UP-TO-DATE
+:lighthttp-rx:mergeDebugAssets UP-TO-DATE
+:lighthttp-rx:generateDebugResValues UP-TO-DATE
+:lighthttp-rx:generateDebugResources UP-TO-DATE
+:lighthttp-rx:mergeDebugResources UP-TO-DATE
+:lighthttp-rx:processDebugManifest UP-TO-DATE
+:lighthttp-rx:processDebugResources UP-TO-DATE
+:lighthttp-rx:generateDebugSources UP-TO-DATE
+:lighthttp-rx:processDebugJavaRes UP-TO-DATE
+:lighthttp-rx:compileDebugJava UP-TO-DATE
+:lighthttp-rx:packageDebugJar UP-TO-DATE
+:lighthttp-rx:compileDebugNdk UP-TO-DATE
+:lighthttp-rx:packageDebugJniLibs UP-TO-DATE
+:lighthttp-rx:packageDebugLocalJar UP-TO-DATE
+:lighthttp-rx:packageDebugRenderscript UP-TO-DATE
+:lighthttp-rx:packageDebugResources UP-TO-DATE
+:lighthttp-rx:bundleDebug UP-TO-DATE
+:lighthttp-rx:compileDebugSources UP-TO-DATE
+:lighthttp-rx:assembleDebug UP-TO-DATE
+:lighthttp-rx:copyReleaseLint UP-TO-DATE
+:lighthttp-rx:mergeReleaseProguardFiles UP-TO-DATE
+:lighthttp-rx:checkReleaseManifest
+:lighthttp-rx:prepareReleaseDependencies
+:lighthttp-rx:compileReleaseAidl UP-TO-DATE
+:lighthttp-rx:compileReleaseRenderscript UP-TO-DATE
+:lighthttp-rx:generateReleaseBuildConfig UP-TO-DATE
+:lighthttp-rx:generateReleaseAssets UP-TO-DATE
+:lighthttp-rx:mergeReleaseAssets UP-TO-DATE
+:lighthttp-rx:generateReleaseResValues UP-TO-DATE
+:lighthttp-rx:generateReleaseResources UP-TO-DATE
+:lighthttp-rx:mergeReleaseResources UP-TO-DATE
+:lighthttp-rx:processReleaseManifest UP-TO-DATE
+:lighthttp-rx:processReleaseResources UP-TO-DATE
+:lighthttp-rx:generateReleaseSources UP-TO-DATE
+:lighthttp-rx:processReleaseJavaRes UP-TO-DATE
+:lighthttp-rx:compileReleaseJava UP-TO-DATE
+:lighthttp-rx:packageReleaseJar UP-TO-DATE
+:lighthttp-rx:compileReleaseNdk UP-TO-DATE
+:lighthttp-rx:packageReleaseJniLibs UP-TO-DATE
+:lighthttp-rx:packageReleaseLocalJar UP-TO-DATE
+:lighthttp-rx:packageReleaseRenderscript UP-TO-DATE
+:lighthttp-rx:packageReleaseResources UP-TO-DATE
+:lighthttp-rx:bundleRelease UP-TO-DATE
+:lighthttp-rx:compileReleaseSources UP-TO-DATE
+:lighthttp-rx:assembleRelease UP-TO-DATE
+:lighthttp-rx:assemble
+:lighthttp-rx:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.242 secs
+
+2018-04-02 00:36:04,259 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 00:36:04,280 ERROR FullProcessService - Could not find generated or existed APK file

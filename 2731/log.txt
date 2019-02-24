@@ -1,0 +1,129 @@
+2019-01-26 22:43:15,746 INFO  DownloadService - Downloading "https://github.com/GadgetCheck/TinderView/archive/master.zip", attempt 3
+2019-01-26 22:43:17,790 INFO  DownloadService - Downloaded https://github.com/GadgetCheck/TinderView/archive/master.zip, attempt 3
+2019-01-26 22:43:17,790 INFO  DownloadService - Size of file "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/master.zip": 195 KB
+2019-01-26 22:43:17,790 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2019-01-26 22:43:17,795 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/master.zip: true
+2019-01-26 22:43:17,796 DEBUG ZipUtil - Extracting '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/master.zip' into '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src'.
+2019-01-26 22:43:17,836 INFO  FullProcessService - Size of directory with sources: 257 KB
+2019-01-26 22:43:17,836 INFO  SysUtils - Execute command: [git, init, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src]
+2019-01-26 22:43:17,871 INFO  SysUtils - Initialized empty Git repository in /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/.git/
+
+2019-01-26 22:43:17,877 INFO  ProjectBuildService - Gradle wrapper(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/gradlew
+2019-01-26 22:43:17,884 INFO  ProjectBuildService - Build script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/wear/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/build.gradle
+2019-01-26 22:43:17,889 INFO  ProjectBuildService - All script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/settings.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/wear/build.gradle
+2019-01-26 22:43:17,890 INFO  ProjectBuildService - Remote scripts: none
+2019-01-26 22:43:17,890 INFO  ProjectFixService - Fixing project...
+2019-01-26 22:43:17,904 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/local.properties
+2019-01-26 22:43:17,904 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=19,targetSdkVersion=23]
+2019-01-26 22:43:17,905 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/wear/local.properties
+2019-01-26 22:43:17,905 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/wear/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=20,targetSdkVersion=22]
+2019-01-26 22:43:17,906 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/local.properties
+2019-01-26 22:43:17,906 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2019-01-26 22:43:17,907 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2019-01-26 22:43:17,908 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=19,targetSdkVersion=23]
+2019-01-26 22:43:17,908 INFO  ProjectFixService - Project was maybe fixed
+2019-01-26 22:43:17,908 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:43:17,908 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:43:37,748 INFO  ProjectTaskService - Detected possible tasks: 66
+2019-01-26 22:43:37,748 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2019-01-26 22:43:37,748 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2019-01-26 22:44:35,243 INFO  SysUtils - Configuration on demand is an incubating feature.
+:mobile:preBuild UP-TO-DATE
+:mobile:preDebugBuild UP-TO-DATE
+:mobile:checkDebugManifest
+:mobile:preReleaseBuild UP-TO-DATE
+:mobile:prepareComAndroidSupportAppcompatV72301Library
+:mobile:prepareComAndroidSupportSupportV42301Library
+:mobile:prepareDebugDependencies
+:mobile:compileDebugAidl
+:mobile:compileDebugRenderscript
+:mobile:generateDebugBuildConfig
+:mobile:generateDebugAssets UP-TO-DATE
+:mobile:mergeDebugAssets
+:mobile:generateDebugResValues
+:mobile:generateDebugResources
+:mobile:mergeDebugResources
+:mobile:processDebugManifest
+:mobile:processDebugResources
+:mobile:generateDebugSources
+:mobile:processDebugJavaRes UP-TO-DATE
+:mobile:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:mobile:compileDebugNdk UP-TO-DATE
+:mobile:compileDebugSources
+:mobile:preDexDebug
+:mobile:dexDebug
+:mobile:validateDebugSigning
+:mobile:packageDebug
+:mobile:zipalignDebug
+:mobile:assembleDebug
+:mobile:checkReleaseManifest
+:mobile:prepareReleaseDependencies
+:mobile:compileReleaseAidl
+:mobile:compileReleaseRenderscript
+:mobile:generateReleaseBuildConfig
+:mobile:generateReleaseAssets UP-TO-DATE
+:mobile:mergeReleaseAssets
+:mobile:generateReleaseResValues
+:wear:preBuild UP-TO-DATE
+:wear:preReleaseBuild UP-TO-DATE
+:wear:checkReleaseManifest
+:wear:preDebugBuild UP-TO-DATE
+:wear:prepareComAndroidSupportRecyclerviewV72200Library
+:wear:prepareComAndroidSupportSupportV42220Library
+:wear:prepareComGoogleAndroidGmsPlayServicesBase780Library
+:wear:prepareComGoogleAndroidGmsPlayServicesWearable780Library
+:wear:prepareComGoogleAndroidSupportWearable120Library
+:wear:prepareReleaseDependencies
+:wear:compileReleaseAidl
+:wear:compileReleaseRenderscript
+:wear:generateReleaseBuildConfig
+:wear:generateReleaseAssets UP-TO-DATE
+:wear:mergeReleaseAssets
+:wear:generateReleaseResValues
+:wear:generateReleaseResources
+:wear:mergeReleaseResources
+:wear:processReleaseManifest
+:wear:processReleaseResources
+:wear:generateReleaseSources
+:wear:processReleaseJavaRes UP-TO-DATE
+:wear:compileReleaseJavaWithJavac
+:wear:compileReleaseNdk UP-TO-DATE
+:wear:preDexRelease
+:wear:dexRelease
+:wear:packageRelease
+:mobile:handleReleaseMicroApk
+:mobile:generateReleaseResources
+:mobile:mergeReleaseResources
+:mobile:processReleaseManifest
+:mobile:processReleaseResources
+:mobile:generateReleaseSources
+:mobile:processReleaseJavaRes UP-TO-DATE
+:mobile:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:mobile:compileReleaseNdk UP-TO-DATE
+:mobile:compileReleaseSources
+:mobile:proguardRelease
+:mobile:dexRelease
+:mobile:shrinkReleaseResources
+Removed unused resources: Binary resource data reduced from 1950KB to 1949KB: Removed 0%
+Note: If necessary, you can disable resource shrinking by adding
+android {
+    buildTypes {
+        release {
+            shrinkResources false
+        }
+    }
+}
+:mobile:packageRelease
+:mobile:assembleRelease
+:mobile:assemble
+:mobile:build
+
+BUILD SUCCESSFUL
+
+Total time: 56.795 secs
+
+2019-01-26 22:44:35,359 INFO  FullProcessService - Found APK file: /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548517395742-0/src/TinderView-master/mobile/build/generated/res/microapk/release/raw/android_wear_micro_apk.apk

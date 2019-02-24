@@ -1,0 +1,635 @@
+2018-04-01 10:01:46,660 INFO  DownloadService - Downloading "https://github.com/stanfy/enroscar-async/archive/master.zip", attempt 3
+2018-04-01 10:02:47,263 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 10:02:48,031 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 10:02:48,032 INFO  DownloadService - Downloading "https://github.com/stanfy/enroscar-async/archive/master.zip", attempt 3
+2018-04-01 10:03:49,322 DEBUG FullProcessService - Repository https://github.com/stanfy/enroscar-async available: true
+2018-04-01 10:03:49,322 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 10:03:49,322 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/stanfy/enroscar-async, /tmp/rdisk/2720/src]
+2018-04-01 10:03:50,968 INFO  SysUtils - 
+2018-04-01 10:03:50,974 INFO  GitService - Deleted "/tmp/rdisk/2720/src/.git": true
+2018-04-01 10:03:50,979 INFO  FullProcessService - Size of directory with sources: 218 KB
+2018-04-01 10:03:50,979 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2720/src]
+2018-04-01 10:03:50,983 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2720/src/.git/
+
+2018-04-01 10:03:50,987 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2720/src/gradlew
+2018-04-01 10:03:50,991 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2720/src/async-rx/build.gradle /tmp/rdisk/2720/src/async/build.gradle /tmp/rdisk/2720/src/build.gradle /tmp/rdisk/2720/src/async-compiler/build.gradle /tmp/rdisk/2720/src/async-interface/build.gradle /tmp/rdisk/2720/src/async-rx-annotations/build.gradle
+2018-04-01 10:03:50,995 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2720/src/settings.gradle /tmp/rdisk/2720/src/gradle/android-maven.gradle /tmp/rdisk/2720/src/build.gradle /tmp/rdisk/2720/src/async/build.gradle /tmp/rdisk/2720/src/async-rx/build.gradle /tmp/rdisk/2720/src/async-rx-annotations/build.gradle /tmp/rdisk/2720/src/async-interface/build.gradle /tmp/rdisk/2720/src/async-compiler/build.gradle
+2018-04-01 10:03:50,996 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 10:03:50,996 INFO  ProjectFixService - Fixing project...
+2018-04-01 10:03:51,005 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/async-rx/local.properties
+2018-04-01 10:03:51,008 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/async-rx/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,008 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/async-rx/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,009 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/async/local.properties
+2018-04-01 10:03:51,012 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/async/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,012 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/async/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,013 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/local.properties
+2018-04-01 10:03:51,013 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.5-all.zip
+2018-04-01 10:03:51,013 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.5-bin.zip)
+2018-04-01 10:03:51,016 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,016 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,017 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/async-compiler/local.properties
+2018-04-01 10:03:51,020 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/async-compiler/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,020 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/async-compiler/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,020 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/async-interface/local.properties
+2018-04-01 10:03:51,023 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/async-interface/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,023 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/async-interface/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,024 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2720/src/async-rx-annotations/local.properties
+2018-04-01 10:03:51,027 INFO  ProjectFixService - Build info for "/tmp/rdisk/2720/src/async-rx-annotations/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 10:03:51,027 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2720/src/async-rx-annotations/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 10:03:51,027 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 10:03:51,027 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:03:51,027 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:04:01,036 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-01 10:04:01,037 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 10:04:01,037 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-rx/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 10:04:11,882 INFO  SysUtils - Configuration on demand is an incubating feature.
+Could not find match for name 'commonPomPart'
+Could not find match for name 'commonPomPart'
+:async:compileLint
+:async:copyReleaseLint UP-TO-DATE
+:async:preBuild UP-TO-DATE
+:async:preReleaseBuild UP-TO-DATE
+:async:checkReleaseManifest
+:async:preDebugAndroidTestBuild UP-TO-DATE
+:async:preDebugBuild UP-TO-DATE
+:async:preDebugUnitTestBuild UP-TO-DATE
+:async:preReleaseUnitTestBuild UP-TO-DATE
+:async-interface:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:async-interface:processResources UP-TO-DATE
+:async-interface:classes
+:async-interface:jar
+:async:prepareComAndroidSupportSupportV42221Library
+:async:prepareReleaseDependencies
+:async:compileReleaseAidl
+:async:compileReleaseRenderscript
+:async:generateReleaseBuildConfig
+:async:generateReleaseAssets UP-TO-DATE
+:async:mergeReleaseAssets
+:async:generateReleaseResValues
+:async:generateReleaseResources
+:async:mergeReleaseResources
+:async:processReleaseManifest
+:async:processReleaseResources
+:async:generateReleaseSources
+:async:processReleaseJavaRes UP-TO-DATE
+:async:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async:extractReleaseAnnotations
+:async:mergeReleaseProguardFiles
+:async:packageReleaseJar
+:async:compileReleaseNdk UP-TO-DATE
+:async:packageReleaseJniLibs UP-TO-DATE
+:async:packageReleaseLocalJar UP-TO-DATE
+:async:packageReleaseRenderscript UP-TO-DATE
+:async:packageReleaseResources
+:async:bundleRelease
+:async-rx:preBuild UP-TO-DATE
+:async-rx:preReleaseBuild UP-TO-DATE
+:async-rx:checkReleaseManifest
+:async-rx:preDebugAndroidTestBuild UP-TO-DATE
+:async-rx:preDebugBuild UP-TO-DATE
+:async-rx:preDebugUnitTestBuild UP-TO-DATE
+:async-rx:preReleaseUnitTestBuild UP-TO-DATE
+:async-rx-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:async-rx-annotations:processResources UP-TO-DATE
+:async-rx-annotations:classes
+:async-rx-annotations:jar
+:async-rx:prepareComAndroidSupportSupportV42221Library
+:async-rx:prepareComStanfyEnroscarAsync20SNAPSHOTLibrary
+:async-rx:prepareReleaseDependencies
+:async-rx:compileReleaseAidl
+:async-rx:compileReleaseRenderscript
+:async-rx:generateReleaseBuildConfig
+:async-rx:generateReleaseAssets UP-TO-DATE
+:async-rx:mergeReleaseAssets
+:async-rx:generateReleaseResValues
+:async-rx:generateReleaseResources
+:async-rx:mergeReleaseResources
+:async-rx:processReleaseManifest
+:async-rx:processReleaseResources
+:async-rx:generateReleaseSources
+:async-rx:processReleaseJavaRes UP-TO-DATE
+:async-rx:compileReleaseJavaWithJavacNote: /tmp/rdisk/2720/src/async-rx/src/main/java/com/stanfy/enroscar/async/internal/ObservableTools.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async-rx:androidJavadocs
+:async-rx:androidJavadocsJar
+:async-rx:androidSourcesJar
+:async-rx:compileLint
+:async-rx:copyDebugLint UP-TO-DATE
+:async-rx:checkDebugManifest
+:async-rx:prepareDebugDependencies
+:async-rx:compileDebugAidl
+:async-rx:compileDebugRenderscript
+:async-rx:generateDebugBuildConfig
+:async-rx:generateDebugAssets UP-TO-DATE
+:async-rx:mergeDebugAssets
+:async-rx:generateDebugResValues
+:async-rx:generateDebugResources
+:async-rx:mergeDebugResources
+:async-rx:processDebugManifest
+:async-rx:processDebugResources
+:async-rx:generateDebugSources
+:async-rx:processDebugJavaRes UP-TO-DATE
+:async-rx:compileDebugJavaWithJavacNote: /tmp/rdisk/2720/src/async-rx/src/main/java/com/stanfy/enroscar/async/internal/ObservableTools.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async-rx:extractDebugAnnotations
+:async-rx:mergeDebugProguardFiles
+:async-rx:packageDebugJar
+:async-rx:compileDebugNdk UP-TO-DATE
+:async-rx:packageDebugJniLibs UP-TO-DATE
+:async-rx:packageDebugLocalJar UP-TO-DATE
+:async-rx:packageDebugRenderscript UP-TO-DATE
+:async-rx:packageDebugResources
+:async-rx:bundleDebug
+:async-rx:compileDebugSources
+:async-rx:assembleDebug
+:async-rx:copyReleaseLint UP-TO-DATE
+:async-rx:extractReleaseAnnotations
+:async-rx:mergeReleaseProguardFiles
+:async-rx:packageReleaseJar
+:async-rx:compileReleaseNdk UP-TO-DATE
+:async-rx:packageReleaseJniLibs UP-TO-DATE
+:async-rx:packageReleaseLocalJar UP-TO-DATE
+:async-rx:packageReleaseRenderscript UP-TO-DATE
+:async-rx:packageReleaseResources
+:async-rx:bundleRelease
+:async-rx:compileReleaseSources
+:async-rx:assembleRelease
+:async-rx:signArchives SKIPPED
+:async-rx:assemble
+:async-rx:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.437 secs
+
+2018-04-01 10:04:11,895 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:04:11,895 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:04:19,221 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 10:04:19,221 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 10:04:19,221 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 10:04:19,221 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 10:04:46,075 INFO  SysUtils - Configuration on demand is an incubating feature.
+Could not find match for name 'commonPomPart'
+:async:preBuild UP-TO-DATE
+:async:preReleaseBuild UP-TO-DATE
+:async:checkReleaseManifest
+:async:preDebugAndroidTestBuild UP-TO-DATE
+:async:preDebugBuild UP-TO-DATE
+:async:preDebugUnitTestBuild UP-TO-DATE
+:async:preReleaseUnitTestBuild UP-TO-DATE
+:async-interface:compileJava UP-TO-DATE
+:async-interface:processResources UP-TO-DATE
+:async-interface:classes UP-TO-DATE
+:async-interface:jar UP-TO-DATE
+:async:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:async:prepareReleaseDependencies
+:async:compileReleaseAidl UP-TO-DATE
+:async:compileReleaseRenderscript UP-TO-DATE
+:async:generateReleaseBuildConfig UP-TO-DATE
+:async:generateReleaseAssets UP-TO-DATE
+:async:mergeReleaseAssets UP-TO-DATE
+:async:generateReleaseResValues UP-TO-DATE
+:async:generateReleaseResources UP-TO-DATE
+:async:mergeReleaseResources UP-TO-DATE
+:async:processReleaseManifest UP-TO-DATE
+:async:processReleaseResources UP-TO-DATE
+:async:generateReleaseSources UP-TO-DATE
+:async:processReleaseJavaRes UP-TO-DATE
+:async:compileReleaseJavaWithJavac UP-TO-DATE
+:async:androidJavadocs/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:42: warning: no @param for uri
+  public B uri(final Uri uri) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:42: warning: no @return
+  public B uri(final Uri uri) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:51: warning: no @param for projection
+  public B projection(final String[] projection) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:51: warning: no @return
+  public B projection(final String[] projection) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:60: warning: no @param for selection
+  public B selection(final String selection) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:60: warning: no @return
+  public B selection(final String selection) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:69: warning: no @param for selectionArgs
+  public B selectionArgs(final String[] selectionArgs) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:69: warning: no @return
+  public B selectionArgs(final String[] selectionArgs) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:78: warning: no @param for sort
+  public B sort(final String sort) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:78: warning: no @return
+  public B sort(final String sort) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:89: warning: no @param for value
+  public B observeDescendants(final boolean value) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:89: warning: no @return
+  public B observeDescendants(final boolean value) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:98: warning: no @param for executor
+  public B onExecutor(final Executor executor) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/BaseCursorAsyncBuilder.java:98: warning: no @return
+  public B onExecutor(final Executor executor) {
+           ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:33: warning: no @param for <D>
+  public static <D> CursorConverter<D> singleRecordConverter(final CursorConverter<D> converter) {
+                                       ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:33: warning: no @param for converter
+  public static <D> CursorConverter<D> singleRecordConverter(final CursorConverter<D> converter) {
+                                       ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:33: warning: no @return
+  public static <D> CursorConverter<D> singleRecordConverter(final CursorConverter<D> converter) {
+                                       ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:41: warning: no @param for <D>
+  public static <D> CursorConverter<List<D>> listConverter(final CursorConverter<D> converter) {
+                                             ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:41: warning: no @param for converter
+  public static <D> CursorConverter<List<D>> listConverter(final CursorConverter<D> converter) {
+                                             ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:41: warning: no @return
+  public static <D> CursorConverter<List<D>> listConverter(final CursorConverter<D> converter) {
+                                             ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:48: warning: no @param for <D>
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convert(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:48: warning: no @param for converter
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convert(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:48: warning: no @return
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convert(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:58: warning: no @param for <D>
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convertFirst(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:58: warning: no @param for converter
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convertFirst(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:58: warning: no @return
+  public <D> BaseCursorAsyncBuilder<? extends BaseCursorAsyncBuilder<?, D>, D> convertFirst(
+                                                                               ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:69: warning: no @param for <D>
+      convertList(final CursorConverter<D> converter) {
+      ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:69: warning: no @param for converter
+      convertList(final CursorConverter<D> converter) {
+      ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/content/CursorAsyncBuilder.java:69: warning: no @return
+      convertList(final CursorConverter<D> converter) {
+      ^
+/tmp/rdisk/2720/src/async/src/main/java/com/stanfy/enroscar/async/internal/OperatorBase.java:146: warning: no @param for operatorContext
+    protected abstract T create(final OperatorContext<W> operatorContext);
+                         ^
+
+30 warnings
+:async:androidJavadocsJar
+:async:androidSourcesJar
+:async:compileLint
+:async:copyDebugLint UP-TO-DATE
+:async:checkDebugManifest
+:async:prepareDebugDependencies
+:async:compileDebugAidl
+:async:compileDebugRenderscript
+:async:generateDebugBuildConfig
+:async:generateDebugAssets UP-TO-DATE
+:async:mergeDebugAssets
+:async:generateDebugResValues
+:async:generateDebugResources
+:async:mergeDebugResources
+:async:processDebugManifest
+:async:processDebugResources
+:async:generateDebugSources
+:async:processDebugJavaRes UP-TO-DATE
+:async:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async:extractDebugAnnotations
+:async:mergeDebugProguardFiles
+:async:packageDebugJar
+:async:compileDebugNdk UP-TO-DATE
+:async:packageDebugJniLibs UP-TO-DATE
+:async:packageDebugLocalJar UP-TO-DATE
+:async:packageDebugRenderscript UP-TO-DATE
+:async:packageDebugResources
+:async:bundleDebug
+:async:compileDebugSources
+:async:assembleDebug
+:async:copyReleaseLint UP-TO-DATE
+:async:extractReleaseAnnotations UP-TO-DATE
+:async:mergeReleaseProguardFiles UP-TO-DATE
+:async:packageReleaseJar UP-TO-DATE
+:async:compileReleaseNdk UP-TO-DATE
+:async:packageReleaseJniLibs UP-TO-DATE
+:async:packageReleaseLocalJar UP-TO-DATE
+:async:packageReleaseRenderscript UP-TO-DATE
+:async:packageReleaseResources UP-TO-DATE
+:async:bundleRelease UP-TO-DATE
+:async:compileReleaseSources UP-TO-DATE
+:async:assembleRelease UP-TO-DATE
+:async:signArchives SKIPPED
+:async:assemble
+:async:lint
+Ran lint on variant debug: 1 issues found
+Ran lint on variant release: 1 issues found
+Wrote HTML report to file:/tmp/rdisk/2720/src/async/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2720/src/async/build/outputs/lint-results.xml
+:async:prepareDebugUnitTestDependencies
+:async:processDebugUnitTestJavaRes UP-TO-DATE
+:async:compileDebugUnitTestJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async:compileDebugUnitTestSources
+:async:mockableAndroidJar
+:async:assembleDebugUnitTest
+:async:testDebugUnitTest
+:async:prepareReleaseUnitTestDependencies
+:async:processReleaseUnitTestJavaRes UP-TO-DATE
+:async:compileReleaseUnitTestJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:async:compileReleaseUnitTestSources
+:async:assembleReleaseUnitTest
+:async:testReleaseUnitTest
+:async:test
+:async:check
+:async:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.436 secs
+
+2018-04-01 10:04:46,094 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:04:46,094 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:04:53,646 INFO  ProjectTaskService - Detected possible tasks: 77
+2018-04-01 10:04:53,646 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar javadocJar deviceCheck lint testReleaseUnitTest javadoc deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll sourcesJar test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 10:04:53,646 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, javadoc, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, sourcesJar, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 10:05:03,050 INFO  SysUtils - Configuration on demand is an incubating feature.
+Could not find match for name 'commonPomPart'
+Could not find match for name 'commonPomPart'
+:async:preBuild UP-TO-DATE
+:async:preReleaseBuild UP-TO-DATE
+:async:checkReleaseManifest
+:async:preDebugAndroidTestBuild UP-TO-DATE
+:async:preDebugBuild UP-TO-DATE
+:async:preDebugUnitTestBuild UP-TO-DATE
+:async:preReleaseUnitTestBuild UP-TO-DATE
+:async-interface:compileJava UP-TO-DATE
+:async-interface:processResources UP-TO-DATE
+:async-interface:classes UP-TO-DATE
+:async-interface:jar UP-TO-DATE
+:async:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:async:prepareReleaseDependencies
+:async:compileReleaseAidl UP-TO-DATE
+:async:compileReleaseRenderscript UP-TO-DATE
+:async:generateReleaseBuildConfig UP-TO-DATE
+:async:generateReleaseAssets UP-TO-DATE
+:async:mergeReleaseAssets UP-TO-DATE
+:async:generateReleaseResValues UP-TO-DATE
+:async:generateReleaseResources UP-TO-DATE
+:async:mergeReleaseResources UP-TO-DATE
+:async:processReleaseManifest UP-TO-DATE
+:async:processReleaseResources UP-TO-DATE
+:async:generateReleaseSources UP-TO-DATE
+:async:processReleaseJavaRes UP-TO-DATE
+:async:compileReleaseJavaWithJavac UP-TO-DATE
+:async:androidJavadocs UP-TO-DATE
+:async:androidJavadocsJar UP-TO-DATE
+:async:androidSourcesJar UP-TO-DATE
+:async:compileLint
+:async:copyDebugLint UP-TO-DATE
+:async:checkDebugManifest
+:async:prepareDebugDependencies
+:async:compileDebugAidl UP-TO-DATE
+:async:compileDebugRenderscript UP-TO-DATE
+:async:generateDebugBuildConfig UP-TO-DATE
+:async:generateDebugAssets UP-TO-DATE
+:async:mergeDebugAssets UP-TO-DATE
+:async:generateDebugResValues UP-TO-DATE
+:async:generateDebugResources UP-TO-DATE
+:async:mergeDebugResources UP-TO-DATE
+:async:processDebugManifest UP-TO-DATE
+:async:processDebugResources UP-TO-DATE
+:async:generateDebugSources UP-TO-DATE
+:async:processDebugJavaRes UP-TO-DATE
+:async:compileDebugJavaWithJavac UP-TO-DATE
+:async:extractDebugAnnotations UP-TO-DATE
+:async:mergeDebugProguardFiles UP-TO-DATE
+:async:packageDebugJar UP-TO-DATE
+:async:compileDebugNdk UP-TO-DATE
+:async:packageDebugJniLibs UP-TO-DATE
+:async:packageDebugLocalJar UP-TO-DATE
+:async:packageDebugRenderscript UP-TO-DATE
+:async:packageDebugResources UP-TO-DATE
+:async:bundleDebug UP-TO-DATE
+:async:compileDebugSources UP-TO-DATE
+:async:assembleDebug UP-TO-DATE
+:async:copyReleaseLint UP-TO-DATE
+:async:extractReleaseAnnotations UP-TO-DATE
+:async:mergeReleaseProguardFiles UP-TO-DATE
+:async:packageReleaseJar UP-TO-DATE
+:async:compileReleaseNdk UP-TO-DATE
+:async:packageReleaseJniLibs UP-TO-DATE
+:async:packageReleaseLocalJar UP-TO-DATE
+:async:packageReleaseRenderscript UP-TO-DATE
+:async:packageReleaseResources UP-TO-DATE
+:async:bundleRelease UP-TO-DATE
+:async:compileReleaseSources UP-TO-DATE
+:async:assembleRelease UP-TO-DATE
+:async:signArchives SKIPPED
+:async:assemble UP-TO-DATE
+:async:build
+:async-rx-annotations:compileJava UP-TO-DATE
+:async-rx-annotations:processResources UP-TO-DATE
+:async-rx-annotations:classes UP-TO-DATE
+:async-rx-annotations:jar UP-TO-DATE
+:async-compiler:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:async-compiler:processResources
+:async-compiler:classes
+:async-compiler:jar
+:async-compiler:signArchives SKIPPED
+:async-compiler:assemble
+:async-compiler:build
+:async-interface:signArchives SKIPPED
+:async-interface:assemble
+:async-interface:build
+:async-rx:preBuild UP-TO-DATE
+:async-rx:preReleaseBuild UP-TO-DATE
+:async-rx:checkReleaseManifest
+:async-rx:preDebugAndroidTestBuild UP-TO-DATE
+:async-rx:preDebugBuild UP-TO-DATE
+:async-rx:preDebugUnitTestBuild UP-TO-DATE
+:async-rx:preReleaseUnitTestBuild UP-TO-DATE
+:async-rx:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:async-rx:prepareComStanfyEnroscarAsync20SNAPSHOTLibrary UP-TO-DATE
+:async-rx:prepareReleaseDependencies
+:async-rx:compileReleaseAidl UP-TO-DATE
+:async-rx:compileReleaseRenderscript UP-TO-DATE
+:async-rx:generateReleaseBuildConfig UP-TO-DATE
+:async-rx:generateReleaseAssets UP-TO-DATE
+:async-rx:mergeReleaseAssets UP-TO-DATE
+:async-rx:generateReleaseResValues UP-TO-DATE
+:async-rx:generateReleaseResources UP-TO-DATE
+:async-rx:mergeReleaseResources UP-TO-DATE
+:async-rx:processReleaseManifest UP-TO-DATE
+:async-rx:processReleaseResources UP-TO-DATE
+:async-rx:generateReleaseSources UP-TO-DATE
+:async-rx:processReleaseJavaRes UP-TO-DATE
+:async-rx:compileReleaseJavaWithJavac UP-TO-DATE
+:async-rx:androidJavadocs
+:async-rx:androidJavadocsJar
+:async-rx:androidSourcesJar UP-TO-DATE
+:async-rx:compileLint
+:async-rx:copyDebugLint UP-TO-DATE
+:async-rx:checkDebugManifest
+:async-rx:prepareDebugDependencies
+:async-rx:compileDebugAidl UP-TO-DATE
+:async-rx:compileDebugRenderscript UP-TO-DATE
+:async-rx:generateDebugBuildConfig UP-TO-DATE
+:async-rx:generateDebugAssets UP-TO-DATE
+:async-rx:mergeDebugAssets UP-TO-DATE
+:async-rx:generateDebugResValues UP-TO-DATE
+:async-rx:generateDebugResources UP-TO-DATE
+:async-rx:mergeDebugResources UP-TO-DATE
+:async-rx:processDebugManifest UP-TO-DATE
+:async-rx:processDebugResources UP-TO-DATE
+:async-rx:generateDebugSources UP-TO-DATE
+:async-rx:processDebugJavaRes UP-TO-DATE
+:async-rx:compileDebugJavaWithJavac UP-TO-DATE
+:async-rx:extractDebugAnnotations UP-TO-DATE
+:async-rx:mergeDebugProguardFiles UP-TO-DATE
+:async-rx:packageDebugJar UP-TO-DATE
+:async-rx:compileDebugNdk UP-TO-DATE
+:async-rx:packageDebugJniLibs UP-TO-DATE
+:async-rx:packageDebugLocalJar UP-TO-DATE
+:async-rx:packageDebugRenderscript UP-TO-DATE
+:async-rx:packageDebugResources UP-TO-DATE
+:async-rx:bundleDebug UP-TO-DATE
+:async-rx:compileDebugSources UP-TO-DATE
+:async-rx:assembleDebug UP-TO-DATE
+:async-rx:copyReleaseLint UP-TO-DATE
+:async-rx:extractReleaseAnnotations UP-TO-DATE
+:async-rx:mergeReleaseProguardFiles UP-TO-DATE
+:async-rx:packageReleaseJar UP-TO-DATE
+:async-rx:compileReleaseNdk UP-TO-DATE
+:async-rx:packageReleaseJniLibs UP-TO-DATE
+:async-rx:packageReleaseLocalJar UP-TO-DATE
+:async-rx:packageReleaseRenderscript UP-TO-DATE
+:async-rx:packageReleaseResources UP-TO-DATE
+:async-rx:bundleRelease UP-TO-DATE
+:async-rx:compileReleaseSources UP-TO-DATE
+:async-rx:assembleRelease UP-TO-DATE
+:async-rx:signArchives SKIPPED
+:async-rx:assemble
+:async-rx:build
+:async-rx-annotations:signArchives SKIPPED
+:async-rx-annotations:assemble
+:async-rx-annotations:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.964 secs
+
+2018-04-01 10:05:03,070 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:05:03,070 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-compiler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:05:10,405 INFO  ProjectTaskService - Detected possible tasks: 45
+2018-04-01 10:05:10,405 INFO  ProjectTaskService - Excluded tasks (5): javadocJar javadoc sourcesJar test check
+2018-04-01 10:05:10,405 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-compiler/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadocJar, -x, javadoc, -x, sourcesJar, -x, test, -x, check, build]
+2018-04-01 10:05:17,742 INFO  SysUtils - Configuration on demand is an incubating feature.
+Could not find match for name 'commonPomPart'
+Could not find match for name 'commonPomPart'
+:async-interface:compileJava UP-TO-DATE
+:async-interface:processResources UP-TO-DATE
+:async-interface:classes UP-TO-DATE
+:async-interface:jar UP-TO-DATE
+:async-rx-annotations:compileJava UP-TO-DATE
+:async-rx-annotations:processResources UP-TO-DATE
+:async-rx-annotations:classes UP-TO-DATE
+:async-rx-annotations:jar UP-TO-DATE
+:async-compiler:compileJava UP-TO-DATE
+:async-compiler:processResources UP-TO-DATE
+:async-compiler:classes UP-TO-DATE
+:async-compiler:jar UP-TO-DATE
+:async-compiler:signArchives SKIPPED
+:async-compiler:assemble
+:async-compiler:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.803 secs
+
+2018-04-01 10:05:17,761 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:05:17,762 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-interface/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:05:25,490 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 10:05:25,490 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 10:05:25,490 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 10:05:25,490 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-interface/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 10:05:31,015 INFO  SysUtils - Configuration on demand is an incubating feature.
+:async-interface:compileJava UP-TO-DATE
+:async-interface:processResources UP-TO-DATE
+:async-interface:classes UP-TO-DATE
+:async-interface:jar UP-TO-DATE
+:async-interface:javadoc
+:async-interface:javadocJar
+:async-interface:sourcesJar
+:async-interface:signArchives SKIPPED
+:async-interface:assemble
+:async-interface:compileTestJava UP-TO-DATE
+:async-interface:processTestResources UP-TO-DATE
+:async-interface:testClasses UP-TO-DATE
+:async-interface:test UP-TO-DATE
+:async-interface:check UP-TO-DATE
+:async-interface:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.12 secs
+
+2018-04-01 10:05:31,035 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:05:31,035 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-rx-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:05:38,501 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 10:05:38,501 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 10:05:38,501 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 10:05:38,501 INFO  SysUtils - Execute command: [/tmp/rdisk/2720/src/gradlew, -b, /tmp/rdisk/2720/src/async-rx-annotations/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 10:05:43,945 INFO  SysUtils - Configuration on demand is an incubating feature.
+:async-rx-annotations:compileJava UP-TO-DATE
+:async-rx-annotations:processResources UP-TO-DATE
+:async-rx-annotations:classes UP-TO-DATE
+:async-rx-annotations:jar UP-TO-DATE
+:async-rx-annotations:javadoc
+:async-rx-annotations:javadocJar
+:async-rx-annotations:sourcesJar
+:async-rx-annotations:signArchives SKIPPED
+:async-rx-annotations:assemble
+:async-rx-annotations:compileTestJava UP-TO-DATE
+:async-rx-annotations:processTestResources UP-TO-DATE
+:async-rx-annotations:testClasses UP-TO-DATE
+:async-rx-annotations:test UP-TO-DATE
+:async-rx-annotations:check UP-TO-DATE
+:async-rx-annotations:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.033 secs
+
+2018-04-01 10:05:43,965 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 10:05:43,994 ERROR FullProcessService - Could not find generated or existed APK file

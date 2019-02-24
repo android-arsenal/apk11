@@ -1,0 +1,130 @@
+2018-05-20 22:28:41,431 INFO  DownloadService - Downloading "https://github.com/ssk5460/DraggableFlipView/archive/master.zip", attempt 3
+2018-05-20 22:29:41,908 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:29:42,647 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:29:42,647 INFO  DownloadService - Downloading "https://github.com/ssk5460/DraggableFlipView/archive/master.zip", attempt 3
+2018-05-20 22:30:44,041 DEBUG FullProcessService - Repository https://github.com/ssk5460/DraggableFlipView available: true
+2018-05-20 22:30:44,041 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:30:44,041 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ssk5460/DraggableFlipView, /tmp/rdisk/2509/src]
+2018-05-20 22:30:46,711 INFO  SysUtils - 
+2018-05-20 22:30:46,725 INFO  GitService - Deleted "/tmp/rdisk/2509/src/.git": true
+2018-05-20 22:30:46,728 INFO  FullProcessService - Size of directory with sources: 5 MB
+2018-05-20 22:30:46,728 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2509/src]
+2018-05-20 22:30:46,735 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2509/src/.git/
+
+2018-05-20 22:30:46,738 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2509/src/gradlew
+2018-05-20 22:30:46,740 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2509/src/demo/build.gradle /tmp/rdisk/2509/src/draggable-flipview/build.gradle /tmp/rdisk/2509/src/build.gradle
+2018-05-20 22:30:46,743 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2509/src/settings.gradle /tmp/rdisk/2509/src/draggable-flipview/build.gradle /tmp/rdisk/2509/src/demo/build.gradle /tmp/rdisk/2509/src/build.gradle
+2018-05-20 22:30:46,743 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:30:46,743 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:30:46,749 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2509/src/demo/local.properties
+2018-05-20 22:30:46,750 INFO  ProjectFixService - Build info for "/tmp/rdisk/2509/src/demo/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=12,targetSdkVersion=22]
+2018-05-20 22:30:46,750 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2509/src/draggable-flipview/local.properties
+2018-05-20 22:30:46,751 INFO  ProjectFixService - Build info for "/tmp/rdisk/2509/src/draggable-flipview/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=12,targetSdkVersion=22]
+2018-05-20 22:30:46,751 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2509/src/local.properties
+2018-05-20 22:30:46,752 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-20 22:30:46,752 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-20 22:30:46,754 INFO  ProjectFixService - Build info for "/tmp/rdisk/2509/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=12,targetSdkVersion=22]
+2018-05-20 22:30:46,754 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:30:46,754 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:30:46,754 INFO  SysUtils - Execute command: [/tmp/rdisk/2509/src/gradlew, -b, /tmp/rdisk/2509/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:30:55,354 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-05-20 22:30:55,354 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-05-20 22:30:55,355 INFO  SysUtils - Execute command: [/tmp/rdisk/2509/src/gradlew, -b, /tmp/rdisk/2509/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-05-20 22:31:20,884 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:demo:preDebugBuild UP-TO-DATE
+:demo:checkDebugManifest
+:demo:preReleaseBuild UP-TO-DATE
+:draggable-flipview:compileLint
+:draggable-flipview:copyReleaseLint UP-TO-DATE
+:draggable-flipview:preBuild UP-TO-DATE
+:draggable-flipview:preReleaseBuild UP-TO-DATE
+:draggable-flipview:checkReleaseManifest
+:draggable-flipview:preDebugAndroidTestBuild UP-TO-DATE
+:draggable-flipview:preDebugBuild UP-TO-DATE
+:draggable-flipview:preDebugUnitTestBuild UP-TO-DATE
+:draggable-flipview:preReleaseUnitTestBuild UP-TO-DATE
+:draggable-flipview:prepareComAndroidSupportAppcompatV72221Library
+:draggable-flipview:prepareComAndroidSupportSupportV42221Library
+:draggable-flipview:prepareReleaseDependencies
+:draggable-flipview:compileReleaseAidl
+:draggable-flipview:compileReleaseRenderscript
+:draggable-flipview:generateReleaseBuildConfig
+:draggable-flipview:generateReleaseAssets UP-TO-DATE
+:draggable-flipview:mergeReleaseAssets
+:draggable-flipview:generateReleaseResValues
+:draggable-flipview:generateReleaseResources
+:draggable-flipview:mergeReleaseResources
+:draggable-flipview:processReleaseManifest
+:draggable-flipview:processReleaseResources
+:draggable-flipview:generateReleaseSources
+:draggable-flipview:processReleaseJavaRes UP-TO-DATE
+:draggable-flipview:compileReleaseJava
+:draggable-flipview:extractReleaseAnnotations
+:draggable-flipview:mergeReleaseProguardFiles
+:draggable-flipview:packageReleaseJar
+:draggable-flipview:compileReleaseNdk UP-TO-DATE
+:draggable-flipview:packageReleaseJniLibs UP-TO-DATE
+:draggable-flipview:packageReleaseLocalJar UP-TO-DATE
+:draggable-flipview:packageReleaseRenderscript UP-TO-DATE
+:draggable-flipview:packageReleaseResources
+:draggable-flipview:bundleRelease
+:demo:prepareComAndroidSupportAppcompatV72221Library
+:demo:prepareComAndroidSupportSupportV42221Library
+:demo:prepareComGithubSasakicksDraggableFlipview110Library
+:demo:prepareDebugDependencies
+:demo:compileDebugAidl
+:demo:compileDebugRenderscript
+:demo:generateDebugBuildConfig
+:demo:generateDebugAssets UP-TO-DATE
+:demo:mergeDebugAssets
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:demo:mergeDebugResources
+AAPT: /tmp/rdisk/2509/src/demo/src/main/res/drawable/dog.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2509/src/demo/src/main/res/drawable/cat.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:demo:processDebugManifest
+:demo:processDebugResources
+:demo:generateDebugSources
+:demo:processDebugJavaRes UP-TO-DATE
+:demo:compileDebugJava
+:demo:compileDebugNdk UP-TO-DATE
+:demo:compileDebugSources
+:demo:preDexDebug
+:demo:dexDebug
+:demo:validateDebugSigning
+:demo:packageDebug
+:demo:zipalignDebug
+:demo:assembleDebug
+:demo:checkReleaseManifest
+:demo:prepareReleaseDependencies
+:demo:compileReleaseAidl
+:demo:compileReleaseRenderscript
+:demo:generateReleaseBuildConfig
+:demo:generateReleaseAssets UP-TO-DATE
+:demo:mergeReleaseAssets
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:demo:mergeReleaseResources
+AAPT: /tmp/rdisk/2509/src/demo/src/main/res/drawable/dog.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT: /tmp/rdisk/2509/src/demo/src/main/res/drawable/cat.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:demo:processReleaseManifest
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:demo:processReleaseJavaRes UP-TO-DATE
+:demo:compileReleaseJava
+:demo:compileReleaseNdk UP-TO-DATE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:preDexRelease
+:demo:dexRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.103 secs
+
+2018-05-20 22:31:20,935 INFO  FullProcessService - Found APK file: /tmp/rdisk/2509/src/demo/build/outputs/apk/demo-release-unsigned.apk

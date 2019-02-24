@@ -1,0 +1,398 @@
+2018-05-20 22:05:54,201 INFO  DownloadService - Downloading "https://github.com/kittinunf/Fuel/archive/master.zip", attempt 3
+2018-05-20 22:06:54,947 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:06:55,658 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:06:55,658 INFO  DownloadService - Downloading "https://github.com/kittinunf/Fuel/archive/master.zip", attempt 3
+2018-05-20 22:07:57,092 DEBUG FullProcessService - Repository https://github.com/kittinunf/Fuel available: true
+2018-05-20 22:07:57,092 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:07:57,092 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/kittinunf/Fuel, /tmp/rdisk/2553/src]
+2018-05-20 22:07:58,860 INFO  SysUtils - 
+2018-05-20 22:07:58,869 INFO  GitService - Deleted "/tmp/rdisk/2553/src/.git": true
+2018-05-20 22:07:58,878 INFO  FullProcessService - Size of directory with sources: 449 KB
+2018-05-20 22:07:58,879 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2553/src]
+2018-05-20 22:07:58,885 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2553/src/.git/
+
+2018-05-20 22:07:58,893 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2553/src/gradlew
+2018-05-20 22:07:58,902 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2553/src/fuel-android/build.gradle /tmp/rdisk/2553/src/fuel-livedata/build.gradle /tmp/rdisk/2553/src/sample-java/build.gradle /tmp/rdisk/2553/src/sample/build.gradle /tmp/rdisk/2553/src/build.gradle /tmp/rdisk/2553/src/fuel-coroutines/build.gradle /tmp/rdisk/2553/src/fuel-forge/build.gradle /tmp/rdisk/2553/src/fuel-gson/build.gradle /tmp/rdisk/2553/src/fuel-jackson/build.gradle /tmp/rdisk/2553/src/fuel-moshi/build.gradle /tmp/rdisk/2553/src/fuel-rxjava/build.gradle /tmp/rdisk/2553/src/fuel/build.gradle
+2018-05-20 22:07:58,910 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2553/src/settings.gradle /tmp/rdisk/2553/src/sample/build.gradle /tmp/rdisk/2553/src/sample-java/build.gradle /tmp/rdisk/2553/src/fuel/build.gradle /tmp/rdisk/2553/src/fuel-rxjava/build.gradle /tmp/rdisk/2553/src/fuel-moshi/build.gradle /tmp/rdisk/2553/src/fuel-livedata/build.gradle /tmp/rdisk/2553/src/fuel-jackson/build.gradle /tmp/rdisk/2553/src/fuel-gson/build.gradle /tmp/rdisk/2553/src/fuel-forge/build.gradle /tmp/rdisk/2553/src/fuel-coroutines/build.gradle /tmp/rdisk/2553/src/fuel-android/build.gradle /tmp/rdisk/2553/src/build.gradle
+2018-05-20 22:07:58,911 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:07:58,911 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:07:58,928 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-android/local.properties
+2018-05-20 22:07:58,933 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-android/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-20 22:07:58,934 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-android/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 22:07:58,934 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-livedata/local.properties
+2018-05-20 22:07:58,939 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-livedata/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=14,targetSdkVersion=<null>]
+2018-05-20 22:07:58,939 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-livedata/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-05-20 22:07:58,939 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/sample-java/local.properties
+2018-05-20 22:07:58,944 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/sample-java/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,944 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/sample-java/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,944 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/sample/local.properties
+2018-05-20 22:07:58,949 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,949 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,949 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/local.properties
+2018-05-20 22:07:58,950 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-20 22:07:58,950 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-20 22:07:58,955 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,955 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,955 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-coroutines/local.properties
+2018-05-20 22:07:58,961 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-coroutines/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,961 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-coroutines/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,961 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-forge/local.properties
+2018-05-20 22:07:58,966 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-forge/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,966 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-forge/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,967 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-gson/local.properties
+2018-05-20 22:07:58,972 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-gson/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,972 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-gson/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,972 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-jackson/local.properties
+2018-05-20 22:07:58,978 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-jackson/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,978 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-jackson/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,979 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-moshi/local.properties
+2018-05-20 22:07:58,985 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-moshi/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,985 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-moshi/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,985 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel-rxjava/local.properties
+2018-05-20 22:07:58,991 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel-rxjava/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,991 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel-rxjava/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,991 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2553/src/fuel/local.properties
+2018-05-20 22:07:58,996 INFO  ProjectFixService - Build info for "/tmp/rdisk/2553/src/fuel/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=16,targetSdkVersion=<null>]
+2018-05-20 22:07:58,996 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2553/src/fuel/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=16,targetSdkVersion=27]
+2018-05-20 22:07:58,996 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:07:58,997 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:07:58,997 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/fuel-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:08:08,933 INFO  ProjectTaskService - Detected possible tasks: 83
+2018-05-20 22:08:08,934 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-20 22:08:08,934 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/fuel-android/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-20 22:08:38,498 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testCompile' is obsolete and has been replaced with 'testImplementation' and 'testApi'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+:fuel-android:preBuild UP-TO-DATE
+:fuel-android:preDebugBuild UP-TO-DATE
+:fuel-android:compileDebugAidl
+:fuel:compileKotlin
+:fuel:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:fuel:processResources NO-SOURCE
+:fuel:classes
+:fuel:jar
+:fuel-android:compileDebugRenderscript
+:fuel-android:checkDebugManifest
+:fuel-android:generateDebugBuildConfig
+:fuel-android:generateDebugResValues
+:fuel-android:generateDebugResources
+:fuel-android:packageDebugResources
+:fuel-android:platformAttrExtractor
+:fuel-android:processDebugManifest
+:fuel-android:prepareLintJar
+:fuel-android:mergeDebugConsumerProguardFiles
+:fuel-android:mergeDebugShaders
+:fuel-android:compileDebugShaders
+:fuel-android:generateDebugAssets
+:fuel-android:packageDebugAssets
+:fuel-android:packageDebugRenderscript NO-SOURCE
+:fuel-android:processDebugJavaRes NO-SOURCE
+:fuel-android:compileDebugNdk NO-SOURCE
+:fuel-android:mergeDebugJniLibFolders
+:fuel-android:transformNativeLibsWithMergeJniLibsForDebug
+:fuel-android:transformNativeLibsWithStripDebugSymbolForDebug
+:fuel-android:transformNativeLibsWithSyncJniLibsForDebug
+:fuel-android:preReleaseBuild UP-TO-DATE
+:fuel-android:compileReleaseAidl
+:fuel-android:compileReleaseRenderscript
+:fuel-android:checkReleaseManifest
+:fuel-android:generateReleaseBuildConfig
+:fuel-android:generateReleaseResValues
+:fuel-android:generateReleaseResources
+:fuel-android:packageReleaseResources
+:fuel-android:processReleaseManifest
+:fuel-android:mergeReleaseConsumerProguardFiles
+:fuel-android:mergeReleaseShaders
+:fuel-android:compileReleaseShaders
+:fuel-android:generateReleaseAssets
+:fuel-android:packageReleaseAssets
+:fuel-android:packageReleaseRenderscript NO-SOURCE
+:fuel-android:processReleaseJavaRes NO-SOURCE
+:fuel-android:compileReleaseNdk NO-SOURCE
+:fuel-android:mergeReleaseJniLibFolders
+:fuel-android:transformNativeLibsWithMergeJniLibsForRelease
+:fuel-android:transformNativeLibsWithStripDebugSymbolForRelease
+:fuel-android:transformNativeLibsWithSyncJniLibsForRelease
+:fuel-android:mergeReleaseResources
+:fuel-android:verifyReleaseResources
+:fuel-android:generateDebugRFile
+:fuel-android:compileDebugKotlin
+:fuel-android:generateDebugSources
+:fuel-android:javaPreCompileDebug
+:fuel-android:compileDebugJavaWithJavac
+:fuel-android:extractDebugAnnotations
+:fuel-android:transformResourcesWithMergeJavaResForDebug
+:fuel-android:transformClassesAndResourcesWithSyncLibJarsForDebug
+:fuel-android:bundleDebug
+:fuel-android:compileDebugSources
+:fuel-android:assembleDebug
+:fuel-android:generateReleaseRFile
+:fuel-android:compileReleaseKotlin
+:fuel-android:generateReleaseSources
+:fuel-android:javaPreCompileRelease
+:fuel-android:compileReleaseJavaWithJavac
+:fuel-android:extractReleaseAnnotations
+:fuel-android:transformResourcesWithMergeJavaResForRelease
+:fuel-android:transformClassesAndResourcesWithSyncLibJarsForRelease
+:fuel-android:bundleRelease
+:fuel-android:compileReleaseSources
+:fuel-android:assembleRelease
+:fuel-android:assemble
+:fuel-android:build
+
+BUILD SUCCESSFUL in 28s
+53 actionable tasks: 53 executed
+
+2018-05-20 22:08:38,520 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:08:38,520 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/fuel-livedata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:08:47,803 INFO  ProjectTaskService - Detected possible tasks: 83
+2018-05-20 22:08:47,803 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-05-20 22:08:47,803 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/fuel-livedata/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-05-20 22:09:09,188 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testCompile' is obsolete and has been replaced with 'testImplementation' and 'testApi'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+:fuel-livedata:preBuild UP-TO-DATE
+:fuel-livedata:preDebugBuild UP-TO-DATE
+:fuel-livedata:compileDebugAidl
+:fuel:compileKotlin UP-TO-DATE
+:fuel:compileJava UP-TO-DATE
+:fuel:processResources NO-SOURCE
+:fuel:classes UP-TO-DATE
+:fuel:jar UP-TO-DATE
+:fuel-livedata:compileDebugRenderscript
+:fuel-livedata:checkDebugManifest
+:fuel-livedata:generateDebugBuildConfig
+:fuel-livedata:generateDebugResValues
+:fuel-livedata:generateDebugResources
+:fuel-livedata:packageDebugResources
+:fuel-livedata:platformAttrExtractor
+:fuel-livedata:processDebugManifest
+:fuel-livedata:prepareLintJar
+:fuel-livedata:mergeDebugConsumerProguardFiles
+:fuel-livedata:mergeDebugShaders
+:fuel-livedata:compileDebugShaders
+:fuel-livedata:generateDebugAssets
+:fuel-livedata:packageDebugAssets
+:fuel-livedata:packageDebugRenderscript NO-SOURCE
+:fuel-livedata:processDebugJavaRes NO-SOURCE
+:fuel-livedata:compileDebugNdk NO-SOURCE
+:fuel-livedata:mergeDebugJniLibFolders
+:fuel-livedata:transformNativeLibsWithMergeJniLibsForDebug
+:fuel-livedata:transformNativeLibsWithStripDebugSymbolForDebug
+:fuel-livedata:transformNativeLibsWithSyncJniLibsForDebug
+:fuel-livedata:preReleaseBuild UP-TO-DATE
+:fuel-livedata:compileReleaseAidl
+:fuel-livedata:compileReleaseRenderscript
+:fuel-livedata:generateDebugRFile
+:fuel-livedata:compileDebugKotlin
+:fuel-livedata:generateDebugSources
+:fuel-livedata:javaPreCompileDebug
+:fuel-livedata:compileDebugJavaWithJavac
+:fuel-livedata:extractDebugAnnotations
+:fuel-livedata:transformResourcesWithMergeJavaResForDebug
+:fuel-livedata:transformClassesAndResourcesWithSyncLibJarsForDebug
+:fuel-livedata:bundleDebug
+:fuel-livedata:compileDebugSources
+:fuel-livedata:assembleDebug
+:fuel-livedata:checkReleaseManifest
+:fuel-livedata:generateReleaseBuildConfig
+:fuel-livedata:generateReleaseResValues
+:fuel-livedata:generateReleaseResources
+:fuel-livedata:packageReleaseResources
+:fuel-livedata:processReleaseManifest
+:fuel-livedata:generateReleaseRFile
+:fuel-livedata:compileReleaseKotlin
+:fuel-livedata:generateReleaseSources
+:fuel-livedata:javaPreCompileRelease
+:fuel-livedata:compileReleaseJavaWithJavac
+:fuel-livedata:extractReleaseAnnotations
+:fuel-livedata:mergeReleaseConsumerProguardFiles
+:fuel-livedata:mergeReleaseShaders
+:fuel-livedata:compileReleaseShaders
+:fuel-livedata:generateReleaseAssets
+:fuel-livedata:packageReleaseAssets
+:fuel-livedata:packageReleaseRenderscript NO-SOURCE
+:fuel-livedata:processReleaseJavaRes NO-SOURCE
+:fuel-livedata:transformResourcesWithMergeJavaResForRelease
+:fuel-livedata:transformClassesAndResourcesWithSyncLibJarsForRelease
+:fuel-livedata:compileReleaseNdk NO-SOURCE
+:fuel-livedata:mergeReleaseJniLibFolders
+:fuel-livedata:transformNativeLibsWithMergeJniLibsForRelease
+:fuel-livedata:transformNativeLibsWithStripDebugSymbolForRelease
+:fuel-livedata:transformNativeLibsWithSyncJniLibsForRelease
+:fuel-livedata:bundleRelease
+:fuel-livedata:compileReleaseSources
+:fuel-livedata:mergeReleaseResources
+:fuel-livedata:verifyReleaseResources
+:fuel-livedata:assembleRelease
+:fuel-livedata:assemble
+:fuel-livedata:build
+
+BUILD SUCCESSFUL in 20s
+53 actionable tasks: 50 executed, 3 up-to-date
+
+2018-05-20 22:09:09,233 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:09:09,233 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/sample-java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:09:16,784 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-20 22:09:16,784 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 22:09:16,784 INFO  SysUtils - Execute command: [/tmp/rdisk/2553/src/gradlew, -b, /tmp/rdisk/2553/src/sample-java/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 22:09:53,459 INFO  SysUtils - Configuration on demand is an incubating feature.
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testCompile' is obsolete and has been replaced with 'testImplementation' and 'testApi'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+WARNING: Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+:fuel:compileKotlin UP-TO-DATE
+:fuel:compileJava UP-TO-DATE
+:fuel:processResources NO-SOURCE
+:fuel:classes UP-TO-DATE
+:fuel:jar UP-TO-DATE
+:fuel-android:preBuild UP-TO-DATE
+:fuel-android:preDebugBuild UP-TO-DATE
+:fuel-android:compileDebugAidl UP-TO-DATE
+:fuel-android:compileDebugRenderscript UP-TO-DATE
+:fuel-android:checkDebugManifest UP-TO-DATE
+:fuel-android:generateDebugBuildConfig UP-TO-DATE
+:fuel-android:generateDebugResValues UP-TO-DATE
+:fuel-android:generateDebugResources UP-TO-DATE
+:fuel-android:packageDebugResources UP-TO-DATE
+:fuel-android:platformAttrExtractor UP-TO-DATE
+:fuel-android:processDebugManifest UP-TO-DATE
+:fuel-android:generateDebugRFile UP-TO-DATE
+:fuel-android:compileDebugKotlin UP-TO-DATE
+:fuel-android:prepareLintJar UP-TO-DATE
+:fuel-android:generateDebugSources UP-TO-DATE
+:fuel-android:javaPreCompileDebug UP-TO-DATE
+:fuel-android:compileDebugJavaWithJavac UP-TO-DATE
+:fuel-android:processDebugJavaRes NO-SOURCE
+:fuel-android:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:sample-java:preBuild UP-TO-DATE
+:sample-java:preDebugBuild
+:sample-java:compileDebugAidl
+:fuel-android:packageDebugRenderscript NO-SOURCE
+:sample-java:compileDebugRenderscript
+:sample-java:generateDebugResValues
+:sample-java:generateDebugResources
+:sample-java:mergeDebugResources
+:sample-java:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForDebug
+:sample-java:dataBindingGenBaseClassesDebug
+:sample-java:checkDebugManifest
+:sample-java:generateDebugBuildConfig
+:sample-java:prepareLintJar
+:sample-java:mainApkListPersistenceDebug
+:sample-java:createDebugCompatibleScreenManifests
+:sample-java:processDebugManifest
+:sample-java:splitsDiscoveryTaskDebug
+:sample-java:processDebugResources
+:sample-java:generateDebugSources
+:sample-java:dataBindingExportBuildInfoDebug
+:sample-java:javaPreCompileDebug
+:sample-java:transformDataBindingWithDataBindingMergeArtifactsForDebug
+:sample-java:compileDebugJavaWithJavac
+:sample-java:compileDebugNdk NO-SOURCE
+:sample-java:compileDebugSources
+:fuel-android:mergeDebugShaders UP-TO-DATE
+:fuel-android:compileDebugShaders UP-TO-DATE
+:fuel-android:generateDebugAssets UP-TO-DATE
+:fuel-android:packageDebugAssets UP-TO-DATE
+:sample-java:mergeDebugShaders
+:sample-java:compileDebugShaders
+:sample-java:generateDebugAssets
+:sample-java:mergeDebugAssets
+:sample-java:transformClassesWithDexBuilderForDebug
+:sample-java:transformDexArchiveWithExternalLibsDexMergerForDebug
+:sample-java:transformDexArchiveWithDexMergerForDebug
+:fuel-android:compileDebugNdk NO-SOURCE
+:fuel-android:mergeDebugJniLibFolders UP-TO-DATE
+:fuel-android:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:fuel-android:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:fuel-android:transformNativeLibsWithIntermediateJniLibsForDebug
+:sample-java:mergeDebugJniLibFolders
+:sample-java:transformNativeLibsWithMergeJniLibsForDebug
+:sample-java:transformNativeLibsWithStripDebugSymbolForDebug
+:sample-java:processDebugJavaRes NO-SOURCE
+:sample-java:transformResourcesWithMergeJavaResForDebug
+:sample-java:validateSigningDebug
+:sample-java:packageDebug
+:sample-java:assembleDebug
+:fuel-android:preReleaseBuild UP-TO-DATE
+:fuel-android:compileReleaseAidl UP-TO-DATE
+:fuel-android:compileReleaseRenderscript UP-TO-DATE
+:fuel-android:checkReleaseManifest UP-TO-DATE
+:fuel-android:generateReleaseBuildConfig UP-TO-DATE
+:fuel-android:generateReleaseResValues UP-TO-DATE
+:fuel-android:generateReleaseResources UP-TO-DATE
+:fuel-android:packageReleaseResources UP-TO-DATE
+:fuel-android:processReleaseManifest UP-TO-DATE
+:fuel-android:generateReleaseRFile UP-TO-DATE
+:fuel-android:compileReleaseKotlin UP-TO-DATE
+:fuel-android:generateReleaseSources UP-TO-DATE
+:fuel-android:javaPreCompileRelease UP-TO-DATE
+:fuel-android:compileReleaseJavaWithJavac UP-TO-DATE
+:fuel-android:processReleaseJavaRes NO-SOURCE
+:fuel-android:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:sample-java:preReleaseBuild
+:sample-java:compileReleaseAidl
+:fuel-android:packageReleaseRenderscript NO-SOURCE
+:sample-java:compileReleaseRenderscript
+:sample-java:generateReleaseResValues
+:sample-java:generateReleaseResources
+:sample-java:mergeReleaseResources
+:sample-java:transformDataBindingBaseClassLogWithDataBindingMergeGenClassesForRelease
+:sample-java:dataBindingGenBaseClassesRelease
+:sample-java:checkReleaseManifest
+:sample-java:generateReleaseBuildConfig
+:sample-java:mainApkListPersistenceRelease
+:sample-java:createReleaseCompatibleScreenManifests
+:sample-java:processReleaseManifest
+:sample-java:splitsDiscoveryTaskRelease
+:sample-java:processReleaseResources
+:sample-java:generateReleaseSources
+:sample-java:dataBindingExportBuildInfoRelease
+:sample-java:javaPreCompileRelease
+:sample-java:transformDataBindingWithDataBindingMergeArtifactsForRelease
+:sample-java:compileReleaseJavaWithJavac
+:sample-java:compileReleaseNdk NO-SOURCE
+:sample-java:compileReleaseSources
+:sample-java:lintVitalRelease
+:fuel-android:mergeReleaseShaders UP-TO-DATE
+:fuel-android:compileReleaseShaders UP-TO-DATE
+:fuel-android:generateReleaseAssets UP-TO-DATE
+:fuel-android:packageReleaseAssets UP-TO-DATE
+:sample-java:mergeReleaseShaders
+:sample-java:compileReleaseShaders
+:sample-java:generateReleaseAssets
+:sample-java:mergeReleaseAssets
+:sample-java:transformClassesWithDexBuilderForRelease
+:sample-java:transformDexArchiveWithExternalLibsDexMergerForRelease
+:sample-java:transformDexArchiveWithDexMergerForRelease
+:fuel-android:compileReleaseNdk NO-SOURCE
+:fuel-android:mergeReleaseJniLibFolders UP-TO-DATE
+:fuel-android:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:fuel-android:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:fuel-android:transformNativeLibsWithIntermediateJniLibsForRelease
+:sample-java:mergeReleaseJniLibFolders
+:sample-java:transformNativeLibsWithMergeJniLibsForRelease
+:sample-java:transformNativeLibsWithStripDebugSymbolForRelease
+:sample-java:processReleaseJavaRes NO-SOURCE
+:sample-java:transformResourcesWithMergeJavaResForRelease
+:sample-java:packageRelease
+:sample-java:assembleRelease
+:sample-java:assemble
+:sample-java:build
+
+BUILD SUCCESSFUL in 36s
+104 actionable tasks: 65 executed, 39 up-to-date
+
+2018-05-20 22:09:53,548 INFO  FullProcessService - Found APK file: /tmp/rdisk/2553/src/sample-java/build/outputs/apk/release/sample-java-release-unsigned.apk

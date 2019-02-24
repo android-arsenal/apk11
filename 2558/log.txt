@@ -1,0 +1,118 @@
+2018-04-01 23:56:25,495 INFO  DownloadService - Downloading "https://github.com/tyrantgit/HeartLayout/archive/master.zip", attempt 3
+2018-04-01 23:57:26,090 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:57:26,732 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 23:57:26,732 INFO  DownloadService - Downloading "https://github.com/tyrantgit/HeartLayout/archive/master.zip", attempt 3
+2018-04-01 23:58:27,922 DEBUG FullProcessService - Repository https://github.com/tyrantgit/HeartLayout available: true
+2018-04-01 23:58:27,922 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:58:27,923 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tyrantgit/HeartLayout, /tmp/rdisk/2558/src]
+2018-04-01 23:58:29,916 INFO  SysUtils - 
+2018-04-01 23:58:29,932 INFO  GitService - Deleted "/tmp/rdisk/2558/src/.git": true
+2018-04-01 23:58:29,934 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 23:58:29,934 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2558/src]
+2018-04-01 23:58:29,939 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2558/src/.git/
+
+2018-04-01 23:58:29,942 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2558/src/gradlew
+2018-04-01 23:58:29,944 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2558/src/app/build.gradle /tmp/rdisk/2558/src/heartlayout/build.gradle /tmp/rdisk/2558/src/build.gradle
+2018-04-01 23:58:29,947 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2558/src/settings.gradle /tmp/rdisk/2558/src/heartlayout/build.gradle /tmp/rdisk/2558/src/build.gradle /tmp/rdisk/2558/src/app/build.gradle
+2018-04-01 23:58:29,947 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:58:29,947 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:58:29,953 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2558/src/app/local.properties
+2018-04-01 23:58:29,953 INFO  ProjectFixService - Build info for "/tmp/rdisk/2558/src/app/build.gradle": [buildToolsVersion=23.0.0 rc2,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 23:58:29,954 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2558/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 23:58:29,954 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2558/src/heartlayout/local.properties
+2018-04-01 23:58:29,954 INFO  ProjectFixService - Build info for "/tmp/rdisk/2558/src/heartlayout/build.gradle": [buildToolsVersion=23.0.0 rc2,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 23:58:29,954 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2558/src/heartlayout/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 23:58:29,955 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2558/src/local.properties
+2018-04-01 23:58:29,955 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 23:58:29,955 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 23:58:29,956 INFO  ProjectFixService - Build info for "/tmp/rdisk/2558/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 23:58:29,956 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:58:29,956 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:58:29,956 INFO  SysUtils - Execute command: [/tmp/rdisk/2558/src/gradlew, -b, /tmp/rdisk/2558/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:58:37,788 INFO  ProjectTaskService - Detected possible tasks: 64
+2018-04-01 23:58:37,788 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 23:58:37,788 INFO  SysUtils - Execute command: [/tmp/rdisk/2558/src/gradlew, -b, /tmp/rdisk/2558/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 23:58:48,551 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:heartlayout:compileLint
+:heartlayout:copyReleaseLint UP-TO-DATE
+:heartlayout:mergeReleaseProguardFiles
+:heartlayout:preBuild UP-TO-DATE
+:heartlayout:preReleaseBuild UP-TO-DATE
+:heartlayout:checkReleaseManifest
+:heartlayout:prepareReleaseDependencies
+:heartlayout:compileReleaseAidl
+:heartlayout:compileReleaseRenderscript
+:heartlayout:generateReleaseBuildConfig
+:heartlayout:generateReleaseAssets UP-TO-DATE
+:heartlayout:mergeReleaseAssets
+:heartlayout:generateReleaseResValues
+:heartlayout:generateReleaseResources
+:heartlayout:packageReleaseResources
+:heartlayout:processReleaseManifest
+:heartlayout:processReleaseResources
+:heartlayout:generateReleaseSources
+:heartlayout:processReleaseJavaRes UP-TO-DATE
+:heartlayout:compileReleaseJava
+:heartlayout:packageReleaseJar
+:heartlayout:compileReleaseNdk UP-TO-DATE
+:heartlayout:packageReleaseJniLibs UP-TO-DATE
+:heartlayout:packageReleaseLocalJar UP-TO-DATE
+:heartlayout:packageReleaseRenderscript UP-TO-DATE
+:heartlayout:bundleRelease
+:app:prepareSrcHeartlayoutUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.357 secs
+
+2018-04-01 23:58:48,562 INFO  FullProcessService - Found APK file: /tmp/rdisk/2558/src/app/build/outputs/apk/app-debug.apk

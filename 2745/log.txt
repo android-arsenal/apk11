@@ -1,0 +1,258 @@
+2019-01-26 22:22:16,399 INFO  DownloadService - Downloading "https://github.com/TurhanOz/RxProximityBeacon/archive/master.zip", attempt 3
+2019-01-26 22:22:18,204 INFO  DownloadService - Downloaded https://github.com/TurhanOz/RxProximityBeacon/archive/master.zip, attempt 3
+2019-01-26 22:22:18,205 INFO  DownloadService - Size of file "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/master.zip": 124 KB
+2019-01-26 22:22:18,205 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2019-01-26 22:22:18,206 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/master.zip: true
+2019-01-26 22:22:18,206 DEBUG ZipUtil - Extracting '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/master.zip' into '/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src'.
+2019-01-26 22:22:18,259 INFO  FullProcessService - Size of directory with sources: 162 KB
+2019-01-26 22:22:18,259 INFO  SysUtils - Execute command: [git, init, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src]
+2019-01-26 22:22:18,314 INFO  SysUtils - Initialized empty Git repository in /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/.git/
+
+2019-01-26 22:22:18,320 INFO  ProjectBuildService - Gradle wrapper(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/gradlew
+2019-01-26 22:22:18,328 INFO  ProjectBuildService - Build script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/build.gradle
+2019-01-26 22:22:18,334 INFO  ProjectBuildService - All script(s): /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build.gradle /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/settings.gradle
+2019-01-26 22:22:18,335 INFO  ProjectBuildService - Remote scripts: none
+2019-01-26 22:22:18,335 INFO  ProjectFixService - Fixing project...
+2019-01-26 22:22:18,352 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/local.properties
+2019-01-26 22:22:18,352 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2019-01-26 22:22:18,353 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/local.properties
+2019-01-26 22:22:18,354 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2019-01-26 22:22:18,355 INFO  LocalPropertiesFixService - Created fake /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/local.properties
+2019-01-26 22:22:18,357 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.7-all.zip
+2019-01-26 22:22:18,358 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.7-bin.zip)
+2019-01-26 22:22:18,359 INFO  ProjectFixService - Build info for "/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2019-01-26 22:22:18,360 INFO  ProjectFixService - Project was maybe fixed
+2019-01-26 22:22:18,360 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:22:18,360 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:22:43,256 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2019-01-26 22:22:43,257 INFO  ProjectTaskService - Detected possible tasks: 0
+2019-01-26 22:22:43,257 INFO  ProjectTaskService - Excluded tasks (0): none
+2019-01-26 22:22:43,257 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2019-01-26 22:24:13,370 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72301Library
+:library:prepareComAndroidSupportMultidex101Library
+:library:prepareComAndroidSupportSupportV42301Library
+:library:prepareIoReactivexRxandroid101Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:copyTestResources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:lint
+Ran lint on variant release: 0 issues found
+Ran lint on variant debug: 0 issues found
+Wrote HTML report to file:/private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build/outputs/lint-results.html
+Wrote XML report to /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/build/outputs/lint-results.xml
+:library:preCompileDebugUnitTestJava
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes
+:library:compileDebugUnitTestJavaNote: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/src/test/java/com/turhanoz/android/rxproximitybeacon/BeaconsServiceTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:compileDebugUnitTestSources
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebugJava HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+
+Executing test for shouldGet with result: SKIPPED
+Executing test for shouldIncludeAuthorizationHeader with result: SUCCESS
+Executing test for shouldCollaborateWithAuthorizationInterception with result: SUCCESS
+:library:preCompileReleaseUnitTestJava
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes
+:library:compileReleaseUnitTestJavaNote: /private/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/library/src/test/java/com/turhanoz/android/rxproximitybeacon/BeaconsServiceTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:compileReleaseUnitTestSources
+:library:assembleReleaseUnitTest
+:library:testReleaseJava HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option UseSplitVerifier; support was removed in 8.0
+
+Executing test for shouldGet with result: SKIPPED
+Executing test for shouldCollaborateWithAuthorizationInterception with result: SUCCESS
+Executing test for shouldIncludeAuthorizationHeader with result: SUCCESS
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 29.459 secs
+
+2019-01-26 22:24:13,467 INFO  ProjectTaskService - Detecting possible tasks...
+2019-01-26 22:24:13,468 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2019-01-26 22:24:26,068 INFO  ProjectTaskService - Detected possible tasks: 65
+2019-01-26 22:24:26,069 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2019-01-26 22:24:26,069 INFO  SysUtils - Execute command: [/var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/gradlew, -b, /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2019-01-26 22:25:20,779 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:library:prepareComAndroidSupportMultidex101Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:library:prepareIoReactivexRxandroid101Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72301Library
+:sample:prepareComAndroidSupportMultidex101Library
+:sample:prepareComAndroidSupportSupportV42301Library
+:sample:prepareComTurhanozAndroidLibrary001Library
+:sample:prepareIoReactivexRxandroid101Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJava
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:collectDebugMultiDexComponents
+:sample:packageAllDebugClassesForMultiDex
+:sample:shrinkDebugMultiDexComponents
+:sample:createDebugMainDexClassList
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJava
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:collectReleaseMultiDexComponents
+:sample:packageAllReleaseClassesForMultiDex
+:sample:shrinkReleaseMultiDexComponents
+:sample:createReleaseMainDexClassList
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 54.135 secs
+
+2019-01-26 22:25:20,882 INFO  FullProcessService - Found APK file: /var/folders/bq/vtzpc5ns5sg2cthy61lqpg3dfzgbys/T/1548516136392-0/src/RxProximityBeacon-master/sample/build/outputs/apk/sample-debug-unaligned.apk

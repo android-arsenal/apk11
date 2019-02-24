@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.github.xizzhu.simpletooltip.sample.debug",
+    "label" : "Simple Tool Tip",
+    "icon" : "res/drawable-xxxhdpi-v4/ic_launcher.png",
+    "versionName" : "0.6.1 debug",
+    "versionCode" : 601,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-xxxhdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 1546,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"601\" android:versionName=\"0.6.1 debug\" package=\"com.github.xizzhu.simpletooltip.sample.debug\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f0800f1\" android:label=\"Simple Tool Tip\" android:icon=\"res/drawable-xxxhdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"false\">\n\t\t<activity android:label=\"Simple Tool Tip\" android:name=\"com.github.xizzhu.simpletooltip.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1225544,
+  "crc32" : 129051853,
+  "sha256" : "bd08e34d27f5a5ae04e795ad2f17a3eaabe2fedde01723a53eb77e99d9827534",
+  "buildTime" : 1522632360000
+}

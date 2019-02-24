@@ -1,0 +1,21 @@
+2018-04-01 20:57:54,823 INFO  DownloadService - Downloading "https://github.com/rathodchintan/ResizableRectangleOverlay/archive/master.zip", attempt 3
+2018-04-01 20:58:55,289 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:58:55,959 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:58:55,959 INFO  DownloadService - Downloading "https://github.com/rathodchintan/ResizableRectangleOverlay/archive/master.zip", attempt 3
+2018-04-01 20:59:57,116 DEBUG FullProcessService - Repository https://github.com/rathodchintan/ResizableRectangleOverlay available: true
+2018-04-01 20:59:57,116 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:59:57,116 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rathodchintan/ResizableRectangleOverlay, /tmp/rdisk/2620/src]
+2018-04-01 20:59:59,183 INFO  SysUtils - 
+2018-04-01 20:59:59,191 INFO  GitService - Deleted "/tmp/rdisk/2620/src/.git": true
+2018-04-01 20:59:59,192 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 20:59:59,192 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2620/src]
+2018-04-01 20:59:59,197 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2620/src/.git/
+
+2018-04-01 20:59:59,199 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-01 20:59:59,199 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-01 20:59:59,200 INFO  ProjectBuildService - Build script(s): none
+2018-04-01 20:59:59,201 INFO  ProjectBuildService - All script(s): none
+2018-04-01 20:59:59,201 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:59:59,201 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-01 20:59:59,201 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 20:59:59,202 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,320 @@
+2018-04-02 01:17:13,047 INFO  DownloadService - Downloading "https://github.com/jcmore2/ShakePhoneLib/archive/master.zip", attempt 3
+2018-04-02 01:18:13,657 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:18:14,398 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:18:14,398 INFO  DownloadService - Downloading "https://github.com/jcmore2/ShakePhoneLib/archive/master.zip", attempt 3
+2018-04-02 01:19:15,715 DEBUG FullProcessService - Repository https://github.com/jcmore2/ShakePhoneLib available: true
+2018-04-02 01:19:15,715 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:19:15,715 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jcmore2/ShakePhoneLib, /tmp/rdisk/2528/src]
+2018-04-02 01:19:17,294 INFO  SysUtils - 
+2018-04-02 01:19:17,308 INFO  GitService - Deleted "/tmp/rdisk/2528/src/.git": true
+2018-04-02 01:19:17,310 INFO  FullProcessService - Size of directory with sources: 483 KB
+2018-04-02 01:19:17,310 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2528/src]
+2018-04-02 01:19:17,315 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2528/src/.git/
+
+2018-04-02 01:19:17,317 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2528/src/ShakePhone/gradlew
+2018-04-02 01:19:17,319 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2528/src/ShakePhone/shakeit/build.gradle /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle /tmp/rdisk/2528/src/ShakePhone/build.gradle
+2018-04-02 01:19:17,321 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle /tmp/rdisk/2528/src/ShakePhone/shakeit/build.gradle /tmp/rdisk/2528/src/ShakePhone/settings.gradle /tmp/rdisk/2528/src/ShakePhone/build.gradle
+2018-04-02 01:19:17,322 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle", attempt 3
+2018-04-02 01:19:17,667 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle, attempt 3
+2018-04-02 01:19:17,667 INFO  DownloadService - Downloading "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle", attempt 3
+2018-04-02 01:19:17,808 INFO  DownloadService - Downloaded https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle, attempt 3
+2018-04-02 01:19:17,808 INFO  ProjectBuildService - Remote scripts: https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
+2018-04-02 01:19:17,808 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:19:17,814 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2528/src/ShakePhone/shakeit/local.properties
+2018-04-02 01:19:17,814 INFO  ProjectFixService - Build info for "/tmp/rdisk/2528/src/ShakePhone/shakeit/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=19]
+2018-04-02 01:19:17,814 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2528/src/ShakePhone/shakeitSample/local.properties
+2018-04-02 01:19:17,815 INFO  ProjectFixService - Build info for "/tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=21]
+2018-04-02 01:19:17,815 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2528/src/ShakePhone/local.properties
+2018-04-02 01:19:17,815 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-04-02 01:19:17,815 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-04-02 01:19:17,816 INFO  ProjectFixService - Build info for "/tmp/rdisk/2528/src/ShakePhone/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=19,minSdkVersion=8,targetSdkVersion=21]
+2018-04-02 01:19:17,821 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:19:17,821 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:19:17,821 INFO  SysUtils - Execute command: [/tmp/rdisk/2528/src/ShakePhone/gradlew, -b, /tmp/rdisk/2528/src/ShakePhone/shakeit/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:19:27,881 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-02 01:19:27,881 INFO  ProjectTaskService - Detected possible tasks: 3
+2018-04-02 01:19:27,881 INFO  ProjectTaskService - Excluded tasks (3): sourcesJar javadocJar javadoc
+2018-04-02 01:19:27,881 INFO  SysUtils - Execute command: [/tmp/rdisk/2528/src/ShakePhone/gradlew, -b, /tmp/rdisk/2528/src/ShakePhone/shakeit/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, sourcesJar, -x, javadocJar, -x, javadoc, build]
+2018-04-02 01:19:44,776 INFO  SysUtils - Configuration on demand is an incubating feature.
+:shakeit:compileLint
+:shakeit:copyDebugLint UP-TO-DATE
+:shakeit:mergeDebugProguardFiles
+:shakeit:preBuild UP-TO-DATE
+:shakeit:preDebugBuild UP-TO-DATE
+:shakeit:checkDebugManifest
+:shakeit:prepareDebugDependencies
+:shakeit:compileDebugAidl
+:shakeit:compileDebugRenderscript
+:shakeit:generateDebugBuildConfig
+:shakeit:generateDebugAssets UP-TO-DATE
+:shakeit:mergeDebugAssets
+:shakeit:generateDebugResValues
+:shakeit:generateDebugResources
+:shakeit:packageDebugResources
+:shakeit:processDebugManifest
+:shakeit:processDebugResources
+:shakeit:generateDebugSources
+:shakeit:processDebugJavaRes UP-TO-DATE
+:shakeit:compileDebugJava
+:shakeit:packageDebugJar
+:shakeit:compileDebugNdk UP-TO-DATE
+:shakeit:packageDebugJniLibs UP-TO-DATE
+:shakeit:packageDebugLocalJar UP-TO-DATE
+:shakeit:packageDebugRenderscript UP-TO-DATE
+:shakeit:bundleDebug
+:shakeit:compileDebugSources
+:shakeit:assembleDebug
+:shakeit:copyReleaseLint UP-TO-DATE
+:shakeit:mergeReleaseProguardFiles
+:shakeit:preReleaseBuild UP-TO-DATE
+:shakeit:checkReleaseManifest
+:shakeit:prepareReleaseDependencies
+:shakeit:compileReleaseAidl
+:shakeit:compileReleaseRenderscript
+:shakeit:generateReleaseBuildConfig
+:shakeit:generateReleaseAssets UP-TO-DATE
+:shakeit:mergeReleaseAssets
+:shakeit:generateReleaseResValues
+:shakeit:generateReleaseResources
+:shakeit:packageReleaseResources
+:shakeit:processReleaseManifest
+:shakeit:processReleaseResources
+:shakeit:generateReleaseSources
+:shakeit:processReleaseJavaRes UP-TO-DATE
+:shakeit:compileReleaseJava
+:shakeit:packageReleaseJar
+:shakeit:compileReleaseNdk UP-TO-DATE
+:shakeit:packageReleaseJniLibs UP-TO-DATE
+:shakeit:packageReleaseLocalJar UP-TO-DATE
+:shakeit:packageReleaseRenderscript UP-TO-DATE
+:shakeit:bundleRelease
+:shakeit:compileReleaseSources
+:shakeit:assembleRelease
+:shakeit:assemble
+:shakeit:lint
+Ran lint on variant debug: 6 issues found
+Ran lint on variant release: 6 issues found
+Wrote HTML report to file:/tmp/rdisk/2528/src/ShakePhone/shakeit/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2528/src/ShakePhone/shakeit/build/outputs/lint-results.xml
+:shakeit:preCompileDebugUnitTestJava
+:shakeit:preDebugUnitTestBuild UP-TO-DATE
+:shakeit:prepareDebugUnitTestDependencies
+:shakeit:processDebugUnitTestJavaRes UP-TO-DATE
+:shakeit:compileDebugUnitTestJava UP-TO-DATE
+:shakeit:compileDebugUnitTestSources UP-TO-DATE
+:shakeit:mockableAndroidJar
+:shakeit:assembleDebugUnitTest
+:shakeit:testDebug
+:shakeit:preCompileReleaseUnitTestJava
+:shakeit:preReleaseUnitTestBuild UP-TO-DATE
+:shakeit:prepareReleaseUnitTestDependencies
+:shakeit:processReleaseUnitTestJavaRes UP-TO-DATE
+:shakeit:compileReleaseUnitTestJava UP-TO-DATE
+:shakeit:compileReleaseUnitTestSources UP-TO-DATE
+:shakeit:assembleReleaseUnitTest
+:shakeit:testRelease
+:shakeit:test
+:shakeit:check
+:shakeit:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.474 secs
+
+2018-04-02 01:19:44,784 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:19:44,784 INFO  SysUtils - Execute command: [/tmp/rdisk/2528/src/ShakePhone/gradlew, -b, /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:19:51,950 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-02 01:19:51,950 INFO  ProjectTaskService - Excluded tasks (22): lintDebug mockableAndroidJar javadocJar deviceCheck lint javadoc uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll sourcesJar testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-02 01:19:51,951 INFO  SysUtils - Execute command: [/tmp/rdisk/2528/src/ShakePhone/gradlew, -b, /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, javadocJar, -x, deviceCheck, -x, lint, -x, javadoc, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, sourcesJar, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-02 01:19:58,756 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-02 01:19:58,756 INFO  SysUtils - Configuration on demand is an incubating feature.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'javadocJar' not found in project ':shakeitSample'.
+
+* Try:
+Run gradlew tasks to get a list of available tasks. Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.execution.TaskSelectionException: Task 'javadocJar' not found in project ':shakeitSample'.
+	at org.gradle.execution.TaskSelector.getSelection(TaskSelector.java:101)
+	at org.gradle.execution.TaskSelector.getFilter(TaskSelector.java:64)
+	at org.gradle.execution.ExcludedTaskFilteringBuildConfigurationAction.configure(ExcludedTaskFilteringBuildConfigurationAction.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.access$100(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:48)
+	at org.gradle.execution.DefaultTasksBuildExecutionAction.configure(DefaultTasksBuildExecutionAction.java:44)
+	at org.gradle.execution.DefaultBuildExecuter.configure(DefaultBuildExecuter.java:42)
+	at org.gradle.execution.DefaultBuildExecuter.select(DefaultBuildExecuter.java:35)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:142)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:80)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:36)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:56)
+
+
+BUILD FAILED
+
+Total time: 6.385 secs
+
+2018-04-02 01:19:58,756 ERROR ProjectBuildService - Excluded tasks were detected wrong
+2018-04-02 01:19:58,756 INFO  SysUtils - Execute command: [/tmp/rdisk/2528/src/ShakePhone/gradlew, -b, /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-02 01:20:21,097 INFO  SysUtils - Configuration on demand is an incubating feature.
+:shakeit:compileLint
+:shakeit:copyReleaseLint UP-TO-DATE
+:shakeit:mergeReleaseProguardFiles UP-TO-DATE
+:shakeit:preBuild UP-TO-DATE
+:shakeit:preReleaseBuild UP-TO-DATE
+:shakeit:checkReleaseManifest
+:shakeit:prepareReleaseDependencies
+:shakeit:compileReleaseAidl UP-TO-DATE
+:shakeit:compileReleaseRenderscript UP-TO-DATE
+:shakeit:generateReleaseBuildConfig UP-TO-DATE
+:shakeit:generateReleaseAssets UP-TO-DATE
+:shakeit:mergeReleaseAssets UP-TO-DATE
+:shakeit:generateReleaseResValues UP-TO-DATE
+:shakeit:generateReleaseResources UP-TO-DATE
+:shakeit:packageReleaseResources UP-TO-DATE
+:shakeit:processReleaseManifest UP-TO-DATE
+:shakeit:processReleaseResources UP-TO-DATE
+:shakeit:generateReleaseSources UP-TO-DATE
+:shakeit:processReleaseJavaRes UP-TO-DATE
+:shakeit:compileReleaseJava UP-TO-DATE
+:shakeit:packageReleaseJar UP-TO-DATE
+:shakeit:compileReleaseNdk UP-TO-DATE
+:shakeit:packageReleaseJniLibs UP-TO-DATE
+:shakeit:packageReleaseLocalJar UP-TO-DATE
+:shakeit:packageReleaseRenderscript UP-TO-DATE
+:shakeit:bundleRelease UP-TO-DATE
+:shakeitSample:preBuild UP-TO-DATE
+:shakeitSample:preDebugBuild UP-TO-DATE
+:shakeitSample:checkDebugManifest
+:shakeitSample:preReleaseBuild UP-TO-DATE
+:shakeitSample:prepareComAndroidSupportSupportV42100Library
+:shakeitSample:prepareComJcmore2ShakeitShakeit100Library
+:shakeitSample:prepareDebugDependencies
+:shakeitSample:compileDebugAidl
+:shakeitSample:compileDebugRenderscript
+:shakeitSample:generateDebugBuildConfig
+:shakeitSample:generateDebugAssets UP-TO-DATE
+:shakeitSample:mergeDebugAssets
+:shakeitSample:generateDebugResValues
+:shakeitSample:generateDebugResources
+:shakeitSample:mergeDebugResources
+:shakeitSample:processDebugManifest
+:shakeitSample:processDebugResources
+:shakeitSample:generateDebugSources
+:shakeitSample:processDebugJavaRes UP-TO-DATE
+:shakeitSample:compileDebugJava
+:shakeitSample:compileDebugNdk UP-TO-DATE
+:shakeitSample:compileDebugSources
+:shakeitSample:preDexDebug
+:shakeitSample:dexDebug
+:shakeitSample:validateDebugSigning
+:shakeitSample:packageDebug
+:shakeitSample:zipalignDebug
+:shakeitSample:assembleDebug
+:shakeitSample:checkReleaseManifest
+:shakeitSample:prepareReleaseDependencies
+:shakeitSample:compileReleaseAidl
+:shakeitSample:compileReleaseRenderscript
+:shakeitSample:generateReleaseBuildConfig
+:shakeitSample:generateReleaseAssets UP-TO-DATE
+:shakeitSample:mergeReleaseAssets
+:shakeitSample:generateReleaseResValues
+:shakeitSample:generateReleaseResources
+:shakeitSample:mergeReleaseResources
+:shakeitSample:processReleaseManifest
+:shakeitSample:processReleaseResources
+:shakeitSample:generateReleaseSources
+:shakeitSample:processReleaseJavaRes UP-TO-DATE
+:shakeitSample:compileReleaseJava
+:shakeitSample:compileReleaseNdk UP-TO-DATE
+:shakeitSample:compileReleaseSources
+:shakeitSample:lintVitalRelease SKIPPED
+:shakeitSample:preDexRelease
+:shakeitSample:dexRelease
+:shakeitSample:packageRelease
+:shakeitSample:assembleRelease
+:shakeitSample:assemble
+:shakeitSample:compileLint
+:shakeitSample:lint
+Ran lint on variant release: 10 issues found
+Ran lint on variant debug: 10 issues found
+Wrote HTML report to file:/tmp/rdisk/2528/src/ShakePhone/shakeitSample/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build/outputs/lint-results.xml
+:shakeitSample:preCompileDebugUnitTestJava
+:shakeitSample:preDebugUnitTestBuild UP-TO-DATE
+:shakeitSample:prepareDebugUnitTestDependencies
+:shakeitSample:processDebugUnitTestJavaRes UP-TO-DATE
+:shakeitSample:compileDebugUnitTestJava UP-TO-DATE
+:shakeitSample:compileDebugUnitTestSources UP-TO-DATE
+:shakeitSample:mockableAndroidJar
+:shakeitSample:assembleDebugUnitTest
+:shakeitSample:testDebug
+:shakeitSample:preCompileReleaseUnitTestJava
+:shakeitSample:preReleaseUnitTestBuild UP-TO-DATE
+:shakeitSample:prepareReleaseUnitTestDependencies
+:shakeitSample:processReleaseUnitTestJavaRes UP-TO-DATE
+:shakeitSample:compileReleaseUnitTestJava UP-TO-DATE
+:shakeitSample:compileReleaseUnitTestSources UP-TO-DATE
+:shakeitSample:assembleReleaseUnitTest
+:shakeitSample:testRelease
+:shakeitSample:test
+:shakeitSample:check
+:shakeitSample:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.895 secs
+
+2018-04-02 01:20:21,112 INFO  FullProcessService - Found APK file: /tmp/rdisk/2528/src/ShakePhone/shakeitSample/build/outputs/apk/shakeitSample-release-unsigned.apk

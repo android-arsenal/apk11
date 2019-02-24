@@ -1,0 +1,352 @@
+2018-04-01 20:23:45,418 INFO  DownloadService - Downloading "https://github.com/H07000223/FlycoBanner_Master/archive/master.zip", attempt 3
+2018-04-01 20:24:45,998 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:24:46,672 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:24:46,673 INFO  DownloadService - Downloading "https://github.com/H07000223/FlycoBanner_Master/archive/master.zip", attempt 3
+2018-04-01 20:25:47,924 DEBUG FullProcessService - Repository https://github.com/H07000223/FlycoBanner_Master available: true
+2018-04-01 20:25:47,924 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:25:47,924 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/H07000223/FlycoBanner_Master, /tmp/rdisk/2632/src]
+2018-04-01 20:26:03,272 INFO  SysUtils - 
+2018-04-01 20:26:03,278 INFO  GitService - Deleted "/tmp/rdisk/2632/src/.git": true
+2018-04-01 20:26:03,282 INFO  FullProcessService - Size of directory with sources: 12 MB
+2018-04-01 20:26:03,282 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2632/src]
+2018-04-01 20:26:03,286 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2632/src/.git/
+
+2018-04-01 20:26:03,289 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2632/src/gradlew
+2018-04-01 20:26:03,293 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2632/src/FlycoBanner_Lib/build.gradle /tmp/rdisk/2632/src/app/build.gradle /tmp/rdisk/2632/src/build.gradle
+2018-04-01 20:26:03,296 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2632/src/settings.gradle /tmp/rdisk/2632/src/build.gradle /tmp/rdisk/2632/src/app/build.gradle /tmp/rdisk/2632/src/FlycoBanner_Lib/build.gradle
+2018-04-01 20:26:03,296 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:26:03,296 INFO  ProjectFixService - Fixing project...
+2018-04-01 20:26:03,304 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2632/src/FlycoBanner_Lib/local.properties
+2018-04-01 20:26:03,305 INFO  ProjectFixService - Build info for "/tmp/rdisk/2632/src/FlycoBanner_Lib/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-01 20:26:03,305 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2632/src/app/local.properties
+2018-04-01 20:26:03,305 INFO  ProjectFixService - Build info for "/tmp/rdisk/2632/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-01 20:26:03,305 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2632/src/local.properties
+2018-04-01 20:26:03,306 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 20:26:03,306 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 20:26:03,307 INFO  ProjectFixService - Build info for "/tmp/rdisk/2632/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=22]
+2018-04-01 20:26:03,307 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 20:26:03,307 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:26:03,307 INFO  SysUtils - Execute command: [/tmp/rdisk/2632/src/gradlew, -b, /tmp/rdisk/2632/src/FlycoBanner_Lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:26:11,351 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 20:26:11,351 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 20:26:11,351 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 20:26:11,351 INFO  SysUtils - Execute command: [/tmp/rdisk/2632/src/gradlew, -b, /tmp/rdisk/2632/src/FlycoBanner_Lib/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 20:26:22,402 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 20:26:22,402 INFO  SysUtils - Configuration on demand is an incubating feature.
+:FlycoBanner_Lib:preBuild UP-TO-DATE
+:FlycoBanner_Lib:preDebugBuild UP-TO-DATE
+:FlycoBanner_Lib:compileDebugNdk UP-TO-DATE
+:FlycoBanner_Lib:compileLint
+:FlycoBanner_Lib:copyDebugLint UP-TO-DATE
+:FlycoBanner_Lib:checkDebugManifest
+:FlycoBanner_Lib:preDebugAndroidTestBuild UP-TO-DATE
+:FlycoBanner_Lib:preDebugUnitTestBuild UP-TO-DATE
+:FlycoBanner_Lib:preReleaseBuild UP-TO-DATE
+:FlycoBanner_Lib:preReleaseUnitTestBuild UP-TO-DATE
+:FlycoBanner_Lib:prepareComAndroidSupportSupportV42221Library
+:FlycoBanner_Lib:prepareDebugDependencies
+:FlycoBanner_Lib:compileDebugAidl
+:FlycoBanner_Lib:compileDebugRenderscript
+:FlycoBanner_Lib:generateDebugBuildConfig
+:FlycoBanner_Lib:generateDebugAssets UP-TO-DATE
+:FlycoBanner_Lib:mergeDebugAssets
+:FlycoBanner_Lib:generateDebugResValues
+:FlycoBanner_Lib:generateDebugResources
+:FlycoBanner_Lib:mergeDebugResources
+:FlycoBanner_Lib:processDebugManifest
+:FlycoBanner_Lib:processDebugResources
+:FlycoBanner_Lib:generateDebugSources
+:FlycoBanner_Lib:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:FlycoBanner_Lib:extractDebugAnnotations
+:FlycoBanner_Lib:mergeDebugProguardFiles
+:FlycoBanner_Lib:packageDebugRenderscript UP-TO-DATE
+:FlycoBanner_Lib:packageDebugResources
+:FlycoBanner_Lib:processDebugJavaRes UP-TO-DATE
+:FlycoBanner_Lib:transformResourcesWithMergeJavaResForDebug
+:FlycoBanner_Lib:transformClassesAndResourcesWithSyncLibJarsForDebug
+:FlycoBanner_Lib:mergeDebugJniLibFolders
+:FlycoBanner_Lib:transformNative_libsWithMergeJniLibsForDebug
+:FlycoBanner_Lib:transformNative_libsWithSyncJniLibsForDebug
+:FlycoBanner_Lib:bundleDebug
+:FlycoBanner_Lib:compileDebugSources
+:FlycoBanner_Lib:assembleDebug
+:FlycoBanner_Lib:compileReleaseNdk UP-TO-DATE
+:FlycoBanner_Lib:copyReleaseLint UP-TO-DATE
+:FlycoBanner_Lib:checkReleaseManifest
+:FlycoBanner_Lib:prepareReleaseDependencies
+:FlycoBanner_Lib:compileReleaseAidl
+:FlycoBanner_Lib:compileReleaseRenderscript
+:FlycoBanner_Lib:generateReleaseBuildConfig
+:FlycoBanner_Lib:generateReleaseAssets UP-TO-DATE
+:FlycoBanner_Lib:mergeReleaseAssets
+:FlycoBanner_Lib:generateReleaseResValues
+:FlycoBanner_Lib:generateReleaseResources
+:FlycoBanner_Lib:mergeReleaseResources
+:FlycoBanner_Lib:processReleaseManifest
+:FlycoBanner_Lib:processReleaseResources
+:FlycoBanner_Lib:generateReleaseSources
+:FlycoBanner_Lib:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:FlycoBanner_Lib:extractReleaseAnnotations
+:FlycoBanner_Lib:mergeReleaseProguardFiles
+:FlycoBanner_Lib:packageReleaseRenderscript UP-TO-DATE
+:FlycoBanner_Lib:packageReleaseResources
+:FlycoBanner_Lib:processReleaseJavaRes UP-TO-DATE
+:FlycoBanner_Lib:transformResourcesWithMergeJavaResForRelease
+:FlycoBanner_Lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:FlycoBanner_Lib:mergeReleaseJniLibFolders
+:FlycoBanner_Lib:transformNative_libsWithMergeJniLibsForRelease
+:FlycoBanner_Lib:transformNative_libsWithSyncJniLibsForRelease
+:FlycoBanner_Lib:bundleRelease
+:FlycoBanner_Lib:compileReleaseSources
+:FlycoBanner_Lib:assembleRelease
+:FlycoBanner_Lib:assemble
+:FlycoBanner_Lib:lint
+Wrote HTML report to file:///tmp/rdisk/2632/src/FlycoBanner_Lib/build/outputs/lint-results.html
+Wrote XML report to file:///tmp/rdisk/2632/src/FlycoBanner_Lib/build/outputs/lint-results.xml
+Lint found 3 errors and 8 warnings
+:FlycoBanner_Lib:lint FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':FlycoBanner_Lib:lint'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':FlycoBanner_Lib:lint'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:310)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:23)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:88)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:68)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:62)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:55)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:106)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:90)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:50)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:27)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:40)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:169)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: org.gradle.api.GradleException: Lint found errors in the project; aborting build.
+
+Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+...
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+...
+	at com.android.build.gradle.tasks.Lint.abort(Lint.groovy:164)
+	at com.android.build.gradle.tasks.Lint.runLint(Lint.groovy:202)
+	at com.android.build.gradle.tasks.Lint.this$6$runLint(Lint.groovy)
+	at com.android.build.gradle.tasks.Lint$this$6$runLint$4.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.groovy:171)
+	at com.android.build.gradle.tasks.Lint$lintSingleVariant$3.callCurrent(Unknown Source)
+	at com.android.build.gradle.tasks.Lint.lint(Lint.groovy:73)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:226)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:208)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:589)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:572)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 49 more
+
+
+BUILD FAILED
+
+Total time: 10.607 secs
+
+2018-04-01 20:26:22,412 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:26:22,412 INFO  SysUtils - Execute command: [/tmp/rdisk/2632/src/gradlew, -b, /tmp/rdisk/2632/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:26:28,159 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-01 20:26:28,159 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 20:26:28,159 INFO  SysUtils - Execute command: [/tmp/rdisk/2632/src/gradlew, -b, /tmp/rdisk/2632/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 20:26:50,216 INFO  SysUtils - Configuration on demand is an incubating feature.
+:FlycoBanner_Lib:preBuild UP-TO-DATE
+:FlycoBanner_Lib:preReleaseBuild UP-TO-DATE
+:FlycoBanner_Lib:compileReleaseNdk UP-TO-DATE
+:FlycoBanner_Lib:compileLint
+:FlycoBanner_Lib:copyReleaseLint UP-TO-DATE
+:FlycoBanner_Lib:checkReleaseManifest
+:FlycoBanner_Lib:preDebugAndroidTestBuild UP-TO-DATE
+:FlycoBanner_Lib:preDebugBuild UP-TO-DATE
+:FlycoBanner_Lib:preDebugUnitTestBuild UP-TO-DATE
+:FlycoBanner_Lib:preReleaseUnitTestBuild UP-TO-DATE
+:FlycoBanner_Lib:prepareComAndroidSupportSupportV42221Library UP-TO-DATE
+:FlycoBanner_Lib:prepareReleaseDependencies
+:FlycoBanner_Lib:compileReleaseAidl UP-TO-DATE
+:FlycoBanner_Lib:compileReleaseRenderscript UP-TO-DATE
+:FlycoBanner_Lib:generateReleaseBuildConfig UP-TO-DATE
+:FlycoBanner_Lib:generateReleaseAssets UP-TO-DATE
+:FlycoBanner_Lib:mergeReleaseAssets UP-TO-DATE
+:FlycoBanner_Lib:generateReleaseResValues UP-TO-DATE
+:FlycoBanner_Lib:generateReleaseResources UP-TO-DATE
+:FlycoBanner_Lib:mergeReleaseResources UP-TO-DATE
+:FlycoBanner_Lib:processReleaseManifest UP-TO-DATE
+:FlycoBanner_Lib:processReleaseResources UP-TO-DATE
+:FlycoBanner_Lib:generateReleaseSources UP-TO-DATE
+:FlycoBanner_Lib:compileReleaseJavaWithJavac UP-TO-DATE
+:FlycoBanner_Lib:extractReleaseAnnotations UP-TO-DATE
+:FlycoBanner_Lib:mergeReleaseProguardFiles UP-TO-DATE
+:FlycoBanner_Lib:packageReleaseRenderscript UP-TO-DATE
+:FlycoBanner_Lib:packageReleaseResources UP-TO-DATE
+:FlycoBanner_Lib:processReleaseJavaRes UP-TO-DATE
+:FlycoBanner_Lib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:FlycoBanner_Lib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:FlycoBanner_Lib:mergeReleaseJniLibFolders UP-TO-DATE
+:FlycoBanner_Lib:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:FlycoBanner_Lib:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:FlycoBanner_Lib:bundleRelease UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42221Library
+:app:prepareComFlycoDialogFlycoDialog_Lib126Library
+:app:prepareSrcFlycoBanner_Lib202Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/2632/src/app/src/main/java/com/flyco/bannersamples/utils/DataProvider.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/2632/src/app/src/main/java/com/flyco/bannersamples/utils/DataProvider.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.626 secs
+
+2018-04-01 20:26:50,235 INFO  FullProcessService - Found APK file: /tmp/rdisk/2632/src/app/build/outputs/apk/app-debug.apk

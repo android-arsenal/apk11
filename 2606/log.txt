@@ -1,0 +1,227 @@
+2018-04-01 21:35:46,680 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/CircleIndicator/archive/master.zip", attempt 3
+2018-04-01 21:36:47,186 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:36:47,843 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 21:36:47,844 INFO  DownloadService - Downloading "https://github.com/THEONE10211024/CircleIndicator/archive/master.zip", attempt 3
+2018-04-01 21:37:48,984 DEBUG FullProcessService - Repository https://github.com/THEONE10211024/CircleIndicator available: true
+2018-04-01 21:37:48,985 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:37:48,985 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/THEONE10211024/CircleIndicator, /tmp/rdisk/2606/src]
+2018-04-01 21:37:51,067 INFO  SysUtils - 
+2018-04-01 21:37:51,080 INFO  GitService - Deleted "/tmp/rdisk/2606/src/.git": true
+2018-04-01 21:37:51,082 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 21:37:51,082 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2606/src]
+2018-04-01 21:37:51,087 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2606/src/.git/
+
+2018-04-01 21:37:51,089 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2606/src/gradlew
+2018-04-01 21:37:51,092 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2606/src/app/build.gradle /tmp/rdisk/2606/src/build.gradle
+2018-04-01 21:37:51,094 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2606/src/settings.gradle /tmp/rdisk/2606/src/build.gradle /tmp/rdisk/2606/src/app/build.gradle
+2018-04-01 21:37:51,094 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:37:51,094 INFO  ProjectFixService - Fixing project...
+2018-04-01 21:37:51,099 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2606/src/app/local.properties
+2018-04-01 21:37:51,099 INFO  ProjectFixService - Build info for "/tmp/rdisk/2606/src/app/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-01 21:37:51,100 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2606/src/local.properties
+2018-04-01 21:37:51,100 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 21:37:51,100 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 21:37:51,101 INFO  ProjectFixService - Build info for "/tmp/rdisk/2606/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=23,minSdkVersion=11,targetSdkVersion=23]
+2018-04-01 21:37:51,101 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 21:37:51,102 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:37:51,102 INFO  SysUtils - Execute command: [/tmp/rdisk/2606/src/gradlew, -b, /tmp/rdisk/2606/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:37:58,863 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-01 21:37:58,863 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-01 21:37:58,863 INFO  SysUtils - Execute command: [/tmp/rdisk/2606/src/gradlew, -b, /tmp/rdisk/2606/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-01 21:38:09,070 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                  ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                   ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                     ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                      ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                        ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                         ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                          ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                           ^
+
+:app:extractDebugAnnotations
+:app:mergeDebugProguardFiles
+:app:packageDebugJar
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:packageDebugResources
+:app:bundleDebug
+:app:compileDebugSources
+:app:assembleDebug
+:app:copyReleaseLint UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                  ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                   ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                     ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                      ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                        ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                         ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                          ^
+/tmp/rdisk/2606/src/app/src/main/java/pers/medusa/circleindicator/widget/holder/ShapeHolder.java:13: error: unmappable character for encoding UTF-8
+    private float x = 0, y = 0;//Բ��x��y����
+                                           ^
+
+:app:extractReleaseAnnotations
+:app:mergeReleaseProguardFiles
+:app:packageReleaseJar
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:packageReleaseResources
+:app:bundleRelease
+:app:compileReleaseSources
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.747 secs
+
+2018-04-01 21:38:09,105 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:38:09,106 INFO  SysUtils - Execute command: [/tmp/rdisk/2606/src/gradlew, -b, /tmp/rdisk/2606/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:38:14,990 INFO  ProjectTaskService - Detected possible tasks: 62
+2018-04-01 21:38:14,990 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug connectedAndroidTestDebug
+2018-04-01 21:38:14,990 INFO  SysUtils - Execute command: [/tmp/rdisk/2606/src/gradlew, -b, /tmp/rdisk/2606/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, build]
+2018-04-01 21:38:21,320 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:compileLint
+:app:copyDebugLint UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72301Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJava UP-TO-DATE
+:app:extractDebugAnnotations UP-TO-DATE
+:app:mergeDebugProguardFiles UP-TO-DATE
+:app:packageDebugJar UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:packageDebugJniLibs UP-TO-DATE
+:app:packageDebugLocalJar UP-TO-DATE
+:app:packageDebugRenderscript UP-TO-DATE
+:app:packageDebugResources UP-TO-DATE
+:app:bundleDebug UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:assembleDebug UP-TO-DATE
+:app:copyReleaseLint UP-TO-DATE
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJava UP-TO-DATE
+:app:extractReleaseAnnotations UP-TO-DATE
+:app:mergeReleaseProguardFiles UP-TO-DATE
+:app:packageReleaseJar UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:packageReleaseJniLibs UP-TO-DATE
+:app:packageReleaseLocalJar UP-TO-DATE
+:app:packageReleaseRenderscript UP-TO-DATE
+:app:packageReleaseResources UP-TO-DATE
+:app:bundleRelease UP-TO-DATE
+:app:compileReleaseSources UP-TO-DATE
+:app:assembleRelease UP-TO-DATE
+:app:assemble UP-TO-DATE
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.907 secs
+
+2018-04-01 21:38:21,354 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 21:38:21,387 ERROR FullProcessService - Could not find generated or existed APK file

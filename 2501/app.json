@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.borax12.materialdaterangepicker",
+    "label" : "Material Date Range Picker",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.8",
+    "versionCode" : 2,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "24",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.VIBRATE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAC61BMVEUAAAD/qqr/gID/gID/hob3gID2hIT/gID4gYH4f3/3f3/2f3/1f3/reXkAAAD2fn72f3/3gID3gIDuenrIZGTPbm70fn7senqqVVXBZ2f0fn6kVVXsenrjdHTtenqeT0/kdXXue3ueVVXldXXve3vmdnbwfHzodnbxfHzod3fEaWmgU1OtW1v0fX3reXnxfX3xfX3ldnaHRESqVVUAAADVbm7EZmYAAAA3GBjFZWXldnbqeHjpeXngdHThdXXidXXjdnbkdnbkdnbidHS+Y2M0FxcAAAAAAABGIyNdMjJcMDBbLy9XLCxXLy9YMDBZMjJmMzMAAAAAAAC/QED4gID3f3/6urr86en85ub6vLz5q6v3hob6w8P87u787Oz6tLT6xcX73Nz4kpL86Oj6xsb7ysr83t75rq785+f719f9+Pjwvb3zycn9/PzroaH6xMT9/f3mfn7to6Pyvr70x8f9+/vqkJD84+P55OTneXn98/P66+vqgYH2ycn77u7zvr70v7/ztLTwpaX1wcHyqKj88/PidXX439/0ysrsoaHnfn7429v1zc3ld3f0ycnupaXzwcHyuLjskZHoeHj53d3peXnxpqbrfn7renr65eX2xcX89vbso6Pura3wtbX67Ozyu7vmd3f89fX1ysr9+fn66urxpaX0tbX1vr7ypKTtenr44OD43d3wuLjleXntoqL66enpgIDofX3539/9+vrsjo7vmJjwmZnthYX41tb99vb3y8vsenrue3vjdnbkdnb1zMz54eHnenrxsbH66Ojpe3v54uLqe3vqeXnypqbsf3/1ubn99fXugoLpiIj67e399/fpf3/65OTtk5PzsrL64uLtf3/ugYH2v7/4k5PojIzof3/qj4/meXnofHztmJjoenrneHjrhYXsjIztjIzth4fukZHvkpLujo7tgYHwkpLtfHzwi4vwjo7ve3vte3vwfHzvfHzxfHzyfX3xfX3zfX30fn75gYHzfn40EiW4AAAAVHRSTlMAAwQCEx4dCpbo7JaYmgHq+f386hcl7+8qJe4q/O/8Ku/8Ku/87/zv/O8nKxzs/P357CIDCKmtAyqw7fDv8PDw8PDv7bEsCSBCTUtMTExLTQULDgRilrAZAAACnUlEQVRIx2NgoBdgZCIAGFGUMzMTNhJZDZDJwsqGF7CygJXB1LNzcHIRAJzc7HAdzAw8IaGEAS8fVAMjAwt/qICgEF4gKBAiLMIA8TkTg6hYqBAh84VCxCWASiEaJKWI0iCN0CA2qmHkaAgLD4+IDI0Kjw6NiY2LD01IDE1KTkkNDw9PSw8Pz4jB1JCZlZ2Tm5dfUFhUUFxSWlZeUVlVXVNbV9/Q2FTQXJvbgqmhta2tvaOzoKu7p7e3r39CxcSsSZNrp0ydOnVawfQZM2fJYGiYPWfu7HlADfMX9PYuXDhhUeniyZNrlyxdumxawfIVpStlVqFrKF29Zu269QVdG4p7F27cNKFg85atk2tnbtu+Y1rBzl2798jslUV30r59+/YDNRw4eGjjosMTjhw9tvl47ZQTJ06cLDh1+sxZub2y8hga9oM0nDvfeuHgxQmXJl8uvVJbeubM1ZMF165X3ZDbq4Cq4eYtoPr9t+/cXXjv/uUHDx89njz1yZOnz549f/Hy1es9b97KvUPTEApS3wvy78KHDx9OnjwZGD5A98yYMWPPnj3v379XfKeghBbTeNXvVXynjK4hFJ/6vYofMDWE4lG/VwWbhlDc6j+qfFDFoiEUp/qPKp+wagjFpf6jGg4NoTjUf1D7pI5dQyh29R/UPuPSEIpV/QcNFA2ohTE29V80PmsiNGih5Wks6r9ofNXUhmpgZNDRDUGtUPRkZGTk5OQUFRVVVFTU1NQ0NPQNvhkaMRhDqywT02/fQ74jA4TJXz5//vzjx4+v3/aamcDrOHMLSytrG2tkYGtra2dnZ29v7+Dg4Ojo6OTo7OJqjqhG3dw9PL28vLyRgA8Q+EKBn5+fv4e7G3JFHRAYRAAEBqBW/sbBBIAx3VoxACnNrHkNFOsRAAAAAElFTkSuQmCC"
+  },
+  "dexClasses" : 1717,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"2\" android:versionName=\"1.8\" package=\"com.borax12.materialdaterangepicker\" platformBuildVersionCode=\"24\" platformBuildVersionName=\"7.0\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"24\" />\n\t<uses-permission android:name=\"android.permission.VIBRATE\" />\n\t<application android:theme=\"resourceId:0x7f080091\" android:label=\"Material Date Range Picker\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"Range Picker\" android:name=\"com.borax12.materialdaterangepickerexample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1447998,
+  "crc32" : 1729093306,
+  "sha256" : "af279164992e8325ce4aa3be6659c18cbf06dd58bd004c3883286a827525ae01",
+  "buildTime" : 1526031337000
+}

@@ -1,0 +1,14 @@
+{
+  "com.kodroid.pilot" : [ "BuildConfig", "R" ],
+  "com.kodroid.pilot.lib.android" : [ "PilotActivityAdapter", "PilotUISyncer" ],
+  "com.kodroid.pilot.lib.android.frameBacking" : [ "PilotFrameBackedUI" ],
+  "com.kodroid.pilot.lib.android.uiTypeHandler" : [ "UITypeHandler", "UITypeHandlerGeneric", "UITypeHandlerView", "UITypeHandlerView$AnimatingDisplayer", "UITypeHandlerView$AnimatingDisplayer$1", "UITypeHandlerView$Displayer", "UITypeHandlerView$SimpleDisplayer", "UITypeHandlerView$ViewCreator" ],
+  "com.kodroid.pilot.lib.stack" : [ "Args", "InvisibleFrame", "PilotFrame", "PilotFrame$Observer", "PilotFrameFactory", "PilotStack", "PilotStack$InternalPilotFrameFactory", "PilotStack$PopType", "PilotStack$StackEmptyListener", "PilotStack$TopFrameChangedListener", "PilotStack$TopFrameChangedListener$Direction" ],
+  "com.kodroid.pilotexample" : [ "BuildConfig", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$mipmap", "R$string", "R$style" ],
+  "com.kodroid.pilotexample.android" : [ "ExampleRootActivity", "ExampleRootActivity$ExampleUIDialogTypeHandler", "ExampleRootActivity$ExampleUIDialogTypeHandler$1" ],
+  "com.kodroid.pilotexample.android.frames.scope" : [ "SessionScopedData" ],
+  "com.kodroid.pilotexample.android.frames.state" : [ "FirstState", "SecondInSessionState", "WarningState" ],
+  "com.kodroid.pilotexample.android.ui.fragment" : [ "WarningDialogFragment" ],
+  "com.kodroid.pilotexample.android.ui.view" : [ "FirstView", "FirstView$1", "SecondInSessionView", "SecondInSessionView$1", "SecondInSessionView$2" ],
+  "com.kodroid.pilotexample.android.util" : [ "XLog", "XLog$Trace" ]
+}

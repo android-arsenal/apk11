@@ -1,0 +1,227 @@
+2018-04-01 22:42:58,121 INFO  DownloadService - Downloading "https://github.com/ajalt/AutoBundle/archive/master.zip", attempt 3
+2018-04-01 22:43:58,714 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 22:43:59,388 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 22:43:59,389 INFO  DownloadService - Downloading "https://github.com/ajalt/AutoBundle/archive/master.zip", attempt 3
+2018-04-01 22:45:00,647 DEBUG FullProcessService - Repository https://github.com/ajalt/AutoBundle available: true
+2018-04-01 22:45:00,647 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 22:45:00,647 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ajalt/AutoBundle, /tmp/rdisk/2585/src]
+2018-04-01 22:45:04,860 INFO  SysUtils - 
+2018-04-01 22:45:04,872 INFO  GitService - Deleted "/tmp/rdisk/2585/src/.git": true
+2018-04-01 22:45:04,874 INFO  FullProcessService - Size of directory with sources: 106 KB
+2018-04-01 22:45:04,874 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2585/src]
+2018-04-01 22:45:04,879 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2585/src/.git/
+
+2018-04-01 22:45:04,881 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2585/src/gradlew
+2018-04-01 22:45:04,883 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2585/src/autobundle/build.gradle /tmp/rdisk/2585/src/sample/build.gradle /tmp/rdisk/2585/src/build.gradle
+2018-04-01 22:45:04,885 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2585/src/settings.gradle /tmp/rdisk/2585/src/sample/build.gradle /tmp/rdisk/2585/src/build.gradle /tmp/rdisk/2585/src/autobundle/build.gradle
+2018-04-01 22:45:04,885 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 22:45:04,885 INFO  ProjectFixService - Fixing project...
+2018-04-01 22:45:04,890 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2585/src/autobundle/local.properties
+2018-04-01 22:45:04,891 INFO  ProjectFixService - Build info for "/tmp/rdisk/2585/src/autobundle/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 22:45:04,891 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2585/src/sample/local.properties
+2018-04-01 22:45:04,892 INFO  ProjectFixService - Build info for "/tmp/rdisk/2585/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 22:45:04,892 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2585/src/local.properties
+2018-04-01 22:45:04,892 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 22:45:04,892 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 22:45:04,893 INFO  ProjectFixService - Build info for "/tmp/rdisk/2585/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 22:45:04,893 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 22:45:04,893 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:45:04,893 INFO  SysUtils - Execute command: [/tmp/rdisk/2585/src/gradlew, -b, /tmp/rdisk/2585/src/autobundle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:45:13,833 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 22:45:13,833 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 22:45:13,833 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 22:45:13,833 INFO  SysUtils - Execute command: [/tmp/rdisk/2585/src/gradlew, -b, /tmp/rdisk/2585/src/autobundle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 22:45:30,976 INFO  SysUtils - Configuration on demand is an incubating feature.
+:autobundle:compileLint
+:autobundle:copyDebugLint UP-TO-DATE
+:autobundle:mergeDebugProguardFiles
+:autobundle:preBuild UP-TO-DATE
+:autobundle:preDebugBuild UP-TO-DATE
+:autobundle:checkDebugManifest
+:autobundle:prepareDebugDependencies
+:autobundle:compileDebugAidl
+:autobundle:compileDebugRenderscript
+:autobundle:generateDebugBuildConfig
+:autobundle:generateDebugAssets UP-TO-DATE
+:autobundle:mergeDebugAssets
+:autobundle:generateDebugResValues
+:autobundle:generateDebugResources
+:autobundle:packageDebugResources
+:autobundle:processDebugManifest
+:autobundle:processDebugResources
+:autobundle:generateDebugSources
+:autobundle:processDebugJavaRes UP-TO-DATE
+:autobundle:compileDebugJavaWithJavac
+:autobundle:packageDebugJar
+:autobundle:compileDebugNdk UP-TO-DATE
+:autobundle:packageDebugJniLibs UP-TO-DATE
+:autobundle:packageDebugLocalJar UP-TO-DATE
+:autobundle:packageDebugRenderscript UP-TO-DATE
+:autobundle:bundleDebug
+:autobundle:compileDebugSources
+:autobundle:assembleDebug
+:autobundle:copyReleaseLint UP-TO-DATE
+:autobundle:mergeReleaseProguardFiles
+:autobundle:preReleaseBuild UP-TO-DATE
+:autobundle:checkReleaseManifest
+:autobundle:prepareReleaseDependencies
+:autobundle:compileReleaseAidl
+:autobundle:compileReleaseRenderscript
+:autobundle:generateReleaseBuildConfig
+:autobundle:generateReleaseAssets UP-TO-DATE
+:autobundle:mergeReleaseAssets
+:autobundle:generateReleaseResValues
+:autobundle:generateReleaseResources
+:autobundle:packageReleaseResources
+:autobundle:processReleaseManifest
+:autobundle:processReleaseResources
+:autobundle:generateReleaseSources
+:autobundle:processReleaseJavaRes UP-TO-DATE
+:autobundle:compileReleaseJavaWithJavac
+:autobundle:packageReleaseJar
+:autobundle:compileReleaseNdk UP-TO-DATE
+:autobundle:packageReleaseJniLibs UP-TO-DATE
+:autobundle:packageReleaseLocalJar UP-TO-DATE
+:autobundle:packageReleaseRenderscript UP-TO-DATE
+:autobundle:bundleRelease
+:autobundle:compileReleaseSources
+:autobundle:assembleRelease
+:autobundle:javadoc/tmp/rdisk/2585/src/autobundle/src/main/java/com/github/ajalt/autobundle/AutoBundle.java:13: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2585/src/autobundle/src/main/java/com/github/ajalt/autobundle/AutoBundle.java:17: error: self-closing element not allowed
+ * <p/>
+   ^
+/tmp/rdisk/2585/src/autobundle/src/main/java/com/github/ajalt/autobundle/BundleArgument.java:18: error: self-closing element not allowed
+     * <p/>
+       ^
+/tmp/rdisk/2585/src/autobundle/src/main/java/com/github/ajalt/autobundle/BundleArgument.java:21: warning: no @return
+    String key() default "";
+           ^
+/tmp/rdisk/2585/src/autobundle/src/main/java/com/github/ajalt/autobundle/BundleArguments.java:11: error: self-closing element not allowed
+ * <p/>
+   ^
+
+4 errors
+1 warning
+:autobundle:javadocJar
+:autobundle:sourcesJar
+:autobundle:assemble
+:autobundle:lint
+Ran lint on variant release: 2 issues found
+Ran lint on variant debug: 2 issues found
+Wrote HTML report to file:/tmp/rdisk/2585/src/autobundle/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2585/src/autobundle/build/outputs/lint-results.xml
+:autobundle:preDebugUnitTestBuild UP-TO-DATE
+:autobundle:prepareDebugUnitTestDependencies
+:autobundle:processDebugUnitTestJavaRes UP-TO-DATE
+:autobundle:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:autobundle:compileDebugUnitTestSources UP-TO-DATE
+:autobundle:mockableAndroidJar
+:autobundle:assembleDebugUnitTest
+:autobundle:testDebugUnitTest
+:autobundle:preReleaseUnitTestBuild UP-TO-DATE
+:autobundle:prepareReleaseUnitTestDependencies
+:autobundle:processReleaseUnitTestJavaRes UP-TO-DATE
+:autobundle:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:autobundle:compileReleaseUnitTestSources UP-TO-DATE
+:autobundle:assembleReleaseUnitTest
+:autobundle:testReleaseUnitTest
+:autobundle:test
+:autobundle:check
+:autobundle:build
+
+BUILD SUCCESSFUL
+
+Total time: 16.689 secs
+
+2018-04-01 22:45:30,983 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 22:45:30,984 INFO  SysUtils - Execute command: [/tmp/rdisk/2585/src/gradlew, -b, /tmp/rdisk/2585/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 22:45:38,266 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 22:45:38,266 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 22:45:38,266 INFO  SysUtils - Execute command: [/tmp/rdisk/2585/src/gradlew, -b, /tmp/rdisk/2585/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 22:45:57,640 INFO  SysUtils - Configuration on demand is an incubating feature.
+:autobundle:compileLint
+:autobundle:copyReleaseLint UP-TO-DATE
+:autobundle:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle:preBuild UP-TO-DATE
+:autobundle:preReleaseBuild UP-TO-DATE
+:autobundle:checkReleaseManifest
+:autobundle:prepareReleaseDependencies
+:autobundle:compileReleaseAidl UP-TO-DATE
+:autobundle:compileReleaseRenderscript UP-TO-DATE
+:autobundle:generateReleaseBuildConfig UP-TO-DATE
+:autobundle:generateReleaseAssets UP-TO-DATE
+:autobundle:mergeReleaseAssets UP-TO-DATE
+:autobundle:generateReleaseResValues UP-TO-DATE
+:autobundle:generateReleaseResources UP-TO-DATE
+:autobundle:packageReleaseResources UP-TO-DATE
+:autobundle:processReleaseManifest UP-TO-DATE
+:autobundle:processReleaseResources UP-TO-DATE
+:autobundle:generateReleaseSources UP-TO-DATE
+:autobundle:processReleaseJavaRes UP-TO-DATE
+:autobundle:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle:packageReleaseJar UP-TO-DATE
+:autobundle:compileReleaseNdk UP-TO-DATE
+:autobundle:packageReleaseJniLibs UP-TO-DATE
+:autobundle:packageReleaseLocalJar UP-TO-DATE
+:autobundle:packageReleaseRenderscript UP-TO-DATE
+:autobundle:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72301Library
+:sample:prepareComAndroidSupportSupportV42301Library
+:sample:prepareSrcAutobundleUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.934 secs
+
+2018-04-01 22:45:57,680 INFO  FullProcessService - Found APK file: /tmp/rdisk/2585/src/sample/build/outputs/apk/sample-release-unsigned.apk

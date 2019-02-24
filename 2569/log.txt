@@ -1,0 +1,88 @@
+2018-04-20 06:52:43,873 INFO  DownloadService - Downloading "https://github.com/zsoltherpai/feather/archive/master.zip", attempt 3
+2018-04-20 06:53:44,500 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-20 06:53:44,508 INFO  GithubDownloadService - Default branch of this repository: null
+2018-04-20 06:53:44,508 ERROR GithubDownloadService - Could not detect default branch for Github repository
+2018-04-20 06:53:45,282 DEBUG FullProcessService - Repository https://github.com/zsoltherpai/feather available: true
+2018-04-20 06:53:45,283 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-20 06:53:45,283 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/zsoltherpai/feather, /tmp/rdisk/2569/src]
+2018-04-20 06:53:47,079 INFO  SysUtils - 
+2018-04-20 06:53:47,084 INFO  GitService - Deleted "/tmp/rdisk/2569/src/.git": true
+2018-04-20 06:53:47,088 INFO  FullProcessService - Size of directory with sources: 138 KB
+2018-04-20 06:53:47,088 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2569/src]
+2018-04-20 06:53:47,101 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2569/src/.git/
+
+2018-04-20 06:53:47,105 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2569/src/android-test/gradlew
+2018-04-20 06:53:47,108 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2569/src/android-test/app/build.gradle /tmp/rdisk/2569/src/android-test/build.gradle
+2018-04-20 06:53:47,111 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2569/src/android-test/settings.gradle /tmp/rdisk/2569/src/android-test/build.gradle /tmp/rdisk/2569/src/android-test/app/build.gradle
+2018-04-20 06:53:47,111 INFO  ProjectBuildService - Remote scripts: none
+2018-04-20 06:53:47,111 INFO  ProjectFixService - Fixing project...
+2018-04-20 06:53:47,118 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2569/src/android-test/app/local.properties
+2018-04-20 06:53:47,118 INFO  ProjectFixService - Build info for "/tmp/rdisk/2569/src/android-test/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=21,targetSdkVersion=23]
+2018-04-20 06:53:47,118 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2569/src/android-test/local.properties
+2018-04-20 06:53:47,119 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-20 06:53:47,119 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-20 06:53:47,120 INFO  ProjectFixService - Build info for "/tmp/rdisk/2569/src/android-test/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=21,targetSdkVersion=23]
+2018-04-20 06:53:47,120 INFO  ProjectFixService - Project was maybe fixed
+2018-04-20 06:53:47,120 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-20 06:53:47,120 INFO  SysUtils - Execute command: [/tmp/rdisk/2569/src/android-test/gradlew, -b, /tmp/rdisk/2569/src/android-test/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-20 06:53:56,270 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-20 06:53:56,270 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-20 06:53:56,270 INFO  SysUtils - Execute command: [/tmp/rdisk/2569/src/android-test/gradlew, -b, /tmp/rdisk/2569/src/android-test/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-20 06:54:16,006 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72310Library
+:app:prepareComAndroidSupportSupportV42310Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 19.313 secs
+
+2018-04-20 06:54:16,044 INFO  FullProcessService - Found APK file: /tmp/rdisk/2569/src/android-test/app/build/outputs/apk/app-debug.apk

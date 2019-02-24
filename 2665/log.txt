@@ -1,0 +1,119 @@
+2018-04-01 18:55:33,166 INFO  DownloadService - Downloading "https://github.com/tamir7/Sabres/archive/master.zip", attempt 3
+2018-04-01 18:56:33,834 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 18:56:34,654 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 18:56:34,654 INFO  DownloadService - Downloading "https://github.com/tamir7/Sabres/archive/master.zip", attempt 3
+2018-04-01 18:57:35,935 DEBUG FullProcessService - Repository https://github.com/tamir7/Sabres available: true
+2018-04-01 18:57:35,936 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 18:57:35,936 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/tamir7/Sabres, /tmp/rdisk/2665/src]
+2018-04-01 18:57:37,634 INFO  SysUtils - 
+2018-04-01 18:57:37,638 INFO  GitService - Deleted "/tmp/rdisk/2665/src/.git": true
+2018-04-01 18:57:37,641 INFO  FullProcessService - Size of directory with sources: 317 KB
+2018-04-01 18:57:37,642 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2665/src]
+2018-04-01 18:57:37,657 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2665/src/.git/
+
+2018-04-01 18:57:37,661 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2665/src/gradlew
+2018-04-01 18:57:37,663 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2665/src/sabres-sample/build.gradle /tmp/rdisk/2665/src/sabres/build.gradle /tmp/rdisk/2665/src/build.gradle
+2018-04-01 18:57:37,666 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2665/src/settings.gradle /tmp/rdisk/2665/src/sabres/build.gradle /tmp/rdisk/2665/src/sabres-sample/build.gradle /tmp/rdisk/2665/src/build.gradle
+2018-04-01 18:57:37,666 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 18:57:37,666 INFO  ProjectFixService - Fixing project...
+2018-04-01 18:57:37,676 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2665/src/sabres-sample/local.properties
+2018-04-01 18:57:37,676 INFO  ProjectFixService - Build info for "/tmp/rdisk/2665/src/sabres-sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 18:57:37,678 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2665/src/sabres/local.properties
+2018-04-01 18:57:37,678 INFO  ProjectFixService - Build info for "/tmp/rdisk/2665/src/sabres/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 18:57:37,678 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2665/src/local.properties
+2018-04-01 18:57:37,679 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 18:57:37,679 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 18:57:37,680 INFO  ProjectFixService - Build info for "/tmp/rdisk/2665/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=23]
+2018-04-01 18:57:37,680 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 18:57:37,680 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:57:37,681 INFO  SysUtils - Execute command: [/tmp/rdisk/2665/src/gradlew, -b, /tmp/rdisk/2665/src/sabres-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:57:51,727 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-01 18:57:51,727 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 18:57:51,727 INFO  SysUtils - Execute command: [/tmp/rdisk/2665/src/gradlew, -b, /tmp/rdisk/2665/src/sabres-sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 18:58:16,251 INFO  SysUtils - Configuration on demand is an incubating feature.
+:sabres:compileLint
+:sabres:copyReleaseLint UP-TO-DATE
+:sabres:mergeReleaseProguardFiles
+:sabres:preBuild UP-TO-DATE
+:sabres:preReleaseBuild UP-TO-DATE
+:sabres:checkReleaseManifest
+:sabres:prepareReleaseDependencies
+:sabres:compileReleaseAidl
+:sabres:compileReleaseRenderscript
+:sabres:generateReleaseBuildConfig
+:sabres:generateReleaseAssets UP-TO-DATE
+:sabres:mergeReleaseAssets
+:sabres:generateReleaseResValues
+:sabres:generateReleaseResources
+:sabres:packageReleaseResources
+:sabres:processReleaseManifest
+:sabres:processReleaseResources
+:sabres:generateReleaseSources
+:sabres:processReleaseJavaRes UP-TO-DATE
+:sabres:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sabres:packageReleaseJar
+:sabres:compileReleaseNdk UP-TO-DATE
+:sabres:packageReleaseJniLibs UP-TO-DATE
+:sabres:packageReleaseLocalJar UP-TO-DATE
+:sabres:packageReleaseRenderscript UP-TO-DATE
+:sabres:bundleRelease
+:sabres-sample:preBuild UP-TO-DATE
+:sabres-sample:preDebugBuild UP-TO-DATE
+:sabres-sample:checkDebugManifest
+:sabres-sample:preReleaseBuild UP-TO-DATE
+:sabres-sample:prepareComAndroidSupportAppcompatV72300Library
+:sabres-sample:prepareComAndroidSupportSupportV42300Library
+:sabres-sample:prepareComSabresSabres0918Library
+:sabres-sample:prepareDebugDependencies
+:sabres-sample:compileDebugAidl
+:sabres-sample:compileDebugRenderscript
+:sabres-sample:generateDebugBuildConfig
+:sabres-sample:generateDebugAssets UP-TO-DATE
+:sabres-sample:mergeDebugAssets
+:sabres-sample:generateDebugResValues
+:sabres-sample:generateDebugResources
+:sabres-sample:mergeDebugResources
+:sabres-sample:processDebugManifest
+:sabres-sample:processDebugResources
+:sabres-sample:generateDebugSources
+:sabres-sample:processDebugJavaRes UP-TO-DATE
+:sabres-sample:compileDebugJavaWithJavac
+:sabres-sample:compileDebugNdk UP-TO-DATE
+:sabres-sample:compileDebugSources
+:sabres-sample:preDexDebug
+:sabres-sample:dexDebug
+:sabres-sample:validateDebugSigning
+:sabres-sample:packageDebug
+:sabres-sample:zipalignDebug
+:sabres-sample:assembleDebug
+:sabres-sample:checkReleaseManifest
+:sabres-sample:prepareReleaseDependencies
+:sabres-sample:compileReleaseAidl
+:sabres-sample:compileReleaseRenderscript
+:sabres-sample:generateReleaseBuildConfig
+:sabres-sample:generateReleaseAssets UP-TO-DATE
+:sabres-sample:mergeReleaseAssets
+:sabres-sample:generateReleaseResValues
+:sabres-sample:generateReleaseResources
+:sabres-sample:mergeReleaseResources
+:sabres-sample:processReleaseManifest
+:sabres-sample:processReleaseResources
+:sabres-sample:generateReleaseSources
+:sabres-sample:processReleaseJavaRes UP-TO-DATE
+:sabres-sample:compileReleaseJavaWithJavac
+:sabres-sample:compileReleaseNdk UP-TO-DATE
+:sabres-sample:compileReleaseSources
+:sabres-sample:preDexRelease
+:sabres-sample:dexRelease
+:sabres-sample:packageRelease
+:sabres-sample:assembleRelease
+:sabres-sample:assemble
+:sabres-sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 24.071 secs
+
+2018-04-01 18:58:16,291 INFO  FullProcessService - Found APK file: /tmp/rdisk/2665/src/sabres-sample/build/outputs/apk/sabres-sample-release-unsigned.apk

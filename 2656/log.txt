@@ -1,0 +1,250 @@
+2018-04-01 19:21:13,548 INFO  DownloadService - Downloading "https://github.com/appformation/smash/archive/master.zip", attempt 3
+2018-04-01 19:22:14,127 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:22:14,812 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:22:14,812 INFO  DownloadService - Downloading "https://github.com/appformation/smash/archive/master.zip", attempt 3
+2018-04-01 19:23:16,119 DEBUG FullProcessService - Repository https://github.com/appformation/smash available: true
+2018-04-01 19:23:16,119 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:23:16,120 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/appformation/smash, /tmp/rdisk/2656/src]
+2018-04-01 19:23:17,771 INFO  SysUtils - 
+2018-04-01 19:23:17,780 INFO  GitService - Deleted "/tmp/rdisk/2656/src/.git": true
+2018-04-01 19:23:17,782 INFO  FullProcessService - Size of directory with sources: 280 KB
+2018-04-01 19:23:17,782 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2656/src]
+2018-04-01 19:23:17,787 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2656/src/.git/
+
+2018-04-01 19:23:17,789 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2656/src/gradlew
+2018-04-01 19:23:17,791 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2656/src/build.gradle /tmp/rdisk/2656/src/smash/build.gradle
+2018-04-01 19:23:17,792 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2656/src/smash/upload.gradle /tmp/rdisk/2656/src/smash/build.gradle /tmp/rdisk/2656/src/settings.gradle /tmp/rdisk/2656/src/build.gradle
+2018-04-01 19:23:17,793 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:23:17,793 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:23:17,797 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2656/src/local.properties
+2018-04-01 19:23:17,797 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 19:23:17,798 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 19:23:17,799 INFO  ProjectFixService - Build info for "/tmp/rdisk/2656/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-01 19:23:17,800 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2656/src/smash/local.properties
+2018-04-01 19:23:17,800 INFO  ProjectFixService - Build info for "/tmp/rdisk/2656/src/smash/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=15,targetSdkVersion=25]
+2018-04-01 19:23:17,800 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:23:17,800 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:23:17,800 INFO  SysUtils - Execute command: [/tmp/rdisk/2656/src/gradlew, -b, /tmp/rdisk/2656/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:23:27,307 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 19:23:27,308 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 19:23:27,308 INFO  SysUtils - Execute command: [/tmp/rdisk/2656/src/gradlew, -b, /tmp/rdisk/2656/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 19:23:37,761 INFO  SysUtils - Configuration on demand is an incubating feature.
+:smash:compileLint
+:smash:copyDebugLint UP-TO-DATE
+:smash:preBuild UP-TO-DATE
+:smash:preDebugBuild UP-TO-DATE
+:smash:checkDebugManifest
+:smash:prepareDebugDependencies
+:smash:compileDebugAidl
+:smash:compileDebugRenderscript
+:smash:generateDebugBuildConfig
+:smash:generateDebugAssets UP-TO-DATE
+:smash:mergeDebugAssets
+:smash:generateDebugResValues
+:smash:generateDebugResources
+:smash:packageDebugResources
+:smash:processDebugManifest
+:smash:processDebugResources
+:smash:generateDebugSources
+:smash:processDebugJavaRes UP-TO-DATE
+:smash:compileDebugJavaWithJavac
+:smash:extractDebugAnnotations
+:smash:mergeDebugProguardFiles
+:smash:packageDebugJar
+:smash:compileDebugNdk UP-TO-DATE
+:smash:packageDebugJniLibs UP-TO-DATE
+:smash:packageDebugLocalJar UP-TO-DATE
+:smash:packageDebugRenderscript UP-TO-DATE
+:smash:bundleDebug
+:smash:compileDebugSources
+:smash:assembleDebug
+:smash:copyReleaseLint UP-TO-DATE
+:smash:preReleaseBuild UP-TO-DATE
+:smash:checkReleaseManifest
+:smash:prepareReleaseDependencies
+:smash:compileReleaseAidl
+:smash:compileReleaseRenderscript
+:smash:generateReleaseBuildConfig
+:smash:generateReleaseAssets UP-TO-DATE
+:smash:mergeReleaseAssets
+:smash:generateReleaseResValues
+:smash:generateReleaseResources
+:smash:packageReleaseResources
+:smash:processReleaseManifest
+:smash:processReleaseResources
+:smash:generateReleaseSources
+:smash:processReleaseJavaRes UP-TO-DATE
+:smash:compileReleaseJavaWithJavac
+:smash:extractReleaseAnnotations
+:smash:mergeReleaseProguardFiles
+:smash:packageReleaseJar
+:smash:compileReleaseNdk UP-TO-DATE
+:smash:packageReleaseJniLibs UP-TO-DATE
+:smash:packageReleaseLocalJar UP-TO-DATE
+:smash:packageReleaseRenderscript UP-TO-DATE
+:smash:bundleRelease
+:smash:compileReleaseSources
+:smash:assembleRelease
+:smash:javadoc/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashFuture.java:205: warning: no @param for request
+    public void setRequest(SmashRequest<T> request)
+                ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashFuture.java:72: warning: no @param for successListener
+    public SmashFuture(SuccessListener<T> successListener, FailedListener failedListener)
+           ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashFuture.java:72: warning: no @param for failedListener
+    public SmashFuture(SuccessListener<T> successListener, FailedListener failedListener)
+           ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashQueue.java:75: warning: no @param for <T>
+    public <T> SmashRequest<T> add(SmashRequest<T> request)
+                               ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashQueue.java:89: warning: no @param for <T>
+    public <T> SmashRequest<T> add(SmashRequest<T> request, Looper looper)
+                               ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashQueue.java:89: warning: no @param for looper
+    public <T> SmashRequest<T> add(SmashRequest<T> request, Looper looper)
+                               ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:197: warning: no @return
+    protected BufferedSource getBody()
+                             ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:217: warning: no @return
+    public String getBodyContentType()
+                  ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:226: warning: no @return
+    public @Nullable Headers getHeaders()
+                             ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:243: warning: no @return
+    protected Map<String, String> getParams()
+                                  ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:251: warning: no @return
+    protected String getParamsEncoding()
+                     ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:259: warning: no @return
+    protected SmashQueue getSmashQueue()
+                         ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:267: warning: no @return
+    protected String getUrl()
+                     ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:275: warning: no @return
+    public boolean isCanceled()
+                   ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:283: warning: no @return
+    protected boolean isFollowingRedirects()
+                      ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:299: warning: no @return
+    public boolean isResponseDelivered()
+                   ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashRequest.java:307: warning: no @return
+    public boolean isShouldRetryOnFailure()
+                   ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:49: warning: no @param for <T>
+    public static <T> SmashResponse<T> success(T result)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:49: warning: no @param for result
+    public static <T> SmashResponse<T> success(T result)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:49: warning: no @return
+    public static <T> SmashResponse<T> success(T result)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:58: warning: no @param for <T>
+    public static <T> SmashResponse<T> failed(SmashError error)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:58: warning: no @param for error
+    public static <T> SmashResponse<T> failed(SmashError error)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:58: warning: no @return
+    public static <T> SmashResponse<T> failed(SmashError error)
+                                       ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:78: warning: no @return
+    public T getResult()
+             ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:86: warning: no @return
+    public boolean isSuccess()
+                   ^
+/tmp/rdisk/2656/src/smash/src/main/java/pl/appformation/smash/SmashResponse.java:94: warning: no @return
+    public SmashError getError()
+                      ^
+
+26 warnings
+:smash:javadocJar
+:smash:sourcesJar
+:smash:assemble
+:smash:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.032 secs
+
+2018-04-01 19:23:37,768 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:23:37,768 INFO  SysUtils - Execute command: [/tmp/rdisk/2656/src/gradlew, -b, /tmp/rdisk/2656/src/smash/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:23:44,366 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 19:23:44,366 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 19:23:44,367 INFO  SysUtils - Execute command: [/tmp/rdisk/2656/src/gradlew, -b, /tmp/rdisk/2656/src/smash/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 19:23:50,911 INFO  SysUtils - Configuration on demand is an incubating feature.
+:smash:compileLint
+:smash:copyDebugLint UP-TO-DATE
+:smash:preBuild UP-TO-DATE
+:smash:preDebugBuild UP-TO-DATE
+:smash:checkDebugManifest
+:smash:prepareDebugDependencies
+:smash:compileDebugAidl UP-TO-DATE
+:smash:compileDebugRenderscript UP-TO-DATE
+:smash:generateDebugBuildConfig UP-TO-DATE
+:smash:generateDebugAssets UP-TO-DATE
+:smash:mergeDebugAssets UP-TO-DATE
+:smash:generateDebugResValues UP-TO-DATE
+:smash:generateDebugResources UP-TO-DATE
+:smash:packageDebugResources UP-TO-DATE
+:smash:processDebugManifest UP-TO-DATE
+:smash:processDebugResources UP-TO-DATE
+:smash:generateDebugSources UP-TO-DATE
+:smash:processDebugJavaRes UP-TO-DATE
+:smash:compileDebugJavaWithJavac UP-TO-DATE
+:smash:extractDebugAnnotations UP-TO-DATE
+:smash:mergeDebugProguardFiles UP-TO-DATE
+:smash:packageDebugJar UP-TO-DATE
+:smash:compileDebugNdk UP-TO-DATE
+:smash:packageDebugJniLibs UP-TO-DATE
+:smash:packageDebugLocalJar UP-TO-DATE
+:smash:packageDebugRenderscript UP-TO-DATE
+:smash:bundleDebug UP-TO-DATE
+:smash:compileDebugSources UP-TO-DATE
+:smash:assembleDebug UP-TO-DATE
+:smash:copyReleaseLint UP-TO-DATE
+:smash:preReleaseBuild UP-TO-DATE
+:smash:checkReleaseManifest
+:smash:prepareReleaseDependencies
+:smash:compileReleaseAidl UP-TO-DATE
+:smash:compileReleaseRenderscript UP-TO-DATE
+:smash:generateReleaseBuildConfig UP-TO-DATE
+:smash:generateReleaseAssets UP-TO-DATE
+:smash:mergeReleaseAssets UP-TO-DATE
+:smash:generateReleaseResValues UP-TO-DATE
+:smash:generateReleaseResources UP-TO-DATE
+:smash:packageReleaseResources UP-TO-DATE
+:smash:processReleaseManifest UP-TO-DATE
+:smash:processReleaseResources UP-TO-DATE
+:smash:generateReleaseSources UP-TO-DATE
+:smash:processReleaseJavaRes UP-TO-DATE
+:smash:compileReleaseJavaWithJavac UP-TO-DATE
+:smash:extractReleaseAnnotations UP-TO-DATE
+:smash:mergeReleaseProguardFiles UP-TO-DATE
+:smash:packageReleaseJar UP-TO-DATE
+:smash:compileReleaseNdk UP-TO-DATE
+:smash:packageReleaseJniLibs UP-TO-DATE
+:smash:packageReleaseLocalJar UP-TO-DATE
+:smash:packageReleaseRenderscript UP-TO-DATE
+:smash:bundleRelease UP-TO-DATE
+:smash:compileReleaseSources UP-TO-DATE
+:smash:assembleRelease UP-TO-DATE
+:smash:javadoc UP-TO-DATE
+:smash:javadocJar UP-TO-DATE
+:smash:sourcesJar UP-TO-DATE
+:smash:assemble UP-TO-DATE
+:smash:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.095 secs
+
+2018-04-01 19:23:50,918 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 19:23:50,923 ERROR FullProcessService - Could not find generated or existed APK file

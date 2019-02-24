@@ -1,0 +1,133 @@
+2018-05-20 22:31:26,905 INFO  DownloadService - Downloading "https://github.com/m1noon/Disco/archive/master.zip", attempt 3
+2018-05-20 22:32:27,573 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:32:28,266 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:32:28,266 INFO  DownloadService - Downloading "https://github.com/m1noon/Disco/archive/master.zip", attempt 3
+2018-05-20 22:33:29,563 DEBUG FullProcessService - Repository https://github.com/m1noon/Disco available: true
+2018-05-20 22:33:29,563 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:33:29,563 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/m1noon/Disco, /tmp/rdisk/2508/src]
+2018-05-20 22:33:31,427 INFO  SysUtils - 
+2018-05-20 22:33:31,432 INFO  GitService - Deleted "/tmp/rdisk/2508/src/.git": true
+2018-05-20 22:33:31,435 INFO  FullProcessService - Size of directory with sources: 754 KB
+2018-05-20 22:33:31,435 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2508/src]
+2018-05-20 22:33:31,440 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2508/src/.git/
+
+2018-05-20 22:33:31,443 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2508/src/gradlew
+2018-05-20 22:33:31,446 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2508/src/app/build.gradle /tmp/rdisk/2508/src/disco/build.gradle /tmp/rdisk/2508/src/build.gradle
+2018-05-20 22:33:31,448 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2508/src/settings.gradle /tmp/rdisk/2508/src/disco/build.gradle /tmp/rdisk/2508/src/build.gradle /tmp/rdisk/2508/src/app/build.gradle
+2018-05-20 22:33:31,448 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:33:31,448 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:33:31,455 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2508/src/app/local.properties
+2018-05-20 22:33:31,457 INFO  ProjectFixService - Build info for "/tmp/rdisk/2508/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:33:31,457 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2508/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:33:31,457 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2508/src/disco/local.properties
+2018-05-20 22:33:31,460 INFO  ProjectFixService - Build info for "/tmp/rdisk/2508/src/disco/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:33:31,460 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2508/src/disco/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:33:31,461 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2508/src/local.properties
+2018-05-20 22:33:31,461 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-05-20 22:33:31,461 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-05-20 22:33:31,463 INFO  ProjectFixService - Build info for "/tmp/rdisk/2508/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:33:31,463 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2508/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:33:31,464 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:33:31,464 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:33:31,464 INFO  SysUtils - Execute command: [/tmp/rdisk/2508/src/gradlew, -b, /tmp/rdisk/2508/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:33:39,668 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-20 22:33:39,669 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 22:33:39,669 INFO  SysUtils - Execute command: [/tmp/rdisk/2508/src/gradlew, -b, /tmp/rdisk/2508/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 22:34:11,329 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:disco:compileLint
+:disco:copyReleaseLint UP-TO-DATE
+:disco:preBuild UP-TO-DATE
+:disco:preReleaseBuild UP-TO-DATE
+:disco:checkReleaseManifest
+:disco:preDebugAndroidTestBuild UP-TO-DATE
+:disco:preDebugBuild UP-TO-DATE
+:disco:preDebugUnitTestBuild UP-TO-DATE
+:disco:preReleaseUnitTestBuild UP-TO-DATE
+:disco:prepareComAndroidSupportAppcompatV72300Library
+:disco:prepareComAndroidSupportRecyclerviewV72340Library
+:disco:prepareComAndroidSupportSupportV42340Library
+:disco:prepareReleaseDependencies
+:disco:compileReleaseAidl
+:disco:compileReleaseRenderscript
+:disco:generateReleaseBuildConfig
+:disco:generateReleaseAssets UP-TO-DATE
+:disco:mergeReleaseAssets
+:disco:generateReleaseResValues
+:disco:generateReleaseResources
+:disco:mergeReleaseResources
+:disco:processReleaseManifest
+:disco:processReleaseResources
+:disco:generateReleaseSources
+:disco:processReleaseJavaRes UP-TO-DATE
+:disco:compileReleaseJavaWithJavacNote: /tmp/rdisk/2508/src/disco/src/main/java/com/minoon/disco/choreography/builder/BaseChoreographyBuilder.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:disco:extractReleaseAnnotations
+:disco:mergeReleaseProguardFiles
+:disco:packageReleaseJar
+:disco:compileReleaseNdk UP-TO-DATE
+:disco:packageReleaseJniLibs UP-TO-DATE
+:disco:packageReleaseLocalJar UP-TO-DATE
+:disco:packageReleaseRenderscript UP-TO-DATE
+:disco:packageReleaseResources
+:disco:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72300Library
+:app:prepareComAndroidSupportDesign2221Library
+:app:prepareComAndroidSupportRecyclerviewV72340Library
+:app:prepareComAndroidSupportSupportV42340Library
+:app:prepareComMinoonDisco012Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 31.227 secs
+
+2018-05-20 22:34:11,386 INFO  FullProcessService - Found APK file: /tmp/rdisk/2508/src/app/build/outputs/apk/app-debug.apk

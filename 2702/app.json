@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "org.ece.owngallery",
+    "label" : "OwnGallery",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "8",
+    "targetSdkVersion" : "21",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAApVBMVEUAAAAztuoztuoztuoztuoztuoztuoAgP8ztukytuo5quM3tu00tusztuo2vOQ0tuoztuowt+c7sesytuoztuoztuo0tuoztegztuoztuo0tekxt+kztuoztuk0tekrqv8ztuozt+okttsytus5uPEztuoxt+gytuo0t+sztuoztuoztekxuusytutAv/8zteoztuo0t+oztuoztukA//9Vqv8zturOYmawAAAAN3RSTlMA4vD//ezkAnSnCRy8wxNU1iANnf7lMTfa8UU5+vldBsd4B00Sd0OTJ5LyphpwBNChSvSaAQP8UIV4nAAAALVJREFUSMft1ckOgjAUhWHoLXWeUcQBxHnEmfd/NCUYLDGS040hhn/V0HxJWfRW0zKZzsD0F2AExmLADSAuAYGcXOQgBzlIB4ViqawCKlWiWh0HDSO86s0WCNodMxoO3R4ErH48TuwBAIYjaQCNnWjHdSbe9AuYJUYW957f5wsR/tISAUSr9WYbrczdHgHE30v74AMg0dFSBHT6S3C+pHb9ADc/tfuvr2gggAIJKD67yg97xnoAmd0dDfORUD8AAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1416,
+  "locales" : [ "", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "af", "in", "vi", "fr_CA", "sr", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"org.ece.owngallery\" platformBuildVersionCode=\"21\" platformBuildVersionName=\"5.0.1-1624448\">\n\t<uses-sdk android:minSdkVersion=\"8\" android:targetSdkVersion=\"21\" />\n\t<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />\n\t<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />\n\t<application android:theme=\"resourceId:0x7f070025\" android:label=\"OwnGallery\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\" android:name=\"org.ece.owngallery.ApplicationOwnGallery\" android:debuggable=\"true\" android:allowBackup=\"true\">\n\t\t<activity android:label=\"OwnGallery\" android:name=\"org.ece.owngallery.activity.ActivityHome\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:theme=\"resourceId:0x7f070026\" android:label=\"OwnGallery\" android:name=\"org.ece.owngallery.activity.AlbumActivity\" />\n\t\t<activity android:theme=\"resourceId:0x7f070026\" android:label=\"OwnGallery\" android:name=\"org.ece.owngallery.activity.PhotoPreviewActivity\" />\n\t</application>\n</manifest>\n",
+  "fileSize" : 1153606,
+  "crc32" : 1756333357,
+  "sha256" : "40793f4f9e0f5073d61e8b8bea29869d383fb443553d2320703f0ded76ea7f1b",
+  "buildTime" : 1522580449000
+}

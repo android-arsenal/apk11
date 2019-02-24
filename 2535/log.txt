@@ -1,0 +1,21 @@
+2018-04-02 00:57:06,559 INFO  DownloadService - Downloading "https://github.com/robertoestivill/densinator/archive/master.zip", attempt 3
+2018-04-02 00:58:07,023 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 00:58:07,741 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 00:58:07,741 INFO  DownloadService - Downloading "https://github.com/robertoestivill/densinator/archive/master.zip", attempt 3
+2018-04-02 00:59:09,018 DEBUG FullProcessService - Repository https://github.com/robertoestivill/densinator available: true
+2018-04-02 00:59:09,018 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 00:59:09,018 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/robertoestivill/densinator, /tmp/rdisk/2535/src]
+2018-04-02 00:59:10,564 INFO  SysUtils - 
+2018-04-02 00:59:10,568 INFO  GitService - Deleted "/tmp/rdisk/2535/src/.git": true
+2018-04-02 00:59:10,568 INFO  FullProcessService - Size of directory with sources: 190 KB
+2018-04-02 00:59:10,568 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2535/src]
+2018-04-02 00:59:10,576 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2535/src/.git/
+
+2018-04-02 00:59:10,577 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-02 00:59:10,577 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-02 00:59:10,578 INFO  ProjectBuildService - Build script(s): none
+2018-04-02 00:59:10,578 INFO  ProjectBuildService - All script(s): none
+2018-04-02 00:59:10,578 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 00:59:10,578 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-02 00:59:10,578 ERROR FullProcessService - Project build has not produced APK file
+2018-04-02 00:59:10,579 ERROR FullProcessService - Could not find generated or existed APK file

@@ -1,0 +1,220 @@
+2018-05-20 22:34:18,661 INFO  DownloadService - Downloading "https://github.com/mcsong/AdvancedAsyncTask/archive/master.zip", attempt 3
+2018-05-20 22:35:19,419 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:35:20,114 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:35:20,114 INFO  DownloadService - Downloading "https://github.com/mcsong/AdvancedAsyncTask/archive/master.zip", attempt 3
+2018-05-20 22:36:21,557 DEBUG FullProcessService - Repository https://github.com/mcsong/AdvancedAsyncTask available: true
+2018-05-20 22:36:21,557 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:36:21,557 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/mcsong/AdvancedAsyncTask, /tmp/rdisk/2506/src]
+2018-05-20 22:36:23,204 INFO  SysUtils - 
+2018-05-20 22:36:23,219 INFO  GitService - Deleted "/tmp/rdisk/2506/src/.git": true
+2018-05-20 22:36:23,222 INFO  FullProcessService - Size of directory with sources: 159 KB
+2018-05-20 22:36:23,222 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2506/src]
+2018-05-20 22:36:23,229 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2506/src/.git/
+
+2018-05-20 22:36:23,232 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2506/src/gradlew
+2018-05-20 22:36:23,234 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2506/src/demo/build.gradle /tmp/rdisk/2506/src/library/build.gradle /tmp/rdisk/2506/src/build.gradle
+2018-05-20 22:36:23,236 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2506/src/settings.gradle /tmp/rdisk/2506/src/library/build.gradle /tmp/rdisk/2506/src/demo/build.gradle /tmp/rdisk/2506/src/build.gradle
+2018-05-20 22:36:23,237 INFO  DownloadService - Downloading "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle", attempt 3
+2018-05-20 22:37:23,617 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-20 22:37:23,617 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:37:23,617 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:37:23,623 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2506/src/demo/local.properties
+2018-05-20 22:37:23,624 INFO  ProjectFixService - Build info for "/tmp/rdisk/2506/src/demo/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=15,targetSdkVersion=27]
+2018-05-20 22:37:23,624 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2506/src/library/local.properties
+2018-05-20 22:37:23,624 INFO  ProjectFixService - Build info for "/tmp/rdisk/2506/src/library/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-20 22:37:23,625 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2506/src/local.properties
+2018-05-20 22:37:23,625 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.4-all.zip
+2018-05-20 22:37:23,625 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.4-bin.zip)
+2018-05-20 22:37:23,626 INFO  ProjectFixService - Build info for "/tmp/rdisk/2506/src/build.gradle": [buildToolsVersion=27.0.3,compileSdkVersion=27,minSdkVersion=9,targetSdkVersion=27]
+2018-05-20 22:37:23,626 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:37:23,626 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:37:23,626 INFO  SysUtils - Execute command: [/tmp/rdisk/2506/src/gradlew, -b, /tmp/rdisk/2506/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:37:31,495 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-20 22:37:31,495 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-20 22:37:31,496 INFO  SysUtils - Execute command: [/tmp/rdisk/2506/src/gradlew, -b, /tmp/rdisk/2506/src/demo/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-20 22:37:57,256 INFO  SysUtils - Configuration on demand is an incubating feature.
+:demo:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:processDebugManifest
+:demo:preDebugBuild
+:library:compileDebugAidl
+:demo:compileDebugAidl
+:library:packageDebugRenderscript NO-SOURCE
+:demo:compileDebugRenderscript
+:demo:checkDebugManifest
+:demo:generateDebugBuildConfig
+:demo:prepareLintJar
+:demo:mainApkListPersistenceDebug
+:demo:generateDebugResValues
+:demo:generateDebugResources
+:library:compileDebugRenderscript
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:packageDebugResources
+:demo:mergeDebugResources
+:demo:createDebugCompatibleScreenManifests
+:demo:processDebugManifest
+:demo:splitsDiscoveryTaskDebug
+:library:platformAttrExtractor
+:library:generateDebugBuildConfig
+:library:prepareLintJar
+:library:javaPreCompileDebug
+:library:processDebugJavaRes NO-SOURCE
+:demo:compileDebugNdk NO-SOURCE
+:demo:mergeDebugShaders
+:demo:compileDebugShaders
+:demo:generateDebugAssets
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugRFile
+:demo:processDebugResources
+:demo:generateDebugSources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavac/tmp/rdisk/2506/src/library/src/main/java/net/sjava/advancedasynctask/AdvancedAsyncTaskCompat.java:16: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+        return executeParallel(task, null);
+                                     ^
+  cast to Params for a varargs call
+  cast to Params[] for a non-varargs call and to suppress this warning
+  where Params,Progress,Result are type-variables:
+    Params extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+    Progress extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+    Result extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:demo:javaPreCompileDebug
+:demo:compileDebugJavaWithJavac
+:demo:compileDebugSources
+:library:generateDebugAssets
+:library:packageDebugAssets
+:demo:mergeDebugAssets
+:demo:transformClassesWithDexBuilderForDebug
+:demo:transformDexArchiveWithExternalLibsDexMergerForDebug
+:demo:transformDexArchiveWithDexMergerForDebug
+:demo:mergeDebugJniLibFolders
+:library:compileDebugNdk NO-SOURCE
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithIntermediateJniLibsForDebug
+:demo:transformNativeLibsWithMergeJniLibsForDebug
+:demo:transformNativeLibsWithStripDebugSymbolForDebug
+:demo:processDebugJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForDebug
+:demo:validateSigningDebug
+:demo:packageDebug
+:demo:assembleDebug
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:processReleaseManifest
+:demo:preReleaseBuild
+:library:compileReleaseAidl
+:demo:compileReleaseAidl
+:library:packageReleaseRenderscript NO-SOURCE
+:demo:compileReleaseRenderscript
+:demo:checkReleaseManifest
+:demo:generateReleaseBuildConfig
+:demo:mainApkListPersistenceRelease
+:demo:generateReleaseResValues
+:demo:generateReleaseResources
+:library:compileReleaseRenderscript
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:packageReleaseResources
+:demo:mergeReleaseResources
+:demo:createReleaseCompatibleScreenManifests
+:demo:processReleaseManifest
+:demo:splitsDiscoveryTaskRelease
+:library:generateReleaseRFile
+:demo:processReleaseResources
+:demo:generateReleaseSources
+:library:generateReleaseBuildConfig
+:library:generateReleaseSources
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac/tmp/rdisk/2506/src/library/src/main/java/net/sjava/advancedasynctask/AdvancedAsyncTaskCompat.java:16: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+        return executeParallel(task, null);
+                                     ^
+  cast to Params for a varargs call
+  cast to Params[] for a non-varargs call and to suppress this warning
+  where Params,Progress,Result are type-variables:
+    Params extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+    Progress extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+    Result extends Object declared in method <Params,Progress,Result>executeParallel(AdvancedAsyncTask<Params,Progress,Result>)
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:demo:javaPreCompileRelease
+:demo:compileReleaseJavaWithJavac
+:demo:compileReleaseNdk NO-SOURCE
+:demo:compileReleaseSources
+:demo:lintVitalRelease
+:demo:mergeReleaseShaders
+:demo:compileReleaseShaders
+:demo:generateReleaseAssets
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:packageReleaseAssets
+:demo:mergeReleaseAssets
+:demo:transformClassesWithDexBuilderForRelease
+:demo:transformDexArchiveWithExternalLibsDexMergerForRelease
+:demo:transformDexArchiveWithDexMergerForRelease
+:demo:mergeReleaseJniLibFolders
+:library:compileReleaseNdk NO-SOURCE
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithIntermediateJniLibsForRelease
+:demo:transformNativeLibsWithMergeJniLibsForRelease
+:demo:transformNativeLibsWithStripDebugSymbolForRelease
+:demo:processReleaseJavaRes NO-SOURCE
+:demo:transformResourcesWithMergeJavaResForRelease
+:demo:packageRelease
+:demo:assembleRelease
+:demo:assemble
+:demo:build
+
+BUILD SUCCESSFUL in 25s
+91 actionable tasks: 91 executed
+
+2018-05-20 22:37:57,305 INFO  FullProcessService - Found APK file: /tmp/rdisk/2506/src/demo/build/outputs/apk/release/demo-release-unsigned.apk

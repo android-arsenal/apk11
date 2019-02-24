@@ -1,0 +1,130 @@
+2018-04-01 23:38:08,901 INFO  DownloadService - Downloading "https://github.com/shiraji/kenkenpa/archive/master.zip", attempt 3
+2018-04-01 23:39:09,586 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:39:10,250 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 23:39:10,250 INFO  DownloadService - Downloading "https://github.com/shiraji/kenkenpa/archive/master.zip", attempt 3
+2018-04-01 23:40:11,549 DEBUG FullProcessService - Repository https://github.com/shiraji/kenkenpa available: true
+2018-04-01 23:40:11,549 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:40:11,549 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/shiraji/kenkenpa, /tmp/rdisk/2564/src]
+2018-04-01 23:40:13,070 INFO  SysUtils - 
+2018-04-01 23:40:13,076 INFO  GitService - Deleted "/tmp/rdisk/2564/src/.git": true
+2018-04-01 23:40:13,080 INFO  FullProcessService - Size of directory with sources: 239 KB
+2018-04-01 23:40:13,080 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2564/src]
+2018-04-01 23:40:13,089 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2564/src/.git/
+
+2018-04-01 23:40:13,093 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2564/src/gradlew
+2018-04-01 23:40:13,097 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2564/src/sample/build.gradle /tmp/rdisk/2564/src/build.gradle /tmp/rdisk/2564/src/kenkenpa-compiler/build.gradle /tmp/rdisk/2564/src/kenkenpa/build.gradle
+2018-04-01 23:40:13,100 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2564/src/settings.gradle /tmp/rdisk/2564/src/sample/build.gradle /tmp/rdisk/2564/src/kenkenpa/build.gradle /tmp/rdisk/2564/src/kenkenpa-compiler/build.gradle /tmp/rdisk/2564/src/build.gradle
+2018-04-01 23:40:13,100 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:40:13,100 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:40:13,109 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2564/src/sample/local.properties
+2018-04-01 23:40:13,110 INFO  ProjectFixService - Build info for "/tmp/rdisk/2564/src/sample/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 23:40:13,110 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2564/src/local.properties
+2018-04-01 23:40:13,110 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 23:40:13,110 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 23:40:13,111 INFO  ProjectFixService - Build info for "/tmp/rdisk/2564/src/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 23:40:13,111 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2564/src/kenkenpa-compiler/local.properties
+2018-04-01 23:40:13,112 INFO  ProjectFixService - Build info for "/tmp/rdisk/2564/src/kenkenpa-compiler/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 23:40:13,112 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2564/src/kenkenpa/local.properties
+2018-04-01 23:40:13,113 INFO  ProjectFixService - Build info for "/tmp/rdisk/2564/src/kenkenpa/build.gradle": [buildToolsVersion=21.1.2,compileSdkVersion=21,minSdkVersion=14,targetSdkVersion=21]
+2018-04-01 23:40:13,113 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:40:13,114 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:40:13,114 INFO  SysUtils - Execute command: [/tmp/rdisk/2564/src/gradlew, -b, /tmp/rdisk/2564/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:40:24,013 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 23:40:24,013 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 23:40:24,013 INFO  SysUtils - Execute command: [/tmp/rdisk/2564/src/gradlew, -b, /tmp/rdisk/2564/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 23:40:47,208 INFO  SysUtils - Configuration on demand is an incubating feature.
+:kenkenpa:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:kenkenpa:processResources UP-TO-DATE
+:kenkenpa:classes
+:kenkenpa:jar
+:kenkenpa-compiler:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+
+:kenkenpa-compiler:processResources UP-TO-DATE
+:kenkenpa-compiler:classes
+:kenkenpa-compiler:jar
+:kenkenpa-compiler:mavenJavadocJar
+:kenkenpa-compiler:mavenSourcesJar
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72103Library
+:sample:prepareComAndroidSupportRecyclerviewV72103Library
+:sample:prepareComAndroidSupportSupportV42103Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResourcesUnknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResourcesUnknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-mdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+Unknown source file : /tmp/rdisk/2564/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.774 secs
+
+2018-04-01 23:40:47,244 INFO  FullProcessService - Found APK file: /tmp/rdisk/2564/src/sample/build/outputs/apk/sample-release-unsigned.apk

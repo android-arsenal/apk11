@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "xyz.sahildave.searchviewfragment.sample",
+    "label" : "Search View Sample",
+    "icon" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "15",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-ldpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA7VBMVEUAAAAUFBQUFBQUFBQUFBQUFBQUFBQoKCitra0oKCjW1tbq6urq6urq6urq6urq6uooKCgoKCjBwcHW1tb+/v7+/v7+/v7q6ur+/v7q6urq6urq6ur+/v7+/v7q6urW1tYoKCj+/v7+/v7+/v7W1tbW1tYUFBQ9PT3q6ur+/v7+/v4oKCjW1tb+/v4oKCjW1tbq6urW1tbBwcEoKCjBwcHW1tbW1tbW1tbq6urq6urq6urW1tb+/v7q6uooKCgoKCj+/v7+/v7W1tbq6ur+/v7+/v7q6urq6ur+/v7+/v7q6uooKCj+/v7W1tYoKChWMBndAAAAT3RSTlMAAAIIERQSDAAILnHK6MtyBxaAXdbt7OrVYoLY4uuvSRjy8PQtZwQns/j+F4DuFMja1gEAf0vHfrBwsWjeLQIZ/DMDgPrPMW/5yDADxygENnMKLwAAARhJREFUKM+tkmtbgjAUx8dwjlDUaTCMAG9hUJHXskJMCvJG3//jxHyK1hNPrzqvds5vO/9zGQD/YMIPD4olhMoiBABLPDmRK1VFqdXlBmliLo5bp6pGqabq7TMDcfdb56Zldzq21e316TeAA928IA4AzvDS9TggVjSLsMPV9Y3HA/92ZDtMqWlQSsd+XvfERyw+lTDKzJ8IHMgMS9PMcTgA/HGWwZix+p356C5PBRD1PPX+KE8W2oPIA/dxyMolT2awDDnQ73WzBlfzhfkcrKNcAxkvbf04Ei0IXuMk/CJ4RhpyvaYo1bflOt5sk883goTZ2MsIlcQwSrZuvNv/3owQJrF7SGHB/qLdoRAAYZ+m78VLh/CvL/EBbager++fGfEAAAAASUVORK5CYII="
+  },
+  "dexClasses" : 1847,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"xyz.sahildave.searchviewfragment.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"15\" android:targetSdkVersion=\"23\" />\n\t<application android:theme=\"resourceId:0x7f090083\" android:label=\"Search View Sample\" android:icon=\"res/drawable-ldpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f090030\" android:name=\"xyz.sahildave.widget.sample.MainActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1463617,
+  "crc32" : 3739517271,
+  "sha256" : "25405b004872b08ee70393bca48c32b3dd4f73c3f96a29abcd38c632cd62ac14",
+  "buildTime" : 1496784515000
+}

@@ -1,0 +1,112 @@
+2018-04-01 20:46:23,767 INFO  DownloadService - Downloading "https://github.com/pedrovgs/AndroidGameBoyEmulator/archive/master.zip", attempt 3
+2018-04-01 20:47:24,218 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:47:24,914 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:47:24,914 INFO  DownloadService - Downloading "https://github.com/pedrovgs/AndroidGameBoyEmulator/archive/master.zip", attempt 3
+2018-04-01 20:48:26,091 DEBUG FullProcessService - Repository https://github.com/pedrovgs/AndroidGameBoyEmulator available: true
+2018-04-01 20:48:26,091 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:48:26,092 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/pedrovgs/AndroidGameBoyEmulator, /tmp/rdisk/2623/src]
+2018-04-01 20:48:27,685 INFO  SysUtils - 
+2018-04-01 20:48:27,691 INFO  GitService - Deleted "/tmp/rdisk/2623/src/.git": true
+2018-04-01 20:48:27,698 INFO  FullProcessService - Size of directory with sources: 820 KB
+2018-04-01 20:48:27,698 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2623/src]
+2018-04-01 20:48:27,702 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2623/src/.git/
+
+2018-04-01 20:48:27,707 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2623/src/gradlew
+2018-04-01 20:48:27,712 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2623/src/app/build.gradle /tmp/rdisk/2623/src/build.gradle
+2018-04-01 20:48:27,717 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2623/src/settings.gradle /tmp/rdisk/2623/src/build.gradle /tmp/rdisk/2623/src/app/build.gradle
+2018-04-01 20:48:27,717 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:48:27,717 INFO  ProjectFixService - Fixing project...
+2018-04-01 20:48:27,737 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2623/src/app/local.properties
+2018-04-01 20:48:27,757 INFO  ProjectFixService - Build info for "/tmp/rdisk/2623/src/app/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=22]
+2018-04-01 20:48:27,757 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2623/src/local.properties
+2018-04-01 20:48:27,757 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.14-all.zip
+2018-04-01 20:48:27,758 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.14-bin.zip)
+2018-04-01 20:48:27,758 INFO  ProjectFixService - Build info for "/tmp/rdisk/2623/src/build.gradle": [buildToolsVersion=24.0.0,compileSdkVersion=24,minSdkVersion=9,targetSdkVersion=22]
+2018-04-01 20:48:27,759 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 20:48:27,759 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:48:27,759 INFO  SysUtils - Execute command: [/tmp/rdisk/2623/src/gradlew, -b, /tmp/rdisk/2623/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:48:36,418 INFO  ProjectTaskService - Detected possible tasks: 70
+2018-04-01 20:48:36,418 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll checkstyle test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 20:48:36,418 INFO  SysUtils - Execute command: [/tmp/rdisk/2623/src/gradlew, -b, /tmp/rdisk/2623/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, checkstyle, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 20:49:11,923 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library
+:app:prepareComAndroidSupportAppcompatV72400Library
+:app:prepareComAndroidSupportSupportV42400Library
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library
+:app:prepareComJakewhartonButterknife810Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:copyResDirectoryToDebugClasses
+:app:prePackageMarkerForDebug
+:app:transformClassesWithDexForDebug
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has approximately 1623 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to more than 2048 MB.
+To do this set org.gradle.jvmargs=-Xmx2048M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:copyResDirectoryToReleaseClasses
+:app:lintVitalRelease
+:app:prePackageMarkerForRelease
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 35.053 secs
+
+2018-04-01 20:49:11,973 INFO  FullProcessService - Found APK file: /tmp/rdisk/2623/src/app/build/outputs/apk/app-debug.apk

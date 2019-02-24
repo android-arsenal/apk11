@@ -1,0 +1,4 @@
+{
+  "net.soroushjavdan.customfontwidgets" : [ "BuildConfig", "CButton", "CCheckBox", "CEditText", "CIconFontView", "CRadioButton", "CTextView", "FontUtils", "R", "R$attr", "R$string", "R$styleable" ],
+  "net.soroushjavdan.customfontwidgetssample" : [ "BuildConfig", "MainActivity", "MyApplication", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$menu", "R$mipmap", "R$string", "R$style", "R$styleable" ]
+}

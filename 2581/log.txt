@@ -1,0 +1,26 @@
+2016-07-19 00:14:12,234 INFO  c.g.v.a.s.n.DownloadService - Downloading "https://github.com/mapsme/omim/archive/master.zip", attempt 3
+2016-07-19 00:14:16,142 INFO  c.g.v.a.s.n.DownloadService - Downloaded https://github.com/mapsme/omim/archive/master.zip, attempt 3
+2016-07-19 00:15:35,489 DEBUG o.z.z.ZipUtil - Extracting '/tmp/rdisk/2581/master.zip' into '/tmp/rdisk/2581/src'.
+2016-07-19 00:15:50,015 ERROR c.g.v.a.s.FullProcessService - Error during build
+org.zeroturnaround.zip.ZipException: Failed to process zip entry 'omim-master/iphone/Maps/Fabric.framework/Fabric' with action org.zeroturnaround.zip.ZipUtil$Unpacker@102fcc80
+	at org.zeroturnaround.zip.ZipUtil.iterate(ZipUtil.java:412)
+	at org.zeroturnaround.zip.ZipUtil.unpack(ZipUtil.java:815)
+	at org.zeroturnaround.zip.ZipUtil.unpack(ZipUtil.java:798)
+	at com.github.vbauer.apkmaster.util.ArchiveUtils.unpack(ArchiveUtils.java:34)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:53)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:33)
+	at com.github.vbauer.apkmaster.Application.process(Application.java:37)
+	at com.github.vbauer.apkmaster.Application.main(Application.java:22)
+Caused by: java.io.IOException: No space left on device
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:326)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.write(BufferedOutputStream.java:126)
+	at org.zeroturnaround.zip.commons.IOUtils.copyLarge(IOUtils.java:236)
+	at org.zeroturnaround.zip.commons.IOUtils.copy(IOUtils.java:211)
+	at org.zeroturnaround.zip.commons.FileUtils.copy(FileUtils.java:131)
+	at org.zeroturnaround.zip.ZipUtil$Unpacker.process(ZipUtil.java:948)
+	at org.zeroturnaround.zip.ZipUtil.iterate(ZipUtil.java:409)
+	... 7 common frames omitted
+2016-07-19 00:15:50,017 ERROR c.g.v.a.s.FullProcessService - Project build has not produced APK file
+2016-07-19 00:15:51,196 ERROR c.g.v.a.s.FullProcessService - Could not find generated or existed APK file

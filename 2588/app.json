@@ -1,0 +1,29 @@
+{
+  "meta" : {
+    "packageName" : "com.github.vmironov.jetpack.sample",
+    "label" : null,
+    "icon" : null,
+    "versionName" : null,
+    "versionCode" : null,
+    "installLocation" : null,
+    "minSdkVersion" : "21",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : null,
+  "dexClasses" : 567,
+  "locales" : [ "" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" package=\"com.github.vmironov.jetpack.sample\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"21\" android:targetSdkVersion=\"23\" />\n\t<application>\n\t\t<activity android:theme=\"resourceId:0x7f070000\" android:label=\"Jetpack Sample\" android:name=\"com.github.vmironov.jetpack.sample.SampleActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 390256,
+  "crc32" : 2547638738,
+  "sha256" : "87cdc2ea8d4663f3f7ef1576ebb605664c6df1a3901b29dee7075143c997dfb1",
+  "buildTime" : 1522622180000
+}

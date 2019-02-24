@@ -1,0 +1,195 @@
+2018-04-02 01:39:02,905 INFO  DownloadService - Downloading "https://github.com/shamanland/fonticon/archive/master.zip", attempt 3
+2018-04-02 01:40:03,506 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:40:04,168 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:40:04,168 INFO  DownloadService - Downloading "https://github.com/shamanland/fonticon/archive/master.zip", attempt 3
+2018-04-02 01:41:05,470 DEBUG FullProcessService - Repository https://github.com/shamanland/fonticon available: true
+2018-04-02 01:41:05,470 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:41:05,470 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/shamanland/fonticon, /tmp/rdisk/2521/src]
+2018-04-02 01:41:07,960 INFO  SysUtils - 
+2018-04-02 01:41:07,965 INFO  GitService - Deleted "/tmp/rdisk/2521/src/.git": true
+2018-04-02 01:41:07,969 INFO  FullProcessService - Size of directory with sources: 252 KB
+2018-04-02 01:41:07,969 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2521/src]
+2018-04-02 01:41:07,974 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2521/src/.git/
+
+2018-04-02 01:41:07,978 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2521/src/gradlew
+2018-04-02 01:41:07,981 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2521/src/build.gradle /tmp/rdisk/2521/src/example/build.gradle /tmp/rdisk/2521/src/lib/build.gradle
+2018-04-02 01:41:07,984 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2521/src/settings.gradle /tmp/rdisk/2521/src/lib/build.gradle /tmp/rdisk/2521/src/example/build.gradle /tmp/rdisk/2521/src/build.gradle
+2018-04-02 01:41:07,985 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:41:07,985 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:41:07,993 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2521/src/local.properties
+2018-04-02 01:41:07,993 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-1.12-all.zip
+2018-04-02 01:41:07,993 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-1.12-bin.zip)
+2018-04-02 01:41:07,995 INFO  ProjectFixService - Build info for "/tmp/rdisk/2521/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:41:07,995 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2521/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:41:07,996 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2521/src/example/local.properties
+2018-04-02 01:41:07,997 INFO  ProjectFixService - Build info for "/tmp/rdisk/2521/src/example/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:41:07,997 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2521/src/example/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:41:07,997 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2521/src/lib/local.properties
+2018-04-02 01:41:07,999 INFO  ProjectFixService - Build info for "/tmp/rdisk/2521/src/lib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:41:07,999 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2521/src/lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:41:07,999 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:41:07,999 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:41:07,999 INFO  SysUtils - Execute command: [/tmp/rdisk/2521/src/gradlew, -b, /tmp/rdisk/2521/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:41:23,072 INFO  ProjectTaskService - Detected possible tasks: 61
+2018-04-02 01:41:23,073 INFO  ProjectTaskService - Excluded tasks (13): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-02 01:41:23,073 INFO  SysUtils - Execute command: [/tmp/rdisk/2521/src/gradlew, -b, /tmp/rdisk/2521/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-02 01:41:49,064 INFO  SysUtils - Configuration on demand is an incubating feature.
+Relying on packaging to define the extension of the main artifact has been deprecated and is scheduled to be removed in Gradle 2.0
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for debugTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency org.apache.httpcomponents:httpclient:4.0.3 is ignored for debugTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+Creating properties on demand (a.k.a. dynamic properties) has been deprecated and is scheduled to be removed in Gradle 2.0. Please read http://gradle.org/docs/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html for information on the replacement for dynamic properties.
+Deprecated dynamic property: "destinationDir" on "task ':lib:testDebugClasses'", value: "/tmp/rdisk/2521/src/li...".
+WARNING: Dependency commons-logging:commons-logging:1.1.1 is ignored for debugTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+WARNING: Dependency org.apache.httpcomponents:httpclient:4.0.3 is ignored for debugTest as it may be conflicting with the internal version provided by Android.
+         In case of problem, please repackage it with jarjar to change the class packages
+Deprecated dynamic property "destinationDir" created in multiple locations.
+:example:preBuild
+:example:compileDebugNdk
+:example:preDebugBuild
+:example:checkDebugManifest
+:example:preReleaseBuild
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:preBuild
+:lib:preReleaseBuild
+:lib:checkReleaseManifest
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:compileReleaseJava
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:packageReleaseJar
+:lib:compileReleaseNdk
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:bundleRelease
+:example:prepareComAndroidSupportAppcompatV71910Library
+:example:prepareComShamanlandLib0110SNAPSHOTLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:compileDebugJava
+:example:preDexDebug
+:example:dexDebug
+:example:processDebugJavaRes UP-TO-DATE
+:example:validateDebugSigning
+:example:packageDebug
+:example:zipalignDebug
+:example:assembleDebug
+:example:checkReleaseManifest
+:example:prepareReleaseDependencies
+:example:compileReleaseAidl
+:example:compileReleaseRenderscript
+:example:generateReleaseBuildConfig
+:example:generateReleaseAssets UP-TO-DATE
+:example:mergeReleaseAssets
+:example:generateReleaseResValues
+:example:generateReleaseResources
+:example:mergeReleaseResources
+:example:processReleaseManifest
+:example:processReleaseResources
+:example:generateReleaseSources
+:example:compileReleaseJava
+:example:lintVitalRelease
+:example:compileReleaseNdk
+:example:preDexRelease
+:example:dexRelease
+:example:processReleaseJavaRes UP-TO-DATE
+:example:packageRelease
+:example:assembleRelease
+:example:assemble
+:example:build
+:lib:androidJavadocs/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/TextPaintHelper.java:8: error: cannot find symbol
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.shamanland.fonticon
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/TextPaintHelper.java:8: error: static import only from classes and interfaces
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+^
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/FontIconView.java:16: error: cannot find symbol
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.shamanland.fonticon
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/FontIconView.java:16: error: static import only from classes and interfaces
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+^
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/FontIconDrawable.java:32: error: cannot find symbol
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.shamanland.fonticon
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/FontIconDrawable.java:32: error: static import only from classes and interfaces
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+^
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/CompoundDrawables.java:13: error: cannot find symbol
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+                                     ^
+  symbol:   class BuildConfig
+  location: package com.shamanland.fonticon
+/tmp/rdisk/2521/src/lib/src/main/java/com/shamanland/fonticon/CompoundDrawables.java:13: error: static import only from classes and interfaces
+import static com.shamanland.fonticon.BuildConfig.SNAPSHOT;
+^
+
+8 warnings
+:lib:androidJavadocsJar
+:lib:androidSourcesJar
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles
+:lib:preDebugBuild
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl
+:lib:compileDebugRenderscript
+:lib:generateDebugBuildConfig
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:compileDebugJava
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:packageDebugJar
+:lib:compileDebugNdk
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:bundleDebug
+:lib:assembleDebug
+:lib:assembleRelease
+:lib:signArchives SKIPPED
+:lib:assemble
+:lib:build
+
+BUILD SUCCESSFUL
+
+Total time: 25.552 secs
+
+2018-04-02 01:41:49,106 INFO  FullProcessService - Found APK file: /tmp/rdisk/2521/src/example/build/outputs/apk/example-release-unsigned.apk

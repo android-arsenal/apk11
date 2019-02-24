@@ -1,0 +1,210 @@
+2018-05-11 09:18:16,570 INFO  DownloadService - Downloading "https://github.com/omadahealth/SlidePager/archive/master.zip", attempt 3
+2018-05-11 09:18:17,042 INFO  DownloadService - Downloaded https://github.com/omadahealth/SlidePager/archive/master.zip, attempt 3
+2018-05-11 09:18:17,042 INFO  DownloadService - Size of file "/tmp/rdisk/2618/master.zip": 1 MB
+2018-05-11 09:18:17,042 INFO  ArchiveUtils - Checking entries [.gradle] in ZIP file...
+2018-05-11 09:18:17,043 INFO  ArchiveUtils - Has entries [.gradle] in ZIP file /tmp/rdisk/2618/master.zip: true
+2018-05-11 09:18:17,043 DEBUG ZipUtil - Extracting '/tmp/rdisk/2618/master.zip' into '/tmp/rdisk/2618/src'.
+2018-05-11 09:18:17,070 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-05-11 09:18:17,071 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2618/src]
+2018-05-11 09:18:17,077 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2618/src/.git/
+
+2018-05-11 09:18:17,081 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2618/src/SlidePager-master/gradlew
+2018-05-11 09:18:17,086 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2618/src/SlidePager-master/app/build.gradle /tmp/rdisk/2618/src/SlidePager-master/lib/build.gradle /tmp/rdisk/2618/src/SlidePager-master/build.gradle
+2018-05-11 09:18:17,089 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2618/src/SlidePager-master/settings.gradle /tmp/rdisk/2618/src/SlidePager-master/lib/build.gradle /tmp/rdisk/2618/src/SlidePager-master/build.gradle /tmp/rdisk/2618/src/SlidePager-master/app/build.gradle
+2018-05-11 09:18:17,090 INFO  DownloadService - Downloading "https://raw.github.com/omadahealth/omada-nexus/master/gradle-mvn-push/gradle-mvn-push.gradle", attempt 3
+2018-05-11 09:19:17,222 ERROR RemoteScriptService - Could not download content from "https://raw.github.com/omadahealth/omada-nexus/master/gradle-mvn-push/gradle-mvn-push.gradle"
+org.apache.http.conn.ConnectionPoolTimeoutException: Timeout waiting for connection from pool
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.leaseConnection(PoolingHttpClientConnectionManager.java:313)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1.get(PoolingHttpClientConnectionManager.java:279)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:191)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.download(DownloadService.java:112)
+	at com.github.vbauer.apkmaster.service.network.DownloadService.downloadContent(DownloadService.java:91)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.fetchRemoteScript(RemoteScriptService.java:42)
+	at com.github.vbauer.apkmaster.service.assembly.RemoteScriptService.detect(RemoteScriptService.java:31)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectInfoService.getProjectInfo(ProjectInfoService.java:48)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:77)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-11 09:19:17,222 INFO  ProjectBuildService - Remote scripts: none
+2018-05-11 09:19:17,222 INFO  ProjectFixService - Fixing project...
+2018-05-11 09:19:17,231 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2618/src/SlidePager-master/app/local.properties
+2018-05-11 09:19:17,232 INFO  ProjectFixService - Build info for "/tmp/rdisk/2618/src/SlidePager-master/app/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 09:19:17,232 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2618/src/SlidePager-master/lib/local.properties
+2018-05-11 09:19:17,233 INFO  ProjectFixService - Build info for "/tmp/rdisk/2618/src/SlidePager-master/lib/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 09:19:17,233 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2618/src/SlidePager-master/local.properties
+2018-05-11 09:19:17,233 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.2.1-all.zip
+2018-05-11 09:19:17,233 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.2.1-bin.zip)
+2018-05-11 09:19:17,235 INFO  ProjectFixService - Build info for "/tmp/rdisk/2618/src/SlidePager-master/build.gradle": [buildToolsVersion=26.0.2,compileSdkVersion=26,minSdkVersion=14,targetSdkVersion=26]
+2018-05-11 09:19:17,235 INFO  ProjectFixService - Project was maybe fixed
+2018-05-11 09:19:17,235 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-11 09:19:17,235 INFO  SysUtils - Execute command: [/tmp/rdisk/2618/src/SlidePager-master/gradlew, -b, /tmp/rdisk/2618/src/SlidePager-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-11 09:19:25,387 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-05-11 09:19:25,387 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-05-11 09:19:25,387 INFO  SysUtils - Execute command: [/tmp/rdisk/2618/src/SlidePager-master/gradlew, -b, /tmp/rdisk/2618/src/SlidePager-master/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-05-11 09:20:13,589 INFO  SysUtils - Configuration on demand is an incubating feature.
+Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':lib' is deprecated. Use 'implementation' instead.
+:app:preBuild UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:checkDebugManifest
+:lib:processDebugManifest
+:app:preDebugBuild
+:lib:compileDebugAidl
+:app:compileDebugAidl
+:lib:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:lib:compileDebugRenderscript
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:lib:platformAttrExtractor
+:lib:generateDebugBuildConfig
+:lib:prepareLintJar
+:lib:mergeDebugResources
+:lib:javaPreCompileDebug
+:lib:transformDataBindingWithDataBindingMergeArtifactsForDebug
+:lib:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:lib:mergeDebugShaders
+:lib:compileDebugShaders
+:lib:generateDebugAssets
+:lib:mergeDebugAssets
+:app:mergeDebugAssets
+:app:mergeDebugJniLibFolders
+:lib:compileDebugNdk NO-SOURCE
+:lib:mergeDebugJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForDebug
+:lib:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:lib:generateDebugSources
+:lib:dataBindingExportBuildInfoDebug
+:lib:compileDebugJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:dataBindingExportBuildInfoDebug
+:app:javaPreCompileDebug
+:app:transformDataBindingWithDataBindingMergeArtifactsForDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:lib:transformNativeLibsWithStripDebugSymbolForDebug
+:lib:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:processReleaseManifest
+:app:preReleaseBuild
+:lib:compileReleaseAidl
+:app:compileReleaseAidl
+:lib:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:lib:compileReleaseRenderscript
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:lib:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseSources
+:lib:mergeReleaseResources
+:lib:dataBindingExportBuildInfoRelease
+:lib:javaPreCompileRelease
+:lib:transformDataBindingWithDataBindingMergeArtifactsForRelease
+:lib:compileReleaseJavaWithJavacNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib:processReleaseJavaRes NO-SOURCE
+:lib:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:dataBindingExportBuildInfoRelease
+:app:javaPreCompileRelease
+:app:transformDataBindingWithDataBindingMergeArtifactsForRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk NO-SOURCE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:lib:mergeReleaseShaders
+:lib:compileReleaseShaders
+:lib:generateReleaseAssets
+:lib:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithPreDexForRelease
+:app:transformDexWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:lib:compileReleaseNdk NO-SOURCE
+:lib:mergeReleaseJniLibFolders
+:lib:transformNativeLibsWithMergeJniLibsForRelease
+:lib:transformNativeLibsWithStripDebugSymbolForRelease
+:lib:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 47s
+98 actionable tasks: 98 executed
+
+2018-05-11 09:20:13,700 INFO  FullProcessService - Found APK file: /tmp/rdisk/2618/src/SlidePager-master/app/build/outputs/apk/debug/app-debug.apk

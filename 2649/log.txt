@@ -1,0 +1,179 @@
+2018-04-01 19:37:53,532 INFO  DownloadService - Downloading "https://github.com/sockeqwe/debugoverlay/archive/master.zip", attempt 3
+2018-04-01 19:38:54,183 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:38:54,886 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:38:54,886 INFO  DownloadService - Downloading "https://github.com/sockeqwe/debugoverlay/archive/master.zip", attempt 3
+2018-04-01 19:39:56,057 DEBUG FullProcessService - Repository https://github.com/sockeqwe/debugoverlay available: true
+2018-04-01 19:39:56,057 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:39:56,057 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/sockeqwe/debugoverlay, /tmp/rdisk/2649/src]
+2018-04-01 19:39:57,656 INFO  SysUtils - 
+2018-04-01 19:39:57,673 INFO  GitService - Deleted "/tmp/rdisk/2649/src/.git": true
+2018-04-01 19:39:57,676 INFO  FullProcessService - Size of directory with sources: 130 KB
+2018-04-01 19:39:57,676 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2649/src]
+2018-04-01 19:39:57,685 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2649/src/.git/
+
+2018-04-01 19:39:57,688 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2649/src/gradlew
+2018-04-01 19:39:57,691 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2649/src/app/build.gradle /tmp/rdisk/2649/src/noop/build.gradle /tmp/rdisk/2649/src/overlay/build.gradle /tmp/rdisk/2649/src/build.gradle
+2018-04-01 19:39:57,694 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2649/src/settings.gradle /tmp/rdisk/2649/src/overlay/build.gradle /tmp/rdisk/2649/src/noop/build.gradle /tmp/rdisk/2649/src/maven-push.gradle /tmp/rdisk/2649/src/build.gradle /tmp/rdisk/2649/src/app/build.gradle
+2018-04-01 19:39:57,694 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:39:57,694 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:39:57,712 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2649/src/app/local.properties
+2018-04-01 19:39:57,712 INFO  ProjectFixService - Build info for "/tmp/rdisk/2649/src/app/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-01 19:39:57,713 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2649/src/noop/local.properties
+2018-04-01 19:39:57,713 INFO  ProjectFixService - Build info for "/tmp/rdisk/2649/src/noop/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-01 19:39:57,714 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2649/src/overlay/local.properties
+2018-04-01 19:39:57,720 INFO  ProjectFixService - Build info for "/tmp/rdisk/2649/src/overlay/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-01 19:39:57,720 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2649/src/local.properties
+2018-04-01 19:39:57,720 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-4.3-all.zip
+2018-04-01 19:39:57,724 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-4.3-bin.zip)
+2018-04-01 19:39:57,726 INFO  ProjectFixService - Build info for "/tmp/rdisk/2649/src/build.gradle": [buildToolsVersion=27.0.0,compileSdkVersion=27,minSdkVersion=14,targetSdkVersion=27]
+2018-04-01 19:39:57,727 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:39:57,727 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:39:57,727 INFO  SysUtils - Execute command: [/tmp/rdisk/2649/src/gradlew, -b, /tmp/rdisk/2649/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:40:09,018 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 19:40:09,018 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 19:40:09,018 INFO  SysUtils - Execute command: [/tmp/rdisk/2649/src/gradlew, -b, /tmp/rdisk/2649/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 19:40:56,759 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:overlay:preBuild UP-TO-DATE
+:overlay:preDebugBuild UP-TO-DATE
+:overlay:checkDebugManifest
+:overlay:processDebugManifest
+:app:preDebugBuild
+:overlay:compileDebugAidl
+:app:compileDebugAidl
+:overlay:packageDebugRenderscript NO-SOURCE
+:app:compileDebugRenderscript
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar
+:app:generateDebugResValues
+:app:generateDebugResources
+:overlay:compileDebugRenderscript
+:overlay:generateDebugResValues
+:overlay:generateDebugResources
+:overlay:packageDebugResources
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:overlay:platformAttrExtractor
+:overlay:generateDebugBuildConfig
+:overlay:prepareLintJar
+:overlay:javaPreCompileDebug
+:overlay:processDebugJavaRes NO-SOURCE
+:app:compileDebugNdk NO-SOURCE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:overlay:mergeDebugShaders
+:overlay:compileDebugShaders
+:overlay:generateDebugAssets
+:overlay:mergeDebugAssets
+:app:mergeDebugAssets
+:app:extractTryWithResourcesSupportJarDebug
+:app:mergeDebugJniLibFolders
+:overlay:compileDebugNdk NO-SOURCE
+:overlay:mergeDebugJniLibFolders
+:overlay:transformNativeLibsWithMergeJniLibsForDebug
+:overlay:transformNativeLibsWithStripDebugSymbolForDebug
+:overlay:transformNativeLibsWithIntermediateJniLibsForDebug
+:app:processDebugJavaRes NO-SOURCE
+:app:validateSigningDebug
+:overlay:preReleaseBuild UP-TO-DATE
+:overlay:checkReleaseManifest
+:overlay:processReleaseManifest
+:app:preReleaseBuild
+:overlay:compileReleaseAidl
+:app:compileReleaseAidl
+:overlay:packageReleaseRenderscript NO-SOURCE
+:app:compileReleaseRenderscript
+:app:checkReleaseManifest
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:overlay:compileReleaseRenderscript
+:overlay:generateReleaseResValues
+:overlay:generateReleaseResources
+:overlay:packageReleaseResources
+:app:mergeReleaseResources
+:app:createReleaseCompatibleScreenManifests
+:app:processReleaseManifest
+:app:splitsDiscoveryTaskRelease
+:overlay:generateReleaseBuildConfig
+:overlay:javaPreCompileRelease
+:overlay:processReleaseJavaRes NO-SOURCE
+:app:compileReleaseNdk NO-SOURCE
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:overlay:mergeReleaseShaders
+:overlay:compileReleaseShaders
+:overlay:generateReleaseAssets
+:overlay:mergeReleaseAssets
+:app:mergeReleaseAssets
+:app:extractTryWithResourcesSupportJarRelease
+:app:mergeReleaseJniLibFolders
+:overlay:compileReleaseNdk NO-SOURCE
+:overlay:mergeReleaseJniLibFolders
+:overlay:transformNativeLibsWithMergeJniLibsForRelease
+:overlay:transformNativeLibsWithStripDebugSymbolForRelease
+:overlay:transformNativeLibsWithIntermediateJniLibsForRelease
+:app:processReleaseJavaRes NO-SOURCE
+:overlay:processDebugResources
+:app:processDebugResources
+:app:generateDebugSources
+:overlay:generateDebugSources
+:overlay:compileDebugJavaWithJavacNote: /tmp/rdisk/2649/src/overlay/src/main/java/com/hannesdorfmann/debugoverlay/DebugOverlayView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:overlay:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugSources
+:app:transformClassesWithStackFramesFixerForDebug
+:app:transformClassesWithDesugarForDebug
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:transformResourcesWithMergeJavaResForDebug
+:app:packageDebug
+:app:assembleDebug
+:overlay:processReleaseResources
+:app:processReleaseResources
+:app:generateReleaseSources
+:overlay:generateReleaseSources
+:overlay:compileReleaseJavaWithJavacNote: /tmp/rdisk/2649/src/overlay/src/main/java/com/hannesdorfmann/debugoverlay/DebugOverlayView.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:overlay:transformClassesAndResourcesWithPrepareIntermediateJarsForRelease
+:app:javaPreCompileRelease
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseSources
+:app:transformClassesWithStackFramesFixerForRelease
+:app:transformClassesWithDesugarForRelease
+:app:transformClassesWithPreDexForRelease
+:app:transformDexWithDexForRelease
+:app:transformNativeLibsWithMergeJniLibsForRelease
+:app:transformNativeLibsWithStripDebugSymbolForRelease
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:lintVitalRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL in 47s
+94 actionable tasks: 94 executed
+Exception in thread "Thread-18" java.lang.NoClassDefFoundError: com/android/utils/PathUtils$1
+	at com.android.utils.PathUtils.deleteIfExists(PathUtils.java:47)
+	at com.android.utils.PathUtils.lambda$addRemovePathHook$0(PathUtils.java:125)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: com.android.utils.PathUtils$1
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 3 more
+
+2018-04-01 19:40:56,820 INFO  FullProcessService - Found APK file: /tmp/rdisk/2649/src/app/build/outputs/apk/debug/app-debug.apk

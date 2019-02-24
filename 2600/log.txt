@@ -1,0 +1,654 @@
+2018-04-01 21:52:39,426 INFO  DownloadService - Downloading "https://github.com/yatatsu/AutoBundle/archive/master.zip", attempt 3
+2018-04-01 21:53:39,902 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:53:40,592 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 21:53:40,592 INFO  DownloadService - Downloading "https://github.com/yatatsu/AutoBundle/archive/master.zip", attempt 3
+2018-04-01 21:54:42,059 DEBUG FullProcessService - Repository https://github.com/yatatsu/AutoBundle available: true
+2018-04-01 21:54:42,059 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:54:42,059 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/yatatsu/AutoBundle, /tmp/rdisk/2600/src]
+2018-04-01 21:54:43,527 INFO  SysUtils - 
+2018-04-01 21:54:43,534 INFO  GitService - Deleted "/tmp/rdisk/2600/src/.git": true
+2018-04-01 21:54:43,542 INFO  FullProcessService - Size of directory with sources: 653 KB
+2018-04-01 21:54:43,542 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2600/src]
+2018-04-01 21:54:43,546 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2600/src/.git/
+
+2018-04-01 21:54:43,552 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2600/src/gradlew
+2018-04-01 21:54:43,559 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2600/src/autobundle-common/build.gradle /tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle /tmp/rdisk/2600/src/autobundle/build.gradle /tmp/rdisk/2600/src/example-apt/build.gradle /tmp/rdisk/2600/src/example-library-project/build.gradle /tmp/rdisk/2600/src/example-library-project2/build.gradle /tmp/rdisk/2600/src/example/build.gradle /tmp/rdisk/2600/src/build.gradle /tmp/rdisk/2600/src/autobundle-annotations/build.gradle /tmp/rdisk/2600/src/autobundle-processor/build.gradle
+2018-04-01 21:54:43,565 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2600/src/settings.gradle /tmp/rdisk/2600/src/metadata.gradle /tmp/rdisk/2600/src/example/build.gradle /tmp/rdisk/2600/src/example-library-project2/build.gradle /tmp/rdisk/2600/src/example-library-project/build.gradle /tmp/rdisk/2600/src/example-apt/build.gradle /tmp/rdisk/2600/src/build.gradle /tmp/rdisk/2600/src/autobundle/build.gradle /tmp/rdisk/2600/src/autobundle-processor/build.gradle /tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle /tmp/rdisk/2600/src/autobundle-common/build.gradle /tmp/rdisk/2600/src/autobundle-annotations/build.gradle
+2018-04-01 21:54:43,566 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:54:43,566 INFO  ProjectFixService - Fixing project...
+2018-04-01 21:54:43,580 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/autobundle-common/local.properties
+2018-04-01 21:54:43,581 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/autobundle-common/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=1,targetSdkVersion=25]
+2018-04-01 21:54:43,581 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2600/src/autobundle-common/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=7,targetSdkVersion=25]
+2018-04-01 21:54:43,582 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/autobundle-dispatcher/local.properties
+2018-04-01 21:54:43,583 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=1,targetSdkVersion=25]
+2018-04-01 21:54:43,583 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=7,targetSdkVersion=25]
+2018-04-01 21:54:43,583 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/autobundle/local.properties
+2018-04-01 21:54:43,584 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/autobundle/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=1,targetSdkVersion=25]
+2018-04-01 21:54:43,584 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2600/src/autobundle/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=7,targetSdkVersion=25]
+2018-04-01 21:54:43,585 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/example-apt/local.properties
+2018-04-01 21:54:43,585 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/example-apt/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-01 21:54:43,585 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/example-library-project/local.properties
+2018-04-01 21:54:43,586 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/example-library-project/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-01 21:54:43,586 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/example-library-project2/local.properties
+2018-04-01 21:54:43,586 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/example-library-project2/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-01 21:54:43,587 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/example/local.properties
+2018-04-01 21:54:43,587 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/example/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-01 21:54:43,587 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/local.properties
+2018-04-01 21:54:43,587 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-01 21:54:43,587 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-01 21:54:43,589 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-01 21:54:43,589 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/autobundle-annotations/local.properties
+2018-04-01 21:54:43,590 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/autobundle-annotations/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-01 21:54:43,590 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2600/src/autobundle-processor/local.properties
+2018-04-01 21:54:43,592 INFO  ProjectFixService - Build info for "/tmp/rdisk/2600/src/autobundle-processor/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=16,targetSdkVersion=25]
+2018-04-01 21:54:43,592 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 21:54:43,592 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:54:43,592 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle-common/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:54:51,350 INFO  ProjectTaskService - Detected possible tasks: 73
+2018-04-01 21:54:51,351 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 21:54:51,351 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle-common/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 21:55:00,147 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:autobundle-common:preBuild UP-TO-DATE
+:autobundle-common:preDebugBuild UP-TO-DATE
+:autobundle-common:checkDebugManifest
+:autobundle-common:prepareDebugDependencies
+:autobundle-common:compileDebugAidl
+:autobundle-common:compileDebugNdk UP-TO-DATE
+:autobundle-common:compileLint
+:autobundle-common:copyDebugLint UP-TO-DATE
+:autobundle-common:mergeDebugShaders
+:autobundle-common:compileDebugShaders
+:autobundle-common:generateDebugAssets
+:autobundle-common:mergeDebugAssets
+:autobundle-common:mergeDebugProguardFiles
+:autobundle-common:packageDebugRenderscript UP-TO-DATE
+:autobundle-common:compileDebugRenderscript
+:autobundle-common:generateDebugResValues
+:autobundle-common:generateDebugResources
+:autobundle-common:packageDebugResources
+:autobundle-common:processDebugManifest
+:autobundle-common:generateDebugBuildConfig
+:autobundle-common:processDebugResources
+:autobundle-common:generateDebugSources
+:autobundle-common:incrementalDebugJavaCompilationSafeguard
+:autobundle-common:javaPreCompileDebug
+:autobundle-common:compileDebugJavaWithJavac
+:autobundle-common:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle-common:processDebugJavaRes UP-TO-DATE
+:autobundle-common:transformResourcesWithMergeJavaResForDebug
+:autobundle-common:transformClassesAndResourcesWithSyncLibJarsForDebug
+:autobundle-common:mergeDebugJniLibFolders
+:autobundle-common:transformNativeLibsWithMergeJniLibsForDebug
+:autobundle-common:transformNativeLibsWithStripDebugSymbolForDebug
+:autobundle-common:transformNativeLibsWithSyncJniLibsForDebug
+:autobundle-common:bundleDebug
+:autobundle-common:compileDebugSources
+:autobundle-common:assembleDebug
+:autobundle-common:preReleaseBuild UP-TO-DATE
+:autobundle-common:checkReleaseManifest
+:autobundle-common:prepareReleaseDependencies
+:autobundle-common:compileReleaseAidl
+:autobundle-common:compileReleaseNdk UP-TO-DATE
+:autobundle-common:copyReleaseLint UP-TO-DATE
+:autobundle-common:mergeReleaseShaders
+:autobundle-common:compileReleaseShaders
+:autobundle-common:generateReleaseAssets
+:autobundle-common:mergeReleaseAssets
+:autobundle-common:mergeReleaseProguardFiles
+:autobundle-common:packageReleaseRenderscript UP-TO-DATE
+:autobundle-common:compileReleaseRenderscript
+:autobundle-common:generateReleaseResValues
+:autobundle-common:generateReleaseResources
+:autobundle-common:packageReleaseResources
+:autobundle-common:processReleaseManifest
+:autobundle-common:generateReleaseBuildConfig
+:autobundle-common:processReleaseResources
+:autobundle-common:generateReleaseSources
+:autobundle-common:incrementalReleaseJavaCompilationSafeguard
+:autobundle-common:javaPreCompileRelease
+:autobundle-common:compileReleaseJavaWithJavac
+:autobundle-common:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle-common:processReleaseJavaRes UP-TO-DATE
+:autobundle-common:transformResourcesWithMergeJavaResForRelease
+:autobundle-common:transformClassesAndResourcesWithSyncLibJarsForRelease
+:autobundle-common:mergeReleaseJniLibFolders
+:autobundle-common:transformNativeLibsWithMergeJniLibsForRelease
+:autobundle-common:transformNativeLibsWithStripDebugSymbolForRelease
+:autobundle-common:transformNativeLibsWithSyncJniLibsForRelease
+:autobundle-common:bundleRelease
+:autobundle-common:compileReleaseSources
+:autobundle-common:assembleRelease
+:autobundle-common:assemble
+:autobundle-common:build
+
+BUILD SUCCESSFUL
+
+Total time: 8.508 secs
+
+2018-04-01 21:55:00,158 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:55:00,158 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:55:07,657 INFO  ProjectTaskService - Detected possible tasks: 63
+2018-04-01 21:55:07,657 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 21:55:07,657 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle-dispatcher/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 21:55:16,909 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:autobundle-common:preBuild UP-TO-DATE
+:autobundle-common:preReleaseBuild UP-TO-DATE
+:autobundle-common:checkReleaseManifest
+:autobundle-common:prepareReleaseDependencies
+:autobundle-common:compileReleaseAidl UP-TO-DATE
+:autobundle-common:compileReleaseNdk UP-TO-DATE
+:autobundle-common:compileLint UP-TO-DATE
+:autobundle-common:copyReleaseLint UP-TO-DATE
+:autobundle-common:mergeReleaseShaders UP-TO-DATE
+:autobundle-common:compileReleaseShaders UP-TO-DATE
+:autobundle-common:generateReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle-common:packageReleaseRenderscript UP-TO-DATE
+:autobundle-common:compileReleaseRenderscript UP-TO-DATE
+:autobundle-common:generateReleaseResValues UP-TO-DATE
+:autobundle-common:generateReleaseResources UP-TO-DATE
+:autobundle-common:packageReleaseResources UP-TO-DATE
+:autobundle-common:processReleaseManifest UP-TO-DATE
+:autobundle-common:generateReleaseBuildConfig UP-TO-DATE
+:autobundle-common:processReleaseResources UP-TO-DATE
+:autobundle-common:generateReleaseSources UP-TO-DATE
+:autobundle-common:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle-common:javaPreCompileRelease
+:autobundle-common:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle-common:processReleaseJavaRes UP-TO-DATE
+:autobundle-common:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle-common:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle-common:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle-common:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle-common:bundleRelease UP-TO-DATE
+:autobundle-dispatcher:preBuild UP-TO-DATE
+:autobundle-dispatcher:preDebugBuild UP-TO-DATE
+:autobundle-dispatcher:checkDebugManifest
+:autobundle-dispatcher:prepareDebugDependencies
+:autobundle-dispatcher:compileDebugAidl
+:autobundle-dispatcher:compileDebugNdk UP-TO-DATE
+:autobundle-dispatcher:compileLint
+:autobundle-dispatcher:copyDebugLint UP-TO-DATE
+:autobundle-dispatcher:mergeDebugShaders
+:autobundle-dispatcher:compileDebugShaders
+:autobundle-dispatcher:generateDebugAssets
+:autobundle-dispatcher:mergeDebugAssets
+:autobundle-dispatcher:mergeDebugProguardFiles
+:autobundle-dispatcher:packageDebugRenderscript UP-TO-DATE
+:autobundle-dispatcher:compileDebugRenderscript
+:autobundle-dispatcher:generateDebugResValues
+:autobundle-dispatcher:generateDebugResources
+:autobundle-dispatcher:packageDebugResources
+:autobundle-dispatcher:processDebugManifest
+:autobundle-dispatcher:generateDebugBuildConfig
+:autobundle-dispatcher:mergeDebugResources
+:autobundle-dispatcher:processDebugResources
+:autobundle-dispatcher:generateDebugSources
+:autobundle-dispatcher:incrementalDebugJavaCompilationSafeguard
+:autobundle-dispatcher:javaPreCompileDebug
+:autobundle-dispatcher:compileDebugJavaWithJavac
+:autobundle-dispatcher:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle-dispatcher:processDebugJavaRes UP-TO-DATE
+:autobundle-dispatcher:transformResourcesWithMergeJavaResForDebug
+:autobundle-dispatcher:transformClassesAndResourcesWithSyncLibJarsForDebug
+:autobundle-dispatcher:mergeDebugJniLibFolders
+:autobundle-dispatcher:transformNativeLibsWithMergeJniLibsForDebug
+:autobundle-dispatcher:transformNativeLibsWithStripDebugSymbolForDebug
+:autobundle-dispatcher:transformNativeLibsWithSyncJniLibsForDebug
+:autobundle-dispatcher:bundleDebug
+:autobundle-dispatcher:compileDebugSources
+:autobundle-dispatcher:assembleDebug
+:autobundle-dispatcher:preReleaseBuild UP-TO-DATE
+:autobundle-dispatcher:checkReleaseManifest
+:autobundle-dispatcher:prepareReleaseDependencies
+:autobundle-dispatcher:compileReleaseAidl
+:autobundle-dispatcher:compileReleaseNdk UP-TO-DATE
+:autobundle-dispatcher:copyReleaseLint UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseShaders
+:autobundle-dispatcher:compileReleaseShaders
+:autobundle-dispatcher:generateReleaseAssets
+:autobundle-dispatcher:mergeReleaseAssets
+:autobundle-dispatcher:mergeReleaseProguardFiles
+:autobundle-dispatcher:packageReleaseRenderscript UP-TO-DATE
+:autobundle-dispatcher:compileReleaseRenderscript
+:autobundle-dispatcher:generateReleaseResValues
+:autobundle-dispatcher:generateReleaseResources
+:autobundle-dispatcher:packageReleaseResources
+:autobundle-dispatcher:processReleaseManifest
+:autobundle-dispatcher:generateReleaseBuildConfig
+:autobundle-dispatcher:mergeReleaseResources
+:autobundle-dispatcher:processReleaseResources
+:autobundle-dispatcher:generateReleaseSources
+:autobundle-dispatcher:incrementalReleaseJavaCompilationSafeguard
+:autobundle-dispatcher:javaPreCompileRelease
+:autobundle-dispatcher:compileReleaseJavaWithJavac
+:autobundle-dispatcher:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle-dispatcher:processReleaseJavaRes UP-TO-DATE
+:autobundle-dispatcher:transformResourcesWithMergeJavaResForRelease
+:autobundle-dispatcher:transformClassesAndResourcesWithSyncLibJarsForRelease
+:autobundle-dispatcher:mergeReleaseJniLibFolders
+:autobundle-dispatcher:transformNativeLibsWithMergeJniLibsForRelease
+:autobundle-dispatcher:transformNativeLibsWithStripDebugSymbolForRelease
+:autobundle-dispatcher:transformNativeLibsWithSyncJniLibsForRelease
+:autobundle-dispatcher:bundleRelease
+:autobundle-dispatcher:compileReleaseSources
+:autobundle-dispatcher:assembleRelease
+:autobundle-dispatcher:assemble
+:autobundle-dispatcher:build
+
+BUILD SUCCESSFUL
+
+Total time: 9.027 secs
+
+2018-04-01 21:55:16,924 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:55:16,925 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:55:24,938 INFO  ProjectTaskService - Detected possible tasks: 75
+2018-04-01 21:55:24,939 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 21:55:24,939 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/autobundle/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 21:55:35,368 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:autobundle:preBuild UP-TO-DATE
+:autobundle:preDebugBuild UP-TO-DATE
+:autobundle:checkDebugManifest
+:autobundle-annotations:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:autobundle-annotations:processResources UP-TO-DATE
+:autobundle-annotations:classes
+:autobundle-annotations:jar
+:autobundle-common:preBuild UP-TO-DATE
+:autobundle-common:preReleaseBuild UP-TO-DATE
+:autobundle-common:checkReleaseManifest
+:autobundle-common:prepareReleaseDependencies
+:autobundle-common:compileReleaseAidl UP-TO-DATE
+:autobundle-common:compileReleaseNdk UP-TO-DATE
+:autobundle-common:compileLint UP-TO-DATE
+:autobundle-common:copyReleaseLint UP-TO-DATE
+:autobundle-common:mergeReleaseShaders UP-TO-DATE
+:autobundle-common:compileReleaseShaders UP-TO-DATE
+:autobundle-common:generateReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle-common:packageReleaseRenderscript UP-TO-DATE
+:autobundle-common:compileReleaseRenderscript UP-TO-DATE
+:autobundle-common:generateReleaseResValues UP-TO-DATE
+:autobundle-common:generateReleaseResources UP-TO-DATE
+:autobundle-common:packageReleaseResources UP-TO-DATE
+:autobundle-common:processReleaseManifest UP-TO-DATE
+:autobundle-common:generateReleaseBuildConfig UP-TO-DATE
+:autobundle-common:processReleaseResources UP-TO-DATE
+:autobundle-common:generateReleaseSources UP-TO-DATE
+:autobundle-common:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle-common:javaPreCompileRelease
+:autobundle-common:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle-common:processReleaseJavaRes UP-TO-DATE
+:autobundle-common:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle-common:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle-common:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle-common:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle-common:bundleRelease UP-TO-DATE
+:autobundle-dispatcher:preBuild UP-TO-DATE
+:autobundle-dispatcher:preReleaseBuild UP-TO-DATE
+:autobundle-dispatcher:checkReleaseManifest
+:autobundle-dispatcher:prepareReleaseDependencies
+:autobundle-dispatcher:compileReleaseAidl UP-TO-DATE
+:autobundle-dispatcher:compileReleaseNdk UP-TO-DATE
+:autobundle-dispatcher:compileLint UP-TO-DATE
+:autobundle-dispatcher:copyReleaseLint UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseShaders UP-TO-DATE
+:autobundle-dispatcher:compileReleaseShaders UP-TO-DATE
+:autobundle-dispatcher:generateReleaseAssets UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseAssets UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle-dispatcher:packageReleaseRenderscript UP-TO-DATE
+:autobundle-dispatcher:compileReleaseRenderscript UP-TO-DATE
+:autobundle-dispatcher:generateReleaseResValues UP-TO-DATE
+:autobundle-dispatcher:generateReleaseResources UP-TO-DATE
+:autobundle-dispatcher:packageReleaseResources UP-TO-DATE
+:autobundle-dispatcher:processReleaseManifest UP-TO-DATE
+:autobundle-dispatcher:generateReleaseBuildConfig UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseResources UP-TO-DATE
+:autobundle-dispatcher:processReleaseResources UP-TO-DATE
+:autobundle-dispatcher:generateReleaseSources UP-TO-DATE
+:autobundle-dispatcher:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle-dispatcher:javaPreCompileRelease
+:autobundle-dispatcher:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle-dispatcher:processReleaseJavaRes UP-TO-DATE
+:autobundle-dispatcher:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle-dispatcher:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle-dispatcher:bundleRelease UP-TO-DATE
+:autobundle:prepareDebugDependencies
+:autobundle:compileDebugAidl
+:autobundle:compileDebugNdk UP-TO-DATE
+:autobundle:compileLint
+:autobundle:copyDebugLint UP-TO-DATE
+:autobundle:compileDebugRenderscript
+:autobundle:generateDebugBuildConfig
+:autobundle:generateDebugResValues
+:autobundle:generateDebugResources
+:autobundle:mergeDebugResources
+:autobundle:processDebugManifest
+:autobundle:processDebugResources
+:autobundle:generateDebugSources
+:autobundle:incrementalDebugJavaCompilationSafeguard
+:autobundle:javaPreCompileDebug
+:autobundle:compileDebugJavaWithJavac
+:autobundle:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle:extractDebugAnnotations
+:autobundle:mergeDebugShaders
+:autobundle:compileDebugShaders
+:autobundle:generateDebugAssets
+:autobundle:mergeDebugAssets
+:autobundle:mergeDebugProguardFiles
+:autobundle:packageDebugRenderscript UP-TO-DATE
+:autobundle:packageDebugResources
+:autobundle:processDebugJavaRes UP-TO-DATE
+:autobundle:transformResourcesWithMergeJavaResForDebug
+:autobundle:transformClassesAndResourcesWithSyncLibJarsForDebug
+:autobundle:mergeDebugJniLibFolders
+:autobundle:transformNativeLibsWithMergeJniLibsForDebug
+:autobundle:transformNativeLibsWithStripDebugSymbolForDebug
+:autobundle:transformNativeLibsWithSyncJniLibsForDebug
+:autobundle:bundleDebug
+:autobundle:compileDebugSources
+:autobundle:assembleDebug
+:autobundle:preReleaseBuild UP-TO-DATE
+:autobundle:checkReleaseManifest
+:autobundle:prepareReleaseDependencies
+:autobundle:compileReleaseAidl
+:autobundle:compileReleaseNdk UP-TO-DATE
+:autobundle:copyReleaseLint UP-TO-DATE
+:autobundle:compileReleaseRenderscript
+:autobundle:generateReleaseBuildConfig
+:autobundle:generateReleaseResValues
+:autobundle:generateReleaseResources
+:autobundle:mergeReleaseResources
+:autobundle:processReleaseManifest
+:autobundle:processReleaseResources
+:autobundle:generateReleaseSources
+:autobundle:incrementalReleaseJavaCompilationSafeguard
+:autobundle:javaPreCompileRelease
+:autobundle:compileReleaseJavaWithJavac
+:autobundle:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:autobundle:extractReleaseAnnotations
+:autobundle:mergeReleaseShaders
+:autobundle:compileReleaseShaders
+:autobundle:generateReleaseAssets
+:autobundle:mergeReleaseAssets
+:autobundle:mergeReleaseProguardFiles
+:autobundle:packageReleaseRenderscript UP-TO-DATE
+:autobundle:packageReleaseResources
+:autobundle:processReleaseJavaRes UP-TO-DATE
+:autobundle:transformResourcesWithMergeJavaResForRelease
+:autobundle:transformClassesAndResourcesWithSyncLibJarsForRelease
+:autobundle:mergeReleaseJniLibFolders
+:autobundle:transformNativeLibsWithMergeJniLibsForRelease
+:autobundle:transformNativeLibsWithStripDebugSymbolForRelease
+:autobundle:transformNativeLibsWithSyncJniLibsForRelease
+:autobundle:bundleRelease
+:autobundle:compileReleaseSources
+:autobundle:assembleRelease
+:autobundle:assemble
+:autobundle:build
+
+BUILD SUCCESSFUL
+
+Total time: 10.179 secs
+
+2018-04-01 21:55:35,391 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:55:35,391 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/example-apt/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:55:44,412 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 21:55:44,412 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 21:55:44,412 INFO  SysUtils - Execute command: [/tmp/rdisk/2600/src/gradlew, -b, /tmp/rdisk/2600/src/example-apt/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 21:56:11,396 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:autobundle:preBuild UP-TO-DATE
+:autobundle:preReleaseBuild UP-TO-DATE
+:autobundle:checkReleaseManifest
+:autobundle-annotations:compileJava UP-TO-DATE
+:autobundle-annotations:processResources UP-TO-DATE
+:autobundle-annotations:classes UP-TO-DATE
+:autobundle-annotations:jar UP-TO-DATE
+:autobundle-common:preBuild UP-TO-DATE
+:autobundle-common:preReleaseBuild UP-TO-DATE
+:autobundle-common:checkReleaseManifest
+:autobundle-common:prepareReleaseDependencies
+:autobundle-common:compileReleaseAidl UP-TO-DATE
+:autobundle-common:compileReleaseNdk UP-TO-DATE
+:autobundle-common:compileLint UP-TO-DATE
+:autobundle-common:copyReleaseLint UP-TO-DATE
+:autobundle-common:mergeReleaseShaders UP-TO-DATE
+:autobundle-common:compileReleaseShaders UP-TO-DATE
+:autobundle-common:generateReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseAssets UP-TO-DATE
+:autobundle-common:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle-common:packageReleaseRenderscript UP-TO-DATE
+:autobundle-common:compileReleaseRenderscript UP-TO-DATE
+:autobundle-common:generateReleaseResValues UP-TO-DATE
+:autobundle-common:generateReleaseResources UP-TO-DATE
+:autobundle-common:packageReleaseResources UP-TO-DATE
+:autobundle-common:processReleaseManifest UP-TO-DATE
+:autobundle-common:generateReleaseBuildConfig UP-TO-DATE
+:autobundle-common:processReleaseResources UP-TO-DATE
+:autobundle-common:generateReleaseSources UP-TO-DATE
+:autobundle-common:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle-common:javaPreCompileRelease
+:autobundle-common:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle-common:processReleaseJavaRes UP-TO-DATE
+:autobundle-common:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle-common:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle-common:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle-common:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle-common:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle-common:bundleRelease UP-TO-DATE
+:autobundle-dispatcher:preBuild UP-TO-DATE
+:autobundle-dispatcher:preReleaseBuild UP-TO-DATE
+:autobundle-dispatcher:checkReleaseManifest
+:autobundle-dispatcher:prepareReleaseDependencies
+:autobundle-dispatcher:compileReleaseAidl UP-TO-DATE
+:autobundle-dispatcher:compileReleaseNdk UP-TO-DATE
+:autobundle-dispatcher:compileLint UP-TO-DATE
+:autobundle-dispatcher:copyReleaseLint UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseShaders UP-TO-DATE
+:autobundle-dispatcher:compileReleaseShaders UP-TO-DATE
+:autobundle-dispatcher:generateReleaseAssets UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseAssets UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle-dispatcher:packageReleaseRenderscript UP-TO-DATE
+:autobundle-dispatcher:compileReleaseRenderscript UP-TO-DATE
+:autobundle-dispatcher:generateReleaseResValues UP-TO-DATE
+:autobundle-dispatcher:generateReleaseResources UP-TO-DATE
+:autobundle-dispatcher:packageReleaseResources UP-TO-DATE
+:autobundle-dispatcher:processReleaseManifest UP-TO-DATE
+:autobundle-dispatcher:generateReleaseBuildConfig UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseResources UP-TO-DATE
+:autobundle-dispatcher:processReleaseResources UP-TO-DATE
+:autobundle-dispatcher:generateReleaseSources UP-TO-DATE
+:autobundle-dispatcher:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle-dispatcher:javaPreCompileRelease
+:autobundle-dispatcher:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle-dispatcher:processReleaseJavaRes UP-TO-DATE
+:autobundle-dispatcher:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle-dispatcher:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle-dispatcher:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle-dispatcher:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle-dispatcher:bundleRelease UP-TO-DATE
+:autobundle:prepareReleaseDependencies
+:autobundle:compileReleaseAidl UP-TO-DATE
+:autobundle:compileReleaseNdk UP-TO-DATE
+:autobundle:compileLint UP-TO-DATE
+:autobundle:copyReleaseLint UP-TO-DATE
+:autobundle:compileReleaseRenderscript UP-TO-DATE
+:autobundle:generateReleaseBuildConfig UP-TO-DATE
+:autobundle:generateReleaseResValues UP-TO-DATE
+:autobundle:generateReleaseResources UP-TO-DATE
+:autobundle:mergeReleaseResources UP-TO-DATE
+:autobundle:processReleaseManifest UP-TO-DATE
+:autobundle:processReleaseResources UP-TO-DATE
+:autobundle:generateReleaseSources UP-TO-DATE
+:autobundle:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:autobundle:javaPreCompileRelease
+:autobundle:compileReleaseJavaWithJavac UP-TO-DATE
+:autobundle:extractReleaseAnnotations UP-TO-DATE
+:autobundle:mergeReleaseShaders UP-TO-DATE
+:autobundle:compileReleaseShaders UP-TO-DATE
+:autobundle:generateReleaseAssets UP-TO-DATE
+:autobundle:mergeReleaseAssets UP-TO-DATE
+:autobundle:mergeReleaseProguardFiles UP-TO-DATE
+:autobundle:packageReleaseRenderscript UP-TO-DATE
+:autobundle:packageReleaseResources UP-TO-DATE
+:autobundle:processReleaseJavaRes UP-TO-DATE
+:autobundle:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:autobundle:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:autobundle:mergeReleaseJniLibFolders UP-TO-DATE
+:autobundle:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:autobundle:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:autobundle:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:autobundle:bundleRelease UP-TO-DATE
+:autobundle-processor:compileJava
+:autobundle-processor:processResources
+:autobundle-processor:classes
+:autobundle-processor:jar
+:example-apt:preBuild UP-TO-DATE
+:example-apt:preDebugBuild UP-TO-DATE
+:example-apt:checkDebugManifest
+:example-apt:preReleaseBuild UP-TO-DATE
+:example-apt:prepareComAndroidSupportAnimatedVectorDrawable2510Library
+:example-apt:prepareComAndroidSupportAppcompatV72510Library
+:example-apt:prepareComAndroidSupportDesign2510Library
+:example-apt:prepareComAndroidSupportRecyclerviewV72510Library
+:example-apt:prepareComAndroidSupportSupportCompat2510Library
+:example-apt:prepareComAndroidSupportSupportCoreUi2510Library
+:example-apt:prepareComAndroidSupportSupportCoreUtils2510Library
+:example-apt:prepareComAndroidSupportSupportFragment2510Library
+:example-apt:prepareComAndroidSupportSupportMediaCompat2510Library
+:example-apt:prepareComAndroidSupportSupportV42510Library
+:example-apt:prepareComAndroidSupportSupportVectorDrawable2510Library
+:example-apt:prepareComAndroidSupportTransition2510Library
+:example-library-project:preBuild UP-TO-DATE
+:example-library-project:preReleaseBuild UP-TO-DATE
+:example-library-project:checkReleaseManifest
+:example-library-project:preDebugAndroidTestBuild UP-TO-DATE
+:example-library-project:preDebugBuild UP-TO-DATE
+:example-library-project:preDebugUnitTestBuild UP-TO-DATE
+:example-library-project:preReleaseUnitTestBuild UP-TO-DATE
+:example-library-project:prepareComAndroidSupportAnimatedVectorDrawable2510Library
+:example-library-project:prepareComAndroidSupportAppcompatV72510Library
+:example-library-project:prepareComAndroidSupportSupportCompat2510Library
+:example-library-project:prepareComAndroidSupportSupportCoreUi2510Library
+:example-library-project:prepareComAndroidSupportSupportCoreUtils2510Library
+:example-library-project:prepareComAndroidSupportSupportFragment2510Library
+:example-library-project:prepareComAndroidSupportSupportMediaCompat2510Library
+:example-library-project:prepareComAndroidSupportSupportV42510Library
+:example-library-project:prepareComAndroidSupportSupportVectorDrawable2510Library
+:example-library-project:prepareReleaseDependencies
+:example-library-project:compileReleaseAidl
+:example-library-project:compileReleaseNdk UP-TO-DATE
+:example-library-project:compileLint
+:example-library-project:copyReleaseLint UP-TO-DATE
+:example-library-project:compileReleaseRenderscript
+:example-library-project:generateReleaseBuildConfig
+:example-library-project:generateReleaseResValues
+:example-library-project:generateReleaseResources
+:example-library-project:mergeReleaseResources
+:example-library-project:processReleaseManifest
+:example-library-project:processReleaseResources
+:example-library-project:generateReleaseSources
+:example-library-project:incrementalReleaseJavaCompilationSafeguard
+:example-library-project:javaPreCompileRelease
+:example-library-project:compileReleaseJavaWithJavac
+:example-library-project:extractReleaseAnnotations
+:example-library-project:mergeReleaseShaders
+:example-library-project:compileReleaseShaders
+:example-library-project:generateReleaseAssets
+:example-library-project:mergeReleaseAssets
+:example-library-project:mergeReleaseProguardFiles
+:example-library-project:packageReleaseRenderscript UP-TO-DATE
+:example-library-project:packageReleaseResources
+:example-library-project:processReleaseJavaRes UP-TO-DATE
+:example-library-project:transformResourcesWithMergeJavaResForRelease
+:example-library-project:transformClassesAndResourcesWithSyncLibJarsForRelease
+:example-library-project:mergeReleaseJniLibFolders
+:example-library-project:transformNativeLibsWithMergeJniLibsForRelease
+:example-library-project:transformNativeLibsWithStripDebugSymbolForRelease
+:example-library-project:transformNativeLibsWithSyncJniLibsForRelease
+:example-library-project:bundleRelease
+:example-apt:prepareDebugDependencies
+:example-apt:compileDebugAidl
+:example-apt:compileDebugRenderscript
+:example-apt:generateDebugBuildConfig
+:example-apt:generateDebugResValues
+:example-apt:generateDebugResources
+:example-apt:mergeDebugResources
+:example-apt:processDebugManifest
+:example-apt:processDebugResources
+:example-apt:generateDebugSources
+:example-apt:incrementalDebugJavaCompilationSafeguard
+:example-apt:javaPreCompileDebug
+:example-apt:compileDebugJavaWithJavac
+:example-apt:compileDebugNdk UP-TO-DATE
+:example-apt:compileDebugSources
+:example-apt:mergeDebugShaders
+:example-apt:compileDebugShaders
+:example-apt:generateDebugAssets
+:example-apt:mergeDebugAssets
+:example-apt:transformClassesWithDexForDebug
+:example-apt:mergeDebugJniLibFolders
+:example-apt:transformNativeLibsWithMergeJniLibsForDebug
+:example-apt:transformNativeLibsWithStripDebugSymbolForDebug
+:example-apt:processDebugJavaRes UP-TO-DATE
+:example-apt:transformResourcesWithMergeJavaResForDebug
+:example-apt:validateSigningDebug
+:example-apt:packageDebug
+:example-apt:assembleDebug
+:example-apt:checkReleaseManifest
+:example-apt:prepareReleaseDependencies
+:example-apt:compileReleaseAidl
+:example-apt:compileReleaseRenderscript
+:example-apt:generateReleaseBuildConfig
+:example-apt:generateReleaseResValues
+:example-apt:generateReleaseResources
+:example-apt:mergeReleaseResources
+:example-apt:processReleaseManifest
+:example-apt:processReleaseResources
+:example-apt:generateReleaseSources
+:example-apt:incrementalReleaseJavaCompilationSafeguard
+:example-apt:javaPreCompileRelease
+:example-apt:compileReleaseJavaWithJavac
+:example-apt:compileReleaseNdk UP-TO-DATE
+:example-apt:compileReleaseSources
+:example-apt:lintVitalRelease
+:example-apt:mergeReleaseShaders
+:example-apt:compileReleaseShaders
+:example-apt:generateReleaseAssets
+:example-apt:mergeReleaseAssets
+:example-apt:transformClassesWithDexForRelease
+:example-apt:mergeReleaseJniLibFolders
+:example-apt:transformNativeLibsWithMergeJniLibsForRelease
+:example-apt:transformNativeLibsWithStripDebugSymbolForRelease
+:example-apt:processReleaseJavaRes UP-TO-DATE
+:example-apt:transformResourcesWithMergeJavaResForRelease
+:example-apt:packageRelease
+:example-apt:assembleRelease
+:example-apt:assemble
+:example-apt:build
+
+BUILD SUCCESSFUL
+
+Total time: 26.688 secs
+
+2018-04-01 21:56:11,486 INFO  FullProcessService - Found APK file: /tmp/rdisk/2600/src/example-apt/build/outputs/apk/example-apt-release-unsigned.apk

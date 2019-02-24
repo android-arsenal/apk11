@@ -1,0 +1,97 @@
+2018-05-20 22:12:48,435 INFO  DownloadService - Downloading "https://github.com/Sloy/okresponsefaker/archive/master.zip", attempt 3
+2018-05-20 22:13:49,191 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-20 22:13:49,905 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-20 22:13:49,905 INFO  DownloadService - Downloading "https://github.com/Sloy/okresponsefaker/archive/master.zip", attempt 3
+2018-05-20 22:14:51,336 DEBUG FullProcessService - Repository https://github.com/Sloy/okresponsefaker available: true
+2018-05-20 22:14:51,337 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-05-20 22:14:51,337 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/Sloy/okresponsefaker, /tmp/rdisk/2517/src]
+2018-05-20 22:14:52,899 INFO  SysUtils - 
+2018-05-20 22:14:52,906 INFO  GitService - Deleted "/tmp/rdisk/2517/src/.git": true
+2018-05-20 22:14:52,907 INFO  FullProcessService - Size of directory with sources: 68 KB
+2018-05-20 22:14:52,907 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2517/src]
+2018-05-20 22:14:52,911 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2517/src/.git/
+
+2018-05-20 22:14:52,913 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2517/src/gradlew
+2018-05-20 22:14:52,914 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2517/src/build.gradle /tmp/rdisk/2517/src/okresponsefaker-json/build.gradle /tmp/rdisk/2517/src/okresponsefaker/build.gradle
+2018-05-20 22:14:52,915 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2517/src/settings.gradle /tmp/rdisk/2517/src/okresponsefaker/build.gradle /tmp/rdisk/2517/src/okresponsefaker-json/build.gradle /tmp/rdisk/2517/src/build.gradle
+2018-05-20 22:14:52,916 INFO  ProjectBuildService - Remote scripts: none
+2018-05-20 22:14:52,916 INFO  ProjectFixService - Fixing project...
+2018-05-20 22:14:52,919 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2517/src/local.properties
+2018-05-20 22:14:52,919 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-05-20 22:14:52,919 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-05-20 22:14:52,920 INFO  ProjectFixService - Build info for "/tmp/rdisk/2517/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:14:52,920 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2517/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:14:52,920 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2517/src/okresponsefaker-json/local.properties
+2018-05-20 22:14:52,922 INFO  ProjectFixService - Build info for "/tmp/rdisk/2517/src/okresponsefaker-json/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:14:52,922 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2517/src/okresponsefaker-json/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:14:52,922 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2517/src/okresponsefaker/local.properties
+2018-05-20 22:14:52,923 INFO  ProjectFixService - Build info for "/tmp/rdisk/2517/src/okresponsefaker/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-05-20 22:14:52,923 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2517/src/okresponsefaker/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-05-20 22:14:52,924 INFO  ProjectFixService - Project was maybe fixed
+2018-05-20 22:14:52,924 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:14:52,924 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:14:58,525 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-05-20 22:14:58,525 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 22:14:58,525 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 22:15:03,243 INFO  SysUtils - Configuration on demand is an incubating feature.
+:okresponsefaker:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:okresponsefaker:processResources UP-TO-DATE
+:okresponsefaker:classes
+:okresponsefaker:jar
+:okresponsefaker:assemble
+:okresponsefaker:build
+:okresponsefaker-json:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.7
+1 warning
+
+:okresponsefaker-json:processResources UP-TO-DATE
+:okresponsefaker-json:classes
+:okresponsefaker-json:jar
+:okresponsefaker-json:assemble
+:okresponsefaker-json:build
+
+BUILD SUCCESSFUL
+
+Total time: 4.3 secs
+
+2018-05-20 22:15:03,246 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:15:03,246 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/okresponsefaker-json/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:15:07,154 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-05-20 22:15:07,154 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 22:15:07,154 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/okresponsefaker-json/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 22:15:11,045 INFO  SysUtils - Configuration on demand is an incubating feature.
+:okresponsefaker:compileJava UP-TO-DATE
+:okresponsefaker:processResources UP-TO-DATE
+:okresponsefaker:classes UP-TO-DATE
+:okresponsefaker:jar UP-TO-DATE
+:okresponsefaker-json:compileJava UP-TO-DATE
+:okresponsefaker-json:processResources UP-TO-DATE
+:okresponsefaker-json:classes UP-TO-DATE
+:okresponsefaker-json:jar UP-TO-DATE
+:okresponsefaker-json:assemble UP-TO-DATE
+:okresponsefaker-json:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.469 secs
+
+2018-05-20 22:15:11,048 INFO  ProjectTaskService - Detecting possible tasks...
+2018-05-20 22:15:11,048 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/okresponsefaker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-05-20 22:15:15,075 INFO  ProjectTaskService - Detected possible tasks: 46
+2018-05-20 22:15:15,075 INFO  ProjectTaskService - Excluded tasks (3): javadoc test check
+2018-05-20 22:15:15,075 INFO  SysUtils - Execute command: [/tmp/rdisk/2517/src/gradlew, -b, /tmp/rdisk/2517/src/okresponsefaker/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, javadoc, -x, test, -x, check, build]
+2018-05-20 22:15:19,109 INFO  SysUtils - Configuration on demand is an incubating feature.
+:okresponsefaker:compileJava UP-TO-DATE
+:okresponsefaker:processResources UP-TO-DATE
+:okresponsefaker:classes UP-TO-DATE
+:okresponsefaker:jar UP-TO-DATE
+:okresponsefaker:assemble UP-TO-DATE
+:okresponsefaker:build
+
+BUILD SUCCESSFUL
+
+Total time: 3.624 secs
+
+2018-05-20 22:15:19,111 ERROR FullProcessService - Project build has not produced APK file
+2018-05-20 22:15:19,114 ERROR FullProcessService - Could not find generated or existed APK file

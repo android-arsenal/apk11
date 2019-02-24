@@ -1,0 +1,228 @@
+2018-04-01 23:15:19,051 INFO  DownloadService - Downloading "https://github.com/akarapetsas/Monet/archive/master.zip", attempt 3
+2018-04-01 23:16:19,523 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 23:16:20,175 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 23:16:20,175 INFO  DownloadService - Downloading "https://github.com/akarapetsas/Monet/archive/master.zip", attempt 3
+2018-04-01 23:17:21,425 DEBUG FullProcessService - Repository https://github.com/akarapetsas/Monet available: true
+2018-04-01 23:17:21,425 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 23:17:21,425 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/akarapetsas/Monet, /tmp/rdisk/2572/src]
+2018-04-01 23:17:22,976 INFO  SysUtils - 
+2018-04-01 23:17:22,981 INFO  GitService - Deleted "/tmp/rdisk/2572/src/.git": true
+2018-04-01 23:17:22,985 INFO  FullProcessService - Size of directory with sources: 292 KB
+2018-04-01 23:17:22,985 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2572/src]
+2018-04-01 23:17:22,988 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2572/src/.git/
+
+2018-04-01 23:17:22,992 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2572/src/gradlew
+2018-04-01 23:17:22,995 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2572/src/library/build.gradle /tmp/rdisk/2572/src/sample/build.gradle /tmp/rdisk/2572/src/build.gradle
+2018-04-01 23:17:22,998 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2572/src/settings.gradle /tmp/rdisk/2572/src/sample/build.gradle /tmp/rdisk/2572/src/library/build.gradle /tmp/rdisk/2572/src/build.gradle
+2018-04-01 23:17:22,999 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 23:17:22,999 INFO  ProjectFixService - Fixing project...
+2018-04-01 23:17:23,006 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2572/src/library/local.properties
+2018-04-01 23:17:23,006 INFO  ProjectFixService - Build info for "/tmp/rdisk/2572/src/library/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-01 23:17:23,006 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2572/src/sample/local.properties
+2018-04-01 23:17:23,007 INFO  ProjectFixService - Build info for "/tmp/rdisk/2572/src/sample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-01 23:17:23,007 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2572/src/local.properties
+2018-04-01 23:17:23,007 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 23:17:23,007 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 23:17:23,008 INFO  ProjectFixService - Build info for "/tmp/rdisk/2572/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=10,targetSdkVersion=23]
+2018-04-01 23:17:23,008 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 23:17:23,008 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:17:23,008 INFO  SysUtils - Execute command: [/tmp/rdisk/2572/src/gradlew, -b, /tmp/rdisk/2572/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:17:31,772 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 23:17:31,772 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 23:17:31,772 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 23:17:31,773 INFO  SysUtils - Execute command: [/tmp/rdisk/2572/src/gradlew, -b, /tmp/rdisk/2572/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 23:17:50,580 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42301Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/2572/src/library/src/main/java/com/alexios/monet/jackson/JacksonRequest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar UP-TO-DATE
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/2572/src/library/src/main/java/com/alexios/monet/jackson/JacksonRequest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:assemble
+:library:lint
+Ran lint on variant release: 4 issues found
+Ran lint on variant debug: 4 issues found
+Wrote HTML report to file:/tmp/rdisk/2572/src/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2572/src/library/build/outputs/lint-results.xml
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJavaWithJavac
+:library:compileDebugUnitTestSources
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebugUnitTest
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJavaWithJavac
+:library:compileReleaseUnitTestSources
+:library:assembleReleaseUnitTest
+:library:testReleaseUnitTest
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 18.391 secs
+
+2018-04-01 23:17:50,589 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 23:17:50,589 INFO  SysUtils - Execute command: [/tmp/rdisk/2572/src/gradlew, -b, /tmp/rdisk/2572/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 23:17:57,018 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 23:17:57,018 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 23:17:57,018 INFO  SysUtils - Execute command: [/tmp/rdisk/2572/src/gradlew, -b, /tmp/rdisk/2572/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 23:18:25,411 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42301Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAppcompatV72301Library
+:sample:prepareComAndroidSupportSupportV42301Library
+:sample:prepareSrcLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:compileDebugJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:preDexDebug
+:sample:dexDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:compileReleaseJavaWithJavacNote: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:preDexRelease
+:sample:dexRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 27.942 secs
+
+2018-04-01 23:18:25,459 INFO  FullProcessService - Found APK file: /tmp/rdisk/2572/src/sample/build/outputs/apk/sample-release-unsigned.apk

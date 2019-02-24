@@ -1,0 +1,136 @@
+2018-04-01 19:46:06,768 INFO  DownloadService - Downloading "https://github.com/PelotonTechIO/StackRX/archive/master.zip", attempt 3
+2018-04-01 19:47:07,298 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:47:07,931 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:47:07,932 INFO  DownloadService - Downloading "https://github.com/PelotonTechIO/StackRX/archive/master.zip", attempt 3
+2018-04-01 19:48:09,293 DEBUG FullProcessService - Repository https://github.com/PelotonTechIO/StackRX available: true
+2018-04-01 19:48:09,293 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:48:09,293 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/PelotonTechIO/StackRX, /tmp/rdisk/2646/src]
+2018-04-01 19:48:10,841 INFO  SysUtils - 
+2018-04-01 19:48:10,846 INFO  GitService - Deleted "/tmp/rdisk/2646/src/.git": true
+2018-04-01 19:48:10,850 INFO  FullProcessService - Size of directory with sources: 169 KB
+2018-04-01 19:48:10,851 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2646/src]
+2018-04-01 19:48:10,861 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2646/src/.git/
+
+2018-04-01 19:48:10,865 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2646/src/gradlew
+2018-04-01 19:48:10,868 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2646/src/app/build.gradle /tmp/rdisk/2646/src/stackrx-services/build.gradle /tmp/rdisk/2646/src/build.gradle
+2018-04-01 19:48:10,872 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2646/src/stackrx-services/build.gradle /tmp/rdisk/2646/src/settings.gradle /tmp/rdisk/2646/src/build.gradle /tmp/rdisk/2646/src/app/build.gradle
+2018-04-01 19:48:10,872 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:48:10,872 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:48:10,881 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2646/src/app/local.properties
+2018-04-01 19:48:10,881 INFO  ProjectFixService - Build info for "/tmp/rdisk/2646/src/app/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 19:48:10,881 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2646/src/stackrx-services/local.properties
+2018-04-01 19:48:10,882 INFO  ProjectFixService - Build info for "/tmp/rdisk/2646/src/stackrx-services/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 19:48:10,882 INFO  LocalPropertiesFixService - Updated fake /tmp/rdisk/2646/src/local.properties
+2018-04-01 19:48:10,882 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 19:48:10,883 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 19:48:10,883 INFO  ProjectFixService - Build info for "/tmp/rdisk/2646/src/build.gradle": [buildToolsVersion=22.0.0,compileSdkVersion=22,minSdkVersion=15,targetSdkVersion=22]
+2018-04-01 19:48:10,883 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:48:10,883 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:48:10,884 INFO  SysUtils - Execute command: [/tmp/rdisk/2646/src/gradlew, -b, /tmp/rdisk/2646/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:48:20,364 INFO  ProjectTaskService - Detected possible tasks: 59
+2018-04-01 19:48:20,364 INFO  ProjectTaskService - Excluded tasks (17): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug uninstallDebug
+2018-04-01 19:48:20,364 INFO  SysUtils - Execute command: [/tmp/rdisk/2646/src/gradlew, -b, /tmp/rdisk/2646/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, uninstallDebug, build]
+2018-04-01 19:49:01,508 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:stackrx-services:compileLint
+:stackrx-services:copyReleaseLint UP-TO-DATE
+:stackrx-services:preBuild UP-TO-DATE
+:stackrx-services:preReleaseBuild UP-TO-DATE
+:stackrx-services:checkReleaseManifest
+:stackrx-services:preDebugAndroidTestBuild UP-TO-DATE
+:stackrx-services:preDebugBuild UP-TO-DATE
+:stackrx-services:prepareComAndroidSupportAppcompatV72200Library
+:stackrx-services:prepareComAndroidSupportSupportV42200Library
+:stackrx-services:prepareReleaseDependencies
+:stackrx-services:compileReleaseAidl
+:stackrx-services:compileReleaseRenderscript
+:stackrx-services:generateReleaseBuildConfig
+:stackrx-services:generateReleaseAssets UP-TO-DATE
+:stackrx-services:mergeReleaseAssets
+:stackrx-services:generateReleaseResValues
+:stackrx-services:generateReleaseResources
+:stackrx-services:mergeReleaseResources
+:stackrx-services:processReleaseManifest
+:stackrx-services:processReleaseResources
+:stackrx-services:generateReleaseSources
+:stackrx-services:compileReleaseJava
+:stackrx-services:extractReleaseAnnotations
+:stackrx-services:mergeReleaseProguardFiles
+:stackrx-services:processReleaseJavaRes UP-TO-DATE
+:stackrx-services:packageReleaseJar
+:stackrx-services:compileReleaseNdk UP-TO-DATE
+:stackrx-services:packageReleaseJniLibs UP-TO-DATE
+:stackrx-services:packageReleaseLocalJar UP-TO-DATE
+:stackrx-services:packageReleaseRenderscript UP-TO-DATE
+:stackrx-services:packageReleaseResources
+:stackrx-services:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72200Library
+:app:prepareComAndroidSupportCardviewV72103Library
+:app:prepareComAndroidSupportRecyclerviewV72200Library
+:app:prepareComAndroidSupportSupportV42200Library
+:app:prepareSrcStackrxServicesUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResourcesAAPT err(1890118776) : No Delegate set : lost message:/tmp/rdisk/2646/src/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+
+AAPT warning(Job{title=Cruncher ic_drawer.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher ic_drawer.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher abc_spinner_mtrl_am_alpha.9.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+AAPT warning(Job{title=Cruncher ic_drawer.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/src/main/res/drawable-mdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher ic_drawer.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/src/main/res/drawable-xhdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher ic_drawer.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/src/main/res/drawable-hdpi/ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+AAPT warning(Job{title=Cruncher abc_spinner_mtrl_am_alpha.9.png, latch=BooleanLatch{signaled=false}, result=false}): /tmp/rdisk/2646/src/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJavaNote: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:app:lintVitalRelease
+:app:compileReleaseNdk UP-TO-DATE
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 40.703 secs
+
+2018-04-01 19:49:01,565 INFO  FullProcessService - Found APK file: /tmp/rdisk/2646/src/app/build/outputs/apk/app-debug.apk

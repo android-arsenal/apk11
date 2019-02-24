@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "com.erz.joystick",
+    "label" : "JoyStick",
+    "icon" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "versionName" : "1.0",
+    "versionCode" : 1,
+    "installLocation" : null,
+    "minSdkVersion" : "11",
+    "targetSdkVersion" : "25",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/mipmap-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 2169,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bs_BA", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "be_BY", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" package=\"com.erz.joystick\" platformBuildVersionCode=\"25\" platformBuildVersionName=\"7.1.1\">\n\t<uses-sdk android:minSdkVersion=\"11\" android:targetSdkVersion=\"25\" />\n\t<meta-data android:name=\"android.support.VERSION\" android:value=\"25.3.1\" />\n\t<application android:theme=\"resourceId:0x7f0900a6\" android:label=\"JoyStick\" android:icon=\"res/mipmap-mdpi-v4/ic_launcher.png\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\">\n\t\t<activity android:theme=\"resourceId:0x7f0900a8\" android:label=\"JoyStick\" android:name=\"com.erz.joystick.MainActivity\" android:configChanges=\"0x480\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 1898444,
+  "crc32" : 2997531310,
+  "sha256" : "3da395413f802e85724ecff558ea3fd40562284fb3899c96e1db40fd5d37b0d4",
+  "buildTime" : 1508074947000
+}

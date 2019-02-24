@@ -1,0 +1,761 @@
+2018-04-01 10:09:20,479 INFO  DownloadService - Downloading "https://github.com/nateisner/android-ads/archive/master.zip", attempt 3
+2018-04-01 10:10:21,070 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 10:10:21,763 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 10:10:21,763 INFO  DownloadService - Downloading "https://github.com/nateisner/android-ads/archive/master.zip", attempt 3
+2018-04-01 10:11:22,973 DEBUG FullProcessService - Repository https://github.com/nateisner/android-ads available: true
+2018-04-01 10:11:22,973 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 10:11:22,973 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/nateisner/android-ads, /tmp/rdisk/2718/src]
+2018-04-01 10:11:25,366 INFO  SysUtils - 
+2018-04-01 10:11:25,378 INFO  GitService - Deleted "/tmp/rdisk/2718/src/.git": true
+2018-04-01 10:11:25,380 INFO  FullProcessService - Size of directory with sources: 511 KB
+2018-04-01 10:11:25,380 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2718/src]
+2018-04-01 10:11:25,384 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2718/src/.git/
+
+2018-04-01 10:11:25,387 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2718/src/gradlew
+2018-04-01 10:11:25,389 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2718/src/example/build.gradle /tmp/rdisk/2718/src/library/build.gradle /tmp/rdisk/2718/src/build.gradle
+2018-04-01 10:11:25,391 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2718/src/settings.gradle /tmp/rdisk/2718/src/library/build.gradle /tmp/rdisk/2718/src/example/build.gradle /tmp/rdisk/2718/src/build.gradle
+2018-04-01 10:11:25,391 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 10:11:25,391 INFO  ProjectFixService - Fixing project...
+2018-04-01 10:11:25,396 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2718/src/example/local.properties
+2018-04-01 10:11:25,396 INFO  ProjectFixService - Build info for "/tmp/rdisk/2718/src/example/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=17,targetSdkVersion=23]
+2018-04-01 10:11:25,396 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2718/src/library/local.properties
+2018-04-01 10:11:25,396 INFO  ProjectFixService - Build info for "/tmp/rdisk/2718/src/library/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 10:11:25,397 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2718/src/local.properties
+2018-04-01 10:11:25,397 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-bin.zip
+2018-04-01 10:11:25,398 INFO  ProjectFixService - Build info for "/tmp/rdisk/2718/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=14,targetSdkVersion=22]
+2018-04-01 10:11:25,398 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 10:11:25,398 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:11:25,398 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:11:33,436 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-01 10:11:33,436 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 10:11:33,436 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/example/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 10:11:44,610 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 10:11:44,611 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72221Library
+:library:prepareComAndroidSupportSupportV42310Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseJar
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:bundleRelease
+:example:prepareComAndroidSupportAppcompatV72310Library
+:example:prepareComAndroidSupportDesign2310Library
+:example:prepareComAndroidSupportRecyclerviewV72310Library
+:example:prepareComAndroidSupportSupportV42310Library
+:example:prepareComGithubNateisnerLibraryUnspecifiedLibrary
+:example:prepareDebugDependencies
+:example:compileDebugAidl
+:example:compileDebugRenderscript
+:example:generateDebugBuildConfig
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets
+:example:generateDebugResValues
+:example:generateDebugResources
+:example:mergeDebugResources
+:example:processDebugManifest
+:example:processDebugResources
+:example:generateDebugSources
+:example:processDebugJavaRes UP-TO-DATE
+:example:compileDebugJava/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:22: error: cannot find symbol
+        String keyserver = getResources().getString(R.string.server);
+                                                            ^
+  symbol:   variable server
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:23: error: cannot find symbol
+        String key = getResources().getString(R.string.key);
+                                                      ^
+  symbol:   variable key
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:24: error: cannot find symbol
+        String secret = getResources().getString(R.string.secret);
+                                                         ^
+  symbol:   variable secret
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:33: error: cannot find symbol
+        final String server = getResources().getString(R.string.xmlserver);
+                                                               ^
+  symbol:   variable xmlserver
+  location: class string
+4 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':example:compileDebugJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':example:compileDebugJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 10.771 secs
+
+2018-04-01 10:11:44,656 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:11:44,656 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:11:51,218 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 10:11:51,218 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 10:11:51,218 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 10:11:51,218 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 10:12:11,881 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42310Library UP-TO-DATE
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:processDebugJavaRes UP-TO-DATE
+:library:compileDebugJava
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugJar
+:library:compileDebugNdk UP-TO-DATE
+:library:packageDebugJniLibs UP-TO-DATE
+:library:packageDebugLocalJar
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:library:compileReleaseSources UP-TO-DATE
+:library:assembleRelease UP-TO-DATE
+:library:javadoc/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:5: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.OkHttpClient;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:6: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:7: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Response;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:8: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.ResponseBody;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:21: error: cannot find symbol
+    private static OkHttpClient okClient = new OkHttpClient();
+                   ^
+  symbol:   class OkHttpClient
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:34: error: cannot find symbol
+    public static byte[] forBytes(Request request) {
+                                  ^
+  symbol:   class Request
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:51: error: cannot find symbol
+    public static ResponseBody forBody(Request request) {
+                                       ^
+  symbol:   class Request
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:51: error: cannot find symbol
+    public static ResponseBody forBody(Request request) {
+                  ^
+  symbol:   class ResponseBody
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:68: error: cannot find symbol
+    public static InputStream forStream(Request request) {
+                                        ^
+  symbol:   class Request
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:79: error: cannot find symbol
+    public static boolean forOK(Request request) {
+                                ^
+  symbol:   class Request
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:91: error: cannot find symbol
+    private static class GetOK extends AsyncTask<Request,Void,Response> {
+                                                 ^
+  symbol:   class Request
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:91: error: cannot find symbol
+    private static class GetOK extends AsyncTask<Request,Void,Response> {
+                                                              ^
+  symbol:   class Response
+  location: class GetResponse
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:94: error: cannot find symbol
+        protected Response doInBackground(Request... params) {
+                                          ^
+  symbol:   class Request
+  location: class GetOK
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/GetResponse.java:94: error: cannot find symbol
+        protected Response doInBackground(Request... params) {
+                  ^
+  symbol:   class Response
+  location: class GetOK
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:10: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:11: error: package android.support.annotation does not exist
+import android.support.annotation.Nullable;
+                                 ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:16: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/Ad.java:4: error: package android.support.v4.content does not exist
+import android.support.v4.content.ContextCompat;
+                                 ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdCache.java:6: error: package com.squareup.okhttp does not exist
+import com.squareup.okhttp.Request;
+                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:232: error: cannot find symbol
+    public static Request buildARequest(@NonNull String url,
+                  ^
+  symbol:   class Request
+  location: class AdProvider
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:273: error: cannot find symbol
+    private class GetAPIKey extends AsyncTask<Request, Void, String> {
+                                              ^
+  symbol:   class Request
+  location: class AdProvider
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:276: error: cannot find symbol
+        protected String doInBackground(Request... params) {
+                                        ^
+  symbol:   class Request
+  location: class AdProvider.GetAPIKey
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:19: error: cannot find symbol
+    public boolean add(@NonNull String name, @NonNull String value) {
+                        ^
+  symbol:   class NonNull
+  location: class HeaderFields
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:19: error: cannot find symbol
+    public boolean add(@NonNull String name, @NonNull String value) {
+                                              ^
+  symbol:   class NonNull
+  location: class HeaderFields
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:35: error: cannot find symbol
+    public String getValue(@NonNull String name) {
+                            ^
+  symbol:   class NonNull
+  location: class HeaderFields
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:39: error: cannot find symbol
+    public void update(@NonNull String name, @NonNull String value) {
+                        ^
+  symbol:   class NonNull
+  location: class HeaderFields
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/HeaderFields.java:39: error: cannot find symbol
+    public void update(@NonNull String name, @NonNull String value) {
+                                              ^
+  symbol:   class NonNull
+  location: class HeaderFields
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:232: error: cannot find symbol
+    public static Request buildARequest(@NonNull String url,
+                                         ^
+  symbol:   class NonNull
+  location: class AdProvider
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:233: error: cannot find symbol
+                                        @Nullable HeaderFields headerFields) {
+                                         ^
+  symbol:   class Nullable
+  location: class AdProvider
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:257: error: cannot find symbol
+    private String getAPIKey(String url, @Nullable HeaderFields headers) {
+                                          ^
+  symbol:   class Nullable
+  location: class AdProvider
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:100: error: cannot find symbol
+        public Builder(@NonNull Context context) {
+                        ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:111: error: cannot find symbol
+        public Builder imageServer(@NonNull String path) {
+                                    ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:116: error: cannot find symbol
+        public Builder requestHeader(@NonNull HeaderFields addHeaders) {
+                                      ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:121: error: cannot find symbol
+        public Builder useAPIKey(@NonNull String server, @Nullable HeaderFields headers,
+                                  ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:121: error: cannot find symbol
+        public Builder useAPIKey(@NonNull String server, @Nullable HeaderFields headers,
+                                                          ^
+  symbol:   class Nullable
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:122: error: cannot find symbol
+                                 @NonNull String name) {
+                                  ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:130: error: cannot find symbol
+        public Builder imageTime(@NonNull long time) {
+                                  ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:135: error: cannot find symbol
+        public Builder attachTo(@NonNull View root) {
+                                 ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:143: error: cannot find symbol
+        public Builder parseTag(@NonNull String tagname) {
+                                 ^
+  symbol:   class NonNull
+  location: class Builder
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdCache.java:30: warning: no @param for limit
+    public AdCache(Context context, int limit) {
+           ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdParser.java:23: warning: no @param for aTagName
+    public static ArrayList<String> parseForImages(InputStream inputStream, String aTagName) {
+                                    ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdParser.java:28: error: unknown tag: item
+     * Used to find the API key in a response in the tags <item>KEY HERE</item>
+                                                          ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdParser.java:28: error: unknown tag: item
+     * Used to find the API key in a response in the tags <item>KEY HERE</item>
+                                                                        ^
+/tmp/rdisk/2718/src/library/src/main/java/io/eisner/ads/AdProvider.java:26: error: self-closing element not allowed
+ * <p/>
+   ^
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class Nullable not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class NonNull not found.
+
+3 errors
+58 warnings
+:library:javadocJar
+:library:sourcesJar
+:library:assemble
+:library:lint
+Ran lint on variant release: 7 issues found
+Ran lint on variant debug: 7 issues found
+Wrote HTML report to file:/tmp/rdisk/2718/src/library/build/outputs/lint-results.html
+Wrote XML report to /tmp/rdisk/2718/src/library/build/outputs/lint-results.xml
+:library:preCompileDebugUnitTestJava
+:library:prepareDebugUnitTestDependencies
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestJava UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebug
+:library:preCompileReleaseUnitTestJava
+:library:prepareReleaseUnitTestDependencies
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestJava UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testRelease
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.236 secs
+
+2018-04-01 10:12:11,934 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:12:11,934 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:12:18,396 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-01 10:12:18,396 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest installDebug lintRelease testDebug connectedAndroidTestDebug uninstallDebug
+2018-04-01 10:12:18,396 INFO  SysUtils - Execute command: [/tmp/rdisk/2718/src/gradlew, -b, /tmp/rdisk/2718/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, testDebug, -x, connectedAndroidTestDebug, -x, uninstallDebug, build]
+2018-04-01 10:12:25,755 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 10:12:25,755 INFO  SysUtils - Configuration on demand is an incubating feature.
+:example:preBuild UP-TO-DATE
+:example:preDebugBuild UP-TO-DATE
+:example:checkDebugManifest
+:example:preReleaseBuild UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72221Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42310Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:compileReleaseJava UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseJar UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:packageReleaseJniLibs UP-TO-DATE
+:library:packageReleaseLocalJar UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:example:prepareComAndroidSupportAppcompatV72310Library UP-TO-DATE
+:example:prepareComAndroidSupportDesign2310Library UP-TO-DATE
+:example:prepareComAndroidSupportRecyclerviewV72310Library UP-TO-DATE
+:example:prepareComAndroidSupportSupportV42310Library UP-TO-DATE
+:example:prepareComGithubNateisnerLibraryUnspecifiedLibrary UP-TO-DATE
+:example:prepareDebugDependencies
+:example:compileDebugAidl UP-TO-DATE
+:example:compileDebugRenderscript UP-TO-DATE
+:example:generateDebugBuildConfig UP-TO-DATE
+:example:generateDebugAssets UP-TO-DATE
+:example:mergeDebugAssets UP-TO-DATE
+:example:generateDebugResValues UP-TO-DATE
+:example:generateDebugResources UP-TO-DATE
+:example:mergeDebugResources UP-TO-DATE
+:example:processDebugManifest UP-TO-DATE
+:example:processDebugResources UP-TO-DATE
+:example:generateDebugSources UP-TO-DATE
+:example:processDebugJavaRes UP-TO-DATE
+:example:compileDebugJava/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:22: error: cannot find symbol
+        String keyserver = getResources().getString(R.string.server);
+                                                            ^
+  symbol:   variable server
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:23: error: cannot find symbol
+        String key = getResources().getString(R.string.key);
+                                                      ^
+  symbol:   variable key
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:24: error: cannot find symbol
+        String secret = getResources().getString(R.string.secret);
+                                                         ^
+  symbol:   variable secret
+  location: class string
+/tmp/rdisk/2718/src/example/src/main/java/io/eisner/bannerads/MainActivity.java:33: error: cannot find symbol
+        final String server = getResources().getString(R.string.xmlserver);
+                                                               ^
+  symbol:   variable xmlserver
+  location: class string
+4 errors
+ FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':example:compileDebugJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':example:compileDebugJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:203)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:185)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:62)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:50)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:25)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:110)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$4.run(DefaultGradleLauncher.java:154)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:52)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.access$200(DefaultGradleLauncher.java:32)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:99)
+	at org.gradle.initialization.DefaultGradleLauncher$1.create(DefaultGradleLauncher.java:93)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:90)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:62)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:93)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:82)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:94)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:43)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:28)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:77)
+	at org.gradle.launcher.exec.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:51)
+	at org.gradle.launcher.exec.DaemonUsageSuggestingBuildActionExecuter.execute(DaemonUsageSuggestingBuildActionExecuter.java:28)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:43)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:237)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:35)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:206)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:169)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:54)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:35)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:47)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:33)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:101)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:36)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:34)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompilerSupport.execute(CleaningJavaCompilerSupport.java:25)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:157)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:139)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:93)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:75)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.doExecute(AnnotationProcessingTaskFactory.java:244)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:220)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$IncrementalTaskAction.execute(AnnotationProcessingTaskFactory.java:231)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:209)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 60 more
+
+
+BUILD FAILED
+
+Total time: 6.929 secs
+
+2018-04-01 10:12:25,810 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 10:12:25,862 ERROR FullProcessService - Could not find generated or existed APK file

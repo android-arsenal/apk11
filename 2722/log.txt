@@ -1,0 +1,125 @@
+2018-04-01 09:56:08,293 INFO  DownloadService - Downloading "https://github.com/AmniX/MaterialPatternllockView/archive/master.zip", attempt 3
+2018-04-01 09:57:08,758 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 09:57:09,394 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 09:57:09,394 INFO  DownloadService - Downloading "https://github.com/AmniX/MaterialPatternllockView/archive/master.zip", attempt 3
+2018-04-01 09:58:10,594 DEBUG FullProcessService - Repository https://github.com/AmniX/MaterialPatternllockView available: true
+2018-04-01 09:58:10,594 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 09:58:10,594 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/AmniX/MaterialPatternllockView, /tmp/rdisk/2722/src]
+2018-04-01 09:58:12,157 INFO  SysUtils - 
+2018-04-01 09:58:12,172 INFO  GitService - Deleted "/tmp/rdisk/2722/src/.git": true
+2018-04-01 09:58:12,175 INFO  FullProcessService - Size of directory with sources: 394 KB
+2018-04-01 09:58:12,175 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2722/src]
+2018-04-01 09:58:12,179 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2722/src/.git/
+
+2018-04-01 09:58:12,182 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2722/src/gradlew
+2018-04-01 09:58:12,184 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2722/src/app/build.gradle /tmp/rdisk/2722/src/materiallockview/build.gradle /tmp/rdisk/2722/src/build.gradle
+2018-04-01 09:58:12,187 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2722/src/settings.gradle /tmp/rdisk/2722/src/materiallockview/build.gradle /tmp/rdisk/2722/src/build.gradle /tmp/rdisk/2722/src/app/build.gradle
+2018-04-01 09:58:12,187 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 09:58:12,187 INFO  ProjectFixService - Fixing project...
+2018-04-01 09:58:12,193 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2722/src/app/local.properties
+2018-04-01 09:58:12,193 INFO  ProjectFixService - Build info for "/tmp/rdisk/2722/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 09:58:12,194 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2722/src/materiallockview/local.properties
+2018-04-01 09:58:12,194 INFO  ProjectFixService - Build info for "/tmp/rdisk/2722/src/materiallockview/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 09:58:12,194 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2722/src/local.properties
+2018-04-01 09:58:12,194 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.4-all.zip
+2018-04-01 09:58:12,194 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.4-bin.zip)
+2018-04-01 09:58:12,195 INFO  ProjectFixService - Build info for "/tmp/rdisk/2722/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 09:58:12,195 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 09:58:12,195 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 09:58:12,195 INFO  SysUtils - Execute command: [/tmp/rdisk/2722/src/gradlew, -b, /tmp/rdisk/2722/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 09:58:18,897 INFO  ProjectTaskService - Detected possible tasks: 66
+2018-04-01 09:58:18,897 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 09:58:18,897 INFO  SysUtils - Execute command: [/tmp/rdisk/2722/src/gradlew, -b, /tmp/rdisk/2722/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 09:58:40,977 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:materiallockview:compileLint
+:materiallockview:copyReleaseLint UP-TO-DATE
+:materiallockview:preBuild UP-TO-DATE
+:materiallockview:preReleaseBuild UP-TO-DATE
+:materiallockview:checkReleaseManifest
+:materiallockview:preDebugAndroidTestBuild UP-TO-DATE
+:materiallockview:preDebugBuild UP-TO-DATE
+:materiallockview:preDebugUnitTestBuild UP-TO-DATE
+:materiallockview:preReleaseUnitTestBuild UP-TO-DATE
+:materiallockview:prepareComAndroidSupportAppcompatV72301Library
+:materiallockview:prepareComAndroidSupportSupportV42301Library
+:materiallockview:prepareReleaseDependencies
+:materiallockview:compileReleaseAidl
+:materiallockview:compileReleaseRenderscript
+:materiallockview:generateReleaseBuildConfig
+:materiallockview:generateReleaseAssets UP-TO-DATE
+:materiallockview:mergeReleaseAssets
+:materiallockview:generateReleaseResValues
+:materiallockview:generateReleaseResources
+:materiallockview:mergeReleaseResources
+:materiallockview:processReleaseManifest
+:materiallockview:processReleaseResources
+:materiallockview:generateReleaseSources
+:materiallockview:processReleaseJavaRes UP-TO-DATE
+:materiallockview:compileReleaseJavaWithJavac
+:materiallockview:extractReleaseAnnotations
+:materiallockview:mergeReleaseProguardFiles
+:materiallockview:packageReleaseJar
+:materiallockview:compileReleaseNdk UP-TO-DATE
+:materiallockview:packageReleaseJniLibs UP-TO-DATE
+:materiallockview:packageReleaseLocalJar UP-TO-DATE
+:materiallockview:packageReleaseRenderscript UP-TO-DATE
+:materiallockview:packageReleaseResources
+:materiallockview:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareSrcMateriallockviewUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.581 secs
+
+2018-04-01 09:58:41,030 INFO  FullProcessService - Found APK file: /tmp/rdisk/2722/src/app/build/outputs/apk/app-debug.apk

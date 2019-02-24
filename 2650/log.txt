@@ -1,0 +1,638 @@
+2018-04-01 19:33:52,926 INFO  DownloadService - Downloading "https://github.com/DreaminginCodeZH/MaterialEditText/archive/master.zip", attempt 3
+2018-04-01 19:34:53,539 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:34:54,249 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:34:54,249 INFO  DownloadService - Downloading "https://github.com/DreaminginCodeZH/MaterialEditText/archive/master.zip", attempt 3
+2018-04-01 19:35:55,577 DEBUG FullProcessService - Repository https://github.com/DreaminginCodeZH/MaterialEditText available: true
+2018-04-01 19:35:55,577 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:35:55,578 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/DreaminginCodeZH/MaterialEditText, /tmp/rdisk/2650/src]
+2018-04-01 19:36:00,522 INFO  SysUtils - 
+2018-04-01 19:36:00,537 INFO  GitService - Deleted "/tmp/rdisk/2650/src/.git": true
+2018-04-01 19:36:00,539 INFO  FullProcessService - Size of directory with sources: 687 KB
+2018-04-01 19:36:00,539 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2650/src]
+2018-04-01 19:36:00,544 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2650/src/.git/
+
+2018-04-01 19:36:00,547 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2650/src/gradlew
+2018-04-01 19:36:00,549 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2650/src/library/build.gradle /tmp/rdisk/2650/src/sample/build.gradle /tmp/rdisk/2650/src/build.gradle
+2018-04-01 19:36:00,551 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2650/src/settings.gradle /tmp/rdisk/2650/src/sample/build.gradle /tmp/rdisk/2650/src/library/build.gradle /tmp/rdisk/2650/src/gradle-mvn-push.gradle /tmp/rdisk/2650/src/build.gradle
+2018-04-01 19:36:00,552 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:36:00,552 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:36:00,560 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2650/src/library/local.properties
+2018-04-01 19:36:00,563 INFO  ProjectFixService - Build info for "/tmp/rdisk/2650/src/library/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 19:36:00,564 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2650/src/library/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 19:36:00,564 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2650/src/sample/local.properties
+2018-04-01 19:36:00,568 INFO  ProjectFixService - Build info for "/tmp/rdisk/2650/src/sample/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 19:36:00,568 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2650/src/sample/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 19:36:00,569 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2650/src/local.properties
+2018-04-01 19:36:00,569 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.3-all.zip
+2018-04-01 19:36:00,569 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.3-bin.zip)
+2018-04-01 19:36:00,573 INFO  ProjectFixService - Build info for "/tmp/rdisk/2650/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-01 19:36:00,573 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2650/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-01 19:36:00,573 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:36:00,573 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:36:00,573 INFO  SysUtils - Execute command: [/tmp/rdisk/2650/src/gradlew, -b, /tmp/rdisk/2650/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:36:08,545 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-01 19:36:08,546 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 19:36:08,546 INFO  SysUtils - Execute command: [/tmp/rdisk/2650/src/gradlew, -b, /tmp/rdisk/2650/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 19:36:30,612 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/2650/src/library/src/main/java/me/zhanghai/android/materialedittext/MaterialTextInputLayout.java:9: error: package android.support.design.widget does not exist
+import android.support.design.widget.TextInputLayout;
+                                    ^
+/tmp/rdisk/2650/src/library/src/main/java/me/zhanghai/android/materialedittext/MaterialTextInputLayout.java:21: error: cannot find symbol
+public class MaterialTextInputLayout extends TextInputLayout {
+                                             ^
+  symbol: class TextInputLayout
+/tmp/rdisk/2650/src/library/src/main/java/me/zhanghai/android/materialedittext/MaterialEditText.java:12: error: package android.support.design.widget does not exist
+import android.support.design.widget.TextInputEditText;
+                                    ^
+/tmp/rdisk/2650/src/library/src/main/java/me/zhanghai/android/materialedittext/MaterialEditText.java:23: error: cannot find symbol
+public class MaterialEditText extends TextInputEditText {
+                                      ^
+  symbol: class TextInputEditText
+
+4 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:library:prepareComAndroidSupportAppcompatV72520Library
+:library:prepareComAndroidSupportDesign2520Library
+:library:prepareComAndroidSupportRecyclerviewV72520Library
+:library:prepareComAndroidSupportSupportCompat2520Library
+:library:prepareComAndroidSupportSupportCoreUi2520Library
+:library:prepareComAndroidSupportSupportCoreUtils2520Library
+:library:prepareComAndroidSupportSupportFragment2520Library
+:library:prepareComAndroidSupportSupportMediaCompat2520Library
+:library:prepareComAndroidSupportSupportV42520Library
+:library:prepareComAndroidSupportSupportVectorDrawable2520Library
+:library:prepareComAndroidSupportTransition2520Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:incrementalDebugJavaCompilationSafeguard
+:library:javaPreCompileDebug
+:library:compileDebugJavaWithJavac
+:library:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:library:extractDebugAnnotations
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 21.805 secs
+
+2018-04-01 19:36:30,660 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:36:30,660 INFO  SysUtils - Execute command: [/tmp/rdisk/2650/src/gradlew, -b, /tmp/rdisk/2650/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:36:38,412 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-01 19:36:38,413 INFO  ProjectTaskService - Excluded tasks (20): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installRelease installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 19:36:38,413 INFO  SysUtils - Execute command: [/tmp/rdisk/2650/src/gradlew, -b, /tmp/rdisk/2650/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installRelease, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 19:37:46,003 ERROR SysUtils - Could not process external command
+org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at com.github.vbauer.apkmaster.util.SysUtils.execute(SysUtils.java:67)
+	at com.github.vbauer.apkmaster.util.SysUtils.executeSimple(SysUtils.java:43)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:78)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:64)
+	at com.github.vbauer.apkmaster.service.assembly.ProjectBuildService.buildProject(ProjectBuildService.java:43)
+	at com.github.vbauer.apkmaster.service.FullProcessService.build(FullProcessService.java:84)
+	at com.github.vbauer.apkmaster.service.FullProcessService.process(FullProcessService.java:34)
+	at com.github.vbauer.apkmaster.app.MainApplication.process(MainApplication.java:38)
+	at com.github.vbauer.apkmaster.app.MainApplication.main(MainApplication.java:20)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.android.arsenal.util.ReflectionUtils.invoke(ReflectionUtils.java:42)
+	at com.android.arsenal.util.ApkMasterUtils.main(ApkMasterUtils.java:30)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.buildProject(BuildProcessorServiceImpl.java:197)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.build(BuildProcessorServiceImpl.java:131)
+	at com.android.arsenal.service.processor.impl.BuildProcessorServiceImpl.lambda$null$1(BuildProcessorServiceImpl.java:114)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-01 19:37:46,003 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:library:prepareComAndroidSupportAppcompatV72520Library
+:library:prepareComAndroidSupportDesign2520Library
+:library:prepareComAndroidSupportRecyclerviewV72520Library
+:library:prepareComAndroidSupportSupportCompat2520Library
+:library:prepareComAndroidSupportSupportCoreUi2520Library
+:library:prepareComAndroidSupportSupportCoreUtils2520Library
+:library:prepareComAndroidSupportSupportFragment2520Library
+:library:prepareComAndroidSupportSupportMediaCompat2520Library
+:library:prepareComAndroidSupportSupportV42520Library
+:library:prepareComAndroidSupportSupportVectorDrawable2520Library
+:library:prepareComAndroidSupportTransition2520Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:extractProguardFiles
+:sample:preReleaseBuild
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2520Library
+:sample:prepareComAndroidSupportAppcompatV72520Library
+:sample:prepareComAndroidSupportDesign2520Library
+:sample:prepareComAndroidSupportRecyclerviewV72520Library
+:sample:prepareComAndroidSupportSupportCompat2520Library
+:sample:prepareComAndroidSupportSupportCoreUi2520Library
+:sample:prepareComAndroidSupportSupportCoreUtils2520Library
+:sample:prepareComAndroidSupportSupportFragment2520Library
+:sample:prepareComAndroidSupportSupportMediaCompat2520Library
+:sample:prepareComAndroidSupportSupportV42520Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2520Library
+:sample:prepareComAndroidSupportTransition2520Library
+:sample:prepareComJakewhartonButterknife851Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:transformClassesAndResourcesWithProguardForRelease
+ProGuard, version 5.3.2
+Reading input...
+Reading program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar] (filtered)
+Reading program jar [/root/.android/build-cache/93834a0868bdc36311fea4f7e79ea49e2e760d22/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/857c19c072ff349404d379e6064842bd1e908ca3/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/c276a18d99b914cea88e75209e7361761cd52a59/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/9c0f44fb65e88e3f6aa198b9782793b8501ebd73/output/jars/classes.jar] (filtered)
+Reading program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar] (filtered)
+Reading program jar [/root/.android/build-cache/640eeedffa8736c78b55e4c16906426dd4ebb499/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/503fd5007d67210a7a968154e5d42eec1bc7e889/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/c4ac61b127d2700617ec0d173481cba51d0f993b/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/b775f790e549c0d85d8c33d77f18e57ff45fab25/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/cd2fd607bf2e84416539a1493307953afc9ac1b8/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/24ad155af000480a8a78a9976cd80a023a681733/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/ab3eea46b289c29341a188159099df000d6c5a41/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/7db1611bef6673dc9e18b06fc4d111a52a0e7e99/output/jars/classes.jar] (filtered)
+Reading program jar [/root/.android/build-cache/6b6b04d7fb2ca8bb0910879ffdd12f16d9456cc2/output/jars/classes.jar] (filtered)
+Reading program jar [/tmp/rdisk/2650/src/library/build/intermediates/bundles/default/classes.jar] (filtered)
+Reading program directory [/tmp/rdisk/2650/src/sample/build/intermediates/classes/release] (filtered)
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/android.jar]
+Reading library jar [/root/Applications/android-sdk/platforms/android-25/optional/org.apache.http.legacy.jar]
+Note: duplicate definition of library class [android.net.http.HttpResponseCache]
+Note: duplicate definition of library class [android.net.http.SslCertificate$DName]
+Note: duplicate definition of library class [android.net.http.SslError]
+Note: duplicate definition of library class [android.net.http.SslCertificate]
+Note: duplicate definition of library class [org.apache.http.params.CoreConnectionPNames]
+Note: duplicate definition of library class [org.apache.http.params.HttpConnectionParams]
+Note: duplicate definition of library class [org.apache.http.params.HttpParams]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.SocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.LayeredSocketFactory]
+Note: duplicate definition of library class [org.apache.http.conn.scheme.HostNameResolver]
+Note: duplicate definition of library class [org.apache.http.conn.ConnectTimeoutException]
+Note: there were 11 duplicate class definitions.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#duplicateclass)
+Initializing...
+Ignoring unused library classes...
+  Original number of library classes: 4237
+  Final number of library classes:    987
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/tmp/rdisk/2650/src/sample/build/outputs/mapping/release/usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 2202
+  Final number of program classes:    1147
+Optimizing...
+  Number of finalized classes:                 522
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                453
+  Number of staticized methods:                253
+  Number of finalized methods:                 3613
+  Number of removed method parameters:         340
+  Number of inlined constant parameters:       84
+  Number of inlined constant return values:    50
+  Number of inlined short method calls:        894
+  Number of inlined unique method calls:       1589
+  Number of inlined tail recursion calls:      14
+  Number of merged code blocks:                59
+  Number of variable peephole optimizations:   4880
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      22
+  Number of branch peephole optimizations:     1423
+  Number of string peephole optimizations:     292
+  Number of simplified instructions:           440
+  Number of removed instructions:              2583
+  Number of removed local variables:           173
+  Number of removed exception blocks:          68
+  Number of optimized local variable frames:   1786
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1147
+  Final number of program classes:    1063
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                4
+  Number of staticized methods:                4
+  Number of finalized methods:                 35
+  Number of removed method parameters:         148
+  Number of inlined constant parameters:       77
+  Number of inlined constant return values:    31
+  Number of inlined short method calls:        16
+  Number of inlined unique method calls:       13
+  Number of inlined tail recursion calls:      6
+  Number of merged code blocks:                6
+  Number of variable peephole optimizations:   468
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     43
+  Number of string peephole optimizations:     1
+  Number of simplified instructions:           163
+  Number of removed instructions:              4184
+  Number of removed local variables:           73
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   107
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1063
+  Final number of program classes:    1062
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                1
+  Number of finalized methods:                 3
+  Number of removed method parameters:         56
+  Number of inlined constant parameters:       21
+  Number of inlined constant return values:    31
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       5
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   99
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     7
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           19
+  Number of removed instructions:              496
+  Number of removed local variables:           6
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   16
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1062
+  Final number of program classes:    1062
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 1
+  Number of removed method parameters:         8
+  Number of inlined constant parameters:       0
+  Number of inlined constant return values:    0
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   16
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           0
+  Number of removed instructions:              78
+  Number of removed local variables:           4
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   1
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1062
+  Final number of program classes:    1062
+Optimizing...
+  Number of finalized classes:                 0
+  Number of unboxed enum classes:              0
+  Number of vertically merged classes:         0   (disabled)
+  Number of horizontally merged classes:       0   (disabled)
+  Number of removed write-only fields:         0   (disabled)
+  Number of privatized fields:                 0   (disabled)
+  Number of inlined constant fields:           0   (disabled)
+  Number of privatized methods:                0
+  Number of staticized methods:                0
+  Number of finalized methods:                 0
+  Number of removed method parameters:         0
+  Number of inlined constant parameters:       0
+  Number of inlined constant return values:    0
+  Number of inlined short method calls:        0
+  Number of inlined unique method calls:       0
+  Number of inlined tail recursion calls:      0
+  Number of merged code blocks:                0
+  Number of variable peephole optimizations:   9
+  Number of arithmetic peephole optimizations: 0   (disabled)
+  Number of cast peephole optimizations:       0   (disabled)
+  Number of field peephole optimizations:      0
+  Number of branch peephole optimizations:     0
+  Number of string peephole optimizations:     0
+  Number of simplified instructions:           0
+  Number of removed instructions:              2
+  Number of removed local variables:           0
+  Number of removed exception blocks:          0
+  Number of optimized local variable frames:   0
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 1062
+  Final number of program classes:    1062
+Obfuscating...
+Printing mapping to [/tmp/rdisk/2650/src/sample/build/outputs/mapping/release/mapping.txt]...
+Writing output...
+Preparing output jar [/tmp/rdisk/2650/src/sample/build/intermediates/transforms/proguard/release/jars/3/1f/main.jar]
+  Copying resources from program jar [/root/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/93834a0868bdc36311fea4f7e79ea49e2e760d22/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/857c19c072ff349404d379e6064842bd1e908ca3/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/c276a18d99b914cea88e75209e7361761cd52a59/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/9c0f44fb65e88e3f6aa198b9782793b8501ebd73/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/640eeedffa8736c78b55e4c16906426dd4ebb499/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/503fd5007d67210a7a968154e5d42eec1bc7e889/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/c4ac61b127d2700617ec0d173481cba51d0f993b/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/b775f790e549c0d85d8c33d77f18e57ff45fab25/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/cd2fd607bf2e84416539a1493307953afc9ac1b8/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/24ad155af000480a8a78a9976cd80a023a681733/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/ab3eea46b289c29341a188159099df000d6c5a41/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/7db1611bef6673dc9e18b06fc4d111a52a0e7e99/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/root/.android/build-cache/6b6b04d7fb2ca8bb0910879ffdd12f16d9456cc2/output/jars/classes.jar] (filtered)
+  Copying resources from program jar [/tmp/rdisk/2650/src/library/build/intermediates/bundles/default/classes.jar] (filtered)
+  Copying resources from program directory [/tmp/rdisk/2650/src/sample/build/intermediates/classes/release] (filtered)
+Printing classes to [/tmp/rdisk/2650/src/sample/build/outputs/mapping/release/dump.txt]...
+:sample:transformClassesWithDexForRelease
+:sample:transformClassesWithShrinkResForRelease
+Removed unused resources: Binary resource data reduced from 548KB to 528KB: Removed 3%
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:validateSigningRelease FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':sample:validateSigningRelease'.
+> Keystore file /tmp/rdisk/2650/github.jks not found for signing config 'release'.
+
+* Try:
+Run with --info or --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':sample:validateSigningRelease'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:84)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.Main.doAction(Main.java:33)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:33)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:130)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: java.lang.IllegalArgumentException: Keystore file /tmp/rdisk/2650/github.jks not found for signing config 'release'.
+	at com.android.build.gradle.internal.tasks.ValidateSigningTask.validate(ValidateSigningTask.java:107)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:632)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:615)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	... 62 more
+
+
+BUILD FAILED
+
+Total time: 1 mins 7.262 secs
+
+2018-04-01 19:37:46,100 INFO  FullProcessService - Found APK file: /tmp/rdisk/2650/src/sample/build/outputs/apk/sample-debug.apk

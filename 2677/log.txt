@@ -1,0 +1,271 @@
+2018-04-01 18:26:11,108 INFO  DownloadService - Downloading "https://github.com/jlelse/SimpleUI/archive/master.zip", attempt 3
+2018-04-01 18:27:11,563 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 18:27:12,234 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 18:27:12,234 INFO  DownloadService - Downloading "https://github.com/jlelse/SimpleUI/archive/master.zip", attempt 3
+2018-04-01 18:28:13,501 DEBUG FullProcessService - Repository https://github.com/jlelse/SimpleUI available: true
+2018-04-01 18:28:13,501 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 18:28:13,502 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/jlelse/SimpleUI, /tmp/rdisk/2677/src]
+2018-04-01 18:28:14,957 INFO  SysUtils - 
+2018-04-01 18:28:14,970 INFO  GitService - Deleted "/tmp/rdisk/2677/src/.git": true
+2018-04-01 18:28:14,972 INFO  FullProcessService - Size of directory with sources: 133 KB
+2018-04-01 18:28:14,972 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2677/src]
+2018-04-01 18:28:14,977 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2677/src/.git/
+
+2018-04-01 18:28:14,980 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2677/src/gradlew
+2018-04-01 18:28:14,982 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2677/src/library/build.gradle /tmp/rdisk/2677/src/sample/build.gradle /tmp/rdisk/2677/src/build.gradle
+2018-04-01 18:28:14,984 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2677/src/settings.gradle /tmp/rdisk/2677/src/sample/build.gradle /tmp/rdisk/2677/src/library/build.gradle /tmp/rdisk/2677/src/build.gradle
+2018-04-01 18:28:14,985 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 18:28:14,985 INFO  ProjectFixService - Fixing project...
+2018-04-01 18:28:14,991 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2677/src/library/local.properties
+2018-04-01 18:28:14,991 INFO  ProjectFixService - Build info for "/tmp/rdisk/2677/src/library/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 18:28:14,992 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2677/src/sample/local.properties
+2018-04-01 18:28:14,992 INFO  ProjectFixService - Build info for "/tmp/rdisk/2677/src/sample/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 18:28:14,993 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2677/src/local.properties
+2018-04-01 18:28:14,993 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.10-all.zip
+2018-04-01 18:28:14,993 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.10-bin.zip)
+2018-04-01 18:28:14,995 INFO  ProjectFixService - Build info for "/tmp/rdisk/2677/src/build.gradle": [buildToolsVersion=23.0.2,compileSdkVersion=23,minSdkVersion=15,targetSdkVersion=23]
+2018-04-01 18:28:14,995 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 18:28:14,995 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:28:14,995 INFO  SysUtils - Execute command: [/tmp/rdisk/2677/src/gradlew, -b, /tmp/rdisk/2677/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:28:24,185 ERROR ProjectTaskService - Could not detect possible Gradle tasks: Process exited with an error: 1 (Exit value: 1)
+2018-04-01 18:28:24,186 INFO  ProjectTaskService - Detected possible tasks: 0
+2018-04-01 18:28:24,186 INFO  ProjectTaskService - Excluded tasks (0): none
+2018-04-01 18:28:24,186 INFO  SysUtils - Execute command: [/tmp/rdisk/2677/src/gradlew, -b, /tmp/rdisk/2677/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, build]
+2018-04-01 18:28:46,990 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:compileDebugNdk UP-TO-DATE
+:library:compileLint
+:library:copyDebugLint UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:library:prepareComAndroidSupportAppcompatV72320Library
+:library:prepareComAndroidSupportDesign2320Library
+:library:prepareComAndroidSupportRecyclerviewV72320Library
+:library:prepareComAndroidSupportSupportV42320Library
+:library:prepareComAndroidSupportSupportVectorDrawable2320Library
+:library:prepareComGithubAfollestadAppThemeEngine101Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugAssets UP-TO-DATE
+:library:mergeDebugAssets
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:compileDebugJavaWithJavacNote: /tmp/rdisk/2677/src/library/src/main/java/jlelse/simpleui/SimpleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractDebugAnnotations
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript UP-TO-DATE
+:library:packageDebugResources
+:library:processDebugJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForDebug
+:library:transformNative_libsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:compileReleaseNdk UP-TO-DATE
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:compileReleaseJavaWithJavacNote: /tmp/rdisk/2677/src/library/src/main/java/jlelse/simpleui/SimpleActivity.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:library:extractReleaseAnnotations
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNative_libsWithMergeJniLibsForRelease
+:library:transformNative_libsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:assemble
+:library:lint
+Ran lint on variant release: 5 issues found
+Ran lint on variant debug: 5 issues found
+Wrote HTML report to file:///tmp/rdisk/2677/src/library/build/outputs/lint-results-debug.html
+Wrote XML report to file:///tmp/rdisk/2677/src/library/build/outputs/lint-results-debug.xml
+:library:prepareDebugUnitTestDependencies
+:library:compileDebugUnitTestJavaWithJavac UP-TO-DATE
+:library:processDebugUnitTestJavaRes UP-TO-DATE
+:library:compileDebugUnitTestSources UP-TO-DATE
+:library:mockableAndroidJar
+:library:assembleDebugUnitTest
+:library:testDebugUnitTest
+:library:prepareReleaseUnitTestDependencies
+:library:compileReleaseUnitTestJavaWithJavac UP-TO-DATE
+:library:processReleaseUnitTestJavaRes UP-TO-DATE
+:library:compileReleaseUnitTestSources UP-TO-DATE
+:library:assembleReleaseUnitTest
+:library:testReleaseUnitTest
+:library:test
+:library:check
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.387 secs
+
+2018-04-01 18:28:47,037 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 18:28:47,038 INFO  SysUtils - Execute command: [/tmp/rdisk/2677/src/gradlew, -b, /tmp/rdisk/2677/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 18:28:54,029 INFO  ProjectTaskService - Detected possible tasks: 69
+2018-04-01 18:28:54,029 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 18:28:54,030 INFO  SysUtils - Execute command: [/tmp/rdisk/2677/src/gradlew, -b, /tmp/rdisk/2677/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 18:29:27,440 INFO  SysUtils - Configuration on demand is an incubating feature.
+Incremental java compilation is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:compileReleaseNdk UP-TO-DATE
+:library:compileLint
+:library:copyReleaseLint UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportAnimatedVectorDrawable2320Library UP-TO-DATE
+:library:prepareComAndroidSupportAppcompatV72320Library UP-TO-DATE
+:library:prepareComAndroidSupportDesign2320Library UP-TO-DATE
+:library:prepareComAndroidSupportRecyclerviewV72320Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportV42320Library UP-TO-DATE
+:library:prepareComAndroidSupportSupportVectorDrawable2320Library UP-TO-DATE
+:library:prepareComGithubAfollestadAppThemeEngine101Library UP-TO-DATE
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript UP-TO-DATE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseJavaRes UP-TO-DATE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2320Library
+:sample:prepareComAndroidSupportAppcompatV72320Library
+:sample:prepareComAndroidSupportDesign2320Library
+:sample:prepareComAndroidSupportRecyclerviewV72320Library
+:sample:prepareComAndroidSupportSupportV42320Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2320Library
+:sample:prepareComGithubAfollestadAppThemeEngine101Library
+:sample:prepareComGithubJlelseLibraryUnspecifiedLibrary
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugAssets UP-TO-DATE
+:sample:mergeDebugAssets
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk UP-TO-DATE
+:sample:compileDebugSources
+:sample:prePackageMarkerForDebug
+:sample:transformClassesWithDexForDebug
+Allocated dexExecutorService of size 1
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/classes/debug took 786
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar took 1583
+Dexing /root/Applications/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar took 297
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar took 3422
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar took 2496
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar took 1507
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.github.jlelse/library/unspecified/jars/classes.jar took 532
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar took 870
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.github.afollestad/app-theme-engine/1.0.1/jars/classes.jar took 1178
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar took 557
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar took 1864
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.github.afollestad-app-theme-engine-1.0.1_84d042fa59456d13f0cf514363b8ccc2a6f28beb.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_48c7f35e71f9d341b2aa59d237e2db20880540b9.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_6ffd05f475cb5f3fd97404f832247c607f1884c0.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_7c7bd994029d36b7f10b5d58f743a1462c07efb6.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.0_27f9d297c3fb5aaf02ea51b2bf23c439c5dbe3cf.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.github.jlelse-library-unspecified_c16d8d0c123cbd1b26ea4f9fca44bd906f280cc3.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/debug_e0ece6f65a3b63da1f5a14664c213fdc7656998a.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_8677e33b8be752f955cc39cdc8925ea16a9c5759.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/internal_impl-23.2.0_f013cba5679d51df25eefe84a66eeab96b98155c.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.0_eaefb2be4cc2696089b9f4ce02a136dacab4e1ec.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_06208d1d86795b9fb3937d27cea3b783d0f04d8b.jar took 701
+:sample:mergeDebugJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForDebug
+:sample:processDebugJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateDebugSigning
+:sample:packageDebug
+:sample:zipalignDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseAssets UP-TO-DATE
+:sample:mergeReleaseAssets
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk UP-TO-DATE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:prePackageMarkerForRelease
+:sample:transformClassesWithDexForRelease
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/classes/release took 743
+Dexing /tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.2.0_8677e33b8be752f955cc39cdc8925ea16a9c5759.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.2.0_6ffd05f475cb5f3fd97404f832247c607f1884c0.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-23.2.0_eaefb2be4cc2696089b9f4ce02a136dacab4e1ec.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.2.0_48c7f35e71f9d341b2aa59d237e2db20880540b9.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-design-23.2.0_27f9d297c3fb5aaf02ea51b2bf23c439c5dbe3cf.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/internal_impl-23.2.0_f013cba5679d51df25eefe84a66eeab96b98155c.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.github.jlelse-library-unspecified_c16d8d0c123cbd1b26ea4f9fca44bd906f280cc3.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/release_70ee3590e7f4a124e241b06130211acb75af700c.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.github.afollestad-app-theme-engine-1.0.1_84d042fa59456d13f0cf514363b8ccc2a6f28beb.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.2.0_06208d1d86795b9fb3937d27cea3b783d0f04d8b.jar,/tmp/rdisk/2677/src/sample/build/intermediates/pre-dexed/release/support-annotations-23.2.0_7c7bd994029d36b7f10b5d58f743a1462c07efb6.jar took 664
+:sample:mergeReleaseJniLibFolders
+:sample:transformNative_libsWithMergeJniLibsForRelease
+:sample:processReleaseJavaRes UP-TO-DATE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 32.965 secs
+
+2018-04-01 18:29:27,530 INFO  FullProcessService - Found APK file: /tmp/rdisk/2677/src/sample/build/outputs/apk/sample-release-unsigned.apk

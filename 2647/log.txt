@@ -1,0 +1,159 @@
+2018-04-01 19:43:34,477 INFO  DownloadService - Downloading "https://github.com/iambmelt/Stanley/archive/master.zip", attempt 3
+2018-04-01 19:44:34,952 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 19:44:35,644 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 19:44:35,644 INFO  DownloadService - Downloading "https://github.com/iambmelt/Stanley/archive/master.zip", attempt 3
+2018-04-01 19:45:36,816 DEBUG FullProcessService - Repository https://github.com/iambmelt/Stanley available: true
+2018-04-01 19:45:36,816 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 19:45:36,816 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/iambmelt/Stanley, /tmp/rdisk/2647/src]
+2018-04-01 19:45:38,264 INFO  SysUtils - 
+2018-04-01 19:45:38,275 INFO  GitService - Deleted "/tmp/rdisk/2647/src/.git": true
+2018-04-01 19:45:38,277 INFO  FullProcessService - Size of directory with sources: 101 KB
+2018-04-01 19:45:38,277 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2647/src]
+2018-04-01 19:45:38,281 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2647/src/.git/
+
+2018-04-01 19:45:38,283 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2647/src/gradlew
+2018-04-01 19:45:38,284 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2647/src/stanley/build.gradle /tmp/rdisk/2647/src/build.gradle
+2018-04-01 19:45:38,286 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2647/src/stanley/build.gradle /tmp/rdisk/2647/src/settings.gradle /tmp/rdisk/2647/src/build.gradle
+2018-04-01 19:45:38,286 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 19:45:38,286 INFO  ProjectFixService - Fixing project...
+2018-04-01 19:45:38,290 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2647/src/stanley/local.properties
+2018-04-01 19:45:38,290 INFO  ProjectFixService - Build info for "/tmp/rdisk/2647/src/stanley/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 19:45:38,290 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2647/src/stanley/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 19:45:38,291 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2647/src/local.properties
+2018-04-01 19:45:38,291 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 19:45:38,291 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 19:45:38,292 INFO  ProjectFixService - Build info for "/tmp/rdisk/2647/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=<null>]
+2018-04-01 19:45:38,292 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2647/src/build.gradle": [buildToolsVersion=22.0.1,compileSdkVersion=22,minSdkVersion=8,targetSdkVersion=27]
+2018-04-01 19:45:38,299 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 19:45:38,300 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:45:38,300 INFO  SysUtils - Execute command: [/tmp/rdisk/2647/src/gradlew, -b, /tmp/rdisk/2647/src/stanley/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:45:47,438 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-01 19:45:47,439 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-01 19:45:47,439 INFO  SysUtils - Execute command: [/tmp/rdisk/2647/src/gradlew, -b, /tmp/rdisk/2647/src/stanley/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-01 19:45:54,505 INFO  SysUtils - Configuration on demand is an incubating feature.
+:stanley:compileLint
+:stanley:copyDebugLint UP-TO-DATE
+:stanley:mergeDebugProguardFiles
+:stanley:preBuild UP-TO-DATE
+:stanley:preDebugBuild UP-TO-DATE
+:stanley:checkDebugManifest
+:stanley:prepareDebugDependencies
+:stanley:compileDebugAidl
+:stanley:compileDebugRenderscript
+:stanley:generateDebugBuildConfig
+:stanley:generateDebugAssets UP-TO-DATE
+:stanley:mergeDebugAssets
+:stanley:generateDebugResValues
+:stanley:generateDebugResources
+:stanley:packageDebugResources
+:stanley:processDebugManifest
+:stanley:processDebugResources
+:stanley:generateDebugSources
+:stanley:compileDebugJava
+:stanley:processDebugJavaRes UP-TO-DATE
+:stanley:packageDebugJar
+:stanley:compileDebugNdk UP-TO-DATE
+:stanley:packageDebugJniLibs UP-TO-DATE
+:stanley:packageDebugLocalJar UP-TO-DATE
+:stanley:packageDebugRenderscript UP-TO-DATE
+:stanley:bundleDebug
+:stanley:assembleDebug
+:stanley:copyReleaseLint UP-TO-DATE
+:stanley:mergeReleaseProguardFiles
+:stanley:preReleaseBuild UP-TO-DATE
+:stanley:checkReleaseManifest
+:stanley:prepareReleaseDependencies
+:stanley:compileReleaseAidl
+:stanley:compileReleaseRenderscript
+:stanley:generateReleaseBuildConfig
+:stanley:generateReleaseAssets UP-TO-DATE
+:stanley:mergeReleaseAssets
+:stanley:generateReleaseResValues
+:stanley:generateReleaseResources
+:stanley:packageReleaseResources
+:stanley:processReleaseManifest
+:stanley:processReleaseResources
+:stanley:generateReleaseSources
+:stanley:compileReleaseJava
+:stanley:processReleaseJavaRes UP-TO-DATE
+:stanley:packageReleaseJar
+:stanley:compileReleaseNdk UP-TO-DATE
+:stanley:packageReleaseJniLibs UP-TO-DATE
+:stanley:packageReleaseLocalJar UP-TO-DATE
+:stanley:packageReleaseRenderscript UP-TO-DATE
+:stanley:bundleRelease
+:stanley:assembleRelease
+:stanley:assemble
+:stanley:build
+
+BUILD SUCCESSFUL
+
+Total time: 6.576 secs
+
+2018-04-01 19:45:54,510 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 19:45:54,510 INFO  SysUtils - Execute command: [/tmp/rdisk/2647/src/gradlew, -b, /tmp/rdisk/2647/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 19:46:00,570 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-01 19:46:00,570 INFO  ProjectTaskService - Excluded tasks (14): lintDebug mockableAndroidJar deviceCheck lint uninstallDebugAndroidTest installDebugAndroidTest connectedCheck uninstallAll testRelease test check connectedAndroidTest lintRelease testDebug
+2018-04-01 19:46:00,570 INFO  SysUtils - Execute command: [/tmp/rdisk/2647/src/gradlew, -b, /tmp/rdisk/2647/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, testRelease, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, -x, testDebug, build]
+2018-04-01 19:46:06,739 INFO  SysUtils - Configuration on demand is an incubating feature.
+:stanley:compileLint
+:stanley:copyDebugLint UP-TO-DATE
+:stanley:mergeDebugProguardFiles UP-TO-DATE
+:stanley:preBuild UP-TO-DATE
+:stanley:preDebugBuild UP-TO-DATE
+:stanley:checkDebugManifest
+:stanley:prepareDebugDependencies
+:stanley:compileDebugAidl UP-TO-DATE
+:stanley:compileDebugRenderscript UP-TO-DATE
+:stanley:generateDebugBuildConfig UP-TO-DATE
+:stanley:generateDebugAssets UP-TO-DATE
+:stanley:mergeDebugAssets UP-TO-DATE
+:stanley:generateDebugResValues UP-TO-DATE
+:stanley:generateDebugResources UP-TO-DATE
+:stanley:packageDebugResources UP-TO-DATE
+:stanley:processDebugManifest UP-TO-DATE
+:stanley:processDebugResources UP-TO-DATE
+:stanley:generateDebugSources UP-TO-DATE
+:stanley:compileDebugJava UP-TO-DATE
+:stanley:processDebugJavaRes UP-TO-DATE
+:stanley:packageDebugJar UP-TO-DATE
+:stanley:compileDebugNdk UP-TO-DATE
+:stanley:packageDebugJniLibs UP-TO-DATE
+:stanley:packageDebugLocalJar UP-TO-DATE
+:stanley:packageDebugRenderscript UP-TO-DATE
+:stanley:bundleDebug UP-TO-DATE
+:stanley:assembleDebug UP-TO-DATE
+:stanley:copyReleaseLint UP-TO-DATE
+:stanley:mergeReleaseProguardFiles UP-TO-DATE
+:stanley:preReleaseBuild UP-TO-DATE
+:stanley:checkReleaseManifest
+:stanley:prepareReleaseDependencies
+:stanley:compileReleaseAidl UP-TO-DATE
+:stanley:compileReleaseRenderscript UP-TO-DATE
+:stanley:generateReleaseBuildConfig UP-TO-DATE
+:stanley:generateReleaseAssets UP-TO-DATE
+:stanley:mergeReleaseAssets UP-TO-DATE
+:stanley:generateReleaseResValues UP-TO-DATE
+:stanley:generateReleaseResources UP-TO-DATE
+:stanley:packageReleaseResources UP-TO-DATE
+:stanley:processReleaseManifest UP-TO-DATE
+:stanley:processReleaseResources UP-TO-DATE
+:stanley:generateReleaseSources UP-TO-DATE
+:stanley:compileReleaseJava UP-TO-DATE
+:stanley:processReleaseJavaRes UP-TO-DATE
+:stanley:packageReleaseJar UP-TO-DATE
+:stanley:compileReleaseNdk UP-TO-DATE
+:stanley:packageReleaseJniLibs UP-TO-DATE
+:stanley:packageReleaseLocalJar UP-TO-DATE
+:stanley:packageReleaseRenderscript UP-TO-DATE
+:stanley:bundleRelease UP-TO-DATE
+:stanley:assembleRelease UP-TO-DATE
+:stanley:assemble UP-TO-DATE
+:stanley:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.718 secs
+
+2018-04-01 19:46:06,744 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 19:46:06,749 ERROR FullProcessService - Could not find generated or existed APK file

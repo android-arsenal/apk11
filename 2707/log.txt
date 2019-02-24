@@ -1,0 +1,122 @@
+2018-04-01 10:44:12,440 INFO  DownloadService - Downloading "https://github.com/artem-zinnatullin/AssertParcelable/archive/master.zip", attempt 3
+2018-04-01 10:45:12,441 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 10:45:13,102 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 10:45:13,102 INFO  DownloadService - Downloading "https://github.com/artem-zinnatullin/AssertParcelable/archive/master.zip", attempt 3
+2018-04-01 10:46:13,847 DEBUG FullProcessService - Repository https://github.com/artem-zinnatullin/AssertParcelable available: true
+2018-04-01 10:46:13,847 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 10:46:13,847 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/artem-zinnatullin/AssertParcelable, /tmp/rdisk/2707/src]
+2018-04-01 10:46:15,405 INFO  SysUtils - 
+2018-04-01 10:46:15,413 INFO  GitService - Deleted "/tmp/rdisk/2707/src/.git": true
+2018-04-01 10:46:15,414 INFO  FullProcessService - Size of directory with sources: 93 KB
+2018-04-01 10:46:15,414 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2707/src]
+2018-04-01 10:46:15,418 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2707/src/.git/
+
+2018-04-01 10:46:15,419 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2707/src/gradlew
+2018-04-01 10:46:15,421 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2707/src/assert-parcelable/build.gradle /tmp/rdisk/2707/src/build.gradle
+2018-04-01 10:46:15,422 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2707/src/settings.gradle /tmp/rdisk/2707/src/gradle/publish-android-lib.gradle /tmp/rdisk/2707/src/build.gradle /tmp/rdisk/2707/src/assert-parcelable/build.gradle
+2018-04-01 10:46:15,422 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 10:46:15,422 INFO  ProjectFixService - Fixing project...
+2018-04-01 10:46:15,427 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2707/src/assert-parcelable/local.properties
+2018-04-01 10:46:15,430 INFO  ProjectFixService - Build info for "/tmp/rdisk/2707/src/assert-parcelable/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=<null>]
+2018-04-01 10:46:15,430 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2707/src/assert-parcelable/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=27]
+2018-04-01 10:46:15,430 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2707/src/local.properties
+2018-04-01 10:46:15,430 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.8-bin.zip
+2018-04-01 10:46:15,432 INFO  ProjectFixService - Build info for "/tmp/rdisk/2707/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=<null>]
+2018-04-01 10:46:15,432 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2707/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=9,targetSdkVersion=27]
+2018-04-01 10:46:15,432 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 10:46:15,432 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:46:15,432 INFO  SysUtils - Execute command: [/tmp/rdisk/2707/src/gradlew, -b, /tmp/rdisk/2707/src/assert-parcelable/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:46:22,820 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-01 10:46:22,820 INFO  ProjectTaskService - Excluded tasks (11): mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest lintRelease
+2018-04-01 10:46:22,820 INFO  SysUtils - Execute command: [/tmp/rdisk/2707/src/gradlew, -b, /tmp/rdisk/2707/src/assert-parcelable/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 10:46:30,870 INFO  SysUtils - Configuration on demand is an incubating feature.
+:assert-parcelable:androidJavadocs
+:assert-parcelable:androidJavadocsJar
+:assert-parcelable:androidSourcesJar
+:assert-parcelable:compileLint
+:assert-parcelable:copyReleaseLint UP-TO-DATE
+:assert-parcelable:mergeReleaseProguardFiles
+:assert-parcelable:preBuild UP-TO-DATE
+:assert-parcelable:preReleaseBuild UP-TO-DATE
+:assert-parcelable:checkReleaseManifest
+:assert-parcelable:prepareReleaseDependencies
+:assert-parcelable:compileReleaseAidl
+:assert-parcelable:compileReleaseRenderscript
+:assert-parcelable:generateReleaseBuildConfig
+:assert-parcelable:generateReleaseAssets UP-TO-DATE
+:assert-parcelable:mergeReleaseAssets
+:assert-parcelable:generateReleaseResValues
+:assert-parcelable:generateReleaseResources
+:assert-parcelable:packageReleaseResources
+:assert-parcelable:processReleaseManifest
+:assert-parcelable:processReleaseResources
+:assert-parcelable:generateReleaseSources
+:assert-parcelable:processReleaseJavaRes UP-TO-DATE
+:assert-parcelable:compileReleaseJavaWithJavacNote: /tmp/rdisk/2707/src/assert-parcelable/src/main/java/com/artemzin/assert_parcelable/AssertParcelable.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:assert-parcelable:packageReleaseJar
+:assert-parcelable:compileReleaseNdk UP-TO-DATE
+:assert-parcelable:packageReleaseJniLibs UP-TO-DATE
+:assert-parcelable:packageReleaseLocalJar UP-TO-DATE
+:assert-parcelable:packageReleaseRenderscript UP-TO-DATE
+:assert-parcelable:bundleRelease
+:assert-parcelable:compileReleaseSources
+:assert-parcelable:assembleRelease
+:assert-parcelable:jarRelease
+:assert-parcelable:signArchives SKIPPED
+:assert-parcelable:assemble
+:assert-parcelable:build
+
+BUILD SUCCESSFUL
+
+Total time: 7.606 secs
+
+2018-04-01 10:46:30,874 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 10:46:30,874 INFO  SysUtils - Execute command: [/tmp/rdisk/2707/src/gradlew, -b, /tmp/rdisk/2707/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 10:46:37,070 INFO  ProjectTaskService - Detected possible tasks: 56
+2018-04-01 10:46:37,070 INFO  ProjectTaskService - Excluded tasks (11): mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest connectedCheck uninstallAll test check connectedAndroidTest lintRelease
+2018-04-01 10:46:37,070 INFO  SysUtils - Execute command: [/tmp/rdisk/2707/src/gradlew, -b, /tmp/rdisk/2707/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, connectedCheck, -x, uninstallAll, -x, test, -x, check, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 10:46:43,442 INFO  SysUtils - Configuration on demand is an incubating feature.
+:assert-parcelable:androidJavadocs UP-TO-DATE
+:assert-parcelable:androidJavadocsJar UP-TO-DATE
+:assert-parcelable:androidSourcesJar UP-TO-DATE
+:assert-parcelable:compileLint
+:assert-parcelable:copyReleaseLint UP-TO-DATE
+:assert-parcelable:mergeReleaseProguardFiles UP-TO-DATE
+:assert-parcelable:preBuild UP-TO-DATE
+:assert-parcelable:preReleaseBuild UP-TO-DATE
+:assert-parcelable:checkReleaseManifest
+:assert-parcelable:prepareReleaseDependencies
+:assert-parcelable:compileReleaseAidl UP-TO-DATE
+:assert-parcelable:compileReleaseRenderscript UP-TO-DATE
+:assert-parcelable:generateReleaseBuildConfig UP-TO-DATE
+:assert-parcelable:generateReleaseAssets UP-TO-DATE
+:assert-parcelable:mergeReleaseAssets UP-TO-DATE
+:assert-parcelable:generateReleaseResValues UP-TO-DATE
+:assert-parcelable:generateReleaseResources UP-TO-DATE
+:assert-parcelable:packageReleaseResources UP-TO-DATE
+:assert-parcelable:processReleaseManifest UP-TO-DATE
+:assert-parcelable:processReleaseResources UP-TO-DATE
+:assert-parcelable:generateReleaseSources UP-TO-DATE
+:assert-parcelable:processReleaseJavaRes UP-TO-DATE
+:assert-parcelable:compileReleaseJavaWithJavac UP-TO-DATE
+:assert-parcelable:packageReleaseJar UP-TO-DATE
+:assert-parcelable:compileReleaseNdk UP-TO-DATE
+:assert-parcelable:packageReleaseJniLibs UP-TO-DATE
+:assert-parcelable:packageReleaseLocalJar UP-TO-DATE
+:assert-parcelable:packageReleaseRenderscript UP-TO-DATE
+:assert-parcelable:bundleRelease UP-TO-DATE
+:assert-parcelable:compileReleaseSources UP-TO-DATE
+:assert-parcelable:assembleRelease UP-TO-DATE
+:assert-parcelable:jarRelease UP-TO-DATE
+:assert-parcelable:signArchives SKIPPED
+:assert-parcelable:assemble UP-TO-DATE
+:assert-parcelable:build
+
+BUILD SUCCESSFUL
+
+Total time: 5.915 secs
+
+2018-04-01 10:46:43,446 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 10:46:43,449 ERROR FullProcessService - Could not find generated or existed APK file

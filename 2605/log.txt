@@ -1,0 +1,148 @@
+2018-04-01 21:38:21,482 INFO  DownloadService - Downloading "https://github.com/ViksaaSkool/AwesomeSplash/archive/master.zip", attempt 3
+2018-04-01 21:39:21,990 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:39:22,711 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 21:39:22,712 INFO  DownloadService - Downloading "https://github.com/ViksaaSkool/AwesomeSplash/archive/master.zip", attempt 3
+2018-04-01 21:40:24,035 DEBUG FullProcessService - Repository https://github.com/ViksaaSkool/AwesomeSplash available: true
+2018-04-01 21:40:24,035 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:40:24,035 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ViksaaSkool/AwesomeSplash, /tmp/rdisk/2605/src]
+2018-04-01 21:40:26,083 INFO  SysUtils - 
+2018-04-01 21:40:26,088 INFO  GitService - Deleted "/tmp/rdisk/2605/src/.git": true
+2018-04-01 21:40:26,092 INFO  FullProcessService - Size of directory with sources: 2 MB
+2018-04-01 21:40:26,093 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2605/src]
+2018-04-01 21:40:26,097 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2605/src/.git/
+
+2018-04-01 21:40:26,101 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2605/src/gradlew
+2018-04-01 21:40:26,104 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2605/src/app/build.gradle /tmp/rdisk/2605/src/lib/build.gradle /tmp/rdisk/2605/src/build.gradle
+2018-04-01 21:40:26,107 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2605/src/settings.gradle /tmp/rdisk/2605/src/lib/build.gradle /tmp/rdisk/2605/src/build.gradle /tmp/rdisk/2605/src/app/build.gradle
+2018-04-01 21:40:26,108 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:40:26,108 INFO  ProjectFixService - Fixing project...
+2018-04-01 21:40:26,116 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2605/src/app/local.properties
+2018-04-01 21:40:26,116 INFO  ProjectFixService - Build info for "/tmp/rdisk/2605/src/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 21:40:26,116 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2605/src/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 21:40:26,117 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2605/src/lib/local.properties
+2018-04-01 21:40:26,117 INFO  ProjectFixService - Build info for "/tmp/rdisk/2605/src/lib/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 21:40:26,117 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2605/src/lib/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 21:40:26,118 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2605/src/local.properties
+2018-04-01 21:40:26,118 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2-all.zip
+2018-04-01 21:40:26,121 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2-bin.zip)
+2018-04-01 21:40:26,122 INFO  ProjectFixService - Build info for "/tmp/rdisk/2605/src/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 21:40:26,122 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 21:40:26,122 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 21:40:26,122 INFO  SysUtils - Execute command: [/tmp/rdisk/2605/src/gradlew, -b, /tmp/rdisk/2605/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 21:40:36,879 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-01 21:40:36,879 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 21:40:36,879 INFO  SysUtils - Execute command: [/tmp/rdisk/2605/src/gradlew, -b, /tmp/rdisk/2605/src/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 21:41:07,431 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:preBuild UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:preDebugAndroidTestBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:preDebugUnitTestBuild UP-TO-DATE
+:lib:preReleaseUnitTestBuild UP-TO-DATE
+:lib:prepareComAndroidSupportAppcompatV72301Library
+:lib:prepareComAndroidSupportSupportV42301Library
+:lib:prepareComDaimajiaAndroidanimationsLibrary113Library
+:lib:prepareComDaimajiaEasingLibrary101Library
+:lib:prepareComGithubJorgecastilloprzFillableloaders102Library
+:lib:prepareComGithubOzodrukhCircularReveal111Library
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:mergeReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:compileReleaseJavaWithJavacNote: /tmp/rdisk/2605/src/lib/src/main/java/com/viksaa/sssplash/lib/activity/AwesomeSplash.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+:lib:extractReleaseAnnotations
+:lib:mergeReleaseProguardFiles
+:lib:packageReleaseJar
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseResources
+:lib:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportCardviewV72301Library
+:app:prepareComAndroidSupportDesign2301Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComBadooMobileAndroidWeakHandler11Library
+:app:prepareComDaimajiaAndroidanimationsLibrary113Library
+:app:prepareComDaimajiaEasingLibrary101Library
+:app:prepareComGithubJorgecastilloprzFillableloaders102Library
+:app:prepareComGithubOzodrukhCircularReveal111Library
+:app:prepareSrcLib100Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavacNote: /tmp/rdisk/2605/src/app/src/main/java/com/viksaa/ssspalsh/adapters/ColorAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2605/src/app/src/main/java/com/viksaa/ssspalsh/util/FixedScrollingViewBehavior.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavacNote: /tmp/rdisk/2605/src/app/src/main/java/com/viksaa/ssspalsh/adapters/ColorAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /tmp/rdisk/2605/src/app/src/main/java/com/viksaa/ssspalsh/util/FixedScrollingViewBehavior.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 30.122 secs
+
+2018-04-01 21:41:07,497 INFO  FullProcessService - Found APK file: /tmp/rdisk/2605/src/app/build/outputs/apk/app-debug.apk

@@ -1,0 +1,21 @@
+2018-04-01 21:13:24,460 INFO  DownloadService - Downloading "https://github.com/ablack13/logger/archive/master.zip", attempt 3
+2018-04-01 21:14:24,941 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 21:14:25,596 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 21:14:25,596 INFO  DownloadService - Downloading "https://github.com/ablack13/logger/archive/master.zip", attempt 3
+2018-04-01 21:15:26,821 DEBUG FullProcessService - Repository https://github.com/ablack13/logger available: true
+2018-04-01 21:15:26,821 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 21:15:26,822 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/ablack13/logger, /tmp/rdisk/2614/src]
+2018-04-01 21:15:28,001 INFO  SysUtils - 
+2018-04-01 21:15:28,004 INFO  GitService - Deleted "/tmp/rdisk/2614/src/.git": true
+2018-04-01 21:15:28,005 INFO  FullProcessService - Size of directory with sources: 16 KB
+2018-04-01 21:15:28,005 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2614/src]
+2018-04-01 21:15:28,010 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2614/src/.git/
+
+2018-04-01 21:15:28,010 INFO  ProjectBuildService - Gradle wrapper(s): none
+2018-04-01 21:15:28,010 ERROR ProjectBuildService - Could not detect Gradle wrapper. Default Gradle installation will be used
+2018-04-01 21:15:28,011 INFO  ProjectBuildService - Build script(s): none
+2018-04-01 21:15:28,012 INFO  ProjectBuildService - All script(s): none
+2018-04-01 21:15:28,012 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 21:15:28,012 ERROR FullProcessService - Project is not correct Gradle project
+2018-04-01 21:15:28,012 ERROR FullProcessService - Project build has not produced APK file
+2018-04-01 21:15:28,012 ERROR FullProcessService - Could not find generated or existed APK file

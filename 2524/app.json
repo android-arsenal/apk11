@@ -1,0 +1,33 @@
+{
+  "meta" : {
+    "packageName" : "it.cosenonjaviste.demomv2m",
+    "label" : "Demo mv2m",
+    "icon" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "versionName" : "2.0",
+    "versionCode" : 11,
+    "installLocation" : null,
+    "minSdkVersion" : "14",
+    "targetSdkVersion" : "23",
+    "maxSdkVersion" : null,
+    "glEsVersion" : null,
+    "anyDensity" : false,
+    "smallScreens" : false,
+    "normalScreens" : false,
+    "largeScreens" : false,
+    "usesPermissions" : [ "android.permission.INTERNET" ],
+    "usesFeatures" : [ ],
+    "permissions" : [ ]
+  },
+  "icon" : {
+    "path" : "res/drawable-mdpi-v4/ic_launcher.png",
+    "density" : 0,
+    "data" : "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"
+  },
+  "dexClasses" : 3442,
+  "locales" : [ "", "az_AZ", "sl", "mr_IN", "kk_KZ", "bg", "zh_HK", "zh_TW", "it", "zu", "ko", "uk", "my_MM", "ur_PK", "mn_MN", "fi", "lv", "et_EE", "sw", "pt_PT", "tl", "th", "sq_AL", "uz_UZ", "pt", "ar", "ru", "eu_ES", "bn_BD", "fa", "gu_IN", "sk", "kn_IN", "hi", "cs", "sv", "km_KH", "el", "nl", "hu", "pa_IN", "af", "en_AU", "in", "vi", "fr_CA", "sr", "pt_BR", "da", "si_LK", "ml_IN", "gl_ES", "es", "is_IS", "hy_AM", "tr", "ne_NP", "ro", "hr", "ms_MY", "am", "ka_GE", "lt", "pl", "zh_CN", "ta_IN", "fr", "ja", "lo_LA", "ky_KG", "iw", "de", "en_IN", "es_US", "mk_MK", "nb", "te_IN", "ca", "en_GB" ],
+  "manifest" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"11\" android:versionName=\"2.0\" package=\"it.cosenonjaviste.demomv2m\" platformBuildVersionCode=\"23\" platformBuildVersionName=\"6.0-2704002\">\n\t<uses-sdk android:minSdkVersion=\"14\" android:targetSdkVersion=\"23\" />\n\t<uses-permission android:name=\"android.permission.INTERNET\" />\n\t<application android:theme=\"resourceId:0x7f080082\" android:label=\"Demo mv2m\" android:icon=\"res/drawable-mdpi-v4/ic_launcher.png\">\n\t\t<activity android:name=\"it.cosenonjaviste.demomv2m.ui.list.NoteListActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t\t<activity android:name=\"it.cosenonjaviste.demomv2m.ui.detail.NoteActivity\" />\n\t\t<activity android:name=\"it.cosenonjaviste.demomv2m.ui.currencyconverter1.CurrencyConverterActivity\" />\n\t\t<activity android:name=\"it.cosenonjaviste.demomv2m.ui.recycler.RecyclerViewDemoActivity\">\n\t\t\t<intent-filter>\n\t\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t\t</intent-filter>\n\t\t</activity>\n\t</application>\n</manifest>\n",
+  "fileSize" : 2014726,
+  "crc32" : 1200610492,
+  "sha256" : "f9880f40f5746675fde7513ae90c8acbda2e4b15231b676b0ee7db007830ac75",
+  "buildTime" : 1522632767000
+}

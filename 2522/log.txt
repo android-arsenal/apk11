@@ -1,0 +1,1199 @@
+2018-04-02 01:35:50,486 INFO  DownloadService - Downloading "https://github.com/shamanland/xdroid/archive/master.zip", attempt 3
+2018-04-02 01:36:50,914 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-02 01:36:51,582 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-02 01:36:51,582 INFO  DownloadService - Downloading "https://github.com/shamanland/xdroid/archive/master.zip", attempt 3
+2018-04-02 01:37:52,802 DEBUG FullProcessService - Repository https://github.com/shamanland/xdroid available: true
+2018-04-02 01:37:52,802 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-02 01:37:52,802 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/shamanland/xdroid, /tmp/rdisk/2522/src]
+2018-04-02 01:37:54,350 INFO  SysUtils - 
+2018-04-02 01:37:54,356 INFO  GitService - Deleted "/tmp/rdisk/2522/src/.git": true
+2018-04-02 01:37:54,363 INFO  FullProcessService - Size of directory with sources: 230 KB
+2018-04-02 01:37:54,363 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2522/src]
+2018-04-02 01:37:54,367 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2522/src/.git/
+
+2018-04-02 01:37:54,372 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2522/src/gradlew
+2018-04-02 01:37:54,378 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2522/src/build.gradle /tmp/rdisk/2522/src/app/build.gradle /tmp/rdisk/2522/src/lib-adapter/build.gradle /tmp/rdisk/2522/src/lib-app/build.gradle /tmp/rdisk/2522/src/lib-collections/build.gradle /tmp/rdisk/2522/src/lib-core/build.gradle /tmp/rdisk/2522/src/lib-customservice/build.gradle /tmp/rdisk/2522/src/lib-enum-format/build.gradle /tmp/rdisk/2522/src/lib-inflater/build.gradle /tmp/rdisk/2522/src/lib-options/build.gradle /tmp/rdisk/2522/src/lib-toaster/build.gradle /tmp/rdisk/2522/src/lib-viewholder/build.gradle /tmp/rdisk/2522/src/lib-widget/build.gradle /tmp/rdisk/2522/src/lib/build.gradle
+2018-04-02 01:37:54,382 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2522/src/settings.gradle /tmp/rdisk/2522/src/lib/build.gradle /tmp/rdisk/2522/src/lib-widget/build.gradle /tmp/rdisk/2522/src/lib-viewholder/build.gradle /tmp/rdisk/2522/src/lib-toaster/build.gradle /tmp/rdisk/2522/src/lib-options/build.gradle /tmp/rdisk/2522/src/lib-inflater/build.gradle /tmp/rdisk/2522/src/lib-enum-format/build.gradle /tmp/rdisk/2522/src/lib-customservice/build.gradle /tmp/rdisk/2522/src/lib-core/build.gradle /tmp/rdisk/2522/src/lib-collections/build.gradle /tmp/rdisk/2522/src/lib-app/build.gradle /tmp/rdisk/2522/src/lib-adapter/build.gradle /tmp/rdisk/2522/src/gradle-mvn-push.gradle /tmp/rdisk/2522/src/build.gradle /tmp/rdisk/2522/src/app/build.gradle
+2018-04-02 01:37:54,384 INFO  ProjectBuildService - Remote scripts: none
+2018-04-02 01:37:54,384 INFO  ProjectFixService - Fixing project...
+2018-04-02 01:37:54,403 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/local.properties
+2018-04-02 01:37:54,404 INFO  WrapperPropertiesFixService - Gradle wrapper: http://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-02 01:37:54,404 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (http://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-02 01:37:54,410 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,411 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,412 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/app/local.properties
+2018-04-02 01:37:54,418 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,418 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,419 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-adapter/local.properties
+2018-04-02 01:37:54,425 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-adapter/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,426 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-adapter/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,426 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-app/local.properties
+2018-04-02 01:37:54,432 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-app/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,432 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-app/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,433 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-collections/local.properties
+2018-04-02 01:37:54,441 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-collections/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,442 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-collections/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,442 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-core/local.properties
+2018-04-02 01:37:54,449 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-core/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,449 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-core/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,449 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-customservice/local.properties
+2018-04-02 01:37:54,456 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-customservice/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,456 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-customservice/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,456 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-enum-format/local.properties
+2018-04-02 01:37:54,468 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-enum-format/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,468 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-enum-format/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,469 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-inflater/local.properties
+2018-04-02 01:37:54,475 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-inflater/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,475 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-inflater/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,475 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-options/local.properties
+2018-04-02 01:37:54,481 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-options/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,481 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-options/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,481 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-toaster/local.properties
+2018-04-02 01:37:54,487 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-toaster/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,487 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-toaster/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,487 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-viewholder/local.properties
+2018-04-02 01:37:54,493 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-viewholder/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,493 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-viewholder/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,494 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib-widget/local.properties
+2018-04-02 01:37:54,500 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib-widget/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,500 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib-widget/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,500 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2522/src/lib/local.properties
+2018-04-02 01:37:54,506 INFO  ProjectFixService - Build info for "/tmp/rdisk/2522/src/lib/build.gradle": [buildToolsVersion=<null>,compileSdkVersion=<null>,minSdkVersion=<null>,targetSdkVersion=<null>]
+2018-04-02 01:37:54,506 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2522/src/lib/build.gradle": [buildToolsVersion=28.0.0-rc1,compileSdkVersion=27,minSdkVersion=27,targetSdkVersion=27]
+2018-04-02 01:37:54,506 INFO  ProjectFixService - Project was maybe fixed
+2018-04-02 01:37:54,506 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-02 01:37:54,507 INFO  SysUtils - Execute command: [/tmp/rdisk/2522/src/gradlew, -b, /tmp/rdisk/2522/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-02 01:38:24,463 INFO  ProjectTaskService - Detected possible tasks: 68
+2018-04-02 01:38:24,463 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-02 01:38:24,463 INFO  SysUtils - Execute command: [/tmp/rdisk/2522/src/gradlew, -b, /tmp/rdisk/2522/src/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-02 01:39:01,631 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:lib:compileLint
+:lib:copyReleaseLint UP-TO-DATE
+:lib:mergeReleaseProguardFiles
+:lib:preBuild UP-TO-DATE
+:lib:preReleaseBuild UP-TO-DATE
+:lib:checkReleaseManifest
+:lib:preDebugAndroidTestBuild UP-TO-DATE
+:lib:preDebugBuild UP-TO-DATE
+:lib:preDebugUnitTestBuild UP-TO-DATE
+:lib:preReleaseUnitTestBuild UP-TO-DATE
+:lib-adapter:compileLint
+:lib-adapter:copyReleaseLint UP-TO-DATE
+:lib-adapter:mergeReleaseProguardFiles
+:lib-adapter:preBuild UP-TO-DATE
+:lib-adapter:preReleaseBuild UP-TO-DATE
+:lib-adapter:checkReleaseManifest
+:lib-adapter:preDebugAndroidTestBuild UP-TO-DATE
+:lib-adapter:preDebugBuild UP-TO-DATE
+:lib-adapter:preDebugUnitTestBuild UP-TO-DATE
+:lib-adapter:preReleaseUnitTestBuild UP-TO-DATE
+:lib-collections:compileLint
+:lib-collections:copyReleaseLint UP-TO-DATE
+:lib-collections:mergeReleaseProguardFiles
+:lib-collections:preBuild UP-TO-DATE
+:lib-collections:preReleaseBuild UP-TO-DATE
+:lib-collections:checkReleaseManifest
+:lib-collections:preDebugAndroidTestBuild UP-TO-DATE
+:lib-collections:preDebugBuild UP-TO-DATE
+:lib-collections:preDebugUnitTestBuild UP-TO-DATE
+:lib-collections:preReleaseUnitTestBuild UP-TO-DATE
+:lib-core:compileLint
+:lib-core:copyReleaseLint UP-TO-DATE
+:lib-core:mergeReleaseProguardFiles
+:lib-core:preBuild UP-TO-DATE
+:lib-core:preReleaseBuild UP-TO-DATE
+:lib-core:checkReleaseManifest
+:lib-core:prepareReleaseDependencies
+:lib-core:compileReleaseAidl
+:lib-core:compileReleaseRenderscript
+:lib-core:generateReleaseBuildConfig
+:lib-core:generateReleaseAssets UP-TO-DATE
+:lib-core:mergeReleaseAssets
+:lib-core:generateReleaseResValues
+:lib-core:generateReleaseResources
+:lib-core:packageReleaseResources
+:lib-core:processReleaseManifest
+:lib-core:processReleaseResources
+:lib-core:generateReleaseSources
+:lib-core:processReleaseJavaRes UP-TO-DATE
+:lib-core:compileReleaseJavaWithJavacNote: /tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ParcelUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib-core:packageReleaseJar
+:lib-core:compileReleaseNdk UP-TO-DATE
+:lib-core:packageReleaseJniLibs UP-TO-DATE
+:lib-core:packageReleaseLocalJar UP-TO-DATE
+:lib-core:packageReleaseRenderscript UP-TO-DATE
+:lib-core:bundleRelease
+:lib-collections:prepareComShamanlandLibCore030Library
+:lib-collections:prepareReleaseDependencies
+:lib-collections:compileReleaseAidl
+:lib-collections:compileReleaseRenderscript
+:lib-collections:generateReleaseBuildConfig
+:lib-collections:generateReleaseAssets UP-TO-DATE
+:lib-collections:mergeReleaseAssets
+:lib-collections:generateReleaseResValues
+:lib-collections:generateReleaseResources
+:lib-collections:mergeReleaseResources
+:lib-collections:processReleaseManifest
+:lib-collections:processReleaseResources
+:lib-collections:generateReleaseSources
+:lib-collections:processReleaseJavaRes UP-TO-DATE
+:lib-collections:compileReleaseJavaWithJavacNote: /tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedCollection.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib-collections:packageReleaseJar
+:lib-collections:compileReleaseNdk UP-TO-DATE
+:lib-collections:packageReleaseJniLibs UP-TO-DATE
+:lib-collections:packageReleaseLocalJar UP-TO-DATE
+:lib-collections:packageReleaseRenderscript UP-TO-DATE
+:lib-collections:packageReleaseResources
+:lib-collections:bundleRelease
+:lib-adapter:prepareComShamanlandLibCollections030Library
+:lib-adapter:prepareComShamanlandLibCore030Library
+:lib-adapter:prepareReleaseDependencies
+:lib-adapter:compileReleaseAidl
+:lib-adapter:compileReleaseRenderscript
+:lib-adapter:generateReleaseBuildConfig
+:lib-adapter:generateReleaseAssets UP-TO-DATE
+:lib-adapter:mergeReleaseAssets
+:lib-adapter:generateReleaseResValues
+:lib-adapter:generateReleaseResources
+:lib-adapter:mergeReleaseResources
+:lib-adapter:processReleaseManifest
+:lib-adapter:processReleaseResources
+:lib-adapter:generateReleaseSources
+:lib-adapter:processReleaseJavaRes UP-TO-DATE
+:lib-adapter:compileReleaseJavaWithJavac
+:lib-adapter:packageReleaseJar
+:lib-adapter:compileReleaseNdk UP-TO-DATE
+:lib-adapter:packageReleaseJniLibs UP-TO-DATE
+:lib-adapter:packageReleaseLocalJar UP-TO-DATE
+:lib-adapter:packageReleaseRenderscript UP-TO-DATE
+:lib-adapter:packageReleaseResources
+:lib-adapter:bundleRelease
+:lib-app:compileLint
+:lib-app:copyReleaseLint UP-TO-DATE
+:lib-app:mergeReleaseProguardFiles
+:lib-app:preBuild UP-TO-DATE
+:lib-app:preReleaseBuild UP-TO-DATE
+:lib-app:checkReleaseManifest
+:lib-app:preDebugAndroidTestBuild UP-TO-DATE
+:lib-app:preDebugBuild UP-TO-DATE
+:lib-app:preDebugUnitTestBuild UP-TO-DATE
+:lib-app:preReleaseUnitTestBuild UP-TO-DATE
+:lib-app:prepareComShamanlandLibCore030Library
+:lib-app:prepareReleaseDependencies
+:lib-app:compileReleaseAidl
+:lib-app:compileReleaseRenderscript
+:lib-app:generateReleaseBuildConfig
+:lib-app:generateReleaseAssets UP-TO-DATE
+:lib-app:mergeReleaseAssets
+:lib-app:generateReleaseResValues
+:lib-app:generateReleaseResources
+:lib-app:mergeReleaseResources
+:lib-app:processReleaseManifest
+:lib-app:processReleaseResources
+:lib-app:generateReleaseSources
+:lib-app:processReleaseJavaRes UP-TO-DATE
+:lib-app:compileReleaseJavaWithJavac
+:lib-app:packageReleaseJar
+:lib-app:compileReleaseNdk UP-TO-DATE
+:lib-app:packageReleaseJniLibs UP-TO-DATE
+:lib-app:packageReleaseLocalJar UP-TO-DATE
+:lib-app:packageReleaseRenderscript UP-TO-DATE
+:lib-app:packageReleaseResources
+:lib-app:bundleRelease
+:lib-customservice:compileLint
+:lib-customservice:copyReleaseLint UP-TO-DATE
+:lib-customservice:mergeReleaseProguardFiles
+:lib-customservice:preBuild UP-TO-DATE
+:lib-customservice:preReleaseBuild UP-TO-DATE
+:lib-customservice:checkReleaseManifest
+:lib-customservice:preDebugAndroidTestBuild UP-TO-DATE
+:lib-customservice:preDebugBuild UP-TO-DATE
+:lib-customservice:preDebugUnitTestBuild UP-TO-DATE
+:lib-customservice:preReleaseUnitTestBuild UP-TO-DATE
+:lib-customservice:prepareComShamanlandLibCollections030Library
+:lib-customservice:prepareComShamanlandLibCore030Library
+:lib-customservice:prepareReleaseDependencies
+:lib-customservice:compileReleaseAidl
+:lib-customservice:compileReleaseRenderscript
+:lib-customservice:generateReleaseBuildConfig
+:lib-customservice:generateReleaseAssets UP-TO-DATE
+:lib-customservice:mergeReleaseAssets
+:lib-customservice:generateReleaseResValues
+:lib-customservice:generateReleaseResources
+:lib-customservice:mergeReleaseResources
+:lib-customservice:processReleaseManifest
+:lib-customservice:processReleaseResources
+:lib-customservice:generateReleaseSources
+:lib-customservice:processReleaseJavaRes UP-TO-DATE
+:lib-customservice:compileReleaseJavaWithJavac
+:lib-customservice:packageReleaseJar
+:lib-customservice:compileReleaseNdk UP-TO-DATE
+:lib-customservice:packageReleaseJniLibs UP-TO-DATE
+:lib-customservice:packageReleaseLocalJar UP-TO-DATE
+:lib-customservice:packageReleaseRenderscript UP-TO-DATE
+:lib-customservice:packageReleaseResources
+:lib-customservice:bundleRelease
+:lib-enum-format:compileLint
+:lib-enum-format:copyReleaseLint UP-TO-DATE
+:lib-enum-format:mergeReleaseProguardFiles
+:lib-enum-format:preBuild UP-TO-DATE
+:lib-enum-format:preReleaseBuild UP-TO-DATE
+:lib-enum-format:checkReleaseManifest
+:lib-enum-format:preDebugAndroidTestBuild UP-TO-DATE
+:lib-enum-format:preDebugBuild UP-TO-DATE
+:lib-enum-format:preDebugUnitTestBuild UP-TO-DATE
+:lib-enum-format:preReleaseUnitTestBuild UP-TO-DATE
+:lib-enum-format:prepareComShamanlandLibCore030Library
+:lib-enum-format:prepareReleaseDependencies
+:lib-enum-format:compileReleaseAidl
+:lib-enum-format:compileReleaseRenderscript
+:lib-enum-format:generateReleaseBuildConfig
+:lib-enum-format:generateReleaseAssets UP-TO-DATE
+:lib-enum-format:mergeReleaseAssets
+:lib-enum-format:generateReleaseResValues
+:lib-enum-format:generateReleaseResources
+:lib-enum-format:mergeReleaseResources
+:lib-enum-format:processReleaseManifest
+:lib-enum-format:processReleaseResources
+:lib-enum-format:generateReleaseSources
+:lib-enum-format:processReleaseJavaRes UP-TO-DATE
+:lib-enum-format:compileReleaseJavaWithJavac
+:lib-enum-format:packageReleaseJar
+:lib-enum-format:compileReleaseNdk UP-TO-DATE
+:lib-enum-format:packageReleaseJniLibs UP-TO-DATE
+:lib-enum-format:packageReleaseLocalJar UP-TO-DATE
+:lib-enum-format:packageReleaseRenderscript UP-TO-DATE
+:lib-enum-format:packageReleaseResources
+:lib-enum-format:bundleRelease
+:lib-inflater:compileLint
+:lib-inflater:copyReleaseLint UP-TO-DATE
+:lib-inflater:mergeReleaseProguardFiles
+:lib-inflater:preBuild UP-TO-DATE
+:lib-inflater:preReleaseBuild UP-TO-DATE
+:lib-inflater:checkReleaseManifest
+:lib-inflater:preDebugAndroidTestBuild UP-TO-DATE
+:lib-inflater:preDebugBuild UP-TO-DATE
+:lib-inflater:preDebugUnitTestBuild UP-TO-DATE
+:lib-inflater:preReleaseUnitTestBuild UP-TO-DATE
+:lib-inflater:prepareComShamanlandLibCore030Library
+:lib-inflater:prepareReleaseDependencies
+:lib-inflater:compileReleaseAidl
+:lib-inflater:compileReleaseRenderscript
+:lib-inflater:generateReleaseBuildConfig
+:lib-inflater:generateReleaseAssets UP-TO-DATE
+:lib-inflater:mergeReleaseAssets
+:lib-inflater:generateReleaseResValues
+:lib-inflater:generateReleaseResources
+:lib-inflater:mergeReleaseResources
+:lib-inflater:processReleaseManifest
+:lib-inflater:processReleaseResources
+:lib-inflater:generateReleaseSources
+:lib-inflater:processReleaseJavaRes UP-TO-DATE
+:lib-inflater:compileReleaseJavaWithJavac
+:lib-inflater:packageReleaseJar
+:lib-inflater:compileReleaseNdk UP-TO-DATE
+:lib-inflater:packageReleaseJniLibs UP-TO-DATE
+:lib-inflater:packageReleaseLocalJar UP-TO-DATE
+:lib-inflater:packageReleaseRenderscript UP-TO-DATE
+:lib-inflater:packageReleaseResources
+:lib-inflater:bundleRelease
+:lib-options:compileLint
+:lib-options:copyReleaseLint UP-TO-DATE
+:lib-options:mergeReleaseProguardFiles
+:lib-options:preBuild UP-TO-DATE
+:lib-options:preReleaseBuild UP-TO-DATE
+:lib-options:checkReleaseManifest
+:lib-options:preDebugAndroidTestBuild UP-TO-DATE
+:lib-options:preDebugBuild UP-TO-DATE
+:lib-options:preDebugUnitTestBuild UP-TO-DATE
+:lib-options:preReleaseUnitTestBuild UP-TO-DATE
+:lib-options:prepareComShamanlandLibCore030Library
+:lib-options:prepareReleaseDependencies
+:lib-options:compileReleaseAidl
+:lib-options:compileReleaseRenderscript
+:lib-options:generateReleaseBuildConfig
+:lib-options:generateReleaseAssets UP-TO-DATE
+:lib-options:mergeReleaseAssets
+:lib-options:generateReleaseResValues
+:lib-options:generateReleaseResources
+:lib-options:mergeReleaseResources
+:lib-options:processReleaseManifest
+:lib-options:processReleaseResources
+:lib-options:generateReleaseSources
+:lib-options:processReleaseJavaRes UP-TO-DATE
+:lib-options:compileReleaseJavaWithJavac
+:lib-options:packageReleaseJar
+:lib-options:compileReleaseNdk UP-TO-DATE
+:lib-options:packageReleaseJniLibs UP-TO-DATE
+:lib-options:packageReleaseLocalJar UP-TO-DATE
+:lib-options:packageReleaseRenderscript UP-TO-DATE
+:lib-options:packageReleaseResources
+:lib-options:bundleRelease
+:lib-toaster:compileLint
+:lib-toaster:copyReleaseLint UP-TO-DATE
+:lib-toaster:mergeReleaseProguardFiles
+:lib-toaster:preBuild UP-TO-DATE
+:lib-toaster:preReleaseBuild UP-TO-DATE
+:lib-toaster:checkReleaseManifest
+:lib-toaster:preDebugAndroidTestBuild UP-TO-DATE
+:lib-toaster:preDebugBuild UP-TO-DATE
+:lib-toaster:preDebugUnitTestBuild UP-TO-DATE
+:lib-toaster:preReleaseUnitTestBuild UP-TO-DATE
+:lib-toaster:prepareComShamanlandLibCore030Library
+:lib-toaster:prepareReleaseDependencies
+:lib-toaster:compileReleaseAidl
+:lib-toaster:compileReleaseRenderscript
+:lib-toaster:generateReleaseBuildConfig
+:lib-toaster:generateReleaseAssets UP-TO-DATE
+:lib-toaster:mergeReleaseAssets
+:lib-toaster:generateReleaseResValues
+:lib-toaster:generateReleaseResources
+:lib-toaster:mergeReleaseResources
+:lib-toaster:processReleaseManifest
+:lib-toaster:processReleaseResources
+:lib-toaster:generateReleaseSources
+:lib-toaster:processReleaseJavaRes UP-TO-DATE
+:lib-toaster:compileReleaseJavaWithJavac
+:lib-toaster:packageReleaseJar
+:lib-toaster:compileReleaseNdk UP-TO-DATE
+:lib-toaster:packageReleaseJniLibs UP-TO-DATE
+:lib-toaster:packageReleaseLocalJar UP-TO-DATE
+:lib-toaster:packageReleaseRenderscript UP-TO-DATE
+:lib-toaster:packageReleaseResources
+:lib-toaster:bundleRelease
+:lib-viewholder:compileLint
+:lib-viewholder:copyReleaseLint UP-TO-DATE
+:lib-viewholder:mergeReleaseProguardFiles
+:lib-viewholder:preBuild UP-TO-DATE
+:lib-viewholder:preReleaseBuild UP-TO-DATE
+:lib-viewholder:checkReleaseManifest
+:lib-viewholder:preDebugAndroidTestBuild UP-TO-DATE
+:lib-viewholder:preDebugBuild UP-TO-DATE
+:lib-viewholder:preDebugUnitTestBuild UP-TO-DATE
+:lib-viewholder:preReleaseUnitTestBuild UP-TO-DATE
+:lib-viewholder:prepareComShamanlandLibCore030Library
+:lib-viewholder:prepareReleaseDependencies
+:lib-viewholder:compileReleaseAidl
+:lib-viewholder:compileReleaseRenderscript
+:lib-viewholder:generateReleaseBuildConfig
+:lib-viewholder:generateReleaseAssets UP-TO-DATE
+:lib-viewholder:mergeReleaseAssets
+:lib-viewholder:generateReleaseResValues
+:lib-viewholder:generateReleaseResources
+:lib-viewholder:mergeReleaseResources
+:lib-viewholder:processReleaseManifest
+:lib-viewholder:processReleaseResources
+:lib-viewholder:generateReleaseSources
+:lib-viewholder:processReleaseJavaRes UP-TO-DATE
+:lib-viewholder:compileReleaseJavaWithJavac
+:lib-viewholder:packageReleaseJar
+:lib-viewholder:compileReleaseNdk UP-TO-DATE
+:lib-viewholder:packageReleaseJniLibs UP-TO-DATE
+:lib-viewholder:packageReleaseLocalJar UP-TO-DATE
+:lib-viewholder:packageReleaseRenderscript UP-TO-DATE
+:lib-viewholder:packageReleaseResources
+:lib-viewholder:bundleRelease
+:lib-widget:compileLint
+:lib-widget:copyReleaseLint UP-TO-DATE
+:lib-widget:mergeReleaseProguardFiles
+:lib-widget:preBuild UP-TO-DATE
+:lib-widget:preReleaseBuild UP-TO-DATE
+:lib-widget:checkReleaseManifest
+:lib-widget:preDebugAndroidTestBuild UP-TO-DATE
+:lib-widget:preDebugBuild UP-TO-DATE
+:lib-widget:preDebugUnitTestBuild UP-TO-DATE
+:lib-widget:preReleaseUnitTestBuild UP-TO-DATE
+:lib-widget:prepareComShamanlandLibAdapter030Library
+:lib-widget:prepareComShamanlandLibCollections030Library
+:lib-widget:prepareComShamanlandLibCore030Library
+:lib-widget:prepareReleaseDependencies
+:lib-widget:compileReleaseAidl
+:lib-widget:compileReleaseRenderscript
+:lib-widget:generateReleaseBuildConfig
+:lib-widget:generateReleaseAssets UP-TO-DATE
+:lib-widget:mergeReleaseAssets
+:lib-widget:generateReleaseResValues
+:lib-widget:generateReleaseResources
+:lib-widget:mergeReleaseResources
+:lib-widget:processReleaseManifest
+:lib-widget:processReleaseResources
+:lib-widget:generateReleaseSources
+:lib-widget:processReleaseJavaRes UP-TO-DATE
+:lib-widget:compileReleaseJavaWithJavac
+:lib-widget:packageReleaseJar
+:lib-widget:compileReleaseNdk UP-TO-DATE
+:lib-widget:packageReleaseJniLibs UP-TO-DATE
+:lib-widget:packageReleaseLocalJar UP-TO-DATE
+:lib-widget:packageReleaseRenderscript UP-TO-DATE
+:lib-widget:packageReleaseResources
+:lib-widget:bundleRelease
+:lib:prepareComShamanlandLibAdapter030Library
+:lib:prepareComShamanlandLibApp030Library
+:lib:prepareComShamanlandLibCollections030Library
+:lib:prepareComShamanlandLibCore030Library
+:lib:prepareComShamanlandLibCustomservice030Library
+:lib:prepareComShamanlandLibEnumFormat030Library
+:lib:prepareComShamanlandLibInflater030Library
+:lib:prepareComShamanlandLibOptions030Library
+:lib:prepareComShamanlandLibToaster030Library
+:lib:prepareComShamanlandLibViewholder030Library
+:lib:prepareComShamanlandLibWidget030Library
+:lib:prepareReleaseDependencies
+:lib:compileReleaseAidl
+:lib:compileReleaseRenderscript
+:lib:generateReleaseBuildConfig
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets
+:lib:generateReleaseResValues
+:lib:generateReleaseResources
+:lib:mergeReleaseResources
+:lib:processReleaseManifest
+:lib:processReleaseResources
+:lib:generateReleaseSources
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:compileReleaseJavaWithJavac
+:lib:packageReleaseJar
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:packageReleaseJniLibs UP-TO-DATE
+:lib:packageReleaseLocalJar UP-TO-DATE
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseResources
+:lib:bundleRelease
+:app:prepareComShamanlandLib030Library
+:app:prepareComShamanlandLibAdapter030Library
+:app:prepareComShamanlandLibApp030Library
+:app:prepareComShamanlandLibCollections030Library
+:app:prepareComShamanlandLibCore030Library
+:app:prepareComShamanlandLibCustomservice030Library
+:app:prepareComShamanlandLibEnumFormat030Library
+:app:prepareComShamanlandLibInflater030Library
+:app:prepareComShamanlandLibOptions030Library
+:app:prepareComShamanlandLibToaster030Library
+:app:prepareComShamanlandLibViewholder030Library
+:app:prepareComShamanlandLibWidget030Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:processDebugJavaRes UP-TO-DATE
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:preDexDebug
+:app:dexDebug
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:processReleaseJavaRes UP-TO-DATE
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:preDexRelease
+:app:dexRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+:lib:androidJavadocs UP-TO-DATE
+:lib:androidJavadocsJar
+:lib:androidSourcesJar
+:lib:copyDebugLint UP-TO-DATE
+:lib:mergeDebugProguardFiles
+:lib:checkDebugManifest
+:lib:prepareDebugDependencies
+:lib:compileDebugAidl
+:lib:compileDebugRenderscript
+:lib:generateDebugBuildConfig
+:lib:generateDebugAssets UP-TO-DATE
+:lib:mergeDebugAssets
+:lib:generateDebugResValues
+:lib:generateDebugResources
+:lib:mergeDebugResources
+:lib:processDebugManifest
+:lib:processDebugResources
+:lib:generateDebugSources
+:lib:processDebugJavaRes UP-TO-DATE
+:lib:compileDebugJavaWithJavac
+:lib:packageDebugJar
+:lib:compileDebugNdk UP-TO-DATE
+:lib:packageDebugJniLibs UP-TO-DATE
+:lib:packageDebugLocalJar UP-TO-DATE
+:lib:packageDebugRenderscript UP-TO-DATE
+:lib:packageDebugResources
+:lib:bundleDebug
+:lib:compileDebugSources
+:lib:assembleDebug
+:lib:compileReleaseSources
+:lib:assembleRelease
+:lib:signArchives SKIPPED
+:lib:assemble
+:lib:build
+:lib-adapter:androidJavadocs/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/CursorAdapterX.java:11: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/CursorAdapterX.java:11: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:14: error: package xdroid.collections does not exist
+import xdroid.collections.Indexed;
+                         ^
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:15: error: package xdroid.collections does not exist
+import xdroid.collections.IndexedIterator;
+                         ^
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:16: error: package xdroid.core does not exist
+import xdroid.core.ParcelUtils;
+                  ^
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:22: error: cannot find symbol
+    private Indexed<D> mData;
+            ^
+  symbol:   class Indexed
+  location: class AdapterX<D,V>
+  where D,V are type-variables:
+    D extends Object declared in class AdapterX
+    V extends View declared in class AdapterX
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:39: error: cannot find symbol
+    public Indexed<D> getData() {
+           ^
+  symbol:   class Indexed
+  location: class AdapterX<D,V>
+  where D,V are type-variables:
+    D extends Object declared in class AdapterX
+    V extends View declared in class AdapterX
+/tmp/rdisk/2522/src/lib-adapter/src/main/java/xdroid/adapter/AdapterX.java:43: error: cannot find symbol
+    public void setData(Indexed<D> data) {
+                        ^
+  symbol:   class Indexed
+  location: class AdapterX<D,V>
+  where D,V are type-variables:
+    D extends Object declared in class AdapterX
+    V extends View declared in class AdapterX
+
+8 warnings
+:lib-adapter:androidJavadocsJar
+:lib-adapter:androidSourcesJar
+:lib-adapter:copyDebugLint UP-TO-DATE
+:lib-adapter:mergeDebugProguardFiles
+:lib-adapter:checkDebugManifest
+:lib-adapter:prepareDebugDependencies
+:lib-adapter:compileDebugAidl
+:lib-adapter:compileDebugRenderscript
+:lib-adapter:generateDebugBuildConfig
+:lib-adapter:generateDebugAssets UP-TO-DATE
+:lib-adapter:mergeDebugAssets
+:lib-adapter:generateDebugResValues
+:lib-adapter:generateDebugResources
+:lib-adapter:mergeDebugResources
+:lib-adapter:processDebugManifest
+:lib-adapter:processDebugResources
+:lib-adapter:generateDebugSources
+:lib-adapter:processDebugJavaRes UP-TO-DATE
+:lib-adapter:compileDebugJavaWithJavac
+:lib-adapter:packageDebugJar
+:lib-adapter:compileDebugNdk UP-TO-DATE
+:lib-adapter:packageDebugJniLibs UP-TO-DATE
+:lib-adapter:packageDebugLocalJar UP-TO-DATE
+:lib-adapter:packageDebugRenderscript UP-TO-DATE
+:lib-adapter:packageDebugResources
+:lib-adapter:bundleDebug
+:lib-adapter:compileDebugSources
+:lib-adapter:assembleDebug
+:lib-adapter:compileReleaseSources
+:lib-adapter:assembleRelease
+:lib-adapter:signArchives SKIPPED
+:lib-adapter:assemble
+:lib-adapter:build
+:lib-app:androidJavadocs/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ApplicationX.java:7: error: package xdroid.core does not exist
+import xdroid.core.ActivityStarter;
+                  ^
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ApplicationX.java:8: error: package xdroid.core does not exist
+import xdroid.core.ContextOwner;
+                  ^
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ApplicationX.java:9: error: package xdroid.core does not exist
+import xdroid.core.Global;
+                  ^
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ApplicationX.java:14: error: cannot find symbol
+public class ApplicationX extends Application implements ActivityStarter, ContextOwner {
+                                                         ^
+  symbol: class ActivityStarter
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ApplicationX.java:14: error: cannot find symbol
+public class ApplicationX extends Application implements ActivityStarter, ContextOwner {
+                                                                          ^
+  symbol: class ContextOwner
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ActivityListeners.java:8: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-app/src/main/java/xdroid/app/ActivityListeners.java:8: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+
+7 warnings
+:lib-app:androidJavadocsJar
+:lib-app:androidSourcesJar
+:lib-app:copyDebugLint UP-TO-DATE
+:lib-app:mergeDebugProguardFiles
+:lib-app:checkDebugManifest
+:lib-app:prepareDebugDependencies
+:lib-app:compileDebugAidl
+:lib-app:compileDebugRenderscript
+:lib-app:generateDebugBuildConfig
+:lib-app:generateDebugAssets UP-TO-DATE
+:lib-app:mergeDebugAssets
+:lib-app:generateDebugResValues
+:lib-app:generateDebugResources
+:lib-app:mergeDebugResources
+:lib-app:processDebugManifest
+:lib-app:processDebugResources
+:lib-app:generateDebugSources
+:lib-app:processDebugJavaRes UP-TO-DATE
+:lib-app:compileDebugJavaWithJavac
+:lib-app:packageDebugJar
+:lib-app:compileDebugNdk UP-TO-DATE
+:lib-app:packageDebugJniLibs UP-TO-DATE
+:lib-app:packageDebugLocalJar UP-TO-DATE
+:lib-app:packageDebugRenderscript UP-TO-DATE
+:lib-app:packageDebugResources
+:lib-app:bundleDebug
+:lib-app:compileDebugSources
+:lib-app:assembleDebug
+:lib-app:compileReleaseSources
+:lib-app:assembleRelease
+:lib-app:signArchives SKIPPED
+:lib-app:assemble
+:lib-app:build
+:lib-collections:androidJavadocs/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedIterator.java:5: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedIterator.java:5: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedCollection.java:6: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedCollection.java:6: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/ArrayIterator.java:5: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/ArrayIterator.java:5: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/ArrayCollection.java:6: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/ArrayCollection.java:6: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+
+8 warnings
+:lib-collections:androidJavadocsJar
+:lib-collections:androidSourcesJar
+:lib-collections:copyDebugLint UP-TO-DATE
+:lib-collections:mergeDebugProguardFiles
+:lib-collections:checkDebugManifest
+:lib-collections:prepareDebugDependencies
+:lib-collections:compileDebugAidl
+:lib-collections:compileDebugRenderscript
+:lib-collections:generateDebugBuildConfig
+:lib-collections:generateDebugAssets UP-TO-DATE
+:lib-collections:mergeDebugAssets
+:lib-collections:generateDebugResValues
+:lib-collections:generateDebugResources
+:lib-collections:mergeDebugResources
+:lib-collections:processDebugManifest
+:lib-collections:processDebugResources
+:lib-collections:generateDebugSources
+:lib-collections:processDebugJavaRes UP-TO-DATE
+:lib-collections:compileDebugJavaWithJavacNote: /tmp/rdisk/2522/src/lib-collections/src/main/java/xdroid/collections/IndexedCollection.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib-collections:packageDebugJar
+:lib-collections:compileDebugNdk UP-TO-DATE
+:lib-collections:packageDebugJniLibs UP-TO-DATE
+:lib-collections:packageDebugLocalJar UP-TO-DATE
+:lib-collections:packageDebugRenderscript UP-TO-DATE
+:lib-collections:packageDebugResources
+:lib-collections:bundleDebug
+:lib-collections:compileDebugSources
+:lib-collections:assembleDebug
+:lib-collections:compileReleaseSources
+:lib-collections:assembleRelease
+:lib-collections:signArchives SKIPPED
+:lib-collections:assemble
+:lib-collections:build
+:lib-core:androidJavadocs/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/IoUtils.java:7: error: cannot find symbol
+import static xdroid.core.BuildConfig.SNAPSHOT;
+                         ^
+  symbol:   class BuildConfig
+  location: package xdroid.core
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/IoUtils.java:7: error: static import only from classes and interfaces
+import static xdroid.core.BuildConfig.SNAPSHOT;
+^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:35: warning: no @param for callback
+    public static Handler newThread(Handler.Callback callback) {
+                          ^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:35: warning: no @return
+    public static Handler newThread(Handler.Callback callback) {
+                          ^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:42: warning: no @param for name
+    public static Handler newThread(String name, Handler.Callback callback) {
+                          ^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:42: warning: no @param for callback
+    public static Handler newThread(String name, Handler.Callback callback) {
+                          ^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:42: warning: no @return
+    public static Handler newThread(String name, Handler.Callback callback) {
+                          ^
+/tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ThreadUtils.java:74: warning: no @param for handler
+    public static void stopThread(Handler handler) {
+                       ^
+
+8 warnings
+:lib-core:androidJavadocsJar
+:lib-core:androidSourcesJar
+:lib-core:copyDebugLint UP-TO-DATE
+:lib-core:mergeDebugProguardFiles
+:lib-core:preDebugBuild UP-TO-DATE
+:lib-core:checkDebugManifest
+:lib-core:prepareDebugDependencies
+:lib-core:compileDebugAidl
+:lib-core:compileDebugRenderscript
+:lib-core:generateDebugBuildConfig
+:lib-core:generateDebugAssets UP-TO-DATE
+:lib-core:mergeDebugAssets
+:lib-core:generateDebugResValues
+:lib-core:generateDebugResources
+:lib-core:packageDebugResources
+:lib-core:processDebugManifest
+:lib-core:processDebugResources
+:lib-core:generateDebugSources
+:lib-core:processDebugJavaRes UP-TO-DATE
+:lib-core:compileDebugJavaWithJavacNote: /tmp/rdisk/2522/src/lib-core/src/main/java/xdroid/core/ParcelUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:lib-core:packageDebugJar
+:lib-core:compileDebugNdk UP-TO-DATE
+:lib-core:packageDebugJniLibs UP-TO-DATE
+:lib-core:packageDebugLocalJar UP-TO-DATE
+:lib-core:packageDebugRenderscript UP-TO-DATE
+:lib-core:bundleDebug
+:lib-core:compileDebugSources
+:lib-core:assembleDebug
+:lib-core:compileReleaseSources
+:lib-core:assembleRelease
+:lib-core:signArchives SKIPPED
+:lib-core:assemble
+:lib-core:build
+:lib-customservice:androidJavadocs/tmp/rdisk/2522/src/lib-customservice/src/main/java/xdroid/customservice/CustomServices.java:6: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-customservice/src/main/java/xdroid/customservice/CustomServices.java:6: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+
+2 warnings
+:lib-customservice:androidJavadocsJar
+:lib-customservice:androidSourcesJar
+:lib-customservice:copyDebugLint UP-TO-DATE
+:lib-customservice:mergeDebugProguardFiles
+:lib-customservice:checkDebugManifest
+:lib-customservice:prepareDebugDependencies
+:lib-customservice:compileDebugAidl
+:lib-customservice:compileDebugRenderscript
+:lib-customservice:generateDebugBuildConfig
+:lib-customservice:generateDebugAssets UP-TO-DATE
+:lib-customservice:mergeDebugAssets
+:lib-customservice:generateDebugResValues
+:lib-customservice:generateDebugResources
+:lib-customservice:mergeDebugResources
+:lib-customservice:processDebugManifest
+:lib-customservice:processDebugResources
+:lib-customservice:generateDebugSources
+:lib-customservice:processDebugJavaRes UP-TO-DATE
+:lib-customservice:compileDebugJavaWithJavac
+:lib-customservice:packageDebugJar
+:lib-customservice:compileDebugNdk UP-TO-DATE
+:lib-customservice:packageDebugJniLibs UP-TO-DATE
+:lib-customservice:packageDebugLocalJar UP-TO-DATE
+:lib-customservice:packageDebugRenderscript UP-TO-DATE
+:lib-customservice:packageDebugResources
+:lib-customservice:bundleDebug
+:lib-customservice:compileDebugSources
+:lib-customservice:assembleDebug
+:lib-customservice:compileReleaseSources
+:lib-customservice:assembleRelease
+:lib-customservice:signArchives SKIPPED
+:lib-customservice:assemble
+:lib-customservice:build
+:lib-enum-format:androidJavadocs/tmp/rdisk/2522/src/lib-enum-format/src/main/java/xdroid/enumformat/EnumFormat.java:10: error: package xdroid.core does not exist
+import static xdroid.core.Global.getContext;
+                         ^
+/tmp/rdisk/2522/src/lib-enum-format/src/main/java/xdroid/enumformat/EnumFormat.java:10: error: static import only from classes and interfaces
+import static xdroid.core.Global.getContext;
+^
+/tmp/rdisk/2522/src/lib-enum-format/src/main/java/xdroid/enumformat/EnumFormat.java:11: error: package xdroid.core does not exist
+import static xdroid.core.Global.getResources;
+                         ^
+/tmp/rdisk/2522/src/lib-enum-format/src/main/java/xdroid/enumformat/EnumFormat.java:11: error: static import only from classes and interfaces
+import static xdroid.core.Global.getResources;
+^
+
+4 warnings
+:lib-enum-format:androidJavadocsJar
+:lib-enum-format:androidSourcesJar
+:lib-enum-format:copyDebugLint UP-TO-DATE
+:lib-enum-format:mergeDebugProguardFiles
+:lib-enum-format:checkDebugManifest
+:lib-enum-format:prepareDebugDependencies
+:lib-enum-format:compileDebugAidl
+:lib-enum-format:compileDebugRenderscript
+:lib-enum-format:generateDebugBuildConfig
+:lib-enum-format:generateDebugAssets UP-TO-DATE
+:lib-enum-format:mergeDebugAssets
+:lib-enum-format:generateDebugResValues
+:lib-enum-format:generateDebugResources
+:lib-enum-format:mergeDebugResources
+:lib-enum-format:processDebugManifest
+:lib-enum-format:processDebugResources
+:lib-enum-format:generateDebugSources
+:lib-enum-format:processDebugJavaRes UP-TO-DATE
+:lib-enum-format:compileDebugJavaWithJavac
+:lib-enum-format:packageDebugJar
+:lib-enum-format:compileDebugNdk UP-TO-DATE
+:lib-enum-format:packageDebugJniLibs UP-TO-DATE
+:lib-enum-format:packageDebugLocalJar UP-TO-DATE
+:lib-enum-format:packageDebugRenderscript UP-TO-DATE
+:lib-enum-format:packageDebugResources
+:lib-enum-format:bundleDebug
+:lib-enum-format:compileDebugSources
+:lib-enum-format:assembleDebug
+:lib-enum-format:compileReleaseSources
+:lib-enum-format:assembleRelease
+:lib-enum-format:signArchives SKIPPED
+:lib-enum-format:assemble
+:lib-enum-format:build
+:lib-inflater:androidJavadocs/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:14: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.isEmpty;
+                         ^
+/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:14: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.isEmpty;
+^
+/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:15: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:15: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:16: error: cannot find symbol
+import static xdroid.inflater.BuildConfig.SNAPSHOT;
+                             ^
+  symbol:   class BuildConfig
+  location: package xdroid.inflater
+/tmp/rdisk/2522/src/lib-inflater/src/main/java/xdroid/inflater/AbstractInflater.java:16: error: static import only from classes and interfaces
+import static xdroid.inflater.BuildConfig.SNAPSHOT;
+^
+
+6 warnings
+:lib-inflater:androidJavadocsJar
+:lib-inflater:androidSourcesJar
+:lib-inflater:copyDebugLint UP-TO-DATE
+:lib-inflater:mergeDebugProguardFiles
+:lib-inflater:checkDebugManifest
+:lib-inflater:prepareDebugDependencies
+:lib-inflater:compileDebugAidl
+:lib-inflater:compileDebugRenderscript
+:lib-inflater:generateDebugBuildConfig
+:lib-inflater:generateDebugAssets UP-TO-DATE
+:lib-inflater:mergeDebugAssets
+:lib-inflater:generateDebugResValues
+:lib-inflater:generateDebugResources
+:lib-inflater:mergeDebugResources
+:lib-inflater:processDebugManifest
+:lib-inflater:processDebugResources
+:lib-inflater:generateDebugSources
+:lib-inflater:processDebugJavaRes UP-TO-DATE
+:lib-inflater:compileDebugJavaWithJavac
+:lib-inflater:packageDebugJar
+:lib-inflater:compileDebugNdk UP-TO-DATE
+:lib-inflater:packageDebugJniLibs UP-TO-DATE
+:lib-inflater:packageDebugLocalJar UP-TO-DATE
+:lib-inflater:packageDebugRenderscript UP-TO-DATE
+:lib-inflater:packageDebugResources
+:lib-inflater:bundleDebug
+:lib-inflater:compileDebugSources
+:lib-inflater:assembleDebug
+:lib-inflater:compileReleaseSources
+:lib-inflater:assembleRelease
+:lib-inflater:signArchives SKIPPED
+:lib-inflater:assemble
+:lib-inflater:build
+:lib-options:androidJavadocs/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/SimpleOption.java:3: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notEmpty;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/SimpleOption.java:3: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notEmpty;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:10: error: package xdroid.core does not exist
+import static xdroid.core.Global.getContext;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:10: error: static import only from classes and interfaces
+import static xdroid.core.Global.getContext;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:11: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.cast;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:11: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.cast;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:12: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:12: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:13: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getBoolean;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:13: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getBoolean;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:14: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getFloat;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:14: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getFloat;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:15: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getInt;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:15: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getInt;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:16: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getLong;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:16: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getLong;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:17: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getString;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:17: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getString;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:18: error: package xdroid.core does not exist
+import static xdroid.core.SharedPreferencesUtils.getStringSet;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/OptionAccessor.java:18: error: static import only from classes and interfaces
+import static xdroid.core.SharedPreferencesUtils.getStringSet;
+^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/EnumOption.java:3: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.notNull;
+                         ^
+/tmp/rdisk/2522/src/lib-options/src/main/java/xdroid/options/EnumOption.java:3: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.notNull;
+^
+
+22 warnings
+:lib-options:androidJavadocsJar
+:lib-options:androidSourcesJar
+:lib-options:copyDebugLint UP-TO-DATE
+:lib-options:mergeDebugProguardFiles
+:lib-options:checkDebugManifest
+:lib-options:prepareDebugDependencies
+:lib-options:compileDebugAidl
+:lib-options:compileDebugRenderscript
+:lib-options:generateDebugBuildConfig
+:lib-options:generateDebugAssets UP-TO-DATE
+:lib-options:mergeDebugAssets
+:lib-options:generateDebugResValues
+:lib-options:generateDebugResources
+:lib-options:mergeDebugResources
+:lib-options:processDebugManifest
+:lib-options:processDebugResources
+:lib-options:generateDebugSources
+:lib-options:processDebugJavaRes UP-TO-DATE
+:lib-options:compileDebugJavaWithJavac
+:lib-options:packageDebugJar
+:lib-options:compileDebugNdk UP-TO-DATE
+:lib-options:packageDebugJniLibs UP-TO-DATE
+:lib-options:packageDebugLocalJar UP-TO-DATE
+:lib-options:packageDebugRenderscript UP-TO-DATE
+:lib-options:packageDebugResources
+:lib-options:bundleDebug
+:lib-options:compileDebugSources
+:lib-options:assembleDebug
+:lib-options:compileReleaseSources
+:lib-options:assembleRelease
+:lib-options:signArchives SKIPPED
+:lib-options:assemble
+:lib-options:build
+:lib-toaster:androidJavadocs/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:7: error: package xdroid.core does not exist
+import static xdroid.core.Global.getContext;
+                         ^
+/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:7: error: static import only from classes and interfaces
+import static xdroid.core.Global.getContext;
+^
+/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:8: error: package xdroid.core does not exist
+import static xdroid.core.Global.getUiHandler;
+                         ^
+/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:8: error: static import only from classes and interfaces
+import static xdroid.core.Global.getUiHandler;
+^
+/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:9: error: package xdroid.core does not exist
+import static xdroid.core.ThreadUtils.newHandler;
+                         ^
+/tmp/rdisk/2522/src/lib-toaster/src/main/java/xdroid/toaster/Toaster.java:9: error: static import only from classes and interfaces
+import static xdroid.core.ThreadUtils.newHandler;
+^
+
+6 warnings
+:lib-toaster:androidJavadocsJar
+:lib-toaster:androidSourcesJar
+:lib-toaster:copyDebugLint UP-TO-DATE
+:lib-toaster:mergeDebugProguardFiles
+:lib-toaster:checkDebugManifest
+:lib-toaster:prepareDebugDependencies
+:lib-toaster:compileDebugAidl
+:lib-toaster:compileDebugRenderscript
+:lib-toaster:generateDebugBuildConfig
+:lib-toaster:generateDebugAssets UP-TO-DATE
+:lib-toaster:mergeDebugAssets
+:lib-toaster:generateDebugResValues
+:lib-toaster:generateDebugResources
+:lib-toaster:mergeDebugResources
+:lib-toaster:processDebugManifest
+:lib-toaster:processDebugResources
+:lib-toaster:generateDebugSources
+:lib-toaster:processDebugJavaRes UP-TO-DATE
+:lib-toaster:compileDebugJavaWithJavac
+:lib-toaster:packageDebugJar
+:lib-toaster:compileDebugNdk UP-TO-DATE
+:lib-toaster:packageDebugJniLibs UP-TO-DATE
+:lib-toaster:packageDebugLocalJar UP-TO-DATE
+:lib-toaster:packageDebugRenderscript UP-TO-DATE
+:lib-toaster:packageDebugResources
+:lib-toaster:bundleDebug
+:lib-toaster:compileDebugSources
+:lib-toaster:assembleDebug
+:lib-toaster:compileReleaseSources
+:lib-toaster:assembleRelease
+:lib-toaster:signArchives SKIPPED
+:lib-toaster:assemble
+:lib-toaster:build
+:lib-viewholder:androidJavadocs/tmp/rdisk/2522/src/lib-viewholder/src/main/java/xdroid/viewholder/ViewHolder.java:6: error: package xdroid.core does not exist
+import static xdroid.core.ObjectUtils.cast;
+                         ^
+/tmp/rdisk/2522/src/lib-viewholder/src/main/java/xdroid/viewholder/ViewHolder.java:6: error: static import only from classes and interfaces
+import static xdroid.core.ObjectUtils.cast;
+^
+/tmp/rdisk/2522/src/lib-viewholder/src/main/java/xdroid/viewholder/ViewHolder.java:60: error: self-closing element not allowed
+     * <b/>
+       ^
+
+1 error
+2 warnings
+:lib-viewholder:androidJavadocsJar
+:lib-viewholder:androidSourcesJar
+:lib-viewholder:copyDebugLint UP-TO-DATE
+:lib-viewholder:mergeDebugProguardFiles
+:lib-viewholder:checkDebugManifest
+:lib-viewholder:prepareDebugDependencies
+:lib-viewholder:compileDebugAidl
+:lib-viewholder:compileDebugRenderscript
+:lib-viewholder:generateDebugBuildConfig
+:lib-viewholder:generateDebugAssets UP-TO-DATE
+:lib-viewholder:mergeDebugAssets
+:lib-viewholder:generateDebugResValues
+:lib-viewholder:generateDebugResources
+:lib-viewholder:mergeDebugResources
+:lib-viewholder:processDebugManifest
+:lib-viewholder:processDebugResources
+:lib-viewholder:generateDebugSources
+:lib-viewholder:processDebugJavaRes UP-TO-DATE
+:lib-viewholder:compileDebugJavaWithJavac
+:lib-viewholder:packageDebugJar
+:lib-viewholder:compileDebugNdk UP-TO-DATE
+:lib-viewholder:packageDebugJniLibs UP-TO-DATE
+:lib-viewholder:packageDebugLocalJar UP-TO-DATE
+:lib-viewholder:packageDebugRenderscript UP-TO-DATE
+:lib-viewholder:packageDebugResources
+:lib-viewholder:bundleDebug
+:lib-viewholder:compileDebugSources
+:lib-viewholder:assembleDebug
+:lib-viewholder:compileReleaseSources
+:lib-viewholder:assembleRelease
+:lib-viewholder:signArchives SKIPPED
+:lib-viewholder:assemble
+:lib-viewholder:build
+:lib-widget:androidJavadocs
+:lib-widget:androidJavadocsJar
+:lib-widget:androidSourcesJar
+:lib-widget:copyDebugLint UP-TO-DATE
+:lib-widget:mergeDebugProguardFiles
+:lib-widget:checkDebugManifest
+:lib-widget:prepareDebugDependencies
+:lib-widget:compileDebugAidl
+:lib-widget:compileDebugRenderscript
+:lib-widget:generateDebugBuildConfig
+:lib-widget:generateDebugAssets UP-TO-DATE
+:lib-widget:mergeDebugAssets
+:lib-widget:generateDebugResValues
+:lib-widget:generateDebugResources
+:lib-widget:mergeDebugResources
+:lib-widget:processDebugManifest
+:lib-widget:processDebugResources
+:lib-widget:generateDebugSources
+:lib-widget:processDebugJavaRes UP-TO-DATE
+:lib-widget:compileDebugJavaWithJavac
+:lib-widget:packageDebugJar
+:lib-widget:compileDebugNdk UP-TO-DATE
+:lib-widget:packageDebugJniLibs UP-TO-DATE
+:lib-widget:packageDebugLocalJar UP-TO-DATE
+:lib-widget:packageDebugRenderscript UP-TO-DATE
+:lib-widget:packageDebugResources
+:lib-widget:bundleDebug
+:lib-widget:compileDebugSources
+:lib-widget:assembleDebug
+:lib-widget:compileReleaseSources
+:lib-widget:assembleRelease
+:lib-widget:signArchives SKIPPED
+:lib-widget:assemble
+:lib-widget:build
+
+BUILD SUCCESSFUL
+
+Total time: 36.746 secs
+
+2018-04-02 01:39:01,693 INFO  FullProcessService - Found APK file: /tmp/rdisk/2522/src/app/build/outputs/apk/app-debug.apk

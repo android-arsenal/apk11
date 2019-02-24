@@ -1,0 +1,126 @@
+2018-04-01 20:06:23,113 INFO  DownloadService - Downloading "https://github.com/rameshvoltella/RWeekCalendar/archive/master.zip", attempt 3
+2018-04-01 20:07:23,608 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 20:07:24,310 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 20:07:24,310 INFO  DownloadService - Downloading "https://github.com/rameshvoltella/RWeekCalendar/archive/master.zip", attempt 3
+2018-04-01 20:08:25,614 DEBUG FullProcessService - Repository https://github.com/rameshvoltella/RWeekCalendar available: true
+2018-04-01 20:08:25,614 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 20:08:25,614 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/rameshvoltella/RWeekCalendar, /tmp/rdisk/2639/src]
+2018-04-01 20:08:27,605 INFO  SysUtils - 
+2018-04-01 20:08:27,610 INFO  GitService - Deleted "/tmp/rdisk/2639/src/.git": true
+2018-04-01 20:08:27,613 INFO  FullProcessService - Size of directory with sources: 1 MB
+2018-04-01 20:08:27,613 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2639/src]
+2018-04-01 20:08:27,622 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2639/src/.git/
+
+2018-04-01 20:08:27,624 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2639/src/RamzCalSample/gradlew
+2018-04-01 20:08:27,628 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2639/src/RamzCalSample/app/build.gradle /tmp/rdisk/2639/src/RamzCalSample/ramzcalender/build.gradle /tmp/rdisk/2639/src/RamzCalSample/build.gradle
+2018-04-01 20:08:27,630 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2639/src/RamzCalSample/settings.gradle /tmp/rdisk/2639/src/RamzCalSample/ramzcalender/build.gradle /tmp/rdisk/2639/src/RamzCalSample/build.gradle /tmp/rdisk/2639/src/RamzCalSample/app/build.gradle
+2018-04-01 20:08:27,631 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 20:08:27,631 INFO  ProjectFixService - Fixing project...
+2018-04-01 20:08:27,637 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2639/src/RamzCalSample/app/local.properties
+2018-04-01 20:08:27,638 INFO  ProjectFixService - Build info for "/tmp/rdisk/2639/src/RamzCalSample/app/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:08:27,638 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2639/src/RamzCalSample/app/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:08:27,638 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2639/src/RamzCalSample/ramzcalender/local.properties
+2018-04-01 20:08:27,639 INFO  ProjectFixService - Build info for "/tmp/rdisk/2639/src/RamzCalSample/ramzcalender/build.gradle": [buildToolsVersion=23.0.0,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:08:27,639 INFO  ProjectFixService - Fixed build info for "/tmp/rdisk/2639/src/RamzCalSample/ramzcalender/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:08:27,639 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2639/src/RamzCalSample/local.properties
+2018-04-01 20:08:27,640 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-2.2.1-all.zip
+2018-04-01 20:08:27,640 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-2.2.1-bin.zip)
+2018-04-01 20:08:27,641 INFO  ProjectFixService - Build info for "/tmp/rdisk/2639/src/RamzCalSample/build.gradle": [buildToolsVersion=23.0.1,compileSdkVersion=23,minSdkVersion=14,targetSdkVersion=23]
+2018-04-01 20:08:27,641 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 20:08:27,641 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 20:08:27,641 INFO  SysUtils - Execute command: [/tmp/rdisk/2639/src/RamzCalSample/gradlew, -b, /tmp/rdisk/2639/src/RamzCalSample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 20:08:38,388 INFO  ProjectTaskService - Detected possible tasks: 53
+2018-04-01 20:08:38,388 INFO  ProjectTaskService - Excluded tasks (11): lintDebug deviceCheck lint uninstallRelease connectedCheck uninstallAll check connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 20:08:38,389 INFO  SysUtils - Execute command: [/tmp/rdisk/2639/src/RamzCalSample/gradlew, -b, /tmp/rdisk/2639/src/RamzCalSample/app/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, deviceCheck, -x, lint, -x, uninstallRelease, -x, connectedCheck, -x, uninstallAll, -x, check, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 20:09:08,035 INFO  SysUtils - Configuration on demand is an incubating feature.
+:app:preBuild
+:app:compileDebugNdk
+:app:preDebugBuild
+:app:checkDebugManifest
+:app:preReleaseBuild
+:ramzcalender:compileLint
+:ramzcalender:copyReleaseLint UP-TO-DATE
+:ramzcalender:preBuild
+:ramzcalender:preReleaseBuild
+:ramzcalender:checkReleaseManifest
+:ramzcalender:preDebugBuild
+:ramzcalender:preDebugTestBuild
+:ramzcalender:prepareComAndroidSupportAppcompatV72301Library
+:ramzcalender:prepareComAndroidSupportSupportV42301Library
+:ramzcalender:prepareReleaseDependencies
+:ramzcalender:compileReleaseAidl
+:ramzcalender:compileReleaseRenderscript
+:ramzcalender:generateReleaseBuildConfig
+:ramzcalender:generateReleaseAssets UP-TO-DATE
+:ramzcalender:mergeReleaseAssets
+:ramzcalender:generateReleaseResValues
+:ramzcalender:generateReleaseResources
+:ramzcalender:mergeReleaseResources
+:ramzcalender:processReleaseManifest
+:ramzcalender:processReleaseResources
+:ramzcalender:generateReleaseSources
+:ramzcalender:compileReleaseJava
+:ramzcalender:extractReleaseAnnotations
+:ramzcalender:mergeReleaseProguardFiles
+:ramzcalender:processReleaseJavaRes UP-TO-DATE
+:ramzcalender:packageReleaseJar
+:ramzcalender:compileReleaseNdk
+:ramzcalender:packageReleaseJniLibs UP-TO-DATE
+:ramzcalender:packageReleaseLocalJar UP-TO-DATE
+:ramzcalender:packageReleaseRenderscript UP-TO-DATE
+:ramzcalender:packageReleaseResources
+:ramzcalender:bundleRelease
+:app:prepareComAndroidSupportAppcompatV72301Library
+:app:prepareComAndroidSupportSupportV132100Library
+:app:prepareComAndroidSupportSupportV42301Library
+:app:prepareComGithubCituxDatetimepicker012Library
+:app:prepareRamzCalSampleRamzcalenderUnspecifiedLibrary
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:compileDebugJava
+:app:preDexDebug
+:app:dexDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:validateDebugSigning
+:app:packageDebug
+:app:zipalignDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:compileReleaseJava
+:app:lintVitalRelease
+:app:compileReleaseNdk
+:app:preDexRelease
+:app:dexRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:build
+
+BUILD SUCCESSFUL
+
+Total time: 29.218 secs
+
+2018-04-01 20:09:08,098 INFO  FullProcessService - Found APK file: /tmp/rdisk/2639/src/RamzCalSample/app/build/outputs/apk/app-debug.apk

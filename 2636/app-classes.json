@@ -1,0 +1,4 @@
+{
+  "com.github.channguyen.adv" : [ "AnimatedDotsView", "AnimatedDotsView$1", "AnimatedDotsView$2", "BuildConfig", "CircleView", "R", "R$attr", "R$id", "R$layout", "R$string", "R$styleable" ],
+  "com.github.channguyen.adv.sample" : [ "BuildConfig", "MainActivity", "R", "R$attr", "R$dimen", "R$id", "R$layout", "R$mipmap", "R$string", "R$styleable" ]
+}

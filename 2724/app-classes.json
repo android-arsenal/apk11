@@ -1,0 +1,23 @@
+{
+  "android.support.annotation" : [ "Keep" ],
+  "android.support.v4.a" : [ "a" ],
+  "android.support.v4.b" : [ "a" ],
+  "android.support.v4.b.a" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o" ],
+  "android.support.v4.c.a" : [ "a", "b", "c" ],
+  "android.support.v4.d" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j" ],
+  "android.support.v4.e" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k" ],
+  "android.support.v4.f" : [ "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", "ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", "aw", "ax", "ay", "az", "b", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bk", "bl", "bm", "bn", "bo", "bp", "bq", "br", "bs", "bt", "bu", "bv", "bw", "bx", "by", "bz", "c", "ca", "cb", "cc", "cd", "ce", "cf", "cg", "ch", "ci", "cj", "ck", "cl", "cm", "cn", "co", "cp", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "android.support.v4.f.a" : [ "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "android.support.v4.widget" : [ "NestedScrollView", "Space", "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "android.support.v7.a" : [ "a", "b", "c" ],
+  "android.support.v7.b" : [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k" ],
+  "android.support.v7.c" : [ "a", "b", "c", "d", "e" ],
+  "android.support.v7.d.a" : [ "a" ],
+  "android.support.v7.e" : [ "a" ],
+  "android.support.v7.view" : [ "a", "b", "c", "d", "e", "f" ],
+  "android.support.v7.view.menu" : [ "ActionMenuItemView", "ExpandedMenuView", "ListMenuItemView", "a", "aa", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "android.support.v7.widget" : [ "ActionBarContainer", "ActionBarContextView", "ActionBarOverlayLayout", "ActionMenuView", "ActivityChooserView", "ActivityChooserView$InnerLayout", "ButtonBarLayout", "CardView", "ContentFrameLayout", "DialogTitle", "FitWindowsFrameLayout", "FitWindowsLinearLayout", "SearchView", "SearchView$SearchAutoComplete", "Toolbar", "ViewStubCompat", "a", "aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj", "ak", "al", "am", "an", "ao", "ap", "aq", "ar", "as", "at", "au", "av", "aw", "ax", "ay", "az", "b", "ba", "bb", "bc", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bk", "bl", "bm", "bn", "bo", "bp", "bq", "br", "bs", "bt", "bu", "bv", "bw", "bx", "by", "bz", "c", "ca", "cb", "cc", "cd", "ce", "cf", "cg", "ch", "ci", "cj", "ck", "cl", "cm", "cn", "co", "cp", "cq", "cr", "cs", "ct", "cu", "cv", "cw", "cx", "cy", "cz", "d", "da", "db", "dc", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+  "com.wenchao.a" : [ "a" ],
+  "com.wenchao.cardstack" : [ "CardStack", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s" ],
+  "wxj.swipeablecardstack" : [ "MyActivity", "a" ]
+}

@@ -1,0 +1,5 @@
+{
+  "com.matthewlogan.circlemenu" : [ "BuildConfig", "R", "R$anim", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$styleable" ],
+  "com.matthewlogan.circlemenu.application" : [ "BuildConfig", "MainActivity", "R", "R$anim", "R$attr", "R$color", "R$dimen", "R$drawable", "R$id", "R$layout", "R$string", "R$style", "R$styleable" ],
+  "com.matthewlogan.circlemenu.library" : [ "CircleMenu", "CircleMenu$CircleMenuAdapter", "CircleMenu$OnItemClickListener" ]
+}

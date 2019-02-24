@@ -1,0 +1,427 @@
+2018-04-01 11:39:25,454 INFO  DownloadService - Downloading "https://github.com/princeparadoxes/RecyclerBindableAdapter/archive/master.zip", attempt 3
+2018-04-01 11:40:25,455 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-04-01 11:40:26,248 INFO  GithubDownloadService - Default branch of this repository: master
+2018-04-01 11:40:26,248 INFO  DownloadService - Downloading "https://github.com/princeparadoxes/RecyclerBindableAdapter/archive/master.zip", attempt 3
+2018-04-01 11:41:27,052 DEBUG FullProcessService - Repository https://github.com/princeparadoxes/RecyclerBindableAdapter available: true
+2018-04-01 11:41:27,052 INFO  FullProcessService - Could not download ZIP file from Github, lets clone it
+2018-04-01 11:41:27,052 INFO  SysUtils - Execute command: [git, clone, -q, --single-branch, --depth, 1, https://github.com/princeparadoxes/RecyclerBindableAdapter, /tmp/rdisk/2689/src]
+2018-04-01 11:41:28,572 INFO  SysUtils - 
+2018-04-01 11:41:28,577 INFO  GitService - Deleted "/tmp/rdisk/2689/src/.git": true
+2018-04-01 11:41:28,580 INFO  FullProcessService - Size of directory with sources: 180 KB
+2018-04-01 11:41:28,581 INFO  SysUtils - Execute command: [git, init, /tmp/rdisk/2689/src]
+2018-04-01 11:41:28,585 INFO  SysUtils - Initialized empty Git repository in /tmp/rdisk/2689/src/.git/
+
+2018-04-01 11:41:28,588 INFO  ProjectBuildService - Gradle wrapper(s): /tmp/rdisk/2689/src/gradlew
+2018-04-01 11:41:28,591 INFO  ProjectBuildService - Build script(s): /tmp/rdisk/2689/src/library/build.gradle /tmp/rdisk/2689/src/sample/build.gradle /tmp/rdisk/2689/src/build.gradle
+2018-04-01 11:41:28,595 INFO  ProjectBuildService - All script(s): /tmp/rdisk/2689/src/settings.gradle /tmp/rdisk/2689/src/sample/build.gradle /tmp/rdisk/2689/src/library/build.gradle /tmp/rdisk/2689/src/gradle/deploy.gradle /tmp/rdisk/2689/src/build.gradle
+2018-04-01 11:41:28,595 INFO  ProjectBuildService - Remote scripts: none
+2018-04-01 11:41:28,595 INFO  ProjectFixService - Fixing project...
+2018-04-01 11:41:28,603 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2689/src/library/local.properties
+2018-04-01 11:41:28,604 INFO  ProjectFixService - Build info for "/tmp/rdisk/2689/src/library/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-01 11:41:28,604 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2689/src/sample/local.properties
+2018-04-01 11:41:28,604 INFO  ProjectFixService - Build info for "/tmp/rdisk/2689/src/sample/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-01 11:41:28,604 INFO  LocalPropertiesFixService - Created fake /tmp/rdisk/2689/src/local.properties
+2018-04-01 11:41:28,605 INFO  WrapperPropertiesFixService - Gradle wrapper: https://services.gradle.org/distributions/gradle-3.5-all.zip
+2018-04-01 11:41:28,605 INFO  WrapperPropertiesFixService - Gradle wrapper was changed from "-all.zip" to "-bin.zip" (https://services.gradle.org/distributions/gradle-3.5-bin.zip)
+2018-04-01 11:41:28,606 INFO  ProjectFixService - Build info for "/tmp/rdisk/2689/src/build.gradle": [buildToolsVersion=25.0.2,compileSdkVersion=25,minSdkVersion=14,targetSdkVersion=25]
+2018-04-01 11:41:28,606 INFO  ProjectFixService - Project was maybe fixed
+2018-04-01 11:41:28,606 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:41:28,606 INFO  SysUtils - Execute command: [/tmp/rdisk/2689/src/gradlew, -b, /tmp/rdisk/2689/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:41:36,836 INFO  ProjectTaskService - Detected possible tasks: 67
+2018-04-01 11:41:36,837 INFO  ProjectTaskService - Excluded tasks (16): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest lintRelease
+2018-04-01 11:41:36,837 INFO  SysUtils - Execute command: [/tmp/rdisk/2689/src/gradlew, -b, /tmp/rdisk/2689/src/library/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, lintRelease, build]
+2018-04-01 11:41:50,301 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:androidJavadocs/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/ClipContainer.java:8: error: package android.support.annotation does not exist
+import android.support.annotation.NonNull;
+                                 ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/BindableViewHolder.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.CallSuper;
+                                 ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/BindableViewHolder.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/BindableViewHolder.java:8: error: package RecyclerView does not exist
+        extends RecyclerView.ViewHolder {
+                            ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleParallaxBindableAdapter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.LayoutRes;
+                                 ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:4: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:5: error: package android.support.annotation does not exist
+import android.support.annotation.LayoutRes;
+                                 ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:6: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.GridLayoutManager;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:7: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.LinearLayoutManager;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:8: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:9: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.StaggeredGridLayoutManager;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:20: error: package RecyclerView does not exist
+        extends RecyclerView.Adapter<VH> {
+                            ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:19: error: package RecyclerView does not exist
+public abstract class RecyclerBindableAdapter<T, VH extends RecyclerView.ViewHolder>
+                                                                        ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:11: error: package RecyclerView does not exist
+public abstract class ParallaxBindableAdapter<T, VH extends RecyclerView.ViewHolder>
+                                                                        ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:85: error: cannot find symbol
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+                                         ^
+  symbol:   class RecyclerView
+  location: class ParallaxBindableAdapter<T,VH>
+  where T,VH are type-variables:
+    T extends Object declared in class ParallaxBindableAdapter
+    VH declared in class ParallaxBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:32: error: package RecyclerView does not exist
+    private RecyclerView.LayoutManager manager;
+                        ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:34: error: package GridLayoutManager does not exist
+    private GridLayoutManager.SpanSizeLookup spanSizeLookup = new GridLayoutManager.SpanSizeLookup() {
+                             ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:145: error: package RecyclerView does not exist
+    final public void onBindViewHolder(final RecyclerView.ViewHolder vh, int position) {
+                                                         ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:320: error: package RecyclerView does not exist
+    public static class HeaderFooterViewHolder extends RecyclerView.ViewHolder {
+                                                                   ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:211: error: cannot find symbol
+    public void onAttachedToRecyclerView(final RecyclerView recyclerView) {
+                                               ^
+  symbol:   class RecyclerView
+  location: class RecyclerBindableAdapter<T,VH>
+  where T,VH are type-variables:
+    T extends Object declared in class RecyclerBindableAdapter
+    VH declared in class RecyclerBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:221: error: package RecyclerView does not exist
+    private void setManager(RecyclerView.LayoutManager manager) {
+                                        ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleBindableAdapter.java:3: error: package android.support.annotation does not exist
+import android.support.annotation.LayoutRes;
+                                 ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java:3: error: package android.support.v7.widget does not exist
+import android.support.v7.widget.RecyclerView;
+                                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java:14: error: package RecyclerView does not exist
+public abstract class FilterBindableAdapter<T, VH extends RecyclerView.ViewHolder>
+                                                                      ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/ClipContainer.java:25: error: cannot find symbol
+    protected void dispatchDraw(@NonNull Canvas canvas) {
+                                 ^
+  symbol:   class NonNull
+  location: class ClipContainer
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/view/BindableViewHolder.java:14: error: cannot find symbol
+    @CallSuper
+     ^
+  symbol:   class CallSuper
+  location: class BindableViewHolder<T,I>
+  where T,I are type-variables:
+    T extends Object declared in class BindableViewHolder
+    I extends ActionListener<T> declared in class BindableViewHolder
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleParallaxBindableAdapter.java:13: error: cannot find symbol
+    @LayoutRes
+     ^
+  symbol:   class LayoutRes
+  location: class SimpleParallaxBindableAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class SimpleParallaxBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleParallaxBindableAdapter.java:18: error: cannot find symbol
+    public SimpleParallaxBindableAdapter(@LayoutRes int layoutId,
+                                          ^
+  symbol:   class LayoutRes
+  location: class SimpleParallaxBindableAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class SimpleParallaxBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/RecyclerBindableAdapter.java:312: error: cannot find symbol
+    @LayoutRes
+     ^
+  symbol:   class LayoutRes
+  location: class RecyclerBindableAdapter<T,VH>
+  where T,VH are type-variables:
+    T extends Object declared in class RecyclerBindableAdapter
+    VH declared in class RecyclerBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleBindableAdapter.java:13: error: cannot find symbol
+    @LayoutRes
+     ^
+  symbol:   class LayoutRes
+  location: class SimpleBindableAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class SimpleBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/SimpleBindableAdapter.java:18: error: cannot find symbol
+    public SimpleBindableAdapter(@LayoutRes int layoutId,
+                                  ^
+  symbol:   class LayoutRes
+  location: class SimpleBindableAdapter<T>
+  where T is a type-variable:
+    T extends Object declared in class SimpleBindableAdapter
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java:139: warning: no @param for item
+    protected String itemToString(T item) {
+                     ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java:139: warning: no @return
+    protected String itemToString(T item) {
+                     ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java:178: warning: no @param for objectCallback
+    public void setOnFilterObjectCallback(OnFilterObjectCallback objectCallback) {
+                ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:121: warning: no description for @param
+         * @param percentage
+           ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:122: warning: no description for @param
+         * @param offset
+           ^
+/tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/ParallaxBindableAdapter.java:123: warning: no description for @param
+         * @param parallax
+           ^
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class NonNull not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class LayoutRes not found.
+javadoc: warning - Class CallSuper not found.
+javadoc: warning - Class LayoutRes not found.
+
+52 warnings
+:library:androidJavadocsJar
+:library:androidSourcesJar
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportRecyclerviewV72531Library
+:library:prepareComAndroidSupportSupportCompat2531Library
+:library:prepareComAndroidSupportSupportCoreUi2531Library
+:library:prepareDebugDependencies
+:library:compileDebugAidl
+:library:compileDebugNdk NO-SOURCE
+:library:compileLint
+:library:copyDebugLint NO-SOURCE
+:library:compileDebugRenderscript
+:library:generateDebugBuildConfig
+:library:generateDebugResValues
+:library:generateDebugResources
+:library:mergeDebugResources
+:library:processDebugManifest
+:library:processDebugResources
+:library:generateDebugSources
+:library:incrementalDebugJavaCompilationSafeguard
+:library:javaPreCompileDebug
+:library:compileDebugJavaWithJavac
+:library:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractDebugAnnotations
+:library:mergeDebugShaders
+:library:compileDebugShaders
+:library:generateDebugAssets
+:library:mergeDebugAssets
+:library:mergeDebugProguardFiles
+:library:packageDebugRenderscript NO-SOURCE
+:library:packageDebugResources
+:library:processDebugJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForDebug
+:library:transformClassesAndResourcesWithSyncLibJarsForDebug
+:library:mergeDebugJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForDebug
+:library:transformNativeLibsWithStripDebugSymbolForDebug
+:library:transformNativeLibsWithSyncJniLibsForDebug
+:library:bundleDebug
+:library:compileDebugSources
+:library:assembleDebug
+:library:checkReleaseManifest
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl
+:library:compileReleaseNdk NO-SOURCE
+:library:copyReleaseLint NO-SOURCE
+:library:compileReleaseRenderscript
+:library:generateReleaseBuildConfig
+:library:generateReleaseResValues
+:library:generateReleaseResources
+:library:mergeReleaseResources
+:library:processReleaseManifest
+:library:processReleaseResources
+:library:generateReleaseSources
+:library:incrementalReleaseJavaCompilationSafeguard
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac
+:library:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+Note: /tmp/rdisk/2689/src/library/src/main/java/com/danil/recyclerbindableadapter/library/FilterBindableAdapter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+:library:extractReleaseAnnotations
+:library:mergeReleaseShaders
+:library:compileReleaseShaders
+:library:generateReleaseAssets
+:library:mergeReleaseAssets
+:library:mergeReleaseProguardFiles
+:library:packageReleaseRenderscript NO-SOURCE
+:library:packageReleaseResources
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForRelease
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease
+:library:mergeReleaseJniLibFolders
+:library:transformNativeLibsWithMergeJniLibsForRelease
+:library:transformNativeLibsWithStripDebugSymbolForRelease
+:library:transformNativeLibsWithSyncJniLibsForRelease
+:library:bundleRelease
+:library:compileReleaseSources
+:library:assembleRelease
+:library:signArchives SKIPPED
+:library:assemble
+:library:build
+
+BUILD SUCCESSFUL
+
+Total time: 13.244 secs
+
+2018-04-01 11:41:50,314 INFO  ProjectTaskService - Detecting possible tasks...
+2018-04-01 11:41:50,314 INFO  SysUtils - Execute command: [/tmp/rdisk/2689/src/gradlew, -b, /tmp/rdisk/2689/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, tasks]
+2018-04-01 11:41:58,197 INFO  ProjectTaskService - Detected possible tasks: 65
+2018-04-01 11:41:58,197 INFO  ProjectTaskService - Excluded tasks (19): lintDebug mockableAndroidJar deviceCheck lint testReleaseUnitTest uninstallRelease deviceAndroidTest uninstallDebugAndroidTest installDebugAndroidTest connectedCheck connectedDebugAndroidTest uninstallAll test check testDebugUnitTest connectedAndroidTest installDebug lintRelease uninstallDebug
+2018-04-01 11:41:58,197 INFO  SysUtils - Execute command: [/tmp/rdisk/2689/src/gradlew, -b, /tmp/rdisk/2689/src/sample/build.gradle, -Dorg.gradle.daemon=false, -Dorg.gradle.daemon.performance.enable-monitoring=false, -Dorg.gradle.configureondemand=true, --stacktrace, -x, lintDebug, -x, mockableAndroidJar, -x, deviceCheck, -x, lint, -x, testReleaseUnitTest, -x, uninstallRelease, -x, deviceAndroidTest, -x, uninstallDebugAndroidTest, -x, installDebugAndroidTest, -x, connectedCheck, -x, connectedDebugAndroidTest, -x, uninstallAll, -x, test, -x, check, -x, testDebugUnitTest, -x, connectedAndroidTest, -x, installDebug, -x, lintRelease, -x, uninstallDebug, build]
+2018-04-01 11:42:18,560 INFO  SysUtils - Configuration on demand is an incubating feature.
+:library:preBuild UP-TO-DATE
+:library:preReleaseBuild UP-TO-DATE
+:library:checkReleaseManifest
+:library:preDebugAndroidTestBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:preDebugUnitTestBuild UP-TO-DATE
+:library:preReleaseUnitTestBuild UP-TO-DATE
+:library:prepareComAndroidSupportRecyclerviewV72531Library
+:library:prepareComAndroidSupportSupportCompat2531Library
+:library:prepareComAndroidSupportSupportCoreUi2531Library
+:library:prepareReleaseDependencies
+:library:compileReleaseAidl UP-TO-DATE
+:library:compileReleaseNdk NO-SOURCE
+:library:compileLint UP-TO-DATE
+:library:copyReleaseLint NO-SOURCE
+:library:compileReleaseRenderscript UP-TO-DATE
+:library:generateReleaseBuildConfig UP-TO-DATE
+:library:generateReleaseResValues UP-TO-DATE
+:library:generateReleaseResources UP-TO-DATE
+:library:mergeReleaseResources UP-TO-DATE
+:library:processReleaseManifest UP-TO-DATE
+:library:processReleaseResources UP-TO-DATE
+:library:generateReleaseSources UP-TO-DATE
+:library:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:library:javaPreCompileRelease
+:library:compileReleaseJavaWithJavac UP-TO-DATE
+:library:extractReleaseAnnotations UP-TO-DATE
+:library:mergeReleaseShaders UP-TO-DATE
+:library:compileReleaseShaders UP-TO-DATE
+:library:generateReleaseAssets UP-TO-DATE
+:library:mergeReleaseAssets UP-TO-DATE
+:library:mergeReleaseProguardFiles UP-TO-DATE
+:library:packageReleaseRenderscript NO-SOURCE
+:library:packageReleaseResources UP-TO-DATE
+:library:processReleaseJavaRes NO-SOURCE
+:library:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:library:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:library:mergeReleaseJniLibFolders UP-TO-DATE
+:library:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:library:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:library:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:library:bundleRelease UP-TO-DATE
+:sample:preBuild UP-TO-DATE
+:sample:preDebugBuild UP-TO-DATE
+:sample:checkDebugManifest
+:sample:preReleaseBuild UP-TO-DATE
+:sample:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:sample:prepareComAndroidSupportAppcompatV72531Library
+:sample:prepareComAndroidSupportCardviewV72531Library
+:sample:prepareComAndroidSupportPercent2531Library
+:sample:prepareComAndroidSupportRecyclerviewV72531Library
+:sample:prepareComAndroidSupportSupportCompat2531Library
+:sample:prepareComAndroidSupportSupportCoreUi2531Library
+:sample:prepareComAndroidSupportSupportCoreUtils2531Library
+:sample:prepareComAndroidSupportSupportFragment2531Library
+:sample:prepareComAndroidSupportSupportMediaCompat2531Library
+:sample:prepareComAndroidSupportSupportV42531Library
+:sample:prepareComAndroidSupportSupportVectorDrawable2531Library
+:sample:prepareComJakewhartonButterknife870Library
+:sample:prepareDebugDependencies
+:sample:compileDebugAidl
+:sample:compileDebugRenderscript
+:sample:generateDebugBuildConfig
+:sample:generateDebugResValues
+:sample:generateDebugResources
+:sample:mergeDebugResources
+:sample:processDebugManifest
+:sample:processDebugResources
+:sample:generateDebugSources
+:sample:incrementalDebugJavaCompilationSafeguard
+:sample:javaPreCompileDebug
+:sample:compileDebugJavaWithJavac
+:sample:compileDebugNdk NO-SOURCE
+:sample:compileDebugSources
+:sample:mergeDebugShaders
+:sample:compileDebugShaders
+:sample:generateDebugAssets
+:sample:mergeDebugAssets
+:sample:transformClassesWithDexForDebug
+:sample:mergeDebugJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForDebug
+:sample:transformNativeLibsWithStripDebugSymbolForDebug
+:sample:processDebugJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForDebug
+:sample:validateSigningDebug
+:sample:packageDebug
+:sample:assembleDebug
+:sample:checkReleaseManifest
+:sample:prepareReleaseDependencies
+:sample:compileReleaseAidl
+:sample:compileReleaseRenderscript
+:sample:generateReleaseBuildConfig
+:sample:generateReleaseResValues
+:sample:generateReleaseResources
+:sample:mergeReleaseResources
+:sample:processReleaseManifest
+:sample:processReleaseResources
+:sample:generateReleaseSources
+:sample:incrementalReleaseJavaCompilationSafeguard
+:sample:javaPreCompileRelease
+:sample:compileReleaseJavaWithJavac
+:sample:compileReleaseNdk NO-SOURCE
+:sample:compileReleaseSources
+:sample:lintVitalRelease
+:sample:mergeReleaseShaders
+:sample:compileReleaseShaders
+:sample:generateReleaseAssets
+:sample:mergeReleaseAssets
+:sample:transformClassesWithDexForRelease
+:sample:mergeReleaseJniLibFolders
+:sample:transformNativeLibsWithMergeJniLibsForRelease
+:sample:transformNativeLibsWithStripDebugSymbolForRelease
+:sample:processReleaseJavaRes NO-SOURCE
+:sample:transformResourcesWithMergeJavaResForRelease
+:sample:packageRelease
+:sample:assembleRelease
+:sample:assemble
+:sample:build
+
+BUILD SUCCESSFUL
+
+Total time: 20.14 secs
+
+2018-04-01 11:42:18,613 INFO  FullProcessService - Found APK file: /tmp/rdisk/2689/src/sample/build/outputs/apk/sample-release-unsigned.apk

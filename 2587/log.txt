@@ -1,0 +1,9 @@
+2018-05-14 05:15:04,903 INFO  DownloadService - Downloading "https://github.com/doridori/Pilot/archive/master.zip", attempt 3
+2018-05-14 05:15:04,904 INFO  GithubDownloadService - Could not find ZIP archive for master branch
+2018-05-14 05:15:05,281 INFO  GithubDownloadService - Default branch of this repository: master
+2018-05-14 05:15:05,281 INFO  DownloadService - Downloading "https://github.com/doridori/Pilot/archive/master.zip", attempt 3
+2018-05-14 05:15:05,282 DEBUG FullProcessService - Repository https://github.com/doridori/Pilot available: false
+2018-05-14 05:15:05,282 ERROR FullProcessService - Could not find directory with sources
+2018-05-14 05:15:05,282 ERROR FullProcessService - Project will not be processed
+2018-05-14 05:15:05,282 ERROR FullProcessService - Project build has not produced APK file
+2018-05-14 05:15:05,283 ERROR FullProcessService - Could not find generated or existed APK file
